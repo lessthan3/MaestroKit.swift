@@ -1,0 +1,6 @@
+framework module MaestroKit {
+  umbrella header "MaestroKit.h"
+  export *
+
+  module * { export * }
+}
