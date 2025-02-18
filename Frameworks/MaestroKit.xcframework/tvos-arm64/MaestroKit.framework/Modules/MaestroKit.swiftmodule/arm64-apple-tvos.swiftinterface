@@ -94,7 +94,7 @@ public struct MaestroKeyPlay {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit25KeyPlaysSectionHeaderViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct MaestroPanel : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil, panelType: MaestroKit.MaestroPanelType, viewModel: any MaestroKit.MaestroEventInterface)
+  @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil, viewModel: any MaestroKit.MaestroEventInterface)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -135,7 +135,7 @@ public enum MaestroPanelType {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16PanelManagerViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor public protocol MaestroEventDelegate {
-  @_Concurrency.MainActor func keyPlaysData(forEventID eventID: Swift.String) -> MaestroKit.MaestroKeyPlaysResponse
+  @_Concurrency.MainActor func keyPlaysData(forEventID eventID: Swift.String) async -> MaestroKit.MaestroKeyPlaysResponse
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func trackAction(analytics: [Swift.String : Swift.String])
   @_Concurrency.MainActor func trackImpression(analytics: [Swift.String : Swift.String])
@@ -171,7 +171,7 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor public func getKeyPlaysCount() -> Swift.Int?
 }
 extension MaestroKit.MaestroEventViewModel {
-  @_Concurrency.MainActor public func startPollingKeyPlays()
+  @_Concurrency.MainActor public func startPollingKeyPlays() async
   @_Concurrency.MainActor public func stopPollingKeyPlays()
 }
 @_hasMissingDesignatedInitializers public actor MaestroManager {
@@ -213,6 +213,1617 @@ public protocol MaestroManagerInterface {
   nonisolated func getCurrentSiteID() async -> Swift.String?
   nonisolated func getCurrentAuthToken() async -> Swift.String?
   nonisolated func getCurrentUserID() async -> Swift.String?
+}
+public struct Channel : Swift.Codable {
+  public let id: Swift.String?
+  public let collection: Swift.String?
+  public let lastModified: Swift.Int?
+  public let data: MaestroKit.ChannelData
+  public let activeRenderers: MaestroKit.ActiveRenderers?
+  public let renderers: MaestroKit.Renderers?
+  public let seo: MaestroKit.ChannelSEO?
+  public let siteID: Swift.String
+  public let slug: Swift.String
+  public let baseLanguage: Swift.String
+  public let type: Swift.String
+  public let creator: Swift.String?
+  public let owner: Swift.String?
+  public let created: Swift.Int
+  public let modified: Swift.Int
+  public let tags: [Swift.String]
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case id
+    case collection
+    case lastModified
+    case data
+    case activeRenderers
+    case renderers
+    case seo
+    case siteID
+    case slug
+    case baseLanguage
+    case type, creator, owner, created, modified, tags
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelData : Swift.Codable {
+  public let gate: MaestroKit.Gate?
+  public let landingContent: [MaestroKit.LandingContent]?
+  public let content: MaestroKit.ContentData?
+  public let name: Swift.String
+  public let regions: MaestroKit.RegionsData?
+  public let theme: MaestroKit.ThemeData?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case gate
+    case landingContent
+    case content
+    case name
+    case regions
+    case theme
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Gate : Swift.Codable {
+  public let active: Swift.Bool?
+  public let gate: MaestroKit.GateDetails?
+  public let kind: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GateDetails : Swift.Codable {
+  public let background: MaestroKit.GateBackground?
+  public let loginMessage: Swift.String?
+  public let logoLink: Swift.String?
+  public let logoTitle: Swift.String?
+  public let logoURL: Swift.String?
+  public let name: Swift.String?
+  public let navigation: MaestroKit.NavigationState?
+  public let subscriptionSubtitle: Swift.String?
+  public let subscriptionTitle: Swift.String?
+  public let subscriptions: [MaestroKit.Subscription]?
+  public let subtitle: Swift.String?
+  public let subtitleRawData: Swift.String?
+  public let subtitleRawDataV2: Swift.String?
+  public let title: Swift.String?
+  public let titleRawData: Swift.String?
+  public let titleRawDataV2: Swift.String?
+  public let bundles: [MaestroKit.BundleItem]?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case background
+    case loginMessage
+    case logoLink
+    case logoTitle
+    case logoURL
+    case name
+    case navigation
+    case subscriptionSubtitle
+    case subscriptionTitle
+    case subscriptions
+    case subtitle
+    case subtitleRawData
+    case subtitleRawDataV2
+    case title
+    case titleRawData
+    case titleRawDataV2
+    case bundles
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GateBackground : Swift.Codable {
+  public let color: Swift.String?
+  public let desktopImage: Swift.String?
+  public let mobileImage: Swift.String?
+  public let opacity: Swift.Double?
+  public let type: Swift.String?
+  public let useGradientMask: Swift.Bool?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case color
+    case desktopImage
+    case mobileImage
+    case opacity, type
+    case useGradientMask
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NavigationState : Swift.Codable {
+  public let state: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Subscription : Swift.Codable {
+  public let id: Swift.String
+  public let activeOnGate: Swift.Bool?
+  public let created: Swift.Int?
+  public let creator: Swift.String?
+  public let defaultPrice: Swift.Double?
+  public let description: Swift.String?
+  public let eventDate: Swift.Int?
+  public let modified: Swift.Int?
+  public let name: Swift.String?
+  public let owner: Swift.String?
+  public let prices: [MaestroKit.Price]?
+  public let recurrence: Swift.String?
+  public let siteID: Swift.String?
+  public let sku: Swift.String?
+  public let subscriptionProvider: Swift.String?
+  public let type: Swift.String?
+  public let visible: Swift.Bool?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case id
+    case activeOnGate
+    case created, creator
+    case defaultPrice
+    case description
+    case eventDate
+    case modified, name, owner, prices, recurrence
+    case siteID
+    case sku
+    case subscriptionProvider
+    case type, visible
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Price : Swift.Codable {
+  public let currency: Swift.String?
+  public let `default`: Swift.Bool?
+  public let value: Swift.Double?
+  public let stripePriceID: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case currency
+    case `default`
+    case value
+    case stripePriceID
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BundleItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LandingContent : Swift.Codable {
+  public let arrayID: Swift.String
+  public let data: MaestroKit.LandingContentData
+  public let kind: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case arrayID
+    case data, kind
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LandingContentData : Swift.Codable {
+  public let background: MaestroKit.LandingBackground?
+  public let description: MaestroKit.RichTextField?
+  public let primaryCTA: MaestroKit.CTAField?
+  public let secondaryCTA: MaestroKit.CTAField?
+  public let title: MaestroKit.RichTextField?
+  public let spacing: MaestroKit.Spacing?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case background, description
+    case primaryCTA
+    case secondaryCTA
+    case title, spacing
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LandingBackground : Swift.Codable {
+  public let behavior: MaestroKit.Behavior?
+  public let bleed: Swift.Bool?
+  public let desktop: Swift.String?
+  public let gradientMask: Swift.Bool?
+  public let mobile: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case behavior, bleed, desktop
+    case gradientMask
+    case mobile
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Behavior : Swift.Codable {
+  public let openInNewTab: Swift.Bool?
+  public let type: Swift.String?
+  public let url: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case openInNewTab
+    case type, url
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RichTextField : Swift.Codable {
+  public let rawData: Swift.String?
+  public let rawDataV2: Swift.String?
+  public let show: Swift.Bool?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case rawData
+    case rawDataV2
+    case show
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CTAField : Swift.Codable {
+  public let behavior: MaestroKit.CTABehavior?
+  public let fontSize: Swift.Int?
+  public let height: MaestroKit.CTAHeight?
+  public let show: Swift.Bool?
+  public let text: Swift.String?
+  public let variant: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case behavior
+    case fontSize
+    case height, show, text, variant
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CTABehavior : Swift.Codable {
+  public let pageID: Swift.String?
+  public let type: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case pageID
+    case type
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CTAHeight : Swift.Codable {
+  public let desktop: Swift.String?
+  public let mobile: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Spacing : Swift.Codable {
+  public let bottom: Swift.Int?
+  public let left: Swift.Int?
+  public let right: Swift.Int?
+  public let top: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ContentData : Swift.Codable {
+  public let live: MaestroKit.LiveContent?
+  public let offline: MaestroKit.OfflineContent?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LiveContent : Swift.Codable {
+  public let schedule: [MaestroKit.ScheduleItem]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ScheduleItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct OfflineContent : Swift.Codable {
+  public let mode: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RegionsData : Swift.Codable {
+  public let navigation: MaestroKit.ChannelNavRegion?
+  public let channelSelect: MaestroKit.ChannelNavRegion?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case navigation
+    case channelSelect
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelNavRegion : Swift.Codable {
+  public let state: Swift.String
+  public let items: [MaestroKit.ChannelNavItem]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelNavItem : Swift.Codable {
+  public let arrayID: Swift.String?
+  public let link: Swift.String?
+  public let text: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case arrayID
+    case link, text
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ThemeData : Swift.Codable {
+  public let classicThemeOptions: MaestroKit.ClassicThemeOptions?
+  public let id: Swift.String
+  public let type: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case classicThemeOptions
+    case id, type
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ClassicThemeOptions : Swift.Codable {
+  public let accentPrimary: Swift.String
+  public let accentSecondary: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case accentPrimary
+    case accentSecondary
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ActiveRenderers : Swift.Codable {
+  public let sidebar: Swift.Bool?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Renderers : Swift.Codable {
+  public let livestream: MaestroKit.LivestreamRenderer?
+  public let sidebar: MaestroKit.SidebarRenderer?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LivestreamRenderer : Swift.Codable {
+  public let streamID: Swift.String?
+  public let livestreamPublished: Swift.Bool?
+  public let status: Swift.String?
+  public let error: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case streamID
+    case livestreamPublished
+    case status, error
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SidebarRenderer : Swift.Codable {
+  public let items: [MaestroKit.SidebarItem]?
+  public let cardID: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case items
+    case cardID
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SidebarItem : Swift.Codable {
+  public let arrayID: Swift.String?
+  public let id: Swift.String?
+  public let isActive: Swift.Bool?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case arrayID
+    case id
+    case isActive
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelSEO : Swift.Codable {
+  public let title: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SiteResponse : Swift.Codable {
+  public let id: Swift.String
+  public let collections: MaestroKit.Collections
+  public let deviceLimit: Swift.Int
+  public let features: MaestroKit.Features
+  public let lastModified: Swift.Int
+  public let mentor: MaestroKit.Mentor
+  public let name: Swift.String
+  public let package: MaestroKit.Package
+  public let regions: MaestroKit.Regions
+  public let settings: MaestroKit.Settings
+  public let settingsId: Swift.String
+  public let shards: [Swift.String]
+  public let slug: Swift.String
+  public let style: MaestroKit.Style
+  public let tax: MaestroKit.Tax
+  public let users: MaestroKit.Users
+  public let pageCounts: MaestroKit.PageCounts
+  public let created: Swift.Int
+  public let modified: Swift.Int
+  public let tags: [Swift.String]
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case id
+    case collections, deviceLimit, features
+    case lastModified
+    case mentor, name, package, regions, settings, settingsId, shards, slug, style, tax, users, pageCounts, created, modified, tags
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Collections : Swift.Codable {
+  public let ads: MaestroKit.SlugObject
+  public let articles: MaestroKit.SlugObject
+  public let categories: MaestroKit.SlugObject
+  public let channels: MaestroKit.SlugObject
+  public let episodes: MaestroKit.SlugObject
+  public let panelSets: MaestroKit.SlugObject
+  public let panels: MaestroKit.SlugObject
+  public let people: MaestroKit.SlugObject
+  public let playlists: MaestroKit.SlugObject
+  public let polls: MaestroKit.SlugObject
+  public let shows: MaestroKit.SlugObject
+  public let tags: MaestroKit.SlugObject
+  public let videos: MaestroKit.SlugObject
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case ads, articles, categories, channels, episodes
+    case panelSets
+    case panels, people, playlists, polls, shows, tags, videos
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SlugObject : Swift.Codable {
+  public let slug: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Features : Swift.Codable {
+  public let accessCode: Swift.Bool
+  public let achievements: Swift.Bool
+  public let ads: Swift.Bool
+  public let amazonBenefit: Swift.Bool
+  public let applePay: Swift.Bool
+  public let billing: Swift.Bool
+  public let developer: Swift.Bool
+  public let disableGtm: Swift.Bool
+  public let domain: Swift.Bool
+  public let earnings: Swift.Bool
+  public let endUserLocalization: Swift.Bool
+  public let fortniteSinglesLeaderboardV2: Swift.Bool
+  public let googlePay: Swift.Bool
+  public let hideCopyright: Swift.Bool
+  public let hideGdpr: Swift.Bool
+  public let hideMaestroLogo: Swift.Bool
+  public let maestroSupport: Swift.Bool
+  public let navigationV1: Swift.Bool
+  public let overlays: MaestroKit.Overlays
+  public let pagesV3: Swift.Bool
+  public let panels: MaestroKit.FeaturesPanels
+  public let questsBlock: Swift.Bool
+  public let revenue: Swift.Bool
+  public let richTextEditorV3: Swift.Bool
+  public let shopify: Swift.Bool
+  public let streamProviderAccount: Swift.Bool
+  public let streaming: Swift.Bool
+  public let studioStream: Swift.Bool
+  public let subscriptions: Swift.Bool
+  public let uploadV2: Swift.Bool
+  public let vodUploads: Swift.Bool
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case accessCode
+    case achievements, ads
+    case amazonBenefit
+    case applePay
+    case billing, developer
+    case disableGtm
+    case domain, earnings
+    case endUserLocalization
+    case fortniteSinglesLeaderboardV2
+    case googlePay
+    case hideCopyright
+    case hideGdpr
+    case hideMaestroLogo
+    case maestroSupport
+    case navigationV1
+    case overlays
+    case pagesV3
+    case panels
+    case questsBlock
+    case revenue, richTextEditorV3, shopify, streamProviderAccount, streaming, studioStream, subscriptions, uploadV2, vodUploads
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Overlays : Swift.Codable {
+  public let highlight: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FeaturesPanels : Swift.Codable {
+  public let fortniteDuosLeaderboard: Swift.Bool
+  public let fortniteDuosMatch: Swift.Bool
+  public let fortnitePlayByPlay: Swift.Bool
+  public let pubgMatch: Swift.Bool
+  public let shopifyBlockPanel: Swift.Bool
+  public let tips: Swift.Bool
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case fortniteDuosLeaderboard
+    case fortniteDuosMatch
+    case fortnitePlayByPlay
+    case pubgMatch
+    case shopifyBlockPanel
+    case tips
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Mentor : Swift.Codable {
+  public let addSocials: Swift.Bool
+  public let finish: Swift.Bool
+  public let initTheme: Swift.Bool
+  public let pickTheme: Swift.Bool
+  public let welcome: Swift.Bool
+  public let welcomeUser: Swift.Bool
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case addSocials
+    case finish
+    case initTheme
+    case pickTheme
+    case welcome
+    case welcomeUser
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Package : Swift.Codable {
+  public let core: Swift.String
+  public let id: Swift.String
+  public let version: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Regions : Swift.Codable {
+  public let channelSelect: MaestroKit.ChannelSelect
+  public let footer: MaestroKit.Footer
+  public let header: MaestroKit.Header
+  public let navigation: MaestroKit.Navigation
+  public let player: MaestroKit.Player
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case channelSelect
+    case footer, header, navigation, player
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ChannelSelect : Swift.Codable {
+  public let state: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Footer : Swift.Codable {
+  public let actions: [MaestroKit.FooterAction]
+  public let background: Swift.String
+  public let footerLinks: [MaestroKit.FooterLink]
+  public let hashtag: Swift.String
+  public let links: [MaestroKit.FooterLink]
+  public let newsletter: MaestroKit.Newsletter
+  public let sharing: [MaestroKit.Sharing]
+  public let socials: [MaestroKit.Social]
+  public let state: Swift.String
+  public let tweetMessage: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case actions, background
+    case footerLinks
+    case hashtag, links, newsletter, sharing, socials, state
+    case tweetMessage
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FooterAction : Swift.Codable {
+  public let content: MaestroKit.FooterActionContent
+  public let display: MaestroKit.FooterActionDisplay
+  public let icon: Swift.String
+  public let kind: Swift.String
+  public let name: Swift.String
+  public let url: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FooterActionContent : Swift.Codable {
+  public let html: Swift.String?
+  public let image: Swift.String?
+  public let kind: Swift.String?
+  public let url: Swift.String?
+  public let menu: [MaestroKit.MenuItem]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MenuItem : Swift.Codable {
+  public let content: MaestroKit.MenuItemContent
+  public let icon: Swift.String
+  public let text: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MenuItemContent : Swift.Codable {
+  public let image: Swift.String?
+  public let kind: Swift.String?
+  public let url: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FooterActionDisplay : Swift.Codable {
+  public let icon: Swift.String
+  public let image: Swift.String
+  public let kind: Swift.String
+  public let text: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct FooterLink : Swift.Codable {
+  public let arrayID: Swift.String?
+  public let kind: Swift.String
+  public let name: Swift.String
+  public let text: Swift.String
+  public let url: Swift.String
+  public let icon: Swift.String?
+  public let image: Swift.String?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case arrayID
+    case kind, name, text, url, icon, image
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Newsletter : Swift.Codable {
+  public let html: Swift.String
+  public let kind: Swift.String
+  public let text: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Sharing : Swift.Codable {
+  public let description: Swift.String
+  public let hashtag: Swift.String
+  public let image: Swift.String
+  public let kind: Swift.String
+  public let name: Swift.String
+  public let text: Swift.String
+  public let title: Swift.String
+  public let tweetText: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case description, hashtag, image, kind, name, text, title
+    case tweetText
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Social : Swift.Codable {
+  public let arrayID: Swift.String
+  public let icon: Swift.String
+  public let title: Swift.String
+  public let url: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case arrayID
+    case icon, title, url
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Header : Swift.Codable {
+  public let authentication: MaestroKit.Authentication
+  public let background: Swift.String
+  public let defaultLogo: MaestroKit.DefaultLogo
+  public let defaultProfile: Swift.String
+  public let logo: Swift.String
+  public let logoLink: Swift.String
+  public let mobile: MaestroKit.MobileHeader
+  public let mobileLogo: Swift.String
+  public let profileImages: [MaestroKit.ProfileImage]
+  public let state: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case authentication, background
+    case defaultLogo
+    case defaultProfile
+    case logo, logoLink, mobile, mobileLogo, profileImages, state
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Authentication : Swift.Codable {
+  public let battlenet: Swift.Bool
+  public let coachella: Swift.Bool
+  public let facebook: Swift.Bool
+  public let faceit: Swift.Bool
+  public let maestro: Swift.Bool
+  public let openid: Swift.Bool
+  public let origin: Swift.Bool
+  public let playstation: Swift.Bool
+  public let twitch: Swift.Bool
+  public let uplay: Swift.Bool
+  public let wargaming: Swift.Bool
+  public let xbox: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct DefaultLogo : Swift.Codable {
+  public let logoLink: Swift.String
+  public let logoMobile: Swift.String
+  public let logoTitle: Swift.String
+  public let logoWeb: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case logoLink
+    case logoMobile
+    case logoTitle
+    case logoWeb
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MobileHeader : Swift.Codable {
+  public let background: Swift.String
+  public let logo: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProfileImage : Swift.Codable {
+  public let image: Swift.String
+  public let title: Swift.String
+  public let url: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Navigation : Swift.Codable {
+  public let items: [MaestroKit.NavigationItem]
+  public let state: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct NavigationItem : Swift.Codable {
+  public let arrayID: Swift.String
+  public let hasMenu: Swift.String
+  public let image: Swift.String
+  public let link: Swift.String
+  public let text: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case arrayID
+    case hasMenu
+    case image, link, text
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Player : Swift.Codable {
+  public let showVideoEmbed: Swift.Bool
+  public let showVideoTitle: Swift.Bool
+  public let showVideoURL: Swift.Bool
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case showVideoEmbed
+    case showVideoTitle
+    case showVideoURL
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Settings : Swift.Codable {
+  public let allowNewAdmin: Swift.Bool
+  public let codeInjection: MaestroKit.CodeInjection
+  public let customerProfile: MaestroKit.CustomerProfile
+  public let defaultStreamingProvider: Swift.String
+  public let defaultThemeID: Swift.String
+  public let deviceLimit: Swift.Int
+  public let domain: MaestroKit.Domain
+  public let email: MaestroKit.EmailSettings
+  public let events: [MaestroKit.Event]
+  public let homeID: Swift.String
+  public let icons: MaestroKit.Icons
+  public let logoURL: Swift.String
+  public let navigationID: Swift.String
+  public let seo: MaestroKit.SEO
+  public let services: MaestroKit.Services
+  public let transitions: MaestroKit.Transitions
+  public let userSegments: [MaestroKit.UserSegment]
+  public let userProfiles: MaestroKit.UserProfiles
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case allowNewAdmin
+    case codeInjection
+    case customerProfile
+    case defaultStreamingProvider
+    case defaultThemeID
+    case deviceLimit
+    case domain, email, events
+    case homeID
+    case icons
+    case logoURL
+    case navigationID
+    case seo, services, transitions
+    case userSegments
+    case userProfiles
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CodeInjection : Swift.Codable {
+  public let body: Swift.String
+  public let footer: Swift.String
+  public let header: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomerProfile : Swift.Codable {
+  public let accessInstructions: Swift.String
+  public let logo: Swift.String
+  public let name: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case accessInstructions
+    case logo, name
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Domain : Swift.Codable {
+  public let url: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct EmailSettings : Swift.Codable {
+  public let closing: Swift.String
+  public let copyright: Swift.String
+  public let from: Swift.String
+  public let mailingAddress: Swift.String
+  public let signature: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case closing, copyright, from, mailingAddress, signature
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Event : Swift.Codable {
+  public let from: Swift.Int
+  public let name: Swift.String
+  public let to: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Icons : Swift.Codable {
+  public let apple167x167: Swift.String
+  public let apple180x180: Swift.String
+  public let favicon: Swift.String
+  public let favicon128x128: Swift.String
+  public let favicon196x196: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case apple167x167
+    case apple180x180
+    case favicon
+    case favicon128x128
+    case favicon196x196
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SEO : Swift.Codable {
+  public let description: Swift.String
+  public let image: Swift.String
+  public let keywords: Swift.String
+  public let title: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Services : Swift.Codable {
+  public let facebookAppID: Swift.String
+  public let facebookPixelID: Swift.String
+  public let googleAnalyticsID: Swift.String
+  public let insightsID: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case facebookAppID
+    case facebookPixelID
+    case googleAnalyticsID
+    case insightsID
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Transitions : Swift.Codable {
+  public let mobile: Swift.String
+  public let web: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserSegment : Swift.Codable {
+  public let data: [MaestroKit.SegmentData]
+  public let name: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct SegmentData : Swift.Codable {
+  public let kind: Swift.String
+  public let type: Swift.String?
+  public let location: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct UserProfiles : Swift.Codable {
+  public let changeName: Swift.Bool
+  public let profileImages: [MaestroKit.ProfileImageSimple]
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case changeName
+    case profileImages
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ProfileImageSimple : Swift.Codable {
+  public let isAdmin: Swift.Bool
+  public let url: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case isAdmin
+    case url
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PageCounts : Swift.Codable {
+  public let channels: Swift.Int
+  public let landings: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Style : Swift.Codable {
+  public let activeColor: Swift.String
+  public let activeTextColor: Swift.String
+  public let background: Swift.String
+  public let backgroundColor: Swift.String
+  public let bodyFont: Swift.String
+  public let channelSelectColor: Swift.String
+  public let contentBackgroundColor: Swift.String
+  public let contentTextColor: Swift.String
+  public let countdownTextColor: Swift.String
+  public let font: Swift.String
+  public let footerLinksColor: Swift.String
+  public let kind: Swift.String
+  public let navigationTextColor: Swift.String
+  public let socialLinksColor: Swift.String
+  public let theme: Swift.String
+  public let titleBackgroundColor: Swift.String
+  public let titleFont: Swift.String
+  public let titleTextColor: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case activeColor
+    case activeTextColor
+    case background
+    case backgroundColor
+    case bodyFont
+    case channelSelectColor
+    case contentBackgroundColor
+    case contentTextColor
+    case countdownTextColor
+    case font
+    case footerLinksColor
+    case kind
+    case navigationTextColor
+    case socialLinksColor
+    case theme
+    case titleBackgroundColor
+    case titleFont
+    case titleTextColor
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Tax : Swift.Codable {
+  public let US: [Swift.String : Swift.Bool]
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Users : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Theme : Swift.Codable {
+  public let id: Swift.String?
+  public let button: MaestroKit.ThemeButton?
+  public let colors: MaestroKit.Colors?
+  public let name: Swift.String?
+  public let siteId: Swift.String?
+  public let type: Swift.String?
+  public let typography: MaestroKit.Typography?
+  public let creator: Swift.String?
+  public let owner: Swift.String?
+  public let created: Swift.Int?
+  public let modified: Swift.Int?
+  public let tags: [Swift.String]?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case id
+    case button, colors, name
+    case siteId
+    case type, typography, creator, owner, created, modified, tags
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public init(from decoder: any Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ThemeButton : Swift.Codable {
+  public let borderRadius: Swift.String?
+  public let textCapitalization: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Colors : Swift.Codable {
+  public let accentPrimary: Swift.String?
+  public let accentSecondary: Swift.String?
+  public let highlightPrimary: Swift.String?
+  public let highlightSecondary: Swift.String?
+  public let highlightTertiary: Swift.String?
+  public let surface1: Swift.String?
+  public let surface2: Swift.String?
+  public let surface3: Swift.String?
+  public let surface4: Swift.String?
+  public let surface5: Swift.String?
+  public let surface6: Swift.String?
+  public let text100: Swift.String?
+  public let text200: Swift.String?
+  public let text300: Swift.String?
+  public let text400: Swift.String?
+  public let text500: Swift.String?
+  public let accentTertiary: Swift.String?
+  public let alertConfirmation: Swift.String?
+  public let alertWarning: Swift.String?
+  public let alertError: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Typography : Swift.Codable {
+  public let body: Swift.String?
+  public let headline: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 public enum Environment {
   case development
@@ -257,6 +1868,30 @@ public enum MaestroApiError : Swift.Error {
   case forbidden(message: Swift.String?)
   case badRequest(statusCode: Swift.Int, message: Swift.String?)
 }
+public enum ChannelServiceError : Swift.Error {
+  case channelNotFound
+  public static func == (a: MaestroKit.ChannelServiceError, b: MaestroKit.ChannelServiceError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class ChannelService {
+  public static let channelEndpoint: Swift.String
+  public static func getAllChannels(siteId: Swift.String, jwt: Swift.String) async throws -> [MaestroKit.Channel]
+  public static func getChannelById(channelId: Swift.String, siteId: Swift.String, jwt: Swift.String) async throws -> MaestroKit.Channel
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class SiteService {
+  public static let siteEndpoint: Swift.String
+  public static func getSite(siteId: Swift.String, jwt: Swift.String) async throws -> MaestroKit.SiteResponse
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ThemeService {
+  public static let themeEndpoint: Swift.String
+  public static func getThemeById(themeId: Swift.String, siteId: Swift.String, jwt: Swift.String) async throws -> MaestroKit.Theme
+  @objc deinit
+}
 extension MaestroKit.KeyPlaysCardView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysPanelView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysProgressBarView : Swift.Sendable {}
@@ -269,8 +1904,139 @@ extension MaestroKit.PanelManagerTabBarView : Swift.Sendable {}
 extension MaestroKit.PanelManagerTabView : Swift.Sendable {}
 extension MaestroKit.PanelManagerView : Swift.Sendable {}
 extension MaestroKit.MaestroEventViewModel : Swift.Sendable {}
+extension MaestroKit.Channel.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Channel.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Channel.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.ChannelData.CodingKeys : Swift.Equatable {}
+extension MaestroKit.ChannelData.CodingKeys : Swift.Hashable {}
+extension MaestroKit.ChannelData.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.GateDetails.CodingKeys : Swift.Equatable {}
+extension MaestroKit.GateDetails.CodingKeys : Swift.Hashable {}
+extension MaestroKit.GateDetails.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.GateBackground.CodingKeys : Swift.Equatable {}
+extension MaestroKit.GateBackground.CodingKeys : Swift.Hashable {}
+extension MaestroKit.GateBackground.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Subscription.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Subscription.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Subscription.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Price.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Price.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Price.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.LandingContent.CodingKeys : Swift.Equatable {}
+extension MaestroKit.LandingContent.CodingKeys : Swift.Hashable {}
+extension MaestroKit.LandingContent.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.LandingContentData.CodingKeys : Swift.Equatable {}
+extension MaestroKit.LandingContentData.CodingKeys : Swift.Hashable {}
+extension MaestroKit.LandingContentData.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.LandingBackground.CodingKeys : Swift.Equatable {}
+extension MaestroKit.LandingBackground.CodingKeys : Swift.Hashable {}
+extension MaestroKit.LandingBackground.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Behavior.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Behavior.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Behavior.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.RichTextField.CodingKeys : Swift.Equatable {}
+extension MaestroKit.RichTextField.CodingKeys : Swift.Hashable {}
+extension MaestroKit.RichTextField.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.CTAField.CodingKeys : Swift.Equatable {}
+extension MaestroKit.CTAField.CodingKeys : Swift.Hashable {}
+extension MaestroKit.CTAField.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.CTABehavior.CodingKeys : Swift.Equatable {}
+extension MaestroKit.CTABehavior.CodingKeys : Swift.Hashable {}
+extension MaestroKit.CTABehavior.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.RegionsData.CodingKeys : Swift.Equatable {}
+extension MaestroKit.RegionsData.CodingKeys : Swift.Hashable {}
+extension MaestroKit.RegionsData.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.ChannelNavItem.CodingKeys : Swift.Equatable {}
+extension MaestroKit.ChannelNavItem.CodingKeys : Swift.Hashable {}
+extension MaestroKit.ChannelNavItem.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.ThemeData.CodingKeys : Swift.Equatable {}
+extension MaestroKit.ThemeData.CodingKeys : Swift.Hashable {}
+extension MaestroKit.ThemeData.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.ClassicThemeOptions.CodingKeys : Swift.Equatable {}
+extension MaestroKit.ClassicThemeOptions.CodingKeys : Swift.Hashable {}
+extension MaestroKit.ClassicThemeOptions.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.LivestreamRenderer.CodingKeys : Swift.Equatable {}
+extension MaestroKit.LivestreamRenderer.CodingKeys : Swift.Hashable {}
+extension MaestroKit.LivestreamRenderer.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.SidebarRenderer.CodingKeys : Swift.Equatable {}
+extension MaestroKit.SidebarRenderer.CodingKeys : Swift.Hashable {}
+extension MaestroKit.SidebarRenderer.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.SidebarItem.CodingKeys : Swift.Equatable {}
+extension MaestroKit.SidebarItem.CodingKeys : Swift.Hashable {}
+extension MaestroKit.SidebarItem.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.SiteResponse.CodingKeys : Swift.Equatable {}
+extension MaestroKit.SiteResponse.CodingKeys : Swift.Hashable {}
+extension MaestroKit.SiteResponse.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Collections.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Collections.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Collections.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Features.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Features.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Features.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.FeaturesPanels.CodingKeys : Swift.Equatable {}
+extension MaestroKit.FeaturesPanels.CodingKeys : Swift.Hashable {}
+extension MaestroKit.FeaturesPanels.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Mentor.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Mentor.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Mentor.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Regions.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Regions.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Regions.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Footer.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Footer.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Footer.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.FooterLink.CodingKeys : Swift.Equatable {}
+extension MaestroKit.FooterLink.CodingKeys : Swift.Hashable {}
+extension MaestroKit.FooterLink.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Sharing.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Sharing.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Sharing.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Social.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Social.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Social.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Header.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Header.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Header.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.DefaultLogo.CodingKeys : Swift.Equatable {}
+extension MaestroKit.DefaultLogo.CodingKeys : Swift.Hashable {}
+extension MaestroKit.DefaultLogo.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.NavigationItem.CodingKeys : Swift.Equatable {}
+extension MaestroKit.NavigationItem.CodingKeys : Swift.Hashable {}
+extension MaestroKit.NavigationItem.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Player.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Player.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Player.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Settings.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Settings.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Settings.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.CustomerProfile.CodingKeys : Swift.Equatable {}
+extension MaestroKit.CustomerProfile.CodingKeys : Swift.Hashable {}
+extension MaestroKit.CustomerProfile.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.EmailSettings.CodingKeys : Swift.Equatable {}
+extension MaestroKit.EmailSettings.CodingKeys : Swift.Hashable {}
+extension MaestroKit.EmailSettings.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Icons.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Icons.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Icons.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Services.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Services.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Services.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.UserProfiles.CodingKeys : Swift.Equatable {}
+extension MaestroKit.UserProfiles.CodingKeys : Swift.Hashable {}
+extension MaestroKit.UserProfiles.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.ProfileImageSimple.CodingKeys : Swift.Equatable {}
+extension MaestroKit.ProfileImageSimple.CodingKeys : Swift.Hashable {}
+extension MaestroKit.ProfileImageSimple.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Style.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Style.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Style.CodingKeys : Swift.RawRepresentable {}
+extension MaestroKit.Theme.CodingKeys : Swift.Equatable {}
+extension MaestroKit.Theme.CodingKeys : Swift.Hashable {}
+extension MaestroKit.Theme.CodingKeys : Swift.RawRepresentable {}
 extension MaestroKit.Environment : Swift.Equatable {}
 extension MaestroKit.Environment : Swift.Hashable {}
 extension MaestroKit.NetworkManager.HTTPMethod : Swift.Equatable {}
 extension MaestroKit.NetworkManager.HTTPMethod : Swift.Hashable {}
 extension MaestroKit.NetworkManager.HTTPMethod : Swift.RawRepresentable {}
+extension MaestroKit.ChannelServiceError : Swift.Equatable {}
+extension MaestroKit.ChannelServiceError : Swift.Hashable {}
