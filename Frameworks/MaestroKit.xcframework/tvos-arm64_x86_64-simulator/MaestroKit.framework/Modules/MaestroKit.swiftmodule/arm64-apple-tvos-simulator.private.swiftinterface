@@ -188,11 +188,10 @@ public enum MaestroPanelType {
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
   @_Concurrency.MainActor func didStartPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func didStopPlayingClip(atIndex index: Swift.Int)
-  @_Concurrency.MainActor func clipDidFailToPlay(atIndex index: Swift.Int)
+  @_Concurrency.MainActor func didFailToPlayClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
   @_Concurrency.MainActor func didShowPanel()
   @_Concurrency.MainActor func didHidePanel()
-  @_Concurrency.MainActor func tabLoadFailure()
   @_Concurrency.MainActor func currentEventDoesNotSupportKeyPlays()
   @_Concurrency.MainActor func getCurrentEventID() -> Swift.String?
   @_Concurrency.MainActor func getCurrentlyPlayingClipIndex() -> Swift.Int?
@@ -209,12 +208,11 @@ public enum MaestroPanelType {
 extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor public func didStartPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor public func didStopPlayingClip(atIndex index: Swift.Int)
-  @_Concurrency.MainActor public func clipDidFailToPlay(atIndex index: Swift.Int)
+  @_Concurrency.MainActor public func didFailToPlayClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor public func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
   @_Concurrency.MainActor public func focusOnFirstKeyPlay()
   @_Concurrency.MainActor public func didShowPanel()
   @_Concurrency.MainActor public func didHidePanel()
-  @_Concurrency.MainActor public func tabLoadFailure()
   @_Concurrency.MainActor public func currentEventDoesNotSupportKeyPlays()
   @_Concurrency.MainActor public func getCurrentEventID() -> Swift.String?
   @_Concurrency.MainActor public func getCurrentlyPlayingClipIndex() -> Swift.Int?
