@@ -284,6 +284,28 @@
             ],
             "usr": "s:s12IdentifiableP",
             "mangledName": "$ss12IdentifiableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
           }
         ]
       },
@@ -964,6 +986,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "KeyPlaysCardView",
         "printedName": "KeyPlaysCardView",
@@ -1194,6 +1226,230 @@
           },
           {
             "kind": "Var",
+            "name": "loadFailureImageView",
+            "printedName": "loadFailureImageView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit16KeyPlaysCardViewV016loadFailureImageF0Qrvp",
+            "mangledName": "$s10MaestroKit16KeyPlaysCardViewV016loadFailureImageF0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit16KeyPlaysCardViewV016loadFailureImageF0Qrvg",
+                "mangledName": "$s10MaestroKit16KeyPlaysCardViewV016loadFailureImageF0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "outlineOverlayView",
+            "printedName": "outlineOverlayView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit16KeyPlaysCardViewV014outlineOverlayF0Qrvp",
+            "mangledName": "$s10MaestroKit16KeyPlaysCardViewV014outlineOverlayF0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit16KeyPlaysCardViewV014outlineOverlayF0Qrvg",
+                "mangledName": "$s10MaestroKit16KeyPlaysCardViewV014outlineOverlayF0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recentLoadFailureOverlayView",
+            "printedName": "recentLoadFailureOverlayView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit16KeyPlaysCardViewV024recentLoadFailureOverlayF0Qrvp",
+            "mangledName": "$s10MaestroKit16KeyPlaysCardViewV024recentLoadFailureOverlayF0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit16KeyPlaysCardViewV024recentLoadFailureOverlayF0Qrvg",
+                "mangledName": "$s10MaestroKit16KeyPlaysCardViewV024recentLoadFailureOverlayF0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nonRecentLoadFailureOverlayView",
+            "printedName": "nonRecentLoadFailureOverlayView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit16KeyPlaysCardViewV027nonRecentLoadFailureOverlayF0Qrvp",
+            "mangledName": "$s10MaestroKit16KeyPlaysCardViewV027nonRecentLoadFailureOverlayF0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit16KeyPlaysCardViewV027nonRecentLoadFailureOverlayF0Qrvg",
+                "mangledName": "$s10MaestroKit16KeyPlaysCardViewV027nonRecentLoadFailureOverlayF0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "body",
             "printedName": "body",
             "children": [
@@ -1252,140 +1508,6 @@
         "declKind": "Struct",
         "usr": "s:10MaestroKit16KeyPlaysCardViewV",
         "mangledName": "$s10MaestroKit16KeyPlaysCardViewV",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KeyPlaysLoadFailureView",
-        "printedName": "KeyPlaysLoadFailureView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit23KeyPlaysLoadFailureViewV4bodyQrvp",
-            "mangledName": "$s10MaestroKit23KeyPlaysLoadFailureViewV4bodyQrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit23KeyPlaysLoadFailureViewV4bodyQrvg",
-                "mangledName": "$s10MaestroKit23KeyPlaysLoadFailureViewV4bodyQrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10MaestroKit23KeyPlaysLoadFailureViewV",
-        "mangledName": "$s10MaestroKit23KeyPlaysLoadFailureViewV",
         "moduleName": "MaestroKit",
         "declAttributes": [
           "Preconcurrency",
@@ -1581,140 +1703,6 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "KeyPlaysPlaybackFailureView",
-        "printedName": "KeyPlaysPlaybackFailureView",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "body",
-            "printedName": "body",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit27KeyPlaysPlaybackFailureViewV4bodyQrvp",
-            "mangledName": "$s10MaestroKit27KeyPlaysPlaybackFailureViewV4bodyQrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit27KeyPlaysPlaybackFailureViewV4bodyQrvg",
-                "mangledName": "$s10MaestroKit27KeyPlaysPlaybackFailureViewV4bodyQrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:10MaestroKit27KeyPlaysPlaybackFailureViewV",
-        "mangledName": "$s10MaestroKit27KeyPlaysPlaybackFailureViewV",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "Preconcurrency",
-          "Custom",
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "View",
-            "printedName": "View",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Body",
-                "printedName": "Body",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI4ViewP",
-            "mangledName": "$s7SwiftUI4ViewP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -1745,6 +1733,230 @@
         "name": "KeyPlaysScoreCardView",
         "printedName": "KeyPlaysScoreCardView",
         "children": [
+          {
+            "kind": "Var",
+            "name": "homeTeamLabelView",
+            "printedName": "homeTeamLabelView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV013homeTeamLabelG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV013homeTeamLabelG0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV013homeTeamLabelG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV013homeTeamLabelG0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "homeTeamScoreView",
+            "printedName": "homeTeamScoreView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV08homeTeameG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV08homeTeameG0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV08homeTeameG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV08homeTeameG0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "awayTeamScoreView",
+            "printedName": "awayTeamScoreView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV08awayTeameG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV08awayTeameG0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV08awayTeameG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV08awayTeameG0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "awayTeamLabelView",
+            "printedName": "awayTeamLabelView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV013awayTeamLabelG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV013awayTeamLabelG0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV013awayTeamLabelG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV013awayTeamLabelG0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "body",
@@ -1939,6 +2151,140 @@
         "declKind": "Struct",
         "usr": "s:10MaestroKit25KeyPlaysSectionHeaderViewV",
         "mangledName": "$s10MaestroKit25KeyPlaysSectionHeaderViewV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KeyPlaysTabLoadFailureView",
+        "printedName": "KeyPlaysTabLoadFailureView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit26KeyPlaysTabLoadFailureViewV4bodyQrvp",
+            "mangledName": "$s10MaestroKit26KeyPlaysTabLoadFailureViewV4bodyQrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit26KeyPlaysTabLoadFailureViewV4bodyQrvg",
+                "mangledName": "$s10MaestroKit26KeyPlaysTabLoadFailureViewV4bodyQrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit26KeyPlaysTabLoadFailureViewV",
+        "mangledName": "$s10MaestroKit26KeyPlaysTabLoadFailureViewV",
         "moduleName": "MaestroKit",
         "declAttributes": [
           "Preconcurrency",
@@ -2318,6 +2664,62 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "gradientMaskView",
+            "printedName": "gradientMaskView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A5PanelV16gradientMaskViewQrvp",
+            "mangledName": "$s10MaestroKit0A5PanelV16gradientMaskViewQrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A5PanelV16gradientMaskViewQrvg",
+                "mangledName": "$s10MaestroKit0A5PanelV16gradientMaskViewQrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
           },
           {
             "kind": "Var",
@@ -3249,9 +3651,17 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "MaestroKeyPlaysResponse",
-                "printedName": "MaestroKit.MaestroKeyPlaysResponse",
-                "usr": "s:10MaestroKit0A16KeyPlaysResponseV"
+                "name": "Optional",
+                "printedName": "MaestroKit.MaestroKeyPlaysResponse?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaestroKeyPlaysResponse",
+                    "printedName": "MaestroKit.MaestroKeyPlaysResponse",
+                    "usr": "s:10MaestroKit0A16KeyPlaysResponseV"
+                  }
+                ],
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -3261,8 +3671,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A13EventDelegateP15getKeyPlaysData03forC2IDAA0afG8ResponseVSS_tYaF",
-            "mangledName": "$s10MaestroKit0A13EventDelegateP15getKeyPlaysData03forC2IDAA0afG8ResponseVSS_tYaF",
+            "usr": "s:10MaestroKit0A13EventDelegateP15getKeyPlaysData03forC2IDAA0afG8ResponseVSgSS_tYaF",
+            "mangledName": "$s10MaestroKit0A13EventDelegateP15getKeyPlaysData03forC2IDAA0afG8ResponseVSgSS_tYaF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroEventDelegate>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroEventDelegate>",
@@ -3545,6 +3955,37 @@
           },
           {
             "kind": "Function",
+            "name": "clipDidFailToPlay",
+            "printedName": "clipDidFailToPlay(atIndex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit0A14EventInterfaceP17clipDidFailToPlay7atIndexySi_tF",
+            "mangledName": "$s10MaestroKit0A14EventInterfaceP17clipDidFailToPlay7atIndexySi_tF",
+            "moduleName": "MaestroKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroEventInterface>",
+            "sugared_genericSig": "<Self where Self : MaestroKit.MaestroEventInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Custom",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "didUpdatePlaybackProgressOfClip",
             "printedName": "didUpdatePlaybackProgressOfClip(atIndex:to:)",
             "children": [
@@ -3569,31 +4010,6 @@
             "declKind": "Func",
             "usr": "s:10MaestroKit0A14EventInterfaceP31didUpdatePlaybackProgressOfClip7atIndex2toySi_SdtF",
             "mangledName": "$s10MaestroKit0A14EventInterfaceP31didUpdatePlaybackProgressOfClip7atIndex2toySi_SdtF",
-            "moduleName": "MaestroKit",
-            "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroEventInterface>",
-            "sugared_genericSig": "<Self where Self : MaestroKit.MaestroEventInterface>",
-            "protocolReq": true,
-            "declAttributes": [
-              "Custom",
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "focusOnFirstKeyPlay",
-            "printedName": "focusOnFirstKeyPlay()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit0A14EventInterfaceP19focusOnFirstKeyPlayyyF",
-            "mangledName": "$s10MaestroKit0A14EventInterfaceP19focusOnFirstKeyPlayyyF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroEventInterface>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroEventInterface>",
@@ -3657,8 +4073,8 @@
           },
           {
             "kind": "Function",
-            "name": "allKeyPlayClipsFailedToLoad",
-            "printedName": "allKeyPlayClipsFailedToLoad()",
+            "name": "tabLoadFailure",
+            "printedName": "tabLoadFailure()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3667,8 +4083,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A14EventInterfaceP27allKeyPlayClipsFailedToLoadyyF",
-            "mangledName": "$s10MaestroKit0A14EventInterfaceP27allKeyPlayClipsFailedToLoadyyF",
+            "usr": "s:10MaestroKit0A14EventInterfaceP14tabLoadFailureyyF",
+            "mangledName": "$s10MaestroKit0A14EventInterfaceP14tabLoadFailureyyF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroEventInterface>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroEventInterface>",
@@ -3956,7 +4372,8 @@
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -4008,6 +4425,34 @@
             "declKind": "Func",
             "usr": "s:10MaestroKit0A14EventViewModelC18didStopPlayingClip7atIndexySi_tF",
             "mangledName": "$s10MaestroKit0A14EventViewModelC18didStopPlayingClip7atIndexySi_tF",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clipDidFailToPlay",
+            "printedName": "clipDidFailToPlay(atIndex:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit0A14EventViewModelC17clipDidFailToPlay7atIndexySi_tF",
+            "mangledName": "$s10MaestroKit0A14EventViewModelC17clipDidFailToPlay7atIndexySi_tF",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Custom",
@@ -4118,8 +4563,8 @@
           },
           {
             "kind": "Function",
-            "name": "allKeyPlayClipsFailedToLoad",
-            "printedName": "allKeyPlayClipsFailedToLoad()",
+            "name": "tabLoadFailure",
+            "printedName": "tabLoadFailure()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4128,8 +4573,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A14EventViewModelC27allKeyPlayClipsFailedToLoadyyF",
-            "mangledName": "$s10MaestroKit0A14EventViewModelC27allKeyPlayClipsFailedToLoadyyF",
+            "usr": "s:10MaestroKit0A14EventViewModelC14tabLoadFailureyyF",
+            "mangledName": "$s10MaestroKit0A14EventViewModelC14tabLoadFailureyyF",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Custom",
@@ -4553,6 +4998,54 @@
                 "declKind": "Accessor",
                 "usr": "s:10MaestroKit0A7ManagerC07networkC0AA07NetworkC0Cvg",
                 "mangledName": "$s10MaestroKit0A7ManagerC07networkC0AA07NetworkC0Cvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cacheManager",
+            "printedName": "cacheManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageCacheManager",
+                "printedName": "MaestroKit.ImageCacheManager",
+                "usr": "s:10MaestroKit17ImageCacheManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7ManagerC05cacheC0AA010ImageCacheC0Cvp",
+            "mangledName": "$s10MaestroKit0A7ManagerC05cacheC0AA010ImageCacheC0Cvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImageCacheManager",
+                    "printedName": "MaestroKit.ImageCacheManager",
+                    "usr": "s:10MaestroKit17ImageCacheManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7ManagerC05cacheC0AA010ImageCacheC0Cvg",
+                "mangledName": "$s10MaestroKit0A7ManagerC05cacheC0AA010ImageCacheC0Cvg",
                 "moduleName": "MaestroKit",
                 "implicit": true,
                 "declAttributes": [
@@ -61312,6 +61805,143 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "MaestroKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ImageCacheManager",
+        "printedName": "ImageCacheManager",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImageCacheManager",
+                "printedName": "MaestroKit.ImageCacheManager",
+                "usr": "s:10MaestroKit17ImageCacheManagerC"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit17ImageCacheManagerCACycfc",
+            "mangledName": "$s10MaestroKit17ImageCacheManagerCACycfc",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit17ImageCacheManagerC15unownedExecutorScevp",
+            "mangledName": "$s10MaestroKit17ImageCacheManagerC15unownedExecutorScevp",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "13.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit17ImageCacheManagerC15unownedExecutorScevg",
+                "mangledName": "$s10MaestroKit17ImageCacheManagerC15unownedExecutorScevg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10MaestroKit17ImageCacheManagerC",
+        "mangledName": "$s10MaestroKit17ImageCacheManagerC",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -63642,6 +64272,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/CachedImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 270,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
       "kind": "IntegerLiteral",
       "offset": 215,
@@ -63782,6 +64419,62 @@
       "value": "0.23"
     },
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "StringLiteral",
+      "offset": 1167,
+      "length": 12,
+      "value": "\"BentonSans\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1230,
+      "length": 2,
+      "value": "21"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "StringLiteral",
+      "offset": 1283,
+      "length": 14,
+      "value": "\"load-failure\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1349,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1400,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1469,
+      "length": 4,
+      "value": "0.07"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1482,
+      "length": 4,
+      "value": "0.07"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysCardView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1494,
+      "length": 4,
+      "value": "0.08"
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
@@ -63790,24 +64483,150 @@
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 288,
+      "length": 2,
+      "value": "48"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 340,
+      "length": 3,
+      "value": "194"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 403,
+      "length": 2,
+      "value": "52"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 455,
+      "length": 2,
+      "value": "32"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 3,
+      "value": "122"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 570,
+      "length": 4,
+      "value": "0.16"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 870,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 980,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "Dictionary",
+      "offset": 1041,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "Array",
+      "offset": 1137,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1221,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1278,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1329,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 1458,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1539,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1592,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1646,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "IntegerLiteral",
-      "offset": 484,
+      "offset": 16654,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5893,
+      "offset": 17060,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "Array",
+      "offset": 17362,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "kind": "Dictionary",
+      "offset": 17605,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysProgressBarView.swift",
@@ -63976,6 +64795,27 @@
       "offset": 491,
       "length": 3,
       "value": "676"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/MaestroPanel\/View\/MaestroPanel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 538,
+      "length": 2,
+      "value": "86"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/MaestroPanel\/View\/MaestroPanel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 593,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/MaestroPanel\/View\/MaestroPanel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 651,
+      "length": 2,
+      "value": "96"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/PanelManager\/View\/PanelManagerTabBarView.swift",
@@ -64160,32 +65000,18 @@
       "value": "86"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/PanelManager\/View\/PanelManagerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 334,
-      "length": 2,
-      "value": "60"
-    },
-    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 565,
+      "offset": 612,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 617,
+      "offset": 664,
       "length": 3,
       "value": "0.1"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "StringLiteral",
-      "offset": 893,
-      "length": 24,
-      "value": "\"MaestroKit Initialized\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/Channel.swift",
@@ -65133,6 +65959,20 @@
       "value": "\"_id\""
     },
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ImageCacheManager.swift",
+      "kind": "Dictionary",
+      "offset": 278,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ImageCacheManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 389,
+      "length": 3,
+      "value": "100"
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
       "offset": 179,
@@ -65366,7 +66206,14 @@
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4743,
+      "offset": 4725,
+      "length": 14,
+      "value": "\"load-failure\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 4912,
       "length": 24,
       "value": "\"no-key-plays-available\""
     }

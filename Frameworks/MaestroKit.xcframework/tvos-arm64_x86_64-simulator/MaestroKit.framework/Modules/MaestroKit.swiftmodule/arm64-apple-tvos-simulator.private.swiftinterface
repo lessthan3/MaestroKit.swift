@@ -22,10 +22,12 @@ import _SwiftConcurrencyShims
   public typealias ID = Foundation.UUID
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class KeyPlayData : Swift.Identifiable {
+@_hasMissingDesignatedInitializers public class KeyPlayData : Swift.Identifiable, Foundation.ObservableObject {
   final public let id: Foundation.UUID
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Foundation.UUID
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
 public struct MaestroKeyPlaysResponse {
@@ -59,18 +61,23 @@ public struct MaestroKeyPlay {
   @_Concurrency.MainActor @preconcurrency public var scoreCardView: some SwiftUICore.View {
     get
   }
+  @_Concurrency.MainActor @preconcurrency public var loadFailureImageView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var outlineOverlayView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var recentLoadFailureOverlayView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var nonRecentLoadFailureOverlayView: some SwiftUICore.View {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16KeyPlaysCardViewV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor @preconcurrency public struct KeyPlaysLoadFailureView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit23KeyPlaysLoadFailureViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysPanelView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -79,14 +86,19 @@ public struct MaestroKeyPlay {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit17KeyPlaysPanelViewV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor @preconcurrency public struct KeyPlaysPlaybackFailureView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct KeyPlaysScoreCardView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var homeTeamLabelView: some SwiftUICore.View {
     get
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit27KeyPlaysPlaybackFailureViewV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor @preconcurrency public struct KeyPlaysScoreCardView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var homeTeamScoreView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var awayTeamScoreView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var awayTeamLabelView: some SwiftUICore.View {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -99,6 +111,13 @@ public struct MaestroKeyPlay {
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit25KeyPlaysSectionHeaderViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct KeyPlaysTabLoadFailureView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit26KeyPlaysTabLoadFailureViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysUnpopulatedEventView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -116,6 +135,9 @@ public struct MaestroKeyPlay {
 }
 @_Concurrency.MainActor @preconcurrency public struct MaestroPanel : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor @preconcurrency public var gradientMaskView: some SwiftUICore.View {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -156,7 +178,7 @@ public enum MaestroPanelType {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16PanelManagerViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor public protocol MaestroEventDelegate {
-  @_Concurrency.MainActor func getKeyPlaysData(forEventID eventID: Swift.String) async -> MaestroKit.MaestroKeyPlaysResponse
+  @_Concurrency.MainActor func getKeyPlaysData(forEventID eventID: Swift.String) async -> MaestroKit.MaestroKeyPlaysResponse?
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func shouldShowPanel()
   @_Concurrency.MainActor func shouldHidePanel()
@@ -166,11 +188,11 @@ public enum MaestroPanelType {
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
   @_Concurrency.MainActor func didStartPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func didStopPlayingClip(atIndex index: Swift.Int)
+  @_Concurrency.MainActor func clipDidFailToPlay(atIndex index: Swift.Int)
   @_Concurrency.MainActor func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
-  @_Concurrency.MainActor func focusOnFirstKeyPlay()
   @_Concurrency.MainActor func didShowPanel()
   @_Concurrency.MainActor func didHidePanel()
-  @_Concurrency.MainActor func allKeyPlayClipsFailedToLoad()
+  @_Concurrency.MainActor func tabLoadFailure()
   @_Concurrency.MainActor func currentEventDoesNotSupportKeyPlays()
   @_Concurrency.MainActor func getCurrentEventID() -> Swift.String?
   @_Concurrency.MainActor func getCurrentlyPlayingClipIndex() -> Swift.Int?
@@ -187,11 +209,12 @@ public enum MaestroPanelType {
 extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor public func didStartPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor public func didStopPlayingClip(atIndex index: Swift.Int)
+  @_Concurrency.MainActor public func clipDidFailToPlay(atIndex index: Swift.Int)
   @_Concurrency.MainActor public func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
   @_Concurrency.MainActor public func focusOnFirstKeyPlay()
   @_Concurrency.MainActor public func didShowPanel()
   @_Concurrency.MainActor public func didHidePanel()
-  @_Concurrency.MainActor public func allKeyPlayClipsFailedToLoad()
+  @_Concurrency.MainActor public func tabLoadFailure()
   @_Concurrency.MainActor public func currentEventDoesNotSupportKeyPlays()
   @_Concurrency.MainActor public func getCurrentEventID() -> Swift.String?
   @_Concurrency.MainActor public func getCurrentlyPlayingClipIndex() -> Swift.Int?
@@ -206,6 +229,7 @@ extension MaestroKit.MaestroEventViewModel {
 @_hasMissingDesignatedInitializers public actor MaestroManager {
   public static let shared: MaestroKit.MaestroManager
   final public let networkManager: MaestroKit.NetworkManager
+  final public let cacheManager: MaestroKit.ImageCacheManager
   public var siteID: Swift.String?
   public var jwt: Swift.String?
   public var authToken: Swift.String?
@@ -1854,6 +1878,14 @@ public struct Typography : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public actor ImageCacheManager {
+  public init()
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
 public enum Environment {
   case development
   case staging
@@ -1922,11 +1954,10 @@ public enum ChannelServiceError : Swift.Error {
   @objc deinit
 }
 extension MaestroKit.KeyPlaysCardView : Swift.Sendable {}
-extension MaestroKit.KeyPlaysLoadFailureView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysPanelView : Swift.Sendable {}
-extension MaestroKit.KeyPlaysPlaybackFailureView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysScoreCardView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysSectionHeaderView : Swift.Sendable {}
+extension MaestroKit.KeyPlaysTabLoadFailureView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysUnpopulatedEventView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysUnsupportedEventView : Swift.Sendable {}
 extension MaestroKit.MaestroPanel : Swift.Sendable {}
