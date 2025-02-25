@@ -40,7 +40,7 @@ public struct MaestroKeyPlaysTeam {
   public init(id: Swift.String, displayName: Swift.String, shortName: Swift.String, color: Swift.String, alternateColor: Swift.String, homeAway: Swift.String, displayOrder: Swift.String, logo: Swift.String, logoDark: Swift.String)
 }
 public struct MaestroKeyPlaysAthlete {
-  public init(id: Swift.String, shortName: Swift.String, headshot: Swift.String)
+  public init(id: Swift.String, shortName: Swift.String = "", headshot: Swift.String)
 }
 public struct MaestroKeyPlaysSection {
   public init(title: Swift.String, items: [MaestroKit.MaestroKeyPlay])
@@ -80,11 +80,16 @@ public struct MaestroKeyPlay {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16KeyPlaysCardViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysPanelView : SwiftUICore.View {
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit17KeyPlaysPanelViewV4bodyQrvp", 0) __
+}
+extension MaestroKit.KeyPlaysPanelView {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit17KeyPlaysPanelViewV4bodyQrvp", 0) __
+  @_Concurrency.MainActor @preconcurrency public var scrollView: some SwiftUICore.View {
+    get
+  }
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysScoreCardView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var homeTeamLabelView: some SwiftUICore.View {

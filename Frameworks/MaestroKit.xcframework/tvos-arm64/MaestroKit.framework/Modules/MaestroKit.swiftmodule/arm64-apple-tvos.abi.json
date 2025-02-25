@@ -725,6 +725,7 @@
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
+                "hasDefaultArg": true,
                 "usr": "s:SS"
               },
               {
@@ -1610,6 +1611,7 @@
               "Custom",
               "AccessControl"
             ],
+            "isFromExtension": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -1634,6 +1636,65 @@
                 "usr": "s:10MaestroKit17KeyPlaysPanelViewV4bodyQrvg",
                 "mangledName": "$s10MaestroKit17KeyPlaysPanelViewV4bodyQrvg",
                 "moduleName": "MaestroKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scrollView",
+            "printedName": "scrollView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit17KeyPlaysPanelViewV06scrollF0Qrvp",
+            "mangledName": "$s10MaestroKit17KeyPlaysPanelViewV06scrollF0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit17KeyPlaysPanelViewV06scrollF0Qrvg",
+                "mangledName": "$s10MaestroKit17KeyPlaysPanelViewV06scrollF0Qrvg",
+                "moduleName": "MaestroKit",
+                "isFromExtension": true,
                 "accessorKind": "get"
               }
             ]
@@ -1699,6 +1760,36 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -64225,6 +64316,13 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/Model\/MaestroKeyPlaysResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1755,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/CachedImageView.swift",
       "kind": "BooleanLiteral",
       "offset": 270,
@@ -64486,119 +64584,119 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "IntegerLiteral",
-      "offset": 928,
+      "offset": 896,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1038,
+      "offset": 990,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "Dictionary",
-      "offset": 1099,
+      "offset": 1043,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "Array",
-      "offset": 1195,
+      "offset": 1131,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "FloatLiteral",
-      "offset": 1279,
+      "offset": 1207,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1336,
+      "offset": 1256,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1387,
+      "offset": 1299,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "StringLiteral",
-      "offset": 1516,
+      "offset": 1412,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1597,
+      "offset": 1485,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1650,
+      "offset": 1530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1704,
+      "offset": 1576,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "Array",
-      "offset": 1964,
+      "offset": 1812,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2024,
+      "offset": 1865,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView+PreferenceKeys.swift",
       "kind": "IntegerLiteral",
-      "offset": 18459,
+      "offset": 251,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView+PreferenceKeys.swift",
       "kind": "IntegerLiteral",
-      "offset": 18865,
+      "offset": 713,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView+PreferenceKeys.swift",
       "kind": "Array",
-      "offset": 19167,
+      "offset": 1059,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/KeyPlaysPanelView+PreferenceKeys.swift",
       "kind": "Dictionary",
-      "offset": 19410,
+      "offset": 1330,
       "length": 3,
       "value": "[]"
     },
