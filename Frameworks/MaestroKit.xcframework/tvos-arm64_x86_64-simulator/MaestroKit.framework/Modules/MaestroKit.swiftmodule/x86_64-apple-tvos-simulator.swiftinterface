@@ -40,7 +40,7 @@ public struct MaestroKeyPlaysTeam {
   public init(id: Swift.String, displayName: Swift.String, shortName: Swift.String, color: Swift.String, alternateColor: Swift.String, homeAway: Swift.String, displayOrder: Swift.String, logo: Swift.String, logoDark: Swift.String)
 }
 public struct MaestroKeyPlaysAthlete {
-  public init(id: Swift.String, shortName: Swift.String = "", headshot: Swift.String)
+  public init(id: Swift.String, shortName: Swift.String = "", headshot: Swift.String = "")
 }
 public struct MaestroKeyPlaysSection {
   public init(title: Swift.String, items: [MaestroKit.MaestroKeyPlay])

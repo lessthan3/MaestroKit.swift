@@ -732,6 +732,7 @@
                 "kind": "TypeNominal",
                 "name": "String",
                 "printedName": "Swift.String",
+                "hasDefaultArg": true,
                 "usr": "s:SS"
               }
             ],
@@ -64318,7 +64319,14 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/Model\/MaestroKeyPlaysResponse.swift",
       "kind": "StringLiteral",
-      "offset": 1755,
+      "offset": 1756,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/Model\/MaestroKeyPlaysResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 1787,
       "length": 2,
       "value": "\"\""
     },
