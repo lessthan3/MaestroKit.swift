@@ -30,23 +30,60 @@ import _SwiftConcurrencyShims
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
   @objc deinit
 }
-public struct MaestroKeyPlaysResponse {
-  public let teams: [MaestroKit.MaestroKeyPlaysTeam]
-  public let athletes: [MaestroKit.MaestroKeyPlaysAthlete]
-  public let sections: [MaestroKit.MaestroKeyPlaysSection]
-  public init(teams: [MaestroKit.MaestroKeyPlaysTeam], athletes: [MaestroKit.MaestroKeyPlaysAthlete], sections: [MaestroKit.MaestroKeyPlaysSection])
+public struct MaestroKeyPlaysResponse : Swift.Decodable {
+  public let teams: [MaestroKit.MaestroKeyPlaysTeam]?
+  public let athletes: [MaestroKit.MaestroKeyPlaysAthlete]?
+  public let sections: [MaestroKit.MaestroKeyPlaysSection]?
+  public init(teams: [MaestroKit.MaestroKeyPlaysTeam]? = nil, athletes: [MaestroKit.MaestroKeyPlaysAthlete]? = nil, sections: [MaestroKit.MaestroKeyPlaysSection]? = nil)
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct MaestroKeyPlaysTeam {
-  public init(id: Swift.String, displayName: Swift.String, shortName: Swift.String, color: Swift.String, alternateColor: Swift.String, homeAway: Swift.String, displayOrder: Swift.String, logo: Swift.String, logoDark: Swift.String)
+public struct MaestroKeyPlaysTeam : Swift.Decodable, Swift.Identifiable {
+  public let id: Swift.String
+  public let displayName: Swift.String?
+  public let shortName: Swift.String?
+  public let color: Swift.String?
+  public let alternateColor: Swift.String?
+  public let homeAway: Swift.String?
+  public let displayOrder: Swift.String?
+  public let logo: Swift.String?
+  public let logoDark: Swift.String?
+  public init(id: Swift.String, displayName: Swift.String? = nil, shortName: Swift.String? = nil, color: Swift.String? = nil, alternateColor: Swift.String? = nil, homeAway: Swift.String? = nil, displayOrder: Swift.String? = nil, logo: Swift.String? = nil, logoDark: Swift.String? = nil)
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct MaestroKeyPlaysAthlete {
-  public init(id: Swift.String, shortName: Swift.String = "", headshot: Swift.String = "")
+public struct MaestroKeyPlaysAthlete : Swift.Decodable, Swift.Identifiable {
+  public let id: Swift.String
+  public let shortName: Swift.String?
+  public let headshot: Swift.String?
+  public init(id: Swift.String, shortName: Swift.String? = nil, headshot: Swift.String? = nil)
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct MaestroKeyPlaysSection {
-  public init(title: Swift.String, items: [MaestroKit.MaestroKeyPlay])
+public struct MaestroKeyPlaysSection : Swift.Decodable {
+  public let title: Swift.String?
+  public let items: [MaestroKit.MaestroKeyPlay]?
+  public init(title: Swift.String? = nil, items: [MaestroKit.MaestroKeyPlay]? = nil)
+  public init(from decoder: any Swift.Decoder) throws
 }
-public struct MaestroKeyPlay {
-  public init(description: Swift.String, team: Swift.String, wallClock: Swift.String, clock: Swift.String, shortPeriod: Swift.String, scoringPlay: Swift.Bool, athlete: Swift.String, thumbnail: Swift.String, clipID: Swift.String, awayScore: Swift.String?, homeScore: Swift.String?)
+public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable {
+  public let id: Swift.String
+  public let description: Swift.String?
+  public let team: Swift.String?
+  public let wallClock: Swift.String?
+  public let clock: Swift.String?
+  public let shortPeriod: Swift.String?
+  public let scoringPlay: Swift.Bool?
+  public let athlete: Swift.String?
+  public let thumbnail: Swift.String?
+  public let clipID: Swift.String
+  public let awayScore: Swift.String?
+  public let homeScore: Swift.String?
+  public init(description: Swift.String? = nil, team: Swift.String? = nil, wallClock: Swift.String? = nil, clock: Swift.String? = nil, shortPeriod: Swift.String? = nil, scoringPlay: Swift.Bool? = nil, athlete: Swift.String? = nil, thumbnail: Swift.String? = nil, clipID: Swift.String, awayScore: Swift.String? = nil, homeScore: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias ID = Swift.String
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysCardView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var imageView: some SwiftUICore.View {
@@ -92,6 +129,9 @@ extension MaestroKit.KeyPlaysPanelView {
   }
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysScoreCardView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency public var homeTeamLabelView: some SwiftUICore.View {
     get
   }
@@ -104,7 +144,13 @@ extension MaestroKit.KeyPlaysPanelView {
   @_Concurrency.MainActor @preconcurrency public var awayTeamLabelView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var edgeMarginView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var teamScoreSpacerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var middleSpacerView: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)

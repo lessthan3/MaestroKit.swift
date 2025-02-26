@@ -331,34 +331,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlaysTeam]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MaestroKeyPlaysTeam",
-                    "printedName": "MaestroKit.MaestroKeyPlaysTeam",
-                    "usr": "s:10MaestroKit0A12KeyPlaysTeamV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGvp",
-            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlaysTeam]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -375,9 +349,51 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGSgvp",
+            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MaestroKit.MaestroKeyPlaysTeam]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MaestroKit.MaestroKeyPlaysTeam]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MaestroKeyPlaysTeam",
+                            "printedName": "MaestroKit.MaestroKeyPlaysTeam",
+                            "usr": "s:10MaestroKit0A12KeyPlaysTeamV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGvg",
-                "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGvg",
+                "usr": "s:10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGSgvg",
+                "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV5teamsSayAA0acD4TeamVGSgvg",
                 "moduleName": "MaestroKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -391,34 +407,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MaestroKeyPlaysAthlete",
-                    "printedName": "MaestroKit.MaestroKeyPlaysAthlete",
-                    "usr": "s:10MaestroKit0A15KeyPlaysAthleteV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGvp",
-            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -435,9 +425,51 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGSgvp",
+            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MaestroKeyPlaysAthlete",
+                            "printedName": "MaestroKit.MaestroKeyPlaysAthlete",
+                            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGvg",
-                "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGvg",
+                "usr": "s:10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGSgvg",
+                "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8athletesSayAA0acD7AthleteVGSgvg",
                 "moduleName": "MaestroKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -451,34 +483,8 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlaysSection]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MaestroKeyPlaysSection",
-                    "printedName": "MaestroKit.MaestroKeyPlaysSection",
-                    "usr": "s:10MaestroKit0A15KeyPlaysSectionV"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGvp",
-            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlaysSection]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -495,9 +501,51 @@
                     "usr": "s:Sa"
                   }
                 ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGSgvp",
+            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MaestroKit.MaestroKeyPlaysSection]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MaestroKit.MaestroKeyPlaysSection]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MaestroKeyPlaysSection",
+                            "printedName": "MaestroKit.MaestroKeyPlaysSection",
+                            "usr": "s:10MaestroKit0A15KeyPlaysSectionV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
                 "declKind": "Accessor",
-                "usr": "s:10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGvg",
-                "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGvg",
+                "usr": "s:10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGSgvg",
+                "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV8sectionsSayAA0acD7SectionVGSgvg",
                 "moduleName": "MaestroKit",
                 "implicit": true,
                 "accessorKind": "get"
@@ -517,54 +565,107 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlaysTeam]",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlaysTeam]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MaestroKeyPlaysTeam",
-                    "printedName": "MaestroKit.MaestroKeyPlaysTeam",
-                    "usr": "s:10MaestroKit0A12KeyPlaysTeamV"
+                    "name": "Array",
+                    "printedName": "[MaestroKit.MaestroKeyPlaysTeam]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaestroKeyPlaysTeam",
+                        "printedName": "MaestroKit.MaestroKeyPlaysTeam",
+                        "usr": "s:10MaestroKit0A12KeyPlaysTeamV"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
-                "usr": "s:Sa"
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MaestroKeyPlaysAthlete",
-                    "printedName": "MaestroKit.MaestroKeyPlaysAthlete",
-                    "usr": "s:10MaestroKit0A15KeyPlaysAthleteV"
+                    "name": "Array",
+                    "printedName": "[MaestroKit.MaestroKeyPlaysAthlete]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaestroKeyPlaysAthlete",
+                        "printedName": "MaestroKit.MaestroKeyPlaysAthlete",
+                        "usr": "s:10MaestroKit0A15KeyPlaysAthleteV"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
-                "usr": "s:Sa"
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlaysSection]",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlaysSection]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MaestroKeyPlaysSection",
-                    "printedName": "MaestroKit.MaestroKeyPlaysSection",
-                    "usr": "s:10MaestroKit0A15KeyPlaysSectionV"
+                    "name": "Array",
+                    "printedName": "[MaestroKit.MaestroKeyPlaysSection]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaestroKeyPlaysSection",
+                        "printedName": "MaestroKit.MaestroKeyPlaysSection",
+                        "usr": "s:10MaestroKit0A15KeyPlaysSectionV"
+                      }
+                    ],
+                    "usr": "s:Sa"
                   }
                 ],
-                "usr": "s:Sa"
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A16KeyPlaysResponseV5teams8athletes8sectionsACSayAA0acD4TeamVG_SayAA0acD7AthleteVGSayAA0acD7SectionVGtcfc",
-            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV5teams8athletes8sectionsACSayAA0acD4TeamVG_SayAA0acD7AthleteVGSayAA0acD7SectionVGtcfc",
+            "usr": "s:10MaestroKit0A16KeyPlaysResponseV5teams8athletes8sectionsACSayAA0acD4TeamVGSg_SayAA0acD7AthleteVGSgSayAA0acD7SectionVGSgtcfc",
+            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV5teams8athletes8sectionsACSayAA0acD4TeamVGSg_SayAA0acD7AthleteVGSgSayAA0acD7SectionVGSgtcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "AccessControl"
             ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroKeyPlaysResponse",
+                "printedName": "MaestroKit.MaestroKeyPlaysResponse",
+                "usr": "s:10MaestroKit0A16KeyPlaysResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit0A16KeyPlaysResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -573,8 +674,7 @@
         "mangledName": "$s10MaestroKit0A16KeyPlaysResponseV",
         "moduleName": "MaestroKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -590,6 +690,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },
@@ -598,6 +705,530 @@
         "name": "MaestroKeyPlaysTeam",
         "printedName": "MaestroKeyPlaysTeam",
         "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV2idSSvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV2idSSvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV2idSSvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV2idSSvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayName",
+            "printedName": "displayName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV11displayNameSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV11displayNameSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV11displayNameSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV11displayNameSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shortName",
+            "printedName": "shortName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV9shortNameSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV9shortNameSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV9shortNameSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV9shortNameSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "color",
+            "printedName": "color",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV5colorSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV5colorSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV5colorSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV5colorSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alternateColor",
+            "printedName": "alternateColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV14alternateColorSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV14alternateColorSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV14alternateColorSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV14alternateColorSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "homeAway",
+            "printedName": "homeAway",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV8homeAwaySSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV8homeAwaySSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV8homeAwaySSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV8homeAwaySSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "displayOrder",
+            "printedName": "displayOrder",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV12displayOrderSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV12displayOrderSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV12displayOrderSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV12displayOrderSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logo",
+            "printedName": "logo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV4logoSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV4logoSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV4logoSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV4logoSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "logoDark",
+            "printedName": "logoDark",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV8logoDarkSSSgvp",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV8logoDarkSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV8logoDarkSSSgvg",
+                "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV8logoDarkSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -617,60 +1248,158 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A12KeyPlaysTeamV2id11displayName05shortH05color14alternateColor8homeAway0G5Order4logo0P4DarkACSS_S8Stcfc",
-            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV2id11displayName05shortH05color14alternateColor8homeAway0G5Order4logo0P4DarkACSS_S8Stcfc",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV2id11displayName05shortH05color14alternateColor8homeAway0G5Order4logo0P4DarkACSS_SSSgA7Mtcfc",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV2id11displayName05shortH05color14alternateColor8homeAway0G5Order4logo0P4DarkACSS_SSSgA7Mtcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "AccessControl"
             ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroKeyPlaysTeam",
+                "printedName": "MaestroKit.MaestroKeyPlaysTeam",
+                "usr": "s:10MaestroKit0A12KeyPlaysTeamV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit0A12KeyPlaysTeamV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -679,8 +1408,7 @@
         "mangledName": "$s10MaestroKit0A12KeyPlaysTeamV",
         "moduleName": "MaestroKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -696,6 +1424,35 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -704,6 +1461,170 @@
         "name": "MaestroKeyPlaysAthlete",
         "printedName": "MaestroKeyPlaysAthlete",
         "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV2idSSvp",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV2idSSvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A15KeyPlaysAthleteV2idSSvg",
+                "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV2idSSvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shortName",
+            "printedName": "shortName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV9shortNameSSSgvp",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV9shortNameSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A15KeyPlaysAthleteV9shortNameSSSgvg",
+                "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV9shortNameSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "headshot",
+            "printedName": "headshot",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV8headshotSSSgvp",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV8headshotSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A15KeyPlaysAthleteV8headshotSSSgvg",
+                "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV8headshotSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -723,26 +1644,68 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "hasDefaultArg": true,
-                "usr": "s:SS"
+                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
                 "hasDefaultArg": true,
-                "usr": "s:SS"
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV2id9shortName8headshotACSS_S2Stcfc",
-            "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV2id9shortName8headshotACSS_S2Stcfc",
+            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV2id9shortName8headshotACSS_SSSgAGtcfc",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV2id9shortName8headshotACSS_SSSgAGtcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "AccessControl"
             ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroKeyPlaysAthlete",
+                "printedName": "MaestroKit.MaestroKeyPlaysAthlete",
+                "usr": "s:10MaestroKit0A15KeyPlaysAthleteV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit0A15KeyPlaysAthleteV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -751,8 +1714,7 @@
         "mangledName": "$s10MaestroKit0A15KeyPlaysAthleteV",
         "moduleName": "MaestroKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -768,6 +1730,35 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -776,6 +1767,142 @@
         "name": "MaestroKeyPlaysSection",
         "printedName": "MaestroKeyPlaysSection",
         "children": [
+          {
+            "kind": "Var",
+            "name": "title",
+            "printedName": "title",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A15KeyPlaysSectionV5titleSSSgvp",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV5titleSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A15KeyPlaysSectionV5titleSSSgvg",
+                "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV5titleSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "items",
+            "printedName": "items",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlay]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MaestroKit.MaestroKeyPlay]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaestroKeyPlay",
+                        "printedName": "MaestroKit.MaestroKeyPlay",
+                        "usr": "s:10MaestroKit0A7KeyPlayV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A15KeyPlaysSectionV5itemsSayAA0aC4PlayVGSgvp",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV5itemsSayAA0aC4PlayVGSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[MaestroKit.MaestroKeyPlay]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[MaestroKit.MaestroKeyPlay]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MaestroKeyPlay",
+                            "printedName": "MaestroKit.MaestroKeyPlay",
+                            "usr": "s:10MaestroKit0A7KeyPlayV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A15KeyPlaysSectionV5itemsSayAA0aC4PlayVGSgvg",
+                "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV5itemsSayAA0aC4PlayVGSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -789,32 +1916,76 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[MaestroKit.MaestroKeyPlay]",
+                "name": "Optional",
+                "printedName": "Swift.String?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "MaestroKeyPlay",
-                    "printedName": "MaestroKit.MaestroKeyPlay",
-                    "usr": "s:10MaestroKit0A7KeyPlayV"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
-                "usr": "s:Sa"
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[MaestroKit.MaestroKeyPlay]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[MaestroKit.MaestroKeyPlay]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaestroKeyPlay",
+                        "printedName": "MaestroKit.MaestroKeyPlay",
+                        "usr": "s:10MaestroKit0A7KeyPlayV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A15KeyPlaysSectionV5title5itemsACSS_SayAA0aC4PlayVGtcfc",
-            "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV5title5itemsACSS_SayAA0aC4PlayVGtcfc",
+            "usr": "s:10MaestroKit0A15KeyPlaysSectionV5title5itemsACSSSg_SayAA0aC4PlayVGSgtcfc",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV5title5itemsACSSSg_SayAA0aC4PlayVGSgtcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "AccessControl"
             ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroKeyPlaysSection",
+                "printedName": "MaestroKit.MaestroKeyPlaysSection",
+                "usr": "s:10MaestroKit0A15KeyPlaysSectionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit0A15KeyPlaysSectionV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -823,8 +1994,7 @@
         "mangledName": "$s10MaestroKit0A15KeyPlaysSectionV",
         "moduleName": "MaestroKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -840,6 +2010,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },
@@ -848,6 +2025,694 @@
         "name": "MaestroKeyPlay",
         "printedName": "MaestroKeyPlay",
         "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV2idSSvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV2idSSvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV2idSSvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV2idSSvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV11descriptionSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV11descriptionSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV11descriptionSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV11descriptionSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "team",
+            "printedName": "team",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV4teamSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV4teamSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV4teamSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV4teamSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wallClock",
+            "printedName": "wallClock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV9wallClockSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV9wallClockSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV9wallClockSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV9wallClockSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clock",
+            "printedName": "clock",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV5clockSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV5clockSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV5clockSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV5clockSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shortPeriod",
+            "printedName": "shortPeriod",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV11shortPeriodSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV11shortPeriodSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV11shortPeriodSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV11shortPeriodSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scoringPlay",
+            "printedName": "scoringPlay",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV07scoringD0SbSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV07scoringD0SbSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV07scoringD0SbSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV07scoringD0SbSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "athlete",
+            "printedName": "athlete",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV7athleteSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV7athleteSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV7athleteSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV7athleteSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "thumbnail",
+            "printedName": "thumbnail",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV9thumbnailSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV9thumbnailSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV9thumbnailSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV9thumbnailSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "clipID",
+            "printedName": "clipID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV6clipIDSSvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV6clipIDSSvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV6clipIDSSvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV6clipIDSSvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "awayScore",
+            "printedName": "awayScore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV9awayScoreSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV9awayScoreSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV9awayScoreSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV9awayScoreSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "homeScore",
+            "printedName": "homeScore",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit0A7KeyPlayV9homeScoreSSSgvp",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV9homeScoreSSSgvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit0A7KeyPlayV9homeScoreSSSgvg",
+                "mangledName": "$s10MaestroKit0A7KeyPlayV9homeScoreSSSgvg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -861,60 +2726,6 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
                 "name": "Optional",
                 "printedName": "Swift.String?",
                 "children": [
@@ -925,6 +2736,7 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               },
               {
@@ -939,16 +2751,171 @@
                     "usr": "s:SS"
                   }
                 ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A7KeyPlayV11description4team9wallClock5clock11shortPeriod07scoringD07athlete9thumbnail6clipID9awayScore04homeR0ACSS_S4SSbS4SSgAOtcfc",
-            "mangledName": "$s10MaestroKit0A7KeyPlayV11description4team9wallClock5clock11shortPeriod07scoringD07athlete9thumbnail6clipID9awayScore04homeR0ACSS_S4SSbS4SSgAOtcfc",
+            "usr": "s:10MaestroKit0A7KeyPlayV11description4team9wallClock5clock11shortPeriod07scoringD07athlete9thumbnail6clipID9awayScore04homeR0ACSSSg_A4OSbSgA2OSSA2Otcfc",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV11description4team9wallClock5clock11shortPeriod07scoringD07athlete9thumbnail6clipID9awayScore04homeR0ACSSSg_A4OSbSgA2OSSA2Otcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "AccessControl"
             ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroKeyPlay",
+                "printedName": "MaestroKit.MaestroKeyPlay",
+                "usr": "s:10MaestroKit0A7KeyPlayV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit0A7KeyPlayV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit0A7KeyPlayV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
             "init_kind": "Designated"
           }
         ],
@@ -957,8 +2924,7 @@
         "mangledName": "$s10MaestroKit0A7KeyPlayV",
         "moduleName": "MaestroKit",
         "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -974,6 +2940,35 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
           }
         ]
       },
@@ -1827,6 +3822,62 @@
         "children": [
           {
             "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "homeTeamLabelView",
             "printedName": "homeTeamLabelView",
             "children": [
@@ -2051,8 +4102,8 @@
           },
           {
             "kind": "Var",
-            "name": "body",
-            "printedName": "body",
+            "name": "edgeMarginView",
+            "printedName": "edgeMarginView",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2069,8 +4120,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvp",
-            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvp",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV010edgeMarginG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV010edgeMarginG0Qrvp",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Preconcurrency",
@@ -2098,8 +4149,120 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvg",
-                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvg",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV010edgeMarginG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV010edgeMarginG0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "teamScoreSpacerView",
+            "printedName": "teamScoreSpacerView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV04teame6SpacerG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV04teame6SpacerG0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV04teame6SpacerG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV04teame6SpacerG0Qrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "middleSpacerView",
+            "printedName": "middleSpacerView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV012middleSpacerG0Qrvp",
+            "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV012middleSpacerG0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21KeyPlaysScoreCardViewV012middleSpacerG0Qrvg",
+                "mangledName": "$s10MaestroKit21KeyPlaysScoreCardViewV012middleSpacerG0Qrvg",
                 "moduleName": "MaestroKit",
                 "accessorKind": "get"
               }
@@ -64316,20 +66479,6 @@
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/Model\/MaestroKeyPlaysResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1756,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/Model\/MaestroKeyPlaysResponse.swift",
-      "kind": "StringLiteral",
-      "offset": 1787,
-      "length": 2,
-      "value": "\"\""
-    },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/Panels\/KeyPlaysPanel\/View\/CachedImageView.swift",
       "kind": "BooleanLiteral",
