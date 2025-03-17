@@ -32,13 +32,6 @@ public enum MaestroPanelType {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
-}
-@_Concurrency.MainActor @preconcurrency public struct MaestroPanelContentView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
   @_Concurrency.MainActor @preconcurrency public var topMarginView: some SwiftUICore.View {
     get
   }
@@ -52,7 +45,7 @@ public enum MaestroPanelType {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A16PanelContentViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
 }
 public struct MaestroViewModels {
   public let eventViewModel: MaestroKit.MaestroEventViewModel
@@ -83,15 +76,16 @@ extension MaestroKit.PanelManagerTabBarView {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit15PanelScrollViewV4bodyQrvp", 0) __
 }
 extension MaestroKit.PanelScrollView {
-  @_Concurrency.MainActor @preconcurrency public var scrollViewContentView: some SwiftUICore.View {
-    get
-  }
-}
-extension MaestroKit.PanelScrollView {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   @_Concurrency.MainActor @preconcurrency public var scrollView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var scrollViewContentView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var experimentalBetsScrollViewContentView: some SwiftUICore.View {
     get
   }
 }
@@ -1949,6 +1943,68 @@ public struct BetsEvent : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+@_Concurrency.MainActor @preconcurrency public struct BetsStraightView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var straightHeaderView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var straightContentView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var straightFooterView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16BetsStraightViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsBoostView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var headerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit13BetsBoostViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsCardFooterView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var pillView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var winningAmountView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit18BetsCardFooterViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsCardHeaderView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit18BetsCardHeaderViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsContentTitleView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit20BetsContentTitleViewV4bodyQrvp", 0) __
+}
 @_Concurrency.MainActor @preconcurrency public struct BetsDisclaimerView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -1956,19 +2012,84 @@ public struct BetsEvent : Swift.Codable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit18BetsDisclaimerViewV4bodyQrvp", 0) __
 }
+@_Concurrency.MainActor @preconcurrency public struct BetsDividerView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit15BetsDividerViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsFocusableItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit21BetsFocusableItemViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsHotPropsLineItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var imageView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var titlesView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var oddsView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit24BetsHotPropsLineItemViewV4bodyQrvp", 0) __
+}
 @_Concurrency.MainActor @preconcurrency public struct BetsHotPropsView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var headerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16BetsHotPropsViewV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor @preconcurrency public struct BetsQRCodeView : SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct BetsLocationDisclaimerView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit14BetsQRCodeViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit26BetsLocationDisclaimerViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsParlayView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var headerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit14BetsParlayViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsPromoView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit13BetsPromoViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct BetsSixPackView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -1977,6 +2098,25 @@ public struct BetsEvent : Swift.Codable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit15BetsSixPackViewV4bodyQrvp", 0) __
 }
+@_Concurrency.MainActor @preconcurrency public struct BetsTeaserView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var headerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit14BetsTeaserViewV4bodyQrvp", 0) __
+}
 @_Concurrency.MainActor @preconcurrency public struct MyBetsView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -1984,47 +2124,12 @@ public struct BetsEvent : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public var tabBarView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var parlayView: some SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var focusTrapTabBar: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var straightView: some SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var focusBounceTargetTabBar: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var boostView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var teaserView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var parlayHeaderView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var straightHeaderView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var boostHeaderView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var teaserHeaderView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var parlayContentView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var straightContentView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var boostContentView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var teaserContentVIew: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public func footerView(leftLabel: Swift.String, rightToWinLabel: Swift.String) -> some SwiftUICore.View
-  
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit10MyBetsViewV4bodyQrvp", 0) __
 }
@@ -2106,7 +2211,14 @@ public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Swift.String
 }
-@_Concurrency.MainActor @preconcurrency public struct KeyPlaysScoreView : SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct KeyPlaysFocusableItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit25KeyPlaysFocusableItemViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct KeyPlaysScoreCardView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -2132,7 +2244,7 @@ public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit17KeyPlaysScoreViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit21KeyPlaysScoreCardViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlaysTabLoadFailureView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -2156,6 +2268,9 @@ public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit28KeyPlaysUnsupportedEventViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct KeyPlayView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
   @_Concurrency.MainActor @preconcurrency public var imageView: some SwiftUICore.View {
     get
   }
@@ -2178,9 +2293,6 @@ public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable {
     get
   }
   @_Concurrency.MainActor @preconcurrency public var nonRecentLoadFailureOverlayView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -2229,7 +2341,6 @@ public enum TestUseCase {
 extension MaestroKit.MaestroPanelType : Swift.Equatable {}
 extension MaestroKit.MaestroPanelType : Swift.Hashable {}
 extension MaestroKit.MaestroPanel : Swift.Sendable {}
-extension MaestroKit.MaestroPanelContentView : Swift.Sendable {}
 extension MaestroKit.PanelManagerTabBarView : Swift.Sendable {}
 extension MaestroKit.PanelManagerView : Swift.Sendable {}
 extension MaestroKit.PanelScrollView : Swift.Sendable {}
@@ -2373,16 +2484,28 @@ extension MaestroKit.NetworkManager.HTTPMethod : Swift.Hashable {}
 extension MaestroKit.NetworkManager.HTTPMethod : Swift.RawRepresentable {}
 extension MaestroKit.ChannelServiceError : Swift.Equatable {}
 extension MaestroKit.ChannelServiceError : Swift.Hashable {}
+extension MaestroKit.BetsStraightView : Swift.Sendable {}
+extension MaestroKit.BetsBoostView : Swift.Sendable {}
+extension MaestroKit.BetsCardFooterView : Swift.Sendable {}
+extension MaestroKit.BetsCardHeaderView : Swift.Sendable {}
+extension MaestroKit.BetsContentTitleView : Swift.Sendable {}
 extension MaestroKit.BetsDisclaimerView : Swift.Sendable {}
+extension MaestroKit.BetsDividerView : Swift.Sendable {}
+extension MaestroKit.BetsFocusableItemView : Swift.Sendable {}
+extension MaestroKit.BetsHotPropsLineItemView : Swift.Sendable {}
 extension MaestroKit.BetsHotPropsView : Swift.Sendable {}
-extension MaestroKit.BetsQRCodeView : Swift.Sendable {}
+extension MaestroKit.BetsLocationDisclaimerView : Swift.Sendable {}
+extension MaestroKit.BetsParlayView : Swift.Sendable {}
+extension MaestroKit.BetsPromoView : Swift.Sendable {}
 extension MaestroKit.BetsSixPackView : Swift.Sendable {}
+extension MaestroKit.BetsTeaserView : Swift.Sendable {}
 extension MaestroKit.MyBetsView : Swift.Sendable {}
 extension MaestroKit.BetsViewModel : Combine.ObservableObject {}
 extension MaestroKit.BetsViewModel : Swift.Sendable {}
 extension MaestroKit.FantasyViewModel : Combine.ObservableObject {}
 extension MaestroKit.FantasyViewModel : Swift.Sendable {}
-extension MaestroKit.KeyPlaysScoreView : Swift.Sendable {}
+extension MaestroKit.KeyPlaysFocusableItemView : Swift.Sendable {}
+extension MaestroKit.KeyPlaysScoreCardView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysTabLoadFailureView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysUnpopulatedEventView : Swift.Sendable {}
 extension MaestroKit.KeyPlaysUnsupportedEventView : Swift.Sendable {}

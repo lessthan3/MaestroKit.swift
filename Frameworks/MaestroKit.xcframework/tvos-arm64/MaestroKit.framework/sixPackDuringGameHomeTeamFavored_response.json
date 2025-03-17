@@ -1,0 +1,163 @@
+{
+    "entities": {
+        "teams": {
+            "45": {
+                "id": "45",
+                "uid": "s:20~l:28~t:45",
+                "guid": "22334455-6677-8899-aabb-ccddeeff0011",
+                "slug": "seattle-seahawks",
+                "abbreviation": "SEA",
+                "displayName": "Seattle Seahawks",
+                "shortDisplayName": "Seahawks",
+                "name": "Seahawks",
+                "nickname": "Seahawks",
+                "location": "Seattle",
+                "color": "69BE28",
+                "alternateColor": "002244",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/sea/seattle-seahawks",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            },
+            "29": {
+                "id": "29",
+                "uid": "s:20~l:28~t:29",
+                "guid": "99887766-5544-3322-1100-aabbccddeeff",
+                "slug": "denver-broncos",
+                "abbreviation": "DEN",
+                "displayName": "Denver Broncos",
+                "shortDisplayName": "Broncos",
+                "name": "Broncos",
+                "nickname": "Broncos",
+                "location": "Denver",
+                "color": "FB4F14",
+                "alternateColor": "002244",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/den/denver-broncos",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            }
+        }
+    },
+    "id": "401672345",
+    "sport": "football",
+    "date": "2025-03-10T21:30Z",
+    "gameState": "in",
+    "bets": {
+        "odds": [
+            {
+                "displayName": "Moneyline",
+                "abbreviation": "ML",
+                "type": "moneyline",
+                "state": "live",
+                "values": [
+                    {
+                        "odds": "-180",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "odds": "+140",
+                        "team": "29",
+                        "type": "away"
+                    }
+                ]
+            },
+            {
+                "displayName": "Total Points",
+                "abbreviation": "Total",
+                "type": "total",
+                "state": "close",
+                "values": [
+                    {
+                        "line": "u38.5",
+                        "odds": "+120",
+                        "type": "over"
+                    },
+                    {
+                        "line": "u46.5",
+                        "odds": "-105",
+                        "type": "under"
+                    }
+                ]
+            },
+            {
+                "displayName": "Total Points",
+                "abbreviation": "Total",
+                "type": "total",
+                "state": "live",
+                "values": [
+                    {
+                        "line": "u38.5",
+                        "odds": "+120",
+                        "outcome": "WIN",
+                        "type": "over"
+                    },
+                    {
+                        "line": "u46.5",
+                        "odds": "-105",
+                        "outcome": "LOSS",
+                        "type": "under"
+                    }
+                ]
+            },
+            {
+                "displayName": "Spread",
+                "abbreviation": "Spread",
+                "type": "pointSpread",
+                "state": "close",
+                "values": [
+                    {
+                        "line": "-4.5",
+                        "odds": "-120",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "line": "2.5",
+                        "odds": "+70",
+                        "team": "29",
+                        "type": "away"
+                    }
+                ]
+            },
+            {
+                "displayName": "Spread",
+                "abbreviation": "Spread",
+                "type": "pointSpread",
+                "state": "live",
+                "values": [
+                    {
+                        "line": "-7.5",
+                        "odds": "-200",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "line": "4.5",
+                        "odds": "+90",
+                        "team": "29",
+                        "type": "away"
+                    }
+                ]
+            }
+        ]
+    },
+    "featured": []
+}

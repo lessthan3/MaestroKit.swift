@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		JLgtlnepTKoR2lG5WTUBTkuEJkE=
+		ObNR+c7ZydNph6nBzdd39L4EDbM=
 		</data>
 		<key>BentonSans-Black.ttf</key>
 		<data>
@@ -78,51 +78,75 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		gy5rDWo0Sx5jE8hHJX/M5FiCbvA=
+		NL7WDNPQ7k/0u5N5RX9mknUc3mY=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CNrjLb5rKt7uSoY5Lz0sDQlywQw=
+		MqvPTrjykIZKQKCOCbC/3EhUAjc=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		YCCnxrUFgzzqeTahp09vWOrxfMc=
+		EIKiCGTfaCbdNX73i+yST8ix3yw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		0bkBPI75cmTWe7Q4skAIlzkSmbo=
+		BbZqBxgtWHyLYukg9iutXYboJxU=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		YCCnxrUFgzzqeTahp09vWOrxfMc=
+		EIKiCGTfaCbdNX73i+yST8ix3yw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		0MruckpZK6/Madd5R+R3nleLens=
+		IWoQ56DdbgmJgSlGV2BMbIZ1jEo=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		CNrjLb5rKt7uSoY5Lz0sDQlywQw=
+		MqvPTrjykIZKQKCOCbC/3EhUAjc=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		y1+2SKCSj8U7xmCvxFBrTR/wBqk=
+		LykwvfaFqlKm7Ma8cJLGQCtLXMA=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		+SK9ffBF7QJ4wjJKne6WVdbjfQc=
+		oqprTa7AM3N1JN5bVDXI42RYYOQ=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		y1+2SKCSj8U7xmCvxFBrTR/wBqk=
+		LykwvfaFqlKm7Ma8cJLGQCtLXMA=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		FoPd/bIDutINsAPGCQZE3N1w01Q=
+		mu6AB6x7PsYaye30TQ/2aucKZGs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		lQQ5J6GTXt/jar63QaoOduEXIcY=
+		</data>
+		<key>sixPackDuringGameAwayTeamFavored_response.json</key>
+		<data>
+		FC4ceawd3vuFs2Fym0TbxWDOu0k=
+		</data>
+		<key>sixPackDuringGameHomeTeamFavored_response.json</key>
+		<data>
+		QFr9CDuW5FJIloLag9QunxGetGA=
+		</data>
+		<key>sixPackPostGameAwayTeamFavored_response.json</key>
+		<data>
+		8iyYJnvgjL0Y1EJ2+3yDQS6mLdw=
+		</data>
+		<key>sixPackPostGameHomeTeamFavored_response.json</key>
+		<data>
+		jGykk09Dshb/XkSI2nbeJ7/9xRc=
+		</data>
+		<key>sixPackPreGameAwayTeamFavored_response.json</key>
+		<data>
+		LBxUMxMITNw7kgLcJyjh6GhUqvQ=
+		</data>
+		<key>sixPackPreGameHomeTeamFavored_response.json</key>
+		<data>
+		XSDO0j7A/gzeO94fcar6UCPoL1w=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,7 +155,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WPZ3E/J3VxrbxDyCbuSCBf1Gvk3KW0k0GufqaCRVrGE=
+			r2ur8/Da/uhW2h6f7iYKBGD6hugFQvLwqw0axE+MfGY=
 			</data>
 		</dict>
 		<key>BentonSans-Black.ttf</key>
@@ -257,70 +281,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBnWdOX/5Ef6SXFMzVqdrwADmoyrXqgTIEfHNmUi89M=
+			OX+oK0T1YtBKu8t0bMHVzzYPztp16NpbRWe3mZBMS5o=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8BQ4Jt90sAjgdcXOzGsTC2zsspUjME+qQ+6Qzx4lx+k=
+			jOdSewPEItMByNIYi+qqWSWeNs2htfnh8bYAvR5hqEM=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K/c87fXf6VmiYgpfps9rHIJqwrb9Co7YsJPIEX9KoZ4=
+			sNMeJLqHjaZo1A3lIyK5qvAFNN/U3mZI198UItlsWAI=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8BQ4Jt90sAjgdcXOzGsTC2zsspUjME+qQ+6Qzx4lx+k=
+			jOdSewPEItMByNIYi+qqWSWeNs2htfnh8bYAvR5hqEM=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BsHR+XfgDOy6NB4pIQ71yMHP47ZGWD6KQi2booIX954=
+			RbY4R/DJ1gjZoW90lcGEBgyWmwOrk6usE/pGcf9Xtsg=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBnWdOX/5Ef6SXFMzVqdrwADmoyrXqgTIEfHNmUi89M=
+			OX+oK0T1YtBKu8t0bMHVzzYPztp16NpbRWe3mZBMS5o=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dwFzTTlgz1FzPrDSIiLx2iJp4T3YyuTuomsl8jIvsto=
+			EgjzABDoU95CNYUU4VUn5AV0j7LKmhlTx2BjDL7yoMg=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			RrMdqFNTT1d97+WTYGQVmye1Wfi8Stgktbla1sIa57E=
+			o3N1KtglYD8Iy4xwd+JM/dQtmcknbBRcyGGSW7Q6/ts=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dwFzTTlgz1FzPrDSIiLx2iJp4T3YyuTuomsl8jIvsto=
+			EgjzABDoU95CNYUU4VUn5AV0j7LKmhlTx2BjDL7yoMg=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aZVhisOiQwaHHgirI5BlBq/MG0j6AFIN9dR/MLLFYE0=
+			C2xxtOyL6kVEnv44g7YXSpr5j7p2K2gXipg9fKTzKek=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -328,6 +352,48 @@
 			<key>hash2</key>
 			<data>
 			k5gEfYD/OyYOMmZ8mHnffOSf60RUPedm+k0lzY2fERg=
+			</data>
+		</dict>
+		<key>sixPackDuringGameAwayTeamFavored_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TvSfJqxZMCzs03zsFfodqw0OJZ8CpAmc+5FPKSe95zQ=
+			</data>
+		</dict>
+		<key>sixPackDuringGameHomeTeamFavored_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4G+DX8m9CpCzYbf7Xg+zx3tDC/6d5Zy1mPY8e8wjpYM=
+			</data>
+		</dict>
+		<key>sixPackPostGameAwayTeamFavored_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/JSbJsUkzIM+rZdC3vkWimEkLVaAlR1D6tlfxfgCVS0=
+			</data>
+		</dict>
+		<key>sixPackPostGameHomeTeamFavored_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CTQkq/XH80NNovlD1UM2iQqVQWLcc5SRORFbl+zvMyo=
+			</data>
+		</dict>
+		<key>sixPackPreGameAwayTeamFavored_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			i6w239MfqPVZ9hOTjdBXPWxD5FMHR7ujiLmWMLqJ5xM=
+			</data>
+		</dict>
+		<key>sixPackPreGameHomeTeamFavored_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			47w8S2/ZTSqdavU58dBfsnlu9IhsMC7bome7uuwNWn0=
 			</data>
 		</dict>
 	</dict>

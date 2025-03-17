@@ -1,0 +1,162 @@
+{
+    "entities": {
+        "teams": {
+            "45": {
+                "id": "45",
+                "uid": "s:20~l:28~t:45",
+                "guid": "3bfa2c1d-9f14-4c3e-9ad2-98d5fd7b5e1a",
+                "slug": "new-york-giants",
+                "abbreviation": "NYG",
+                "displayName": "New York Giants",
+                "shortDisplayName": "Giants",
+                "name": "Giants",
+                "nickname": "Giants",
+                "location": "New York",
+                "color": "0B2265",
+                "alternateColor": "A71930",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/nyg/new-york-giants",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            },
+            "19": {
+                "id": "19",
+                "uid": "s:20~l:28~t:19",
+                "guid": "b7e49124-2a3d-4cb7-b6a4-f67b23ed5c64",
+                "slug": "green-bay-packers",
+                "abbreviation": "GB",
+                "displayName": "Green Bay Packers",
+                "shortDisplayName": "Packers",
+                "name": "Packers",
+                "nickname": "Packers",
+                "location": "Green Bay",
+                "color": "203731",
+                "alternateColor": "FFB612",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/gb/green-bay-packers",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            }
+        }
+    },
+    "id": "401571900",
+    "sport": "football",
+    "date": "2025-02-15T18:30Z",
+    "gameState": "in",
+    "bets": {
+        "odds": [
+            {
+                "displayName": "Spread",
+                "abbreviation": "Spread",
+                "type": "pointSpread",
+                "state": "live",
+                "values": [
+                    {
+                        "line": "-1.5",
+                        "odds": "+145",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "line": "-2.5",
+                        "odds": "-175",
+                        "team": "19",
+                        "type": "away"
+                    }
+                ]
+            },
+            {
+                "displayName": "Spread",
+                "abbreviation": "Spread",
+                "type": "pointSpread",
+                "state": "close",
+                "values": [
+                    {
+                        "line": "-2.0",
+                        "odds": "+125",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "line": "-1.0",
+                        "odds": "-160",
+                        "team": "19",
+                        "type": "away"
+                    }
+                ]
+            },
+            {
+                "displayName": "Total Points",
+                "abbreviation": "Total",
+                "type": "total",
+                "state": "close",
+                "values": [
+                    {
+                        "line": "u22.0",
+                        "odds": "-200",
+                        "type": "over"
+                    },
+                    {
+                        "line": "o39.5",
+                        "odds": "+105",
+                        "type": "under"
+                    }
+                ]
+            },
+            {
+                "displayName": "Total Points",
+                "abbreviation": "Total",
+                "type": "total",
+                "state": "live",
+                "values": [
+                    {
+                        "line": "u42.0",
+                        "odds": "-240",
+                        "outcome": "LOSS",
+                        "type": "over"
+                    },
+                    {
+                        "line": "o29.5",
+                        "odds": "+125",
+                        "outcome": "WIN",
+                        "type": "under"
+                    }
+                ]
+            },
+            {
+                "displayName": "Moneyline",
+                "abbreviation": "ML",
+                "type": "moneyline",
+                "state": "live",
+                "values": [
+                    {
+                        "odds": "+175",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "odds": "-140",
+                        "team": "19",
+                        "type": "away"
+                    }
+                ]
+            }
+        ]
+    }
+}

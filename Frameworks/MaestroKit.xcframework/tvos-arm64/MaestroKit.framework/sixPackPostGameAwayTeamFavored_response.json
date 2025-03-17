@@ -1,0 +1,162 @@
+{
+    "entities": {
+        "teams": {
+            "45": {
+                "id": "45",
+                "uid": "s:20~l:28~t:45",
+                "guid": "a1b2c3d4-5678-9876-5432-10abcdef1234",
+                "slug": "miami-dolphins",
+                "abbreviation": "MIA",
+                "displayName": "Miami Dolphins",
+                "shortDisplayName": "Dolphins",
+                "name": "Dolphins",
+                "nickname": "Dolphins",
+                "location": "Miami",
+                "color": "008E97",
+                "alternateColor": "FC4C02",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/mia/miami-dolphins",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            },
+            "39": {
+                "id": "39",
+                "uid": "s:20~l:28~t:39",
+                "guid": "f1e2d3c4-b567-8a90-1234-56abcdef7890",
+                "slug": "denver-broncos",
+                "abbreviation": "DEN",
+                "displayName": "Denver Broncos",
+                "shortDisplayName": "Broncos",
+                "name": "Broncos",
+                "nickname": "Broncos",
+                "location": "Denver",
+                "color": "FB4F14",
+                "alternateColor": "002244",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/den/denver-broncos",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            }
+        }
+    },
+    "id": "401581899",
+    "sport": "football",
+    "date": "2025-01-10T22:30Z",
+    "gameState": "post",
+    "bets": {
+        "odds": [
+            {
+                "displayName": "Spread",
+                "abbreviation": "Spread",
+                "type": "pointSpread",
+                "state": "open",
+                "values": [
+                    {
+                        "line": "-3.0",
+                        "odds": "+140",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "line": "-2.5",
+                        "odds": "-200",
+                        "team": "39",
+                        "type": "away"
+                    }
+                ]
+            },
+            {
+                "displayName": "Spread",
+                "abbreviation": "Spread",
+                "type": "pointSpread",
+                "state": "close",
+                "values": [
+                    {
+                        "line": "-1.5",
+                        "odds": "+125",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "line": "-1.0",
+                        "odds": "-175",
+                        "team": "39",
+                        "type": "away"
+                    }
+                ]
+            },
+            {
+                "displayName": "Total Points",
+                "abbreviation": "Total",
+                "type": "total",
+                "state": "close",
+                "values": [
+                    {
+                        "line": "u22.5",
+                        "odds": "-210",
+                        "outcome": "WIN",
+                        "type": "over"
+                    },
+                    {
+                        "line": "o44.5",
+                        "odds": "+120",
+                        "outcome": "LOSS",
+                        "type": "under"
+                    }
+                ]
+            },
+            {
+                "displayName": "Total Points",
+                "abbreviation": "Total",
+                "type": "total",
+                "state": "open",
+                "values": [
+                    {
+                        "line": "u23.5",
+                        "odds": "-230",
+                        "type": "over"
+                    },
+                    {
+                        "line": "o23.5",
+                        "odds": "+135",
+                        "type": "under"
+                    }
+                ]
+            },
+            {
+                "displayName": "Moneyline",
+                "abbreviation": "ML",
+                "type": "moneyline",
+                "state": "close",
+                "values": [
+                    {
+                        "odds": "+158",
+                        "team": "45",
+                        "type": "home"
+                    },
+                    {
+                        "odds": "-128",
+                        "team": "39",
+                        "type": "away"
+                    }
+                ]
+            }
+        ]
+    }
+}
