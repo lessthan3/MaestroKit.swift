@@ -6,16 +6,6 @@
     "children": [
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1123,16 +1113,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -1496,8 +1476,8 @@
           },
           {
             "kind": "Var",
-            "name": "experimentalBetsScrollViewContentView",
-            "printedName": "experimentalBetsScrollViewContentView",
+            "name": "keyPlaysScrollViewContentView",
+            "printedName": "keyPlaysScrollViewContentView",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1514,8 +1494,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10MaestroKit15PanelScrollViewV016experimentalBetsde7ContentE0Qrvp",
-            "mangledName": "$s10MaestroKit15PanelScrollViewV016experimentalBetsde7ContentE0Qrvp",
+            "usr": "s:10MaestroKit15PanelScrollViewV08keyPlaysde7ContentE0Qrvp",
+            "mangledName": "$s10MaestroKit15PanelScrollViewV08keyPlaysde7ContentE0Qrvp",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Preconcurrency",
@@ -1544,8 +1524,67 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10MaestroKit15PanelScrollViewV016experimentalBetsde7ContentE0Qrvg",
-                "mangledName": "$s10MaestroKit15PanelScrollViewV016experimentalBetsde7ContentE0Qrvg",
+                "usr": "s:10MaestroKit15PanelScrollViewV08keyPlaysde7ContentE0Qrvg",
+                "mangledName": "$s10MaestroKit15PanelScrollViewV08keyPlaysde7ContentE0Qrvg",
+                "moduleName": "MaestroKit",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "betsScrollViewContentView",
+            "printedName": "betsScrollViewContentView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit15PanelScrollViewV04betsde7ContentE0Qrvp",
+            "mangledName": "$s10MaestroKit15PanelScrollViewV04betsde7ContentE0Qrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit15PanelScrollViewV04betsde7ContentE0Qrvg",
+                "mangledName": "$s10MaestroKit15PanelScrollViewV04betsde7ContentE0Qrvg",
                 "moduleName": "MaestroKit",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -3974,7 +4013,8 @@
             "declAttributes": [
               "HasInitialValue",
               "HasStorage",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -67733,8 +67773,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "MyBetsView",
-        "printedName": "MyBetsView",
+        "name": "MyBetsTabBarButtonView",
+        "printedName": "MyBetsTabBarButtonView",
         "children": [
           {
             "kind": "Var",
@@ -67756,65 +67796,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10MaestroKit10MyBetsViewV4bodyQrvp",
-            "mangledName": "$s10MaestroKit10MyBetsViewV4bodyQrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit10MyBetsViewV4bodyQrvg",
-                "mangledName": "$s10MaestroKit10MyBetsViewV4bodyQrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "tabBarView",
-            "printedName": "tabBarView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit10MyBetsViewV06tabBarE0Qrvp",
-            "mangledName": "$s10MaestroKit10MyBetsViewV06tabBarE0Qrvp",
+            "usr": "s:10MaestroKit22MyBetsTabBarButtonViewV4bodyQrvp",
+            "mangledName": "$s10MaestroKit22MyBetsTabBarButtonViewV4bodyQrvp",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Preconcurrency",
@@ -67842,120 +67825,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10MaestroKit10MyBetsViewV06tabBarE0Qrvg",
-                "mangledName": "$s10MaestroKit10MyBetsViewV06tabBarE0Qrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "focusTrapTabBar",
-            "printedName": "focusTrapTabBar",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit10MyBetsViewV15focusTrapTabBarQrvp",
-            "mangledName": "$s10MaestroKit10MyBetsViewV15focusTrapTabBarQrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit10MyBetsViewV15focusTrapTabBarQrvg",
-                "mangledName": "$s10MaestroKit10MyBetsViewV15focusTrapTabBarQrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "focusBounceTargetTabBar",
-            "printedName": "focusBounceTargetTabBar",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit10MyBetsViewV23focusBounceTargetTabBarQrvp",
-            "mangledName": "$s10MaestroKit10MyBetsViewV23focusBounceTargetTabBarQrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit10MyBetsViewV23focusBounceTargetTabBarQrvg",
-                "mangledName": "$s10MaestroKit10MyBetsViewV23focusBounceTargetTabBarQrvg",
+                "usr": "s:10MaestroKit22MyBetsTabBarButtonViewV4bodyQrvg",
+                "mangledName": "$s10MaestroKit22MyBetsTabBarButtonViewV4bodyQrvg",
                 "moduleName": "MaestroKit",
                 "accessorKind": "get"
               }
@@ -67963,8 +67834,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:10MaestroKit10MyBetsViewV",
-        "mangledName": "$s10MaestroKit10MyBetsViewV",
+        "usr": "s:10MaestroKit22MyBetsTabBarButtonViewV",
+        "mangledName": "$s10MaestroKit22MyBetsTabBarButtonViewV",
         "moduleName": "MaestroKit",
         "declAttributes": [
           "Preconcurrency",
@@ -68182,6 +68053,23 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit"
       },
       {
         "kind": "Import",
@@ -74021,20 +73909,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/FocusTrapTabBar\/FocusTrapTabBarView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 193,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/FocusTrapTabBar\/FocusTrapTabBarView.swift",
-      "kind": "Array",
-      "offset": 227,
-      "length": 144,
-      "value": "[(\"Home\", \"house.fill\"), (\"Search\", \"magnifyingglass\"), (\"Favorites\", \"heart.fill\"), (\"Settings\", \"gear\")]"
-    },
-    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroPanel\/View\/MaestroPanel.swift",
       "kind": "IntegerLiteral",
       "offset": 205,
@@ -74436,91 +74310,91 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1424,
+      "offset": 1428,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1518,
+      "offset": 1522,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1689,
+      "offset": 1693,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1868,
+      "offset": 1872,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1910,
+      "offset": 1914,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Array",
-      "offset": 2026,
+      "offset": 2030,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Dictionary",
-      "offset": 2082,
+      "offset": 2086,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "FloatLiteral",
-      "offset": 2159,
+      "offset": 2163,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2208,
+      "offset": 2212,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2251,
+      "offset": 2255,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "StringLiteral",
-      "offset": 2364,
+      "offset": 2368,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2406,
+      "offset": 2410,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Array",
-      "offset": 2496,
+      "offset": 2500,
       "length": 2,
       "value": "[]"
     },
@@ -74574,6 +74448,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1131,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroLogger.swift",
       "kind": "StringLiteral",
       "offset": 185,
@@ -74604,42 +74485,28 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 367,
+      "offset": 362,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 450,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 570,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 683,
+      "offset": 476,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1096,
+      "offset": 948,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1148,
+      "offset": 1000,
       "length": 3,
       "value": "0.1"
     },
@@ -75715,9 +75582,9 @@
       "value": "\"\/themes\/v1\""
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View\/BetsHotPropsLineItemView.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View\/BetsHotPropsView.swift",
       "kind": "BooleanLiteral",
-      "offset": 406,
+      "offset": 440,
       "length": 5,
       "value": "false"
     },
@@ -76149,46 +76016,25 @@
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core\/BetsViewModel.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
       "kind": "FloatLiteral",
       "offset": 252,
       "length": 3,
       "value": "5.0"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core\/BetsViewModel.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 302,
       "length": 2,
       "value": "21"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core\/BetsViewModel.swift",
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 353,
       "length": 2,
       "value": "18"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core\/BetsViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 766,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core\/BetsViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 816,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core\/BetsViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 866,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/KeyPlays\/View\/KeyPlaysProgressBarView.swift",

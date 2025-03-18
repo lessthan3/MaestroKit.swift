@@ -85,7 +85,10 @@ extension MaestroKit.PanelScrollView {
   @_Concurrency.MainActor @preconcurrency public var scrollViewContentView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var experimentalBetsScrollViewContentView: some SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var keyPlaysScrollViewContentView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var betsScrollViewContentView: some SwiftUICore.View {
     get
   }
 }
@@ -2117,21 +2120,12 @@ public struct BetsEvent : Swift.Codable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit14BetsTeaserViewV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor @preconcurrency public struct MyBetsView : SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct MyBetsTabBarButtonView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var tabBarView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var focusTrapTabBar: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var focusBounceTargetTabBar: some SwiftUICore.View {
-    get
-  }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit10MyBetsViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit22MyBetsTabBarButtonViewV4bodyQrvp", 0) __
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BetsViewModel {
   @objc deinit
@@ -2499,7 +2493,7 @@ extension MaestroKit.BetsParlayView : Swift.Sendable {}
 extension MaestroKit.BetsPromoView : Swift.Sendable {}
 extension MaestroKit.BetsSixPackView : Swift.Sendable {}
 extension MaestroKit.BetsTeaserView : Swift.Sendable {}
-extension MaestroKit.MyBetsView : Swift.Sendable {}
+extension MaestroKit.MyBetsTabBarButtonView : Swift.Sendable {}
 extension MaestroKit.BetsViewModel : Combine.ObservableObject {}
 extension MaestroKit.BetsViewModel : Swift.Sendable {}
 extension MaestroKit.FantasyViewModel : Combine.ObservableObject {}
