@@ -7,6 +7,7 @@ import CoreText
 import DeveloperToolsSupport
 import Foundation
 @_exported import MaestroKit
+import RiveRuntime
 import Swift
 import SwiftUI
 import UIKit
@@ -15,6 +16,14 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+@_Concurrency.MainActor @preconcurrency public struct MaestroOverlay : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(id: Swift.String, buttonPosition: CoreFoundation.CGPoint)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A7OverlayV4bodyQrvp", 0) __
+}
 public enum MaestroPanelType {
   case keyPlays
   case stats
@@ -92,18 +101,13 @@ extension MaestroKit.PanelScrollView {
     get
   }
 }
-@_Concurrency.MainActor @preconcurrency public struct SectionHeaderView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit17SectionHeaderViewV4bodyQrvp", 0) __
-}
 @_Concurrency.MainActor public protocol MaestroEventDelegate {
   @_Concurrency.MainActor func getKeyPlaysData(forEventID eventID: Swift.String) async -> MaestroKit.MaestroKeyPlaysResponse?
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func shouldShowPanel()
   @_Concurrency.MainActor func shouldHidePanel()
+  @_Concurrency.MainActor func shouldShowOverlay(id: Swift.String, buttonSize: CoreFoundation.CGSize)
+  @_Concurrency.MainActor func shouldHideOverlay()
   @_Concurrency.MainActor func trackAction(analytics: [Swift.String : Swift.String])
   @_Concurrency.MainActor func trackImpression(analytics: [Swift.String : Swift.String])
 }
@@ -114,6 +118,8 @@ extension MaestroKit.PanelScrollView {
   @_Concurrency.MainActor func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
   @_Concurrency.MainActor func didShowPanel()
   @_Concurrency.MainActor func didHidePanel()
+  @_Concurrency.MainActor func didShowOverlay()
+  @_Concurrency.MainActor func didHideOverlay()
   @_Concurrency.MainActor func currentEventDoesNotSupportKeyPlays()
   @_Concurrency.MainActor func getCurrentEventID() -> Swift.String?
   @_Concurrency.MainActor func getCurrentlyPlayingClipIndex() -> Swift.Int?
@@ -136,6 +142,8 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor public func focusOnFirstKeyPlay()
   @_Concurrency.MainActor public func didShowPanel()
   @_Concurrency.MainActor public func didHidePanel()
+  @_Concurrency.MainActor public func didShowOverlay()
+  @_Concurrency.MainActor public func didHideOverlay()
   @_Concurrency.MainActor public func currentEventDoesNotSupportKeyPlays()
   @_Concurrency.MainActor public func getCurrentEventID() -> Swift.String?
   @_Concurrency.MainActor public func getCurrentlyPlayingClipIndex() -> Swift.Int?
@@ -163,16 +171,18 @@ public enum MaestroLogger {
   final public let networkManager: MaestroKit.NetworkManager
   final public let cacheManager: MaestroKit.ImageCacheManager
   public var siteID: Swift.String?
-  public var jwt: Swift.String?
-  public var authToken: Swift.String?
-  public var userID: Swift.String?
+  public var maestroJwt: Swift.String?
+  public var clientAppJwt: Swift.String?
+  public var clientAppSwid: Swift.String?
   public var pollFrequency: Swift.Float
   public var progressUpdateFrequency: Swift.Float
   public var isAuthorizedClient: Swift.Bool {
     get
   }
   public func setSiteID(_ siteID: Swift.String?)
-  public func setJwt(_ jwt: Swift.String)
+  public func setMaestroJwt(_ jwt: Swift.String?)
+  public func setClientAppSwid(_ swid: Swift.String?)
+  public func setClientAppJwt(_ jwt: Swift.String?)
   @_Concurrency.MainActor public func setEventViewModel(_ eventViewModel: MaestroKit.MaestroEventViewModel?)
   @_Concurrency.MainActor public func getMaestroEventViewModel() async -> MaestroKit.MaestroEventViewModel?
   @_Concurrency.MainActor public func getViewModels() async -> MaestroKit.MaestroViewModels?
@@ -189,17 +199,21 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func configure(siteID: Swift.String, jwt: Swift.String)
   nonisolated public func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate) async -> any MaestroKit.MaestroEventInterface
   nonisolated public func userDidStopWatchingEvent(_ eventID: Swift.String) async
+  nonisolated public func authenticateUser(swid: Swift.String, jwt: Swift.String) async
+  nonisolated public func deauthenticateUser() async
   nonisolated public func getCurrentSiteID() async -> Swift.String?
-  nonisolated public func getCurrentAuthToken() async -> Swift.String?
-  nonisolated public func getCurrentUserID() async -> Swift.String?
+  nonisolated public func getCurrentJwt() async -> Swift.String?
+  nonisolated public func getCurrentSwid() async -> Swift.String?
 }
 public protocol MaestroManagerInterface {
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String)
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate) async -> any MaestroKit.MaestroEventInterface
   nonisolated func userDidStopWatchingEvent(_ eventID: Swift.String) async
+  nonisolated func authenticateUser(swid: Swift.String, jwt: Swift.String) async
+  nonisolated func deauthenticateUser() async
   nonisolated func getCurrentSiteID() async -> Swift.String?
-  nonisolated func getCurrentAuthToken() async -> Swift.String?
-  nonisolated func getCurrentUserID() async -> Swift.String?
+  nonisolated func getCurrentJwt() async -> Swift.String?
+  nonisolated func getCurrentSwid() async -> Swift.String?
 }
 public struct Channel : Swift.Codable {
   public let id: Swift.String?
@@ -1085,7 +1099,6 @@ public struct Package : Swift.Codable {
 public struct Regions : Swift.Codable {
   public let channelSelect: MaestroKit.ChannelSelect
   public let footer: MaestroKit.Footer
-  public let header: MaestroKit.Header
   public let navigation: MaestroKit.Navigation
   public let player: MaestroKit.Player
   public enum CodingKeys : Swift.String, Swift.CodingKey {
@@ -1259,39 +1272,6 @@ public struct Social : Swift.Codable {
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case arrayID
     case icon, title, url
-    public init?(rawValue: Swift.String)
-    public init?(stringValue: Swift.String)
-    public init?(intValue: Swift.Int)
-    public typealias RawValue = Swift.String
-    public var intValue: Swift.Int? {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-    public var stringValue: Swift.String {
-      get
-    }
-  }
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
-}
-public struct Header : Swift.Codable {
-  public let authentication: MaestroKit.Authentication
-  public let background: Swift.String
-  public let defaultLogo: MaestroKit.DefaultLogo
-  public let defaultProfile: Swift.String
-  public let logo: Swift.String
-  public let logoLink: Swift.String
-  public let mobile: MaestroKit.MobileHeader
-  public let mobileLogo: Swift.String
-  public let profileImages: [MaestroKit.ProfileImage]
-  public let state: Swift.String
-  public enum CodingKeys : Swift.String, Swift.CodingKey {
-    case authentication, background
-    case defaultLogo
-    case defaultProfile
-    case logo, logoLink, mobile, mobileLogo, profileImages, state
     public init?(rawValue: Swift.String)
     public init?(stringValue: Swift.String)
     public init?(intValue: Swift.Int)
@@ -1946,22 +1926,6 @@ public struct BetsEvent : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-@_Concurrency.MainActor @preconcurrency public struct BetsStraightView : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var straightHeaderView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var straightContentView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var straightFooterView: some SwiftUICore.View {
-    get
-  }
-  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16BetsStraightViewV4bodyQrvp", 0) __
-}
 @_Concurrency.MainActor @preconcurrency public struct BetsBoostView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -2068,6 +2032,13 @@ public struct BetsEvent : Swift.Codable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit26BetsLocationDisclaimerViewV4bodyQrvp", 0) __
 }
+@_Concurrency.MainActor @preconcurrency public struct BetsParlayLineItemView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit22BetsParlayLineItemViewV4bodyQrvp", 0) __
+}
 @_Concurrency.MainActor @preconcurrency public struct BetsParlayView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -2075,10 +2046,13 @@ public struct BetsEvent : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public var headerView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var moreItemsView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
     get
   }
   @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
@@ -2101,6 +2075,25 @@ public struct BetsEvent : Swift.Codable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit15BetsSixPackViewV4bodyQrvp", 0) __
 }
+@_Concurrency.MainActor @preconcurrency public struct BetsStraightView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var headerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16BetsStraightViewV4bodyQrvp", 0) __
+}
 @_Concurrency.MainActor @preconcurrency public struct BetsTeaserView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
@@ -2120,12 +2113,19 @@ public struct BetsEvent : Swift.Codable {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit14BetsTeaserViewV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor @preconcurrency public struct MyBetsTabBarButtonView : SwiftUICore.View {
+@_Concurrency.MainActor @preconcurrency public struct MyBetsFocusMagnetTabBarButtonView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit22MyBetsTabBarButtonViewV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit33MyBetsFocusMagnetTabBarButtonViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct MyBetsDummyTabBarButtonView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit27MyBetsDummyTabBarButtonViewV4bodyQrvp", 0) __
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BetsViewModel {
   @objc deinit
@@ -2326,19 +2326,20 @@ public enum TestUseCase {
   case myBetsParlayBetWon
   case myBetsParlayBetLost
   case myBetsParlayBetUnsettled
+  case winningBetWithOverlay
   public static func == (a: MaestroKit.TestUseCase, b: MaestroKit.TestUseCase) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
+extension MaestroKit.MaestroOverlay : Swift.Sendable {}
 extension MaestroKit.MaestroPanelType : Swift.Equatable {}
 extension MaestroKit.MaestroPanelType : Swift.Hashable {}
 extension MaestroKit.MaestroPanel : Swift.Sendable {}
 extension MaestroKit.PanelManagerTabBarView : Swift.Sendable {}
 extension MaestroKit.PanelManagerView : Swift.Sendable {}
 extension MaestroKit.PanelScrollView : Swift.Sendable {}
-extension MaestroKit.SectionHeaderView : Swift.Sendable {}
 extension MaestroKit.MaestroEventViewModel : Swift.Sendable {}
 extension MaestroKit.MaestroLogger.Level : Swift.Equatable {}
 extension MaestroKit.MaestroLogger.Level : Swift.Hashable {}
@@ -2432,9 +2433,6 @@ extension MaestroKit.Sharing.CodingKeys : Swift.RawRepresentable {}
 extension MaestroKit.Social.CodingKeys : Swift.Equatable {}
 extension MaestroKit.Social.CodingKeys : Swift.Hashable {}
 extension MaestroKit.Social.CodingKeys : Swift.RawRepresentable {}
-extension MaestroKit.Header.CodingKeys : Swift.Equatable {}
-extension MaestroKit.Header.CodingKeys : Swift.Hashable {}
-extension MaestroKit.Header.CodingKeys : Swift.RawRepresentable {}
 extension MaestroKit.DefaultLogo.CodingKeys : Swift.Equatable {}
 extension MaestroKit.DefaultLogo.CodingKeys : Swift.Hashable {}
 extension MaestroKit.DefaultLogo.CodingKeys : Swift.RawRepresentable {}
@@ -2478,7 +2476,6 @@ extension MaestroKit.NetworkManager.HTTPMethod : Swift.Hashable {}
 extension MaestroKit.NetworkManager.HTTPMethod : Swift.RawRepresentable {}
 extension MaestroKit.ChannelServiceError : Swift.Equatable {}
 extension MaestroKit.ChannelServiceError : Swift.Hashable {}
-extension MaestroKit.BetsStraightView : Swift.Sendable {}
 extension MaestroKit.BetsBoostView : Swift.Sendable {}
 extension MaestroKit.BetsCardFooterView : Swift.Sendable {}
 extension MaestroKit.BetsCardHeaderView : Swift.Sendable {}
@@ -2489,11 +2486,14 @@ extension MaestroKit.BetsFocusableItemView : Swift.Sendable {}
 extension MaestroKit.BetsHotPropsLineItemView : Swift.Sendable {}
 extension MaestroKit.BetsHotPropsView : Swift.Sendable {}
 extension MaestroKit.BetsLocationDisclaimerView : Swift.Sendable {}
+extension MaestroKit.BetsParlayLineItemView : Swift.Sendable {}
 extension MaestroKit.BetsParlayView : Swift.Sendable {}
 extension MaestroKit.BetsPromoView : Swift.Sendable {}
 extension MaestroKit.BetsSixPackView : Swift.Sendable {}
+extension MaestroKit.BetsStraightView : Swift.Sendable {}
 extension MaestroKit.BetsTeaserView : Swift.Sendable {}
-extension MaestroKit.MyBetsTabBarButtonView : Swift.Sendable {}
+extension MaestroKit.MyBetsFocusMagnetTabBarButtonView : Swift.Sendable {}
+extension MaestroKit.MyBetsDummyTabBarButtonView : Swift.Sendable {}
 extension MaestroKit.BetsViewModel : Combine.ObservableObject {}
 extension MaestroKit.BetsViewModel : Swift.Sendable {}
 extension MaestroKit.FantasyViewModel : Combine.ObservableObject {}
