@@ -1847,6 +1847,13 @@
       },
       {
         "kind": "Import",
+        "name": "RiveRuntime",
+        "printedName": "RiveRuntime",
+        "declKind": "Import",
+        "moduleName": "MaestroKit"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -60743,7 +60750,7 @@
           {
             "kind": "Function",
             "name": "externalApiRequest",
-            "printedName": "externalApiRequest(route:method:body:maxRetryCount:skipResponseBodyDeserialization:)",
+            "printedName": "externalApiRequest(route:method:body:queryParams:headers:maxRetryCount:skipResponseBodyDeserialization:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -60780,6 +60787,64 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "Int",
                 "printedName": "Swift.Int",
                 "hasDefaultArg": true,
@@ -60794,8 +60859,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit14NetworkManagerC18externalApiRequest5route6method4body13maxRetryCount31skipResponseBodyDeserializationxSS_AC10HTTPMethodO10Foundation4DataVSgSiSbtYaKSeRzlF",
-            "mangledName": "$s10MaestroKit14NetworkManagerC18externalApiRequest5route6method4body13maxRetryCount31skipResponseBodyDeserializationxSS_AC10HTTPMethodO10Foundation4DataVSgSiSbtYaKSeRzlF",
+            "usr": "s:10MaestroKit14NetworkManagerC18externalApiRequest5route6method4body11queryParams7headers13maxRetryCount31skipResponseBodyDeserializationxSS_AC10HTTPMethodO10Foundation4DataVSgSDyS2SGSgASSiSbtYaKSeRzlF",
+            "mangledName": "$s10MaestroKit14NetworkManagerC18externalApiRequest5route6method4body11queryParams7headers13maxRetryCount31skipResponseBodyDeserializationxSS_AC10HTTPMethodO10Foundation4DataVSgSDyS2SGSgASSiSbtYaKSeRzlF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
             "sugared_genericSig": "<ResponseType where ResponseType : Swift.Decodable>",
@@ -61713,24 +61778,29 @@
           {
             "kind": "Function",
             "name": "getPersonalizedBets",
-            "printedName": "getPersonalizedBets()",
+            "printedName": "getPersonalizedBets(swid:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "PersonalizedBetsResponse",
                 "printedName": "MaestroKit.PersonalizedBetsResponse",
                 "usr": "s:10MaestroKit24PersonalizedBetsResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit11BetsServiceC015getPersonalizedC0AA0fC8ResponseVyYaKFZ",
-            "mangledName": "$s10MaestroKit11BetsServiceC015getPersonalizedC0AA0fC8ResponseVyYaKFZ",
+            "usr": "s:10MaestroKit11BetsServiceC015getPersonalizedC04swidAA0fC8ResponseVSS_tYaKFZ",
+            "mangledName": "$s10MaestroKit11BetsServiceC015getPersonalizedC04swidAA0fC8ResponseVSS_tYaKFZ",
             "moduleName": "MaestroKit",
             "static": true,
             "declAttributes": [
               "Final",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
             "throwing": true,
             "funcSelfKind": "NonMutating"
@@ -63515,6 +63585,1052 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BetsModule",
+        "printedName": "BetsModule",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BetsModule",
+                "printedName": "MaestroKit.BetsModule",
+                "usr": "s:10MaestroKit10BetsModuleV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit10BetsModuleV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit10BetsModuleV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit10BetsModuleV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit10BetsModuleV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit10BetsModuleV",
+        "mangledName": "$s10MaestroKit10BetsModuleV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BetsModuleItem",
+        "printedName": "BetsModuleItem",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BetsModuleItem",
+                "printedName": "MaestroKit.BetsModuleItem",
+                "usr": "s:10MaestroKit14BetsModuleItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit14BetsModuleItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit14BetsModuleItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit14BetsModuleItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit14BetsModuleItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit14BetsModuleItemV",
+        "mangledName": "$s10MaestroKit14BetsModuleItemV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LinkItem",
+        "printedName": "LinkItem",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LinkItem",
+                "printedName": "MaestroKit.LinkItem",
+                "usr": "s:10MaestroKit8LinkItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit8LinkItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit8LinkItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit8LinkItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit8LinkItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit8LinkItemV",
+        "mangledName": "$s10MaestroKit8LinkItemV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "URLItem",
+        "printedName": "URLItem",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "URLItem",
+                "printedName": "MaestroKit.URLItem",
+                "usr": "s:10MaestroKit7URLItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit7URLItemV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit7URLItemV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit7URLItemV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit7URLItemV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit7URLItemV",
+        "mangledName": "$s10MaestroKit7URLItemV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BetsModuleEvent",
+        "printedName": "BetsModuleEvent",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BetsModuleEvent",
+                "printedName": "MaestroKit.BetsModuleEvent",
+                "usr": "s:10MaestroKit15BetsModuleEventV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit15BetsModuleEventV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit15BetsModuleEventV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit15BetsModuleEventV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit15BetsModuleEventV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit15BetsModuleEventV",
+        "mangledName": "$s10MaestroKit15BetsModuleEventV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BetsModuleLeg",
+        "printedName": "BetsModuleLeg",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BetsModuleLeg",
+                "printedName": "MaestroKit.BetsModuleLeg",
+                "usr": "s:10MaestroKit13BetsModuleLegV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit13BetsModuleLegV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit13BetsModuleLegV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit13BetsModuleLegV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit13BetsModuleLegV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit13BetsModuleLegV",
+        "mangledName": "$s10MaestroKit13BetsModuleLegV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RewardInfo",
+        "printedName": "RewardInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RewardInfo",
+                "printedName": "MaestroKit.RewardInfo",
+                "usr": "s:10MaestroKit10RewardInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit10RewardInfoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit10RewardInfoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit10RewardInfoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit10RewardInfoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit10RewardInfoV",
+        "mangledName": "$s10MaestroKit10RewardInfoV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Icon",
+        "printedName": "Icon",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Icon",
+                "printedName": "MaestroKit.Icon",
+                "usr": "s:10MaestroKit4IconV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit4IconV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit4IconV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit4IconV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit4IconV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit4IconV",
+        "mangledName": "$s10MaestroKit4IconV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Accrued",
+        "printedName": "Accrued",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Accrued",
+                "printedName": "MaestroKit.Accrued",
+                "usr": "s:10MaestroKit7AccruedV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit7AccruedV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit7AccruedV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit7AccruedV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit7AccruedV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit7AccruedV",
+        "mangledName": "$s10MaestroKit7AccruedV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Promo",
+        "printedName": "Promo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Promo",
+                "printedName": "MaestroKit.Promo",
+                "usr": "s:10MaestroKit5PromoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit5PromoV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit5PromoV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit5PromoV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit5PromoV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit5PromoV",
+        "mangledName": "$s10MaestroKit5PromoV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Disclaimer",
+        "printedName": "Disclaimer",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Disclaimer",
+                "printedName": "MaestroKit.Disclaimer",
+                "usr": "s:10MaestroKit10DisclaimerV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10MaestroKit10DisclaimerV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s10MaestroKit10DisclaimerV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit10DisclaimerV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s10MaestroKit10DisclaimerV6encode2toys7Encoder_p_tKF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit10DisclaimerV",
+        "mangledName": "$s10MaestroKit10DisclaimerV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
         ],
         "conformances": [
           {
@@ -72586,6 +73702,83 @@
         "children": [
           {
             "kind": "Var",
+            "name": "enableMockBetsData",
+            "printedName": "enableMockBetsData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MaestroKit.TestUseCase.Type) -> MaestroKit.TestUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestUseCase",
+                    "printedName": "MaestroKit.TestUseCase",
+                    "usr": "s:10MaestroKit11TestUseCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MaestroKit.TestUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestUseCase",
+                        "printedName": "MaestroKit.TestUseCase",
+                        "usr": "s:10MaestroKit11TestUseCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10MaestroKit11TestUseCaseO18enableMockBetsDatayA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO18enableMockBetsDatayA2CmF",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "enableLiveBetsData",
+            "printedName": "enableLiveBetsData",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MaestroKit.TestUseCase.Type) -> MaestroKit.TestUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestUseCase",
+                    "printedName": "MaestroKit.TestUseCase",
+                    "usr": "s:10MaestroKit11TestUseCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MaestroKit.TestUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestUseCase",
+                        "printedName": "MaestroKit.TestUseCase",
+                        "usr": "s:10MaestroKit11TestUseCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10MaestroKit11TestUseCaseO18enableLiveBetsDatayA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO18enableLiveBetsDatayA2CmF",
+            "moduleName": "MaestroKit"
+          },
+          {
+            "kind": "Var",
             "name": "sixPackPreGameHomeTeamFavored",
             "printedName": "sixPackPreGameHomeTeamFavored",
             "children": [
@@ -72888,8 +74081,8 @@
           },
           {
             "kind": "Var",
-            "name": "myBetsStraightBetUnsettled",
-            "printedName": "myBetsStraightBetUnsettled",
+            "name": "myBetsStraightBetPending",
+            "printedName": "myBetsStraightBetPending",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -72919,8 +74112,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10MaestroKit11TestUseCaseO26myBetsStraightBetUnsettledyA2CmF",
-            "mangledName": "$s10MaestroKit11TestUseCaseO26myBetsStraightBetUnsettledyA2CmF",
+            "usr": "s:10MaestroKit11TestUseCaseO24myBetsStraightBetPendingyA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO24myBetsStraightBetPendingyA2CmF",
             "moduleName": "MaestroKit"
           },
           {
@@ -72999,8 +74192,8 @@
           },
           {
             "kind": "Var",
-            "name": "myBetsTeaserBetUnsettled",
-            "printedName": "myBetsTeaserBetUnsettled",
+            "name": "myBetsTeaserBetPending",
+            "printedName": "myBetsTeaserBetPending",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -73030,8 +74223,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10MaestroKit11TestUseCaseO24myBetsTeaserBetUnsettledyA2CmF",
-            "mangledName": "$s10MaestroKit11TestUseCaseO24myBetsTeaserBetUnsettledyA2CmF",
+            "usr": "s:10MaestroKit11TestUseCaseO22myBetsTeaserBetPendingyA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO22myBetsTeaserBetPendingyA2CmF",
             "moduleName": "MaestroKit"
           },
           {
@@ -73110,8 +74303,8 @@
           },
           {
             "kind": "Var",
-            "name": "myBetsBoostBetUnsettled",
-            "printedName": "myBetsBoostBetUnsettled",
+            "name": "myBetsBoostBetPending",
+            "printedName": "myBetsBoostBetPending",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -73141,8 +74334,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10MaestroKit11TestUseCaseO23myBetsBoostBetUnsettledyA2CmF",
-            "mangledName": "$s10MaestroKit11TestUseCaseO23myBetsBoostBetUnsettledyA2CmF",
+            "usr": "s:10MaestroKit11TestUseCaseO21myBetsBoostBetPendingyA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO21myBetsBoostBetPendingyA2CmF",
             "moduleName": "MaestroKit"
           },
           {
@@ -73217,6 +74410,43 @@
             "declKind": "EnumElement",
             "usr": "s:10MaestroKit11TestUseCaseO19myBetsParlayBetLostyA2CmF",
             "mangledName": "$s10MaestroKit11TestUseCaseO19myBetsParlayBetLostyA2CmF",
+            "moduleName": "MaestroKit"
+          },
+          {
+            "kind": "Var",
+            "name": "myBetsParlayBetPending",
+            "printedName": "myBetsParlayBetPending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MaestroKit.TestUseCase.Type) -> MaestroKit.TestUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestUseCase",
+                    "printedName": "MaestroKit.TestUseCase",
+                    "usr": "s:10MaestroKit11TestUseCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MaestroKit.TestUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestUseCase",
+                        "printedName": "MaestroKit.TestUseCase",
+                        "usr": "s:10MaestroKit11TestUseCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10MaestroKit11TestUseCaseO22myBetsParlayBetPendingyA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO22myBetsParlayBetPendingyA2CmF",
             "moduleName": "MaestroKit"
           },
           {
@@ -73845,41 +75075,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/PanelManagerView.swift",
-      "kind": "StringLiteral",
-      "offset": 956,
-      "length": 91,
-      "value": "\"https:\/\/static.gcp.maestro.io\/media\/664b9c57d59a7a431542d814\/67db106027ddcdcd2ecb97d4.riv\""
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/PanelManagerView.swift",
-      "kind": "StringLiteral",
-      "offset": 1075,
-      "length": 14,
-      "value": "\"stateMachine\""
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/PanelManagerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1160,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/PanelManagerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1183,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/PanelManagerView.swift",
-      "kind": "StringLiteral",
-      "offset": 1211,
-      "length": 14,
-      "value": "\"mainArtboard\""
-    },
-    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/CachedImageView.swift",
       "kind": "BooleanLiteral",
       "offset": 270,
@@ -74134,42 +75329,35 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 282,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 362,
+      "offset": 278,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 476,
+      "offset": 392,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 514,
+      "offset": 430,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 993,
+      "offset": 909,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 1045,
+      "offset": 961,
       "length": 3,
       "value": "0.1"
     },
@@ -75142,70 +76330,70 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1341,
+      "offset": 1347,
       "length": 14,
       "value": "\"\/caniplay\/v1\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1388,
+      "offset": 1394,
       "length": 12,
       "value": "\"\/stream\/v1\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1438,
+      "offset": 1444,
       "length": 17,
       "value": "\"\/userprofile\/v1\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1492,
+      "offset": 1498,
       "length": 12,
       "value": "\"\/active\/v2\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2684,
+      "offset": 2690,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2735,
+      "offset": 2741,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6557,
+      "offset": 6563,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6608,
+      "offset": 6614,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7925,
+      "offset": 8019,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7976,
+      "offset": 8070,
       "length": 5,
       "value": "false"
     },
@@ -75221,7 +76409,7 @@
       "kind": "StringLiteral",
       "offset": 774,
       "length": 45,
-      "value": "\"\/personalized\/site\/v2\/events\/401679842\/odds\""
+      "value": "\"\/personalized\/site\/v2\/events\/401721458\/odds\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Service\/ChannelService.swift",
@@ -75754,6 +76942,20 @@
       "offset": 372,
       "length": 2,
       "value": "18"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 499,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 574,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/KeyPlays\/View\/KeyPlaysProgressBarView.swift",
@@ -76577,9 +77779,44 @@
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13676,
+      "offset": 13686,
+      "length": 29,
+      "value": "\"mybets_allsports_green_icon\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13887,
+      "length": 23,
+      "value": "\"mybets_allsports_icon\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14085,
+      "length": 25,
+      "value": "\"mybets_green_check_icon\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14285,
+      "length": 25,
+      "value": "\"mybets_under_caret_icon\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14483,
       "length": 24,
       "value": "\"no-key-plays-available\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14680,
+      "length": 24,
+      "value": "\"winning-bet-cta-mockup\""
     }
   ]
 }

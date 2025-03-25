@@ -15,8 +15,7 @@ let package = Package(
             targets: ["MaestroKit.swift"]),
     ],
     dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url: "https://github.com/rive-app/rive-ios.git", .upToNextMajor(from: "6.7.3")),
     ],
     targets: [
         .binaryTarget(

@@ -1,0 +1,425 @@
+{
+    "entities": {
+        "teams": {
+            "130": {
+                "id": "130",
+                "uid": "s:40~l:41~t:130",
+                "guid": "c00151c6-cdd4-5aab-0130-37416052eb2a",
+                "slug": "michigan-wolverines",
+                "abbreviation": "MICH",
+                "displayName": "Michigan Wolverines",
+                "shortDisplayName": "Michigan",
+                "name": "Wolverines",
+                "nickname": "Michigan",
+                "location": "Michigan",
+                "color": "00274c",
+                "alternateColor": "ffcb05",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "clubhouse",
+                            "desktop",
+                            "team"
+                        ],
+                        "href": "https://www.espnqa.com/mens-college-basketball/team/_/id/130/michigan-wolverines",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            },
+            "164": {
+                "id": "164",
+                "uid": "s:40~l:41~t:164",
+                "guid": "425c8e51-59d0-75a1-0815-dc3556c5cfda",
+                "slug": "rutgers-scarlet-knights",
+                "abbreviation": "RUTG",
+                "displayName": "Rutgers Scarlet Knights",
+                "shortDisplayName": "Rutgers",
+                "name": "Scarlet Knights",
+                "nickname": "Rutgers",
+                "location": "Rutgers",
+                "color": "d21034",
+                "alternateColor": "ffffff",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": [
+                            "clubhouse",
+                            "desktop",
+                            "team"
+                        ],
+                        "href": "https://www.espnqa.com/mens-college-basketball/team/_/id/164/rutgers-scarlet-knights",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            }
+        }
+    },
+    "event": {
+        "id": "401721458",
+        "sport": "basketball",
+        "date": "2025-02-28T02:00Z",
+        "gameState": "post",
+        "bets": {
+            "odds": [
+                {
+                    "displayName": "Moneyline",
+                    "abbreviation": "ML",
+                    "type": "moneyline",
+                    "state": "close",
+                    "values": [
+                        {
+                            "odds": "-500",
+                            "outcome": "WIN",
+                            "team": "130",
+                            "type": "home"
+                        },
+                        {
+                            "odds": "+360",
+                            "outcome": "LOSS",
+                            "team": "164",
+                            "type": "away"
+                        }
+                    ]
+                },
+                {
+                    "displayName": "Moneyline",
+                    "abbreviation": "ML",
+                    "type": "moneyline",
+                    "state": "open",
+                    "values": [
+                        {
+                            "odds": "-700",
+                            "team": "130",
+                            "type": "home"
+                        },
+                        {
+                            "odds": "+450",
+                            "team": "164",
+                            "type": "away"
+                        }
+                    ]
+                },
+                {
+                    "displayName": "Total Points",
+                    "abbreviation": "Total",
+                    "type": "total",
+                    "state": "close",
+                    "values": [
+                        {
+                            "line": "o154.5",
+                            "odds": "-115",
+                            "outcome": "WIN",
+                            "type": "over"
+                        },
+                        {
+                            "line": "u154.5",
+                            "odds": "-105",
+                            "outcome": "LOSS",
+                            "type": "under"
+                        }
+                    ]
+                },
+                {
+                    "displayName": "Total Points",
+                    "abbreviation": "Total",
+                    "type": "total",
+                    "state": "open",
+                    "values": [
+                        {
+                            "line": "o154.5",
+                            "odds": "-105",
+                            "type": "over"
+                        },
+                        {
+                            "line": "u154.5",
+                            "odds": "-115",
+                            "type": "under"
+                        }
+                    ]
+                },
+                {
+                    "displayName": "Spread",
+                    "abbreviation": "Spread",
+                    "type": "pointSpread",
+                    "state": "close",
+                    "values": [
+                        {
+                            "line": "-9.5",
+                            "odds": "-105",
+                            "outcome": "LOSS",
+                            "team": "130",
+                            "type": "home"
+                        },
+                        {
+                            "line": "+9.5",
+                            "odds": "-115",
+                            "outcome": "WIN",
+                            "team": "164",
+                            "type": "away"
+                        }
+                    ]
+                },
+                {
+                    "displayName": "Spread",
+                    "abbreviation": "Spread",
+                    "type": "pointSpread",
+                    "state": "open",
+                    "values": [
+                        {
+                            "line": "-11.5",
+                            "odds": "-105",
+                            "team": "130",
+                            "type": "home"
+                        },
+                        {
+                            "line": "+11.5",
+                            "odds": "-115",
+                            "team": "164",
+                            "type": "away"
+                        }
+                    ]
+                }
+            ]
+        },
+        "featured": [
+            {
+                "id": "00015c79-3454-4356-bab6-af050554b761",
+                "text": "Carlos Santana Total Hits + Runs + RBIs",
+                "date": "2024-06-09T17:35Z",
+                "selections": [
+                    {
+                        "id": "5a61fd15-9a86-4769-af3f-52c0696c89eb",
+                        "text": "Over 5.5",
+                        "type": "over",
+                        "status": "closed",
+                        "odds": {
+                            "current": "+750"
+                        },
+                        "outcome": "LOSS"
+                    }
+                ]
+            },
+            {
+                "id": "00015c79-3454-4356-bab6-af050554b761",
+                "text": "Carlos Santana Total Hits + Runs + RBIs",
+                "date": "2024-06-09T17:35Z",
+                "selections": [
+                    {
+                        "id": "f54ad079-304e-43fe-a45a-96bd237c9c78",
+                        "text": "Under 5.5",
+                        "type": "under",
+                        "status": "closed",
+                        "odds": {
+                            "current": "-3000"
+                        },
+                        "outcome": "WIN",
+                        "icon": "https://a.espncdn.com/i/espnbet/mybets_under_caret_icon.png",
+                        "iconDark": "https://a.espncdn.com/i/espnbet/dark/mybets_under_caret_icon.png"
+                    }
+                ]
+            }
+        ]
+    },
+    "betsModule": {
+        "defaultTab": "live",
+        "upcoming": [
+            {
+                "id": "upcoming-promo",
+                "isEmpty": true,
+                "link": {
+                    "text": "Go to ESPN BET",
+                    "url": {
+                        "app": "sportscenter://x-callback-url/showExitModal?type=espnbet&url=https%3A%2F%2Fespnbet.app.link%2FMW9v6djV5Fb%3F%243p%3Da_espn",
+                        "web": "https://espnbet.app.link/?$3p=a_espn&CLR=espnbettingintegration&channel=espn-web&campaign=betting-integrations"
+                    }
+                },
+                "type": "promo",
+                "message": "No Upcoming Bets, Place a Bet Now with ESPN BET"
+            }
+        ],
+        "live": [
+            {
+                "id": "N05CU5OqLk5GR//uxZfIyVyjRhM=",
+                "type": "STRAIGHT",
+                "betStatus": "OPEN",
+                "outcome": "PENDING",
+                "overrideOutcome": "NOT_SET",
+                "betAmount": "1",
+                "payoutAmount": "1.90",
+                "odds": "-111",
+                "startTime": "2025-02-14T01:30Z",
+                "events": [
+                    {
+                        "displayName": "Total Points",
+                        "legs": [
+                            {
+                                "id": "3ca625d0-01f7-49a1-9f22-7172c725b217",
+                                "marketId": "6d0b38ef-f107-48cd-b8b4-e67cfb839cc2",
+                                "marketSelectionId": "3b123002-2d35-4a18-a249-6b878b6f6f95",
+                                "marketType": "total",
+                                "status": "PENDING",
+                                "odds": "-111",
+                                "boostType": "NONE",
+                                "selectionText": "Under 221.5",
+                                "type": "under",
+                                "points": "221.5",
+                                "marketText": "Total Points",
+                                "icon": "https://a.espncdn.com/i/espnbet/mybets_under_caret_green_icon.png",
+                                "iconDark": "https://a.espncdn.com/i/espnbet/dark/mybets_under_caret_green_icon.png",
+                                "url": "https://espnbet.app.link?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/nba/event/1db309ca-e43e-4758-9c3f-2b5c65b6d986&market_selection_id[0]=3b123002-2d35-4a18-a249-6b878b6f6f95&odds_numerator[0]=211&odds_denominator[0]=111",
+                                "accrued": {}
+                            }
+                        ]
+                    }
+                ],
+                "rewardInfo": {
+                    "type": "NONE"
+                },
+                "legCount": 1,
+                "isNoAction": false,
+                "betDisplayStatement": "to win"
+            },
+            {
+                "id": "live-promo",
+                "isEmpty": false,
+                "link": {
+                    "text": "Go to ESPN BET",
+                    "url": {
+                        "app": "sportscenter://x-callback-url/showExitModal?type=espnbet&url=https%3A%2F%2Fespnbet.app.link%2FMW9v6djV5Fb%3F%243p%3Da_espn",
+                        "web": "https://espnbet.app.link/?$3p=a_espn&CLR=espnbettingintegration&channel=espn-web&campaign=betting-integrations"
+                    }
+                },
+                "type": "promo",
+                "message": "Level Up Your Game And Place More Bets!"
+            }
+        ],
+        "settled": [
+            {
+                "id": "lnNE68vScVDsSYIz3VG6gp450hQ=",
+                "type": "STRAIGHT",
+                "betStatus": "SETTLED",
+                "outcome": "WIN",
+                "overrideOutcome": "NOT_SET",
+                "closedAtTime": "2025-02-23T02:49Z",
+                "betAmount": "1",
+                "payoutAmount": "4.15",
+                "odds": "+315",
+                "startTime": "2025-02-22T19:30Z",
+                "events": [
+                    {
+                        "displayName": "Match Result",
+                        "legs": [
+                            {
+                                "id": "d54da58b-a1ef-4f5e-98e2-38069ff97878",
+                                "marketId": "b61c2525-cc57-4d9a-a4a4-c90fd6bf14b4",
+                                "marketSelectionId": "d45adeb3-e188-4cf6-a2b0-a30c2bf0998f",
+                                "marketType": "threeway_moneyline",
+                                "status": "WIN",
+                                "odds": "+315",
+                                "boostType": "NONE",
+                                "selectionText": "Draw",
+                                "type": "draw",
+                                "marketText": "Match Result",
+                                "icon": "https://a.espncdn.com/i/espnbet/mybets_green_check_icon.png",
+                                "iconDark": "https://a.espncdn.com/i/espnbet/dark/mybets_green_check_icon.png",
+                                "url": "https://espnbet.app.link?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/soccer/organization/usa/competition/mls/event/2e91b769-e941-4ac3-b573-9529bb991c12&market_selection_id[0]=d45adeb3-e188-4cf6-a2b0-a30c2bf0998f&odds_numerator[0]=83&odds_denominator[0]=20",
+                                "accrued": {}
+                            }
+                        ]
+                    }
+                ],
+                "rewardInfo": {
+                    "type": "NONE"
+                },
+                "legCount": 1,
+                "isNoAction": false,
+                "betDisplayStatement": "you won"
+            },
+            {
+                "id": "gycQcLI94VZP1QMan7Wa3GMoh28=",
+                "type": "PARLAY_PLUS",
+                "betStatus": "SETTLED",
+                "outcome": "LOSS",
+                "overrideOutcome": "NOT_SET",
+                "closedAtTime": "2025-02-21T02:30Z",
+                "betAmount": "20",
+                "payoutAmount": "0.00",
+                "odds": "+240",
+                "startTime": "2025-02-21T00:00Z",
+                "events": [
+                    {
+                        "displayName": "Total Points",
+                        "legs": [
+                            {
+                                "id": "4ffd8d7e-206a-4708-9d6d-1bce3115e052",
+                                "marketId": "f418a1d0-e00d-4cf9-862c-7a786c965e8b",
+                                "marketSelectionId": "b61334d0-38d0-4e3e-9d50-1e8d80011b78",
+                                "marketType": "spread",
+                                "status": "LOSS",
+                                "odds": "+100",
+                                "boostType": "NONE",
+                                "selectionText": "MEM Grizzlies -2.5",
+                                "type": "away_spread",
+                                "points": "-2.5",
+                                "marketText": "Game Spread",
+                                "icon": "https://a.espncdn.com/i/espnbet/mybets_grey_x_icon.png",
+                                "iconDark": "https://a.espncdn.com/i/espnbet/dark/mybets_grey_x_icon.png",
+                                "url": "https://espnbet.app.link?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/nba/event/5bdef23f-8491-4cc2-b380-23be893a984a&market_selection_id[0]=b61334d0-38d0-4e3e-9d50-1e8d80011b78&odds_numerator[0]=2&odds_denominator[0]=1",
+                                "accrued": {}
+                            },
+                            {
+                                "id": "a6ca173f-692b-4e36-889c-314be0ce465c",
+                                "marketId": "8010f32a-4ac5-41aa-989d-eecc3bc8f0c3",
+                                "marketSelectionId": "c1bccbf6-660b-4599-b060-a85d64a9663c",
+                                "marketType": "total",
+                                "status": "WIN",
+                                "odds": "-110",
+                                "boostType": "NONE",
+                                "selectionText": "Under 249",
+                                "type": "under",
+                                "points": "249.0",
+                                "marketText": "Total Points",
+                                "icon": "https://a.espncdn.com/i/espnbet/mybets_green_check_icon.png",
+                                "iconDark": "https://a.espncdn.com/i/espnbet/dark/mybets_green_check_icon.png",
+                                "url": "https://espnbet.app.link?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/basketball/organization/united-states/competition/nba/event/5bdef23f-8491-4cc2-b380-23be893a984a&market_selection_id[0]=c1bccbf6-660b-4599-b060-a85d64a9663c&odds_numerator[0]=21&odds_denominator[0]=11",
+                                "accrued": {}
+                            }
+                        ]
+                    }
+                ],
+                "rewardInfo": {
+                    "type": "NONE"
+                },
+                "legCount": 2,
+                "icon": {
+                    "light": "https://a.espncdn.com/i/espnbet/sgp.png",
+                    "dark": "https://a.espncdn.com/i/espnbet/sgp.png"
+                },
+                "isNoAction": false,
+                "betDisplayStatement": "loss"
+            },
+            {
+                "id": "settled-promo",
+                "isEmpty": false,
+                "link": {
+                    "text": "Go to ESPN BET",
+                    "url": {
+                        "app": "sportscenter://x-callback-url/showExitModal?type=espnbet&url=https%3A%2F%2Fespnbet.app.link%2FMW9v6djV5Fb%3F%243p%3Da_espn",
+                        "web": "https://espnbet.app.link/?$3p=a_espn&CLR=espnbettingintegration&channel=espn-web&campaign=betting-integrations"
+                    }
+                },
+                "type": "promo",
+                "message": "What A Play!"
+            }
+        ]
+    }
+}

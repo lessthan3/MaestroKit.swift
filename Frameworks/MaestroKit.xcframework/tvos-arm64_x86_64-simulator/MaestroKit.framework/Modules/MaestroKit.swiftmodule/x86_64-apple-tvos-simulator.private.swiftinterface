@@ -1825,7 +1825,7 @@ public class NetworkManager {
   public init(environment: MaestroKit.WorkingEnvironment = .production)
   public func maestroApiRequest<ResponseType>(route: Swift.String, method: MaestroKit.NetworkManager.HTTPMethod = .GET, headers: [Swift.String : Swift.String]? = nil, maestroDefaultHeaders: (siteId: Swift.String, jwt: Swift.String)? = nil, body: Foundation.Data? = nil, maxRetryCount: Swift.Int = 3, skipResponseBodyDeserialization: Swift.Bool = false) async throws -> ResponseType where ResponseType : Swift.Decodable
   public func pollMaestroApiRequest<ResponseType>(route: Swift.String, frequency: Foundation.TimeInterval, method: MaestroKit.NetworkManager.HTTPMethod = .GET, headers: [Swift.String : Swift.String]? = nil, maestroDefaultHeaders: (siteId: Swift.String, jwt: Swift.String)? = nil, body: Foundation.Data? = nil, maxRetryCount: Swift.Int = 3, skipResponseBodyDeserialization: Swift.Bool = false) -> _Concurrency.AsyncThrowingStream<ResponseType, any Swift.Error> where ResponseType : Swift.Decodable
-  public func externalApiRequest<ResponseType>(route: Swift.String, method: MaestroKit.NetworkManager.HTTPMethod = .GET, body: Foundation.Data? = nil, maxRetryCount: Swift.Int = 3, skipResponseBodyDeserialization: Swift.Bool = false) async throws -> ResponseType where ResponseType : Swift.Decodable
+  public func externalApiRequest<ResponseType>(route: Swift.String, method: MaestroKit.NetworkManager.HTTPMethod = .GET, body: Foundation.Data? = nil, queryParams: [Swift.String : Swift.String]? = nil, headers: [Swift.String : Swift.String]? = nil, maxRetryCount: Swift.Int = 3, skipResponseBodyDeserialization: Swift.Bool = false) async throws -> ResponseType where ResponseType : Swift.Decodable
   public enum HTTPMethod : Swift.String {
     case GET, POST, DELETE, PUT
     public init?(rawValue: Swift.String)
@@ -1851,7 +1851,7 @@ public enum MaestroApiError : Swift.Error {
   public static let betsEndpoint: Swift.String
   public static let personalizedBetsEndpoint: Swift.String
   public static func getBets() async throws -> MaestroKit.BetsResponse
-  public static func getPersonalizedBets() async throws -> MaestroKit.PersonalizedBetsResponse
+  public static func getPersonalizedBets(swid: Swift.String) async throws -> MaestroKit.PersonalizedBetsResponse
   @objc deinit
 }
 public enum ChannelServiceError : Swift.Error {
@@ -1923,6 +1923,50 @@ public struct OddsDetails : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct BetsEvent : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BetsModule : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BetsModuleItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LinkItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct URLItem : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BetsModuleEvent : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BetsModuleLeg : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RewardInfo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Icon : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Accrued : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Promo : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Disclaimer : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -2308,6 +2352,8 @@ public struct StatsResponse : Swift.Codable {
   @objc deinit
 }
 public enum TestUseCase {
+  case enableMockBetsData
+  case enableLiveBetsData
   case sixPackPreGameHomeTeamFavored
   case sixPackPreGameAwayTeamFavored
   case sixPackPostGameHomeTeamFavored
@@ -2316,15 +2362,16 @@ public enum TestUseCase {
   case sixPackDuringGameAwayTeamFavored
   case myBetsStraightBetWon
   case myBetsStraightBetLost
-  case myBetsStraightBetUnsettled
+  case myBetsStraightBetPending
   case myBetsTeaserBetWon
   case myBetsTeaserBetLost
-  case myBetsTeaserBetUnsettled
+  case myBetsTeaserBetPending
   case myBetsBoostBetWon
   case myBetsBoostBetLost
-  case myBetsBoostBetUnsettled
+  case myBetsBoostBetPending
   case myBetsParlayBetWon
   case myBetsParlayBetLost
+  case myBetsParlayBetPending
   case myBetsParlayBetUnsettled
   case winningBetWithOverlay
   public static func == (a: MaestroKit.TestUseCase, b: MaestroKit.TestUseCase) -> Swift.Bool

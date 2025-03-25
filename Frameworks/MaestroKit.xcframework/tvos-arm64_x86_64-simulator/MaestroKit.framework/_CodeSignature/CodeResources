@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		itYB22jmVicLPWILZglmOaIVnBg=
+		+rKYPuaYOnFUs9+/9l4WSnxEjZQ=
 		</data>
 		<key>BentonSans-Black.ttf</key>
 		<data>
@@ -78,75 +78,123 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		JFlqiEbpxtb8zVLZzNlxc+XjUo4=
+		9SiiwcTsKoMNXbJMwIEvRxgll/w=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		HLTh9doLHZG4n9+8dmKaNCk1NrE=
+		snr1di+2WA23tgYt7ufw1nuurR8=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		RIKAh3nxm1afrGKKU3Tl+zomtlM=
+		X6ZZRIH33hcSRUSnKUDug2+5xLw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		dFrvEo370ZiDVrCYswiGZazRugg=
+		m3e8qOUvg8yITPf+jnQyVUnrs3I=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		RIKAh3nxm1afrGKKU3Tl+zomtlM=
+		X6ZZRIH33hcSRUSnKUDug2+5xLw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		+KgoZCvldRUMqEcHxJikJYGg4Lw=
+		pe37hWMEPXZsMcZLJZV1w631Wcw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		HLTh9doLHZG4n9+8dmKaNCk1NrE=
+		snr1di+2WA23tgYt7ufw1nuurR8=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		g+3EfA2+PBMPeJ6SXwDusWOaJz4=
+		Q8KJARC8J0F/pe07kqPTs+u2Fc0=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		wP3bmX36tlSfK9Q/5EFd8iWsjQo=
+		jCrx2ta3LiQiLAzQie4hsHhn9qM=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		g+3EfA2+PBMPeJ6SXwDusWOaJz4=
+		Q8KJARC8J0F/pe07kqPTs+u2Fc0=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		oYxv9T6vS6Q0Rmpt2YdKA8buz6M=
+		oiC0Mugb4C2LcC2vAY44eNbU29k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		lQQ5J6GTXt/jar63QaoOduEXIcY=
 		</data>
+		<key>myBetsBoostBetLost_response.json</key>
+		<data>
+		AeiFKSQXjORsA6hkuhkdba+8sTs=
+		</data>
+		<key>myBetsBoostBetPending_response.json</key>
+		<data>
+		QZ01EdcibExAWw5EvbettsTfXbA=
+		</data>
+		<key>myBetsBoostBetWon_response.json</key>
+		<data>
+		dgePJf9EsuVKDASmshROC22I+v4=
+		</data>
+		<key>myBetsParlayBetLost_response.json</key>
+		<data>
+		FPbQu/fzsleEMFZDXwfLC0WaKj4=
+		</data>
+		<key>myBetsParlayBetPending_response.json</key>
+		<data>
+		/wzax5lEkm3X/8h9aD1qO/ryX/g=
+		</data>
+		<key>myBetsParlayBetWon_response.json</key>
+		<data>
+		Y9uVHsafr59rzT/VCL7Zw75TyS0=
+		</data>
+		<key>myBetsStraightBetLost_response.json</key>
+		<data>
+		Yp7cZGxt1l7rrrCgZMUToxez/w4=
+		</data>
+		<key>myBetsStraightBetPending_response.json</key>
+		<data>
+		ccKZ23ysU1UpkGyZBWBUvTIDD6I=
+		</data>
+		<key>myBetsStraightBetWon_response.json</key>
+		<data>
+		R2siIPPacfD0kUJgsrm2TqShrXY=
+		</data>
+		<key>myBetsTeaserBetLost_response.json</key>
+		<data>
+		yNQDSTCdENMSERoGhMua5ZYNbRE=
+		</data>
+		<key>myBetsTeaserBetPending_response.json</key>
+		<data>
+		BUceTadKhxNFaDzp1t13BA7suxA=
+		</data>
+		<key>myBetsTeaserBetWon_response.json</key>
+		<data>
+		VTVWkW9dFXAk+/JRoLS7wjUoH+8=
+		</data>
 		<key>sixPackDuringGameAwayTeamFavored_response.json</key>
 		<data>
-		FC4ceawd3vuFs2Fym0TbxWDOu0k=
+		FxNSFuhC+J2zkvSBKXfZUtWSZBI=
 		</data>
 		<key>sixPackDuringGameHomeTeamFavored_response.json</key>
 		<data>
-		QFr9CDuW5FJIloLag9QunxGetGA=
+		yGcrCbKu971CUDjto4iyycq+2Qk=
 		</data>
 		<key>sixPackPostGameAwayTeamFavored_response.json</key>
 		<data>
-		8iyYJnvgjL0Y1EJ2+3yDQS6mLdw=
+		axtDHwJBxNUj1vl9t0Sj4NlApXw=
 		</data>
 		<key>sixPackPostGameHomeTeamFavored_response.json</key>
 		<data>
-		jGykk09Dshb/XkSI2nbeJ7/9xRc=
+		Y0nxy9fffgK5oRn8mJiL27rwVbk=
 		</data>
 		<key>sixPackPreGameAwayTeamFavored_response.json</key>
 		<data>
-		LBxUMxMITNw7kgLcJyjh6GhUqvQ=
+		6oGzTDcToDvNOjYpEgC8W+DXRs0=
 		</data>
 		<key>sixPackPreGameHomeTeamFavored_response.json</key>
 		<data>
-		XSDO0j7A/gzeO94fcar6UCPoL1w=
+		dyrBgjDqBYATV3DchECFD5EHvAw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -155,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nNomOJisz4BAH2goV8Px2WBLEbPAHjtz3TbvyK+0CcQ=
+			2KtFjAcNbOLoP8D2JOCZ6FEYqp4zobsAxabVcE9mxeY=
 			</data>
 		</dict>
 		<key>BentonSans-Black.ttf</key>
@@ -281,70 +329,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0i8JoijQx09qQVCV5rL7CIPH2/eHjDt5aH1PPeoXV0A=
+			iBUBHrDGFBpabe2AhElPp4k8e8Qo4GPjfIS/y10JDzU=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pE80w2KFC5IH6qZZpttvLumLviFLPpmntsypKh+Lb/A=
+			byaK2B3M+ePV62sq8r2yUoDLaATYKvKkSIZqiWjmG2s=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4zStaXP3Y7Oybt25xB65P2VuXhoxy+WprsP+Hh7otcI=
+			A+jcZHYtOoWL7lQItYIO7ockeABqZ8VKY4wpu5HdhDA=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pE80w2KFC5IH6qZZpttvLumLviFLPpmntsypKh+Lb/A=
+			byaK2B3M+ePV62sq8r2yUoDLaATYKvKkSIZqiWjmG2s=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cBzT9lldAYux02G9q5yqb1wsVKCVRWVhnydgr8Pr7aM=
+			wh4be3/8xy+q14UKKHHGr1qGIRPHXcGYLKPx04nxpns=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0i8JoijQx09qQVCV5rL7CIPH2/eHjDt5aH1PPeoXV0A=
+			iBUBHrDGFBpabe2AhElPp4k8e8Qo4GPjfIS/y10JDzU=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ojT/QlkwklyJNuPNv+qL1lIGFwKY0RubiIK0RVR3XA=
+			4V4qnGclc1FOVcPZWzcJiLeg/HpMMEy1+THoAqQOmu0=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			weV6N1xhESzkfTw1Wg8b1DObq3Y8IQYGIuge2G+nQD0=
+			P5TDxj8BudfS5hcQhNY6Vg2HFkYGK9RKRicDryvNulA=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ojT/QlkwklyJNuPNv+qL1lIGFwKY0RubiIK0RVR3XA=
+			4V4qnGclc1FOVcPZWzcJiLeg/HpMMEy1+THoAqQOmu0=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vvL8SEqQU1ijxD7XV6D6bGy+p8X2EATK+CiXqenB2m0=
+			Gw2B+v1Hy/M0q+q5j9/0Gxr+vFfpOK5tiZqzp49rn9w=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -354,46 +402,130 @@
 			k5gEfYD/OyYOMmZ8mHnffOSf60RUPedm+k0lzY2fERg=
 			</data>
 		</dict>
+		<key>myBetsBoostBetLost_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			AyPrPwhRh3a+oIFdkZeG3/owpCpbziDFSDUJsqpCe40=
+			</data>
+		</dict>
+		<key>myBetsBoostBetPending_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iL0IE4OUMKmAEft6TiFRr29OVt5SM/egopk0QfHL7TU=
+			</data>
+		</dict>
+		<key>myBetsBoostBetWon_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qmktNgczcAiVc89MPk54lTSGiuBhzmJyHNmonOTIuOI=
+			</data>
+		</dict>
+		<key>myBetsParlayBetLost_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GacwFlgL/nxyVAUU6Q68sH3LarQ3sp5IiNipG+1ta0g=
+			</data>
+		</dict>
+		<key>myBetsParlayBetPending_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			40rQW51uSHmIAFfqdvXPfnkpT3zVWglmUg2yj+vuXC8=
+			</data>
+		</dict>
+		<key>myBetsParlayBetWon_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LQyjNheNKA+Wk3JVEjxcl6vVWLKwv6offC0EciqufPw=
+			</data>
+		</dict>
+		<key>myBetsStraightBetLost_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pRil/vp1BfnsuJMCWvRFVfCqEKWXfaNi8f4yR69xL3Q=
+			</data>
+		</dict>
+		<key>myBetsStraightBetPending_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yi0PbURaSfmUZi7IR6cogYfwUMhPyPM00SMkSTfDAUI=
+			</data>
+		</dict>
+		<key>myBetsStraightBetWon_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qigBg/C759//k4lkv5LqNKK7JM/K+VARVTIgE0+mlPY=
+			</data>
+		</dict>
+		<key>myBetsTeaserBetLost_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			cIIk/hUpj2ZamSVsJ8L5y7n6JB/N1/CmeL2/iCEmTIw=
+			</data>
+		</dict>
+		<key>myBetsTeaserBetPending_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			T47YiiG9QtRB0d2lXniqR7K0vS9C2tmlQKg/EJVSBrA=
+			</data>
+		</dict>
+		<key>myBetsTeaserBetWon_response.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			roK6rIFIOuANasGzgQBt9j318YgThyUzk8mabtsdwDs=
+			</data>
+		</dict>
 		<key>sixPackDuringGameAwayTeamFavored_response.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TvSfJqxZMCzs03zsFfodqw0OJZ8CpAmc+5FPKSe95zQ=
+			7XqHgcwlDujRUktn6dKqUvZFghaMqBMRwlozonRshLs=
 			</data>
 		</dict>
 		<key>sixPackDuringGameHomeTeamFavored_response.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4G+DX8m9CpCzYbf7Xg+zx3tDC/6d5Zy1mPY8e8wjpYM=
+			W3eWL19xxqJ9ShxZAAQR0mrz6XP0gyj4vaFPMgtu/z0=
 			</data>
 		</dict>
 		<key>sixPackPostGameAwayTeamFavored_response.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/JSbJsUkzIM+rZdC3vkWimEkLVaAlR1D6tlfxfgCVS0=
+			7c95YYy3ZPw0qAThJNeI4MaXD8qNBxH5+0+Y9SgMqQ4=
 			</data>
 		</dict>
 		<key>sixPackPostGameHomeTeamFavored_response.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CTQkq/XH80NNovlD1UM2iQqVQWLcc5SRORFbl+zvMyo=
+			8uxY8vCj49hqKAnFzkczH3aiSkAC/eZFi20UZ8Nf0LE=
 			</data>
 		</dict>
 		<key>sixPackPreGameAwayTeamFavored_response.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i6w239MfqPVZ9hOTjdBXPWxD5FMHR7ujiLmWMLqJ5xM=
+			0UM5jDu9axwPZJPtNHSLC7f1ISUxcVnAq+r9P3zzOcc=
 			</data>
 		</dict>
 		<key>sixPackPreGameHomeTeamFavored_response.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			47w8S2/ZTSqdavU58dBfsnlu9IhsMC7bome7uuwNWn0=
+			wjOfRf7jPSq/s4vyk13IOkOn++Dy9P3wXOPEG4esFC0=
 			</data>
 		</dict>
 	</dict>

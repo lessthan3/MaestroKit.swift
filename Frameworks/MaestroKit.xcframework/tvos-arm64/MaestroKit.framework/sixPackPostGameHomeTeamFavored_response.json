@@ -1,32 +1,6 @@
 {
     "entities": {
         "teams": {
-            "18": {
-                "id": "18",
-                "uid": "s:20~l:28~t:18",
-                "guid": "1234abcd-5678-ef90-1122-334455667788",
-                "slug": "buffalo-bills",
-                "abbreviation": "BUF",
-                "displayName": "Buffalo Bills",
-                "shortDisplayName": "Bills",
-                "name": "Bills",
-                "nickname": "Bills",
-                "location": "Buffalo",
-                "color": "00338d",
-                "alternateColor": "c60c30",
-                "links": [
-                    {
-                        "language": "en-US",
-                        "rel": ["clubhouse", "desktop", "team"],
-                        "href": "https://www.espn.com/nfl/team/_/name/buf/buffalo-bills",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false,
-                        "isHidden": false
-                    }
-                ]
-            },
             "11": {
                 "id": "11",
                 "uid": "s:20~l:28~t:11",
@@ -34,6 +8,7 @@
                 "slug": "seattle-seahawks",
                 "abbreviation": "SEA",
                 "displayName": "Seattle Seahawks",
+                "favored":true,
                 "shortDisplayName": "Seahawks",
                 "name": "Seahawks",
                 "nickname": "Seahawks",
@@ -45,6 +20,33 @@
                         "language": "en-US",
                         "rel": ["clubhouse", "desktop", "team"],
                         "href": "https://www.espn.com/nfl/team/_/name/sea/seattle-seahawks",
+                        "text": "Clubhouse",
+                        "shortText": "Clubhouse",
+                        "isExternal": false,
+                        "isPremium": false,
+                        "isHidden": false
+                    }
+                ]
+            },
+            "18": {
+                "id": "18",
+                "uid": "s:20~l:28~t:18",
+                "guid": "1234abcd-5678-ef90-1122-334455667788",
+                "slug": "buffalo-bills",
+                "abbreviation": "BUF",
+                "displayName": "Buffalo Bills",
+                "favored":false,
+                "shortDisplayName": "Bills",
+                "name": "Bills",
+                "nickname": "Bills",
+                "location": "Buffalo",
+                "color": "00338d",
+                "alternateColor": "c60c30",
+                "links": [
+                    {
+                        "language": "en-US",
+                        "rel": ["clubhouse", "desktop", "team"],
+                        "href": "https://www.espn.com/nfl/team/_/name/buf/buffalo-bills",
                         "text": "Clubhouse",
                         "shortText": "Clubhouse",
                         "isExternal": false,
@@ -91,14 +93,14 @@
                         "line": "-1.5",
                         "odds": "-110",
                         "outcome": "WIN",
-                        "team": "18",
+                        "team": "11",
                         "type": "home"
                     },
                     {
                         "line": "+1.5",
                         "odds": "+115",
                         "outcome": "LOSS",
-                        "team": "11",
+                        "team": "18",
                         "type": "away"
                     }
                 ]
@@ -149,12 +151,12 @@
                 "values": [
                     {
                         "odds": "-130",
-                        "team": "18",
+                        "team": "11",
                         "type": "home"
                     },
                     {
                         "odds": "+150",
-                        "team": "11",
+                        "team": "18",
                         "type": "away"
                     }
                 ]
