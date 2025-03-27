@@ -78,11 +78,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		9A2UqzaQ+bYXhmIAx/Pg1gdhO0I=
+		XEWgYj/MZ1+eJD/zSSvZR8OPbPk=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		MG7Y3oTTVk61qnw56IX+jPLBs/E=
+		mgCFRuyWz7mZbWodKoUNFZ/5Ppw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		qy/MvXyAM+P+REX8IYB6rTDiBp8=
+		tfLU7Wg5a7KiChvLsMGHj+/XZ+Y=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		MG7Y3oTTVk61qnw56IX+jPLBs/E=
+		mgCFRuyWz7mZbWodKoUNFZ/5Ppw=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		Gr2qypNQj9soJ+YvV31liAdxqPw=
+		Ayovra40ULAKSZnUInpKugRT0Y4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -329,7 +329,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MVouVzkz35bLYVeYKWjJO9ZngMrztEPuHpPdHQUqVUk=
+			JZr83gcQ5Moyx7OH9VSD/DD6NQ6FAmskyRzCSsnEmzQ=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -357,14 +357,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I9ea/wPATfzo0Wbn2K/hLnBCm/F7Xx8u72akXT6QI9A=
+			OwDr4n84ElBhsqywAwhvoU1+hkND85waVwjkaYWkxwE=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MVouVzkz35bLYVeYKWjJO9ZngMrztEPuHpPdHQUqVUk=
+			JZr83gcQ5Moyx7OH9VSD/DD6NQ6FAmskyRzCSsnEmzQ=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
@@ -392,7 +392,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OPlvldlanJi+0XTvbBJsPIORJGCoN4M457wpf2liS4A=
+			RiJuu8yWgMUo9wjsjVw+rEqxmQq5Qg3PmGhbEmEQ/y4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
