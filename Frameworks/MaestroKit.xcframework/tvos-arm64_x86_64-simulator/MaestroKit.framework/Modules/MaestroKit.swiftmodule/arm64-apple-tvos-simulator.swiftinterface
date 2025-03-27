@@ -176,9 +176,6 @@ public enum MaestroLogger {
   public var clientAppSwid: Swift.String?
   public var pollFrequency: Swift.Float
   public var progressUpdateFrequency: Swift.Float
-  public var isAuthorizedClient: Swift.Bool {
-    get
-  }
   public func setSiteID(_ siteID: Swift.String?)
   public func setMaestroJwt(_ jwt: Swift.String?)
   public func setClientAppSwid(_ swid: Swift.String?)
@@ -1848,10 +1845,6 @@ public enum MaestroApiError : Swift.Error {
   case badRequest(statusCode: Swift.Int, message: Swift.String?)
 }
 @_hasMissingDesignatedInitializers public class BetsService {
-  public static let betsEndpoint: Swift.String
-  public static let personalizedBetsEndpoint: Swift.String
-  public static func getBets() async throws -> MaestroKit.BetsResponse
-  public static func getPersonalizedBets(swid: Swift.String) async throws -> MaestroKit.PersonalizedBetsResponse
   @objc deinit
 }
 public enum ChannelServiceError : Swift.Error {
@@ -1983,9 +1976,6 @@ public struct Disclaimer : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
-    get
-  }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit13BetsBoostViewV4bodyQrvp", 0) __
 }
@@ -2041,9 +2031,6 @@ public struct Disclaimer : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var imageView: some SwiftUICore.View {
-    get
-  }
   @_Concurrency.MainActor @preconcurrency public var titlesView: some SwiftUICore.View {
     get
   }
@@ -2068,6 +2055,13 @@ public struct Disclaimer : Swift.Codable {
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16BetsHotPropsViewV4bodyQrvp", 0) __
+}
+@_Concurrency.MainActor @preconcurrency public struct BetsLineItemImageView : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit21BetsLineItemImageViewV4bodyQrvp", 0) __
 }
 @_Concurrency.MainActor @preconcurrency public struct BetsLocationDisclaimerView : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -2097,9 +2091,6 @@ public struct Disclaimer : Swift.Codable {
     get
   }
   @_Concurrency.MainActor @preconcurrency public var dividerView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -2132,9 +2123,6 @@ public struct Disclaimer : Swift.Codable {
   @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
-    get
-  }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit16BetsStraightViewV4bodyQrvp", 0) __
 }
@@ -2149,9 +2137,6 @@ public struct Disclaimer : Swift.Codable {
     get
   }
   @_Concurrency.MainActor @preconcurrency public var lineItemsView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var footerView: some SwiftUICore.View {
     get
   }
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -2173,9 +2158,11 @@ public struct Disclaimer : Swift.Codable {
 }
 @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class BetsViewModel {
   @objc deinit
-  @_Concurrency.MainActor public func startPolling() async
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+}
+extension MaestroKit.BetsViewModel {
+  @_Concurrency.MainActor public func startPolling() async
 }
 public struct FantasyResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -2532,6 +2519,7 @@ extension MaestroKit.BetsDividerView : Swift.Sendable {}
 extension MaestroKit.BetsFocusableItemView : Swift.Sendable {}
 extension MaestroKit.BetsHotPropsLineItemView : Swift.Sendable {}
 extension MaestroKit.BetsHotPropsView : Swift.Sendable {}
+extension MaestroKit.BetsLineItemImageView : Swift.Sendable {}
 extension MaestroKit.BetsLocationDisclaimerView : Swift.Sendable {}
 extension MaestroKit.BetsParlayLineItemView : Swift.Sendable {}
 extension MaestroKit.BetsParlayView : Swift.Sendable {}

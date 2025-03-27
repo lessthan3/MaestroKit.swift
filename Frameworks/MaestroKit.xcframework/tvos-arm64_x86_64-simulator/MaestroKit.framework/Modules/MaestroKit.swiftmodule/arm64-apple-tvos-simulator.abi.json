@@ -4589,46 +4589,6 @@
             ]
           },
           {
-            "kind": "Var",
-            "name": "isAuthorizedClient",
-            "printedName": "isAuthorizedClient",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit0A7ManagerC18isAuthorizedClientSbvp",
-            "mangledName": "$s10MaestroKit0A7ManagerC18isAuthorizedClientSbvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit0A7ManagerC18isAuthorizedClientSbvg",
-                "mangledName": "$s10MaestroKit0A7ManagerC18isAuthorizedClientSbvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "setSiteID",
             "printedName": "setSiteID(_:)",
@@ -61647,165 +61607,6 @@
         "kind": "TypeDecl",
         "name": "BetsService",
         "printedName": "BetsService",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "betsEndpoint",
-            "printedName": "betsEndpoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit11BetsServiceC12betsEndpointSSvpZ",
-            "mangledName": "$s10MaestroKit11BetsServiceC12betsEndpointSSvpZ",
-            "moduleName": "MaestroKit",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit11BetsServiceC12betsEndpointSSvgZ",
-                "mangledName": "$s10MaestroKit11BetsServiceC12betsEndpointSSvgZ",
-                "moduleName": "MaestroKit",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "personalizedBetsEndpoint",
-            "printedName": "personalizedBetsEndpoint",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit11BetsServiceC012personalizedC8EndpointSSvpZ",
-            "mangledName": "$s10MaestroKit11BetsServiceC012personalizedC8EndpointSSvpZ",
-            "moduleName": "MaestroKit",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit11BetsServiceC012personalizedC8EndpointSSvgZ",
-                "mangledName": "$s10MaestroKit11BetsServiceC012personalizedC8EndpointSSvgZ",
-                "moduleName": "MaestroKit",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "getBets",
-            "printedName": "getBets()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BetsResponse",
-                "printedName": "MaestroKit.BetsResponse",
-                "usr": "s:10MaestroKit12BetsResponseV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit11BetsServiceC03getC0AA0C8ResponseVyYaKFZ",
-            "mangledName": "$s10MaestroKit11BetsServiceC03getC0AA0C8ResponseVyYaKFZ",
-            "moduleName": "MaestroKit",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getPersonalizedBets",
-            "printedName": "getPersonalizedBets(swid:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PersonalizedBetsResponse",
-                "printedName": "MaestroKit.PersonalizedBetsResponse",
-                "usr": "s:10MaestroKit24PersonalizedBetsResponseV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit11BetsServiceC015getPersonalizedC04swidAA0fC8ResponseVSS_tYaKFZ",
-            "mangledName": "$s10MaestroKit11BetsServiceC015getPersonalizedC04swidAA0fC8ResponseVSS_tYaKFZ",
-            "moduleName": "MaestroKit",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "throwing": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
         "declKind": "Class",
         "usr": "s:10MaestroKit11BetsServiceC",
         "mangledName": "$s10MaestroKit11BetsServiceC",
@@ -64901,62 +64702,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "footerView",
-            "printedName": "footerView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit13BetsBoostViewV06footerE0Qrvp",
-            "mangledName": "$s10MaestroKit13BetsBoostViewV06footerE0Qrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit13BetsBoostViewV06footerE0Qrvg",
-                "mangledName": "$s10MaestroKit13BetsBoostViewV06footerE0Qrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Struct",
@@ -66021,62 +65766,6 @@
           },
           {
             "kind": "Var",
-            "name": "imageView",
-            "printedName": "imageView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit24BetsHotPropsLineItemViewV05imageH0Qrvp",
-            "mangledName": "$s10MaestroKit24BetsHotPropsLineItemViewV05imageH0Qrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit24BetsHotPropsLineItemViewV05imageH0Qrvg",
-                "mangledName": "$s10MaestroKit24BetsHotPropsLineItemViewV05imageH0Qrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "titlesView",
             "printedName": "titlesView",
             "children": [
@@ -66493,6 +66182,140 @@
         "declKind": "Struct",
         "usr": "s:10MaestroKit16BetsHotPropsViewV",
         "mangledName": "$s10MaestroKit16BetsHotPropsViewV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "View",
+            "printedName": "View",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Body",
+                "printedName": "Body",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7SwiftUI4ViewP",
+            "mangledName": "$s7SwiftUI4ViewP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BetsLineItemImageView",
+        "printedName": "BetsLineItemImageView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "body",
+            "printedName": "body",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OpaqueTypeArchetype",
+                "printedName": "some SwiftUI.View",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "View",
+                    "printedName": "SwiftUI.View",
+                    "usr": "s:7SwiftUI4ViewP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit21BetsLineItemImageViewV4bodyQrvp",
+            "mangledName": "$s10MaestroKit21BetsLineItemImageViewV4bodyQrvp",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OpaqueTypeArchetype",
+                    "printedName": "some SwiftUI.View",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "View",
+                        "printedName": "SwiftUI.View",
+                        "usr": "s:7SwiftUI4ViewP"
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit21BetsLineItemImageViewV4bodyQrvg",
+                "mangledName": "$s10MaestroKit21BetsLineItemImageViewV4bodyQrvg",
+                "moduleName": "MaestroKit",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit21BetsLineItemImageViewV",
+        "mangledName": "$s10MaestroKit21BetsLineItemImageViewV",
         "moduleName": "MaestroKit",
         "declAttributes": [
           "Preconcurrency",
@@ -67114,62 +66937,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "footerView",
-            "printedName": "footerView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit14BetsParlayViewV06footerE0Qrvp",
-            "mangledName": "$s10MaestroKit14BetsParlayViewV06footerE0Qrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit14BetsParlayViewV06footerE0Qrvg",
-                "mangledName": "$s10MaestroKit14BetsParlayViewV06footerE0Qrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Struct",
@@ -67740,62 +67507,6 @@
                 "accessorKind": "get"
               }
             ]
-          },
-          {
-            "kind": "Var",
-            "name": "footerView",
-            "printedName": "footerView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit16BetsStraightViewV06footerE0Qrvp",
-            "mangledName": "$s10MaestroKit16BetsStraightViewV06footerE0Qrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit16BetsStraightViewV06footerE0Qrvg",
-                "mangledName": "$s10MaestroKit16BetsStraightViewV06footerE0Qrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
           }
         ],
         "declKind": "Struct",
@@ -68094,62 +67805,6 @@
                 "declKind": "Accessor",
                 "usr": "s:10MaestroKit14BetsTeaserViewV09lineItemsE0Qrvg",
                 "mangledName": "$s10MaestroKit14BetsTeaserViewV09lineItemsE0Qrvg",
-                "moduleName": "MaestroKit",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "footerView",
-            "printedName": "footerView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "OpaqueTypeArchetype",
-                "printedName": "some SwiftUI.View",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "View",
-                    "printedName": "SwiftUI.View",
-                    "usr": "s:7SwiftUI4ViewP"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10MaestroKit14BetsTeaserViewV06footerE0Qrvp",
-            "mangledName": "$s10MaestroKit14BetsTeaserViewV06footerE0Qrvp",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some SwiftUI.View",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "View",
-                        "printedName": "SwiftUI.View",
-                        "usr": "s:7SwiftUI4ViewP"
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10MaestroKit14BetsTeaserViewV06footerE0Qrvg",
-                "mangledName": "$s10MaestroKit14BetsTeaserViewV06footerE0Qrvg",
                 "moduleName": "MaestroKit",
                 "accessorKind": "get"
               }
@@ -68544,6 +68199,7 @@
               "Custom",
               "AccessControl"
             ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -68606,6 +68262,26 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "MaestroKit",
         "declAttributes": [
@@ -68731,8 +68407,8 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
+        "name": "UIKit",
+        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "MaestroKit",
         "declAttributes": [
@@ -75160,92 +74836,99 @@
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1419,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1428,
+      "offset": 1494,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1522,
+      "offset": 1588,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1737,
+      "offset": 1803,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1916,
+      "offset": 1982,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1958,
+      "offset": 2024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Array",
-      "offset": 2074,
+      "offset": 2140,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Dictionary",
-      "offset": 2130,
+      "offset": 2196,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "FloatLiteral",
-      "offset": 2207,
+      "offset": 2273,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2256,
+      "offset": 2322,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2299,
+      "offset": 2365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "StringLiteral",
-      "offset": 2412,
+      "offset": 2478,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2454,
+      "offset": 2520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Array",
-      "offset": 2544,
+      "offset": 2610,
       "length": 2,
       "value": "[]"
     },
@@ -75360,6 +75043,20 @@
       "offset": 961,
       "length": 3,
       "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1316,
+      "length": 40,
+      "value": "\"{45636D22-B82E-494E-B0BD-DBF25AB34BB5}\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1392,
+      "length": 346,
+      "value": "\"AEA916LtQmdBEZaslSodIec3p\/BaLeVs\/\/M0vT1\/lWr7EB\/O3KAYs194dsnz\/ytViMfYJw7sw0psPTaLeiDSljkUoZ8oei6NXfyANi2aHiFNzXJVRhVX9RxgBivWJbwMW9+UNriY+OpQAtmvdJ8Z4YImkg8I\/ObizzP1p2us9RpqrKByaG0hejzX7qGx3EkkD0gLi5jp19IZxVGrqvXusM8rOSAiKytR0by9elfs0KGCXjdw6M0\/qmolfyQviKQpTlwakeixqUsvngwX+Ws\/rgm88IuQFwfdg9KWgFkMPhwEFj3LMdu155Gbh4fJM8p2wwtN+\/MtynUXQPiGXWoB9AZC\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/Channel.swift",
@@ -76398,20 +76095,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Service\/BetsService.swift",
-      "kind": "StringLiteral",
-      "offset": 692,
-      "length": 32,
-      "value": "\"\/site\/v2\/events\/401671878\/odds\""
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Service\/BetsService.swift",
-      "kind": "StringLiteral",
-      "offset": 774,
-      "length": 45,
-      "value": "\"\/personalized\/site\/v2\/events\/401721458\/odds\""
-    },
-    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Service\/ChannelService.swift",
       "kind": "StringLiteral",
       "offset": 203,
@@ -76946,16 +76629,9 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 499,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/Core View Model\/BetsViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 574,
-      "length": 4,
-      "value": "true"
+      "offset": 606,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/KeyPlays\/View\/KeyPlaysProgressBarView.swift",
