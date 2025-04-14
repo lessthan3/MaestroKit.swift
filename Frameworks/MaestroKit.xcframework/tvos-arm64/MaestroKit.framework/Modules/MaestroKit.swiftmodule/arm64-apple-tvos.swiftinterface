@@ -65,6 +65,7 @@ public enum MaestroPanelType {
   @_Concurrency.MainActor func shouldHideOverlay()
   @_Concurrency.MainActor func trackAction(analytics: [Swift.String : Swift.String])
   @_Concurrency.MainActor func trackImpression(analytics: [Swift.String : Swift.String])
+  @_Concurrency.MainActor func userDidRequestLogin()
 }
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
   @_Concurrency.MainActor func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
@@ -82,10 +83,10 @@ public enum MaestroPanelType {
   @_Concurrency.MainActor func getLastPlayedClipIndex() -> Swift.Int?
   @_Concurrency.MainActor func getCurrentClipPlaybackProgress() -> Swift.Double?
   @_Concurrency.MainActor func getKeyPlaysCount() -> Swift.Int?
-  @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType)
+  @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
 }
 @_Concurrency.MainActor public class MaestroEventViewModel : Combine.ObservableObject {
-  @_Concurrency.MainActor public init(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate)
+  @_Concurrency.MainActor public init(eventID: Swift.String, eventDelegate: any MaestroKit.MaestroEventDelegate, viewModelDelegate: any MaestroKit.MaestroManagerViewModelDelegate)
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
@@ -107,7 +108,7 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor public func getLastPlayedClipIndex() -> Swift.Int?
   @_Concurrency.MainActor public func getCurrentClipPlaybackProgress() -> Swift.Double?
   @_Concurrency.MainActor public func getKeyPlaysCount() -> Swift.Int?
-  @_Concurrency.MainActor public func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType)
+  @_Concurrency.MainActor public func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
 }
 @_hasMissingDesignatedInitializers public actor MaestroManager {
   public static let shared: MaestroKit.MaestroManager
@@ -131,6 +132,9 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func getCurrentJwt() async -> Swift.String?
   nonisolated public func getCurrentSwid() async -> Swift.String?
 }
+extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerViewModelDelegate {
+  public func userIsAuthenticated() async -> Swift.Bool
+}
 public protocol MaestroManagerInterface {
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String)
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate) async -> any MaestroKit.MaestroEventInterface
@@ -140,6 +144,9 @@ public protocol MaestroManagerInterface {
   nonisolated func getCurrentSiteID() async -> Swift.String?
   nonisolated func getCurrentJwt() async -> Swift.String?
   nonisolated func getCurrentSwid() async -> Swift.String?
+}
+public protocol MaestroManagerViewModelDelegate : AnyObject {
+  func userIsAuthenticated() async -> Swift.Bool
 }
 public struct SiteResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -255,6 +262,10 @@ public enum TestUseCase {
   case myBetsParlayBetPending
   case myBetsParlayBetUnsettled
   case winningBetWithOverlay
+  case simulateFantasyUserWithLeagues
+  case simulateFantasyUserWithoutLeagues
+  case enableMockFantasyData
+  case enableLiveFantasyData
   public static func == (a: MaestroKit.TestUseCase, b: MaestroKit.TestUseCase) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
