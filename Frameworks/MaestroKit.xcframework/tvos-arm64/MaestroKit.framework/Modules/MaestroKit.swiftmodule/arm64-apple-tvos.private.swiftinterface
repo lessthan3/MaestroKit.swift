@@ -56,7 +56,7 @@ public enum MaestroPanelType {
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
 }
-@_Concurrency.MainActor public protocol MaestroEventDelegate {
+@_Concurrency.MainActor public protocol MaestroEventDelegate : AnyObject {
   @_Concurrency.MainActor func userRequestedNewKeyPlaysData()
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func shouldShowPanel()
@@ -85,7 +85,8 @@ public enum MaestroPanelType {
   @_Concurrency.MainActor func getKeyPlaysCount() -> Swift.Int?
   @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
 }
-@_Concurrency.MainActor public class MaestroEventViewModel : Combine.ObservableObject {
+@_Concurrency.MainActor public class MaestroEventViewModel : Combine.ObservableObject, MaestroKit.MaestroManagerViewModelDelegate {
+  @_Concurrency.MainActor public func userIsAuthenticated() async -> Swift.Bool
   @_Concurrency.MainActor public init(eventID: Swift.String, eventDelegate: any MaestroKit.MaestroEventDelegate, viewModelDelegate: any MaestroKit.MaestroManagerViewModelDelegate)
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -132,8 +133,10 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func getCurrentJwt() async -> Swift.String?
   nonisolated public func getCurrentSwid() async -> Swift.String?
 }
-extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerViewModelDelegate {
+extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerViewModelDelegate {
   public func userIsAuthenticated() async -> Swift.Bool
+  @_Concurrency.MainActor public func getKeyPlaysCount() -> Swift.Int?
+  @_Concurrency.MainActor public func getCurrentEventID() -> Swift.String?
 }
 public protocol MaestroManagerInterface {
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String)
@@ -147,6 +150,8 @@ public protocol MaestroManagerInterface {
 }
 public protocol MaestroManagerViewModelDelegate : AnyObject {
   func userIsAuthenticated() async -> Swift.Bool
+  func getKeyPlaysCount() -> Swift.Int?
+  func getCurrentEventID() -> Swift.String?
 }
 public struct SiteResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
