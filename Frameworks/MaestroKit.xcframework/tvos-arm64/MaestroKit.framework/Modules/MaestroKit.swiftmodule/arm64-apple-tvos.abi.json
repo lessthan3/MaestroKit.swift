@@ -16,10 +16,234 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "RiveRuntime",
         "printedName": "RiveRuntime",
         "declKind": "Import",
         "moduleName": "MaestroKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OverlayType",
+        "printedName": "OverlayType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "winningBet",
+            "printedName": "winningBet",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MaestroKit.OverlayType.Type) -> MaestroKit.OverlayType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OverlayType",
+                    "printedName": "MaestroKit.OverlayType",
+                    "usr": "s:10MaestroKit11OverlayTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MaestroKit.OverlayType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OverlayType",
+                        "printedName": "MaestroKit.OverlayType",
+                        "usr": "s:10MaestroKit11OverlayTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10MaestroKit11OverlayTypeO10winningBetyA2CmF",
+            "mangledName": "$s10MaestroKit11OverlayTypeO10winningBetyA2CmF",
+            "moduleName": "MaestroKit"
+          },
+          {
+            "kind": "Var",
+            "name": "fantasyPlayerEvent",
+            "printedName": "fantasyPlayerEvent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MaestroKit.OverlayType.Type) -> MaestroKit.OverlayType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OverlayType",
+                    "printedName": "MaestroKit.OverlayType",
+                    "usr": "s:10MaestroKit11OverlayTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MaestroKit.OverlayType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OverlayType",
+                        "printedName": "MaestroKit.OverlayType",
+                        "usr": "s:10MaestroKit11OverlayTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10MaestroKit11OverlayTypeO18fantasyPlayerEventyA2CmF",
+            "mangledName": "$s10MaestroKit11OverlayTypeO18fantasyPlayerEventyA2CmF",
+            "moduleName": "MaestroKit"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OverlayType",
+                "printedName": "MaestroKit.OverlayType",
+                "usr": "s:10MaestroKit11OverlayTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OverlayType",
+                "printedName": "MaestroKit.OverlayType",
+                "usr": "s:10MaestroKit11OverlayTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit11OverlayTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10MaestroKit11OverlayTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "MaestroKit",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10MaestroKit11OverlayTypeO9hashValueSivp",
+            "mangledName": "$s10MaestroKit11OverlayTypeO9hashValueSivp",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10MaestroKit11OverlayTypeO9hashValueSivg",
+                "mangledName": "$s10MaestroKit11OverlayTypeO9hashValueSivg",
+                "moduleName": "MaestroKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit11OverlayTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10MaestroKit11OverlayTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "MaestroKit",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10MaestroKit11OverlayTypeO",
+        "mangledName": "$s10MaestroKit11OverlayTypeO",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -29,7 +253,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:buttonPosition:)",
+            "printedName": "init(id:buttonPosition:overlayType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -48,11 +272,17 @@
                 "name": "CGPoint",
                 "printedName": "CoreFoundation.CGPoint",
                 "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OverlayType",
+                "printedName": "MaestroKit.OverlayType",
+                "usr": "s:10MaestroKit11OverlayTypeO"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A7OverlayV2id14buttonPositionACSS_So7CGPointVtcfc",
-            "mangledName": "$s10MaestroKit0A7OverlayV2id14buttonPositionACSS_So7CGPointVtcfc",
+            "usr": "s:10MaestroKit0A7OverlayV2id14buttonPosition11overlayTypeACSS_So7CGPointVAA0cH0Otcfc",
+            "mangledName": "$s10MaestroKit0A7OverlayV2id14buttonPosition11overlayTypeACSS_So7CGPointVAA0cH0Otcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Preconcurrency",
@@ -1019,30 +1249,40 @@
       },
       {
         "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "RiveRuntime",
         "printedName": "RiveRuntime",
         "declKind": "Import",
         "moduleName": "MaestroKit"
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -1168,7 +1408,7 @@
           {
             "kind": "Function",
             "name": "shouldShowOverlay",
-            "printedName": "shouldShowOverlay(id:buttonSize:)",
+            "printedName": "shouldShowOverlay(id:buttonSize:overlayType:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1186,11 +1426,17 @@
                 "name": "CGSize",
                 "printedName": "CoreFoundation.CGSize",
                 "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OverlayType",
+                "printedName": "MaestroKit.OverlayType",
+                "usr": "s:10MaestroKit11OverlayTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A13EventDelegateP17shouldShowOverlay2id10buttonSizeySS_So6CGSizeVtF",
-            "mangledName": "$s10MaestroKit0A13EventDelegateP17shouldShowOverlay2id10buttonSizeySS_So6CGSizeVtF",
+            "usr": "s:10MaestroKit0A13EventDelegateP17shouldShowOverlay2id10buttonSize11overlayTypeySS_So6CGSizeVAA0gL0OtF",
+            "mangledName": "$s10MaestroKit0A13EventDelegateP17shouldShowOverlay2id10buttonSize11overlayTypeySS_So6CGSizeVAA0gL0OtF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroEventDelegate>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroEventDelegate>",
@@ -2009,7 +2255,8 @@
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Custom",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "init_kind": "Designated"
           },
@@ -3917,6 +4164,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4190,6 +4447,34 @@
         "moduleName": "MaestroKit"
       },
       {
+        "kind": "TypeDecl",
+        "name": "WinningBet",
+        "printedName": "WinningBet",
+        "declKind": "Struct",
+        "usr": "s:10MaestroKit10WinningBetV",
+        "mangledName": "$s10MaestroKit10WinningBetV",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -4321,6 +4606,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -4340,6 +4635,26 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
         "declKind": "Import",
         "moduleName": "MaestroKit",
         "declAttributes": [
@@ -8874,6 +9189,46 @@
           },
           {
             "kind": "Var",
+            "name": "fantasyEventWithOverlay",
+            "printedName": "fantasyEventWithOverlay",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MaestroKit.TestUseCase.Type) -> MaestroKit.TestUseCase",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TestUseCase",
+                    "printedName": "MaestroKit.TestUseCase",
+                    "usr": "s:10MaestroKit11TestUseCaseO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "MaestroKit.TestUseCase.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TestUseCase",
+                        "printedName": "MaestroKit.TestUseCase",
+                        "usr": "s:10MaestroKit11TestUseCaseO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10MaestroKit11TestUseCaseO23fantasyEventWithOverlayyA2CmF",
+            "mangledName": "$s10MaestroKit11TestUseCaseO23fantasyEventWithOverlayyA2CmF",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "simulateFantasyUserWithLeagues",
             "printedName": "simulateFantasyUserWithLeagues",
             "children": [
@@ -8907,10 +9262,7 @@
             "declKind": "EnumElement",
             "usr": "s:10MaestroKit11TestUseCaseO30simulateFantasyUserWithLeaguesyA2CmF",
             "mangledName": "$s10MaestroKit11TestUseCaseO30simulateFantasyUserWithLeaguesyA2CmF",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "RawDocComment"
-            ]
+            "moduleName": "MaestroKit"
           },
           {
             "kind": "Var",
@@ -9238,46 +9590,102 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/CachedImageView\/CachedImageView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 390,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 678,
+      "offset": 765,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 847,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 764,
+      "offset": 933,
       "length": 91,
       "value": "\"https:\/\/static.gcp.maestro.io\/media\/664b9c57d59a7a431542d814\/67db106027ddcdcd2ecb97d4.riv\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 883,
+      "offset": 1052,
       "length": 14,
       "value": "\"stateMachine\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 968,
+      "offset": 1137,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 991,
+      "offset": 1160,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 1019,
+      "offset": 1188,
       "length": 14,
       "value": "\"mainArtboard\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 1299,
+      "length": 13,
+      "value": "\"fantasyRive\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 1333,
+      "length": 6,
+      "value": "\".riv\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 1401,
+      "length": 14,
+      "value": "\"stateMachine\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1486,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "StringLiteral",
+      "offset": 1514,
+      "length": 14,
+      "value": "\"mainArtboard\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1547,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroPanel\/View\/MaestroPanel.swift",
@@ -9595,13 +10003,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/CachedImageView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 270,
-      "length": 5,
-      "value": "false"
-    },
-    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 223,
@@ -9695,86 +10096,79 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2095,
+      "offset": 2140,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2274,
+      "offset": 2319,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2316,
+      "offset": 2361,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Array",
-      "offset": 2432,
+      "offset": 2477,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Dictionary",
-      "offset": 2488,
+      "offset": 2533,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "FloatLiteral",
-      "offset": 2565,
+      "offset": 2610,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "IntegerLiteral",
-      "offset": 2614,
+      "offset": 2659,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2657,
+      "offset": 2702,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "StringLiteral",
-      "offset": 2770,
+      "offset": 2815,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2812,
+      "offset": 2857,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView.swift",
       "kind": "Array",
-      "offset": 2902,
+      "offset": 2947,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView+Methods.swift",
-      "kind": "BooleanLiteral",
-      "offset": 1940,
-      "length": 4,
-      "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView+PreferenceKeys.swift",
@@ -9805,51 +10199,58 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelScrollView\/View\/PanelScrollView+Scrolling.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5243,
+      "length": 4,
+      "value": "true"
+    },
+    {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1779,
+      "offset": 1809,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1891,
+      "offset": 1921,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2035,
+      "offset": 2062,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "Array",
-      "offset": 2110,
+      "offset": 2170,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2645,
+      "offset": 2749,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2759,
+      "offset": 2863,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3954,
+      "offset": 4080,
       "length": 5,
       "value": "false"
     },
@@ -9876,50 +10277,29 @@
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 278,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 392,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 430,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 860,
+      "offset": 589,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "FloatLiteral",
-      "offset": 905,
+      "offset": 634,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 895,
       "length": 40,
       "value": "\"{45636D22-B82E-494E-B0BD-DBF25AB34BB5}\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "StringLiteral",
-      "offset": 1242,
+      "offset": 971,
       "length": 346,
       "value": "\"AEA916LtQmdBEZaslSodIec3p\/BaLeVs\/\/M0vT1\/lWr7EB\/O3KAYs194dsnz\/ytViMfYJw7sw0psPTaLeiDSljkUoZ8oei6NXfyANi2aHiFNzXJVRhVX9RxgBivWJbwMW9+UNriY+OpQAtmvdJ8Z4YImkg8I\/ObizzP1p2us9RpqrKByaG0hejzX7qGx3EkkD0gLi5jp19IZxVGrqvXusM8rOSAiKytR0by9elfs0KGCXjdw6M0\/qmolfyQviKQpTlwakeixqUsvngwX+Ws\/rgm88IuQFwfdg9KWgFkMPhwEFj3LMdu155Gbh4fJM8p2wwtN+\/MtynUXQPiGXWoB9AZC\""
     },
@@ -10885,77 +11265,77 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 179,
+      "offset": 140,
       "length": 17,
       "value": "\"MaestroKit_tvOS\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1305,
+      "offset": 1209,
       "length": 14,
       "value": "\"\/caniplay\/v1\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1345,
+      "offset": 1249,
       "length": 12,
       "value": "\"\/stream\/v1\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1388,
+      "offset": 1292,
       "length": 17,
       "value": "\"\/userprofile\/v1\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 1435,
+      "offset": 1339,
       "length": 12,
       "value": "\"\/active\/v2\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2613,
+      "offset": 2328,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2664,
+      "offset": 2379,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6479,
+      "offset": 6194,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6530,
+      "offset": 6245,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7928,
+      "offset": 7829,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7979,
+      "offset": 7880,
       "length": 5,
       "value": "false"
     },
@@ -11494,133 +11874,133 @@
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 326,
+      "offset": 333,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 376,
+      "offset": 383,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 427,
+      "offset": 434,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 823,
+      "offset": 830,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 868,
+      "offset": 875,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "Array",
-      "offset": 1000,
+      "offset": 1007,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1211,
+      "offset": 1218,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1533,
+      "offset": 1540,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1575,
+      "offset": 1582,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1748,
+      "offset": 1755,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View Model\/BetsViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 1875,
+      "offset": 1882,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1771,
+      "offset": 1882,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1797,
+      "offset": 1908,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1821,
+      "offset": 1932,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1845,
+      "offset": 1956,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1868,
+      "offset": 1979,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1900,
+      "offset": 2011,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "FloatLiteral",
-      "offset": 1951,
+      "offset": 2062,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/Model\/FantasyViewDataModel.swift",
       "kind": "StringLiteral",
-      "offset": 1998,
+      "offset": 2109,
       "length": 2,
       "value": "\"\""
     },
@@ -11685,217 +12065,392 @@
       "kind": "IntegerLiteral",
       "offset": 173,
       "length": 3,
-      "value": "562"
+      "value": "568"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "IntegerLiteral",
       "offset": 219,
       "length": 3,
-      "value": "536"
+      "value": "520"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 280,
+      "offset": 268,
+      "length": 2,
+      "value": "64"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 379,
       "length": 3,
       "value": "562"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 337,
+      "offset": 436,
       "length": 3,
       "value": "680"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 401,
+      "offset": 505,
       "length": 3,
       "value": "562"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 461,
+      "offset": 565,
       "length": 3,
       "value": "337"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 572,
+      "offset": 676,
       "length": 4,
       "value": "0.78"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 585,
+      "offset": 689,
       "length": 4,
       "value": "0.78"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 597,
-      "length": 4,
-      "value": "0.78"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 661,
-      "length": 4,
-      "value": "0.12"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "StringLiteral",
       "offset": 701,
-      "length": 19,
-      "value": "\"BentonSans-Medium\""
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 768,
       "length": 4,
-      "value": "28.7"
+      "value": "0.78"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 931,
+      "offset": 760,
       "length": 4,
-      "value": "23.0"
+      "value": "0.71"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 999,
+      "offset": 773,
       "length": 4,
-      "value": "0.64"
+      "value": "0.71"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1049,
-      "length": 3,
-      "value": "8.0"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 1102,
-      "length": 3,
-      "value": "7.0"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1153,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1209,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1263,
-      "length": 2,
-      "value": "26"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 1330,
-      "length": 4,
-      "value": "0.25"
-    },
-    {
-      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
-      "kind": "FloatLiteral",
-      "offset": 1343,
+      "offset": 785,
       "length": 4,
       "value": "0.72"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1355,
+      "offset": 840,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1421,
+      "offset": 853,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 865,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 923,
+      "length": 4,
+      "value": "0.13"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 936,
+      "length": 4,
+      "value": "0.91"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 948,
+      "length": 4,
+      "value": "0.14"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1015,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1028,
+      "length": 4,
+      "value": "0.72"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1040,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1115,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1128,
+      "length": 4,
+      "value": "0.73"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1140,
+      "length": 4,
+      "value": "0.26"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1185,
+      "length": 19,
+      "value": "\"BentonSans-Medium\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1247,
+      "length": 4,
+      "value": "28.7"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1410,
+      "length": 4,
+      "value": "23.0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1469,
+      "length": 4,
+      "value": "0.52"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1482,
+      "length": 4,
+      "value": "0.53"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1494,
+      "length": 4,
+      "value": "0.53"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1544,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1597,
+      "length": 3,
+      "value": "7.0"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1654,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1708,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1780,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1793,
+      "length": 4,
+      "value": "0.72"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1805,
+      "length": 4,
+      "value": "0.25"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 1871,
       "length": 4,
       "value": "0.37"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1434,
+      "offset": 1884,
       "length": 4,
       "value": "0.38"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1446,
+      "offset": 1896,
       "length": 4,
       "value": "0.39"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1516,
+      "offset": 1966,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1529,
+      "offset": 1979,
       "length": 4,
       "value": "0.26"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1541,
+      "offset": 1991,
       "length": 4,
       "value": "0.25"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1608,
+      "offset": 2058,
       "length": 4,
       "value": "0.38"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1621,
+      "offset": 2071,
       "length": 4,
       "value": "0.38"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
       "kind": "FloatLiteral",
-      "offset": 1633,
+      "offset": 2083,
       "length": 4,
       "value": "0.38"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2246,
+      "length": 4,
+      "value": "0.14"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2259,
+      "length": 4,
+      "value": "0.14"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2271,
+      "length": 4,
+      "value": "0.15"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2334,
+      "length": 4,
+      "value": "0.10"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2347,
+      "length": 4,
+      "value": "0.12"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2359,
+      "length": 4,
+      "value": "0.12"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2513,
+      "length": 4,
+      "value": "0.21"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2526,
+      "length": 4,
+      "value": "0.21"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View\/FantasyUIConstants.swift",
+      "kind": "FloatLiteral",
+      "offset": 2538,
+      "length": 4,
+      "value": "0.21"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
@@ -11917,6 +12472,13 @@
       "offset": 536,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
+      "kind": "Array",
+      "offset": 1164,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/todd\/Maestro\/Repos\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel+MockData.swift",
@@ -12754,147 +13316,161 @@
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13799,
+      "offset": 13797,
+      "length": 16,
+      "value": "\"basketballMens\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 13977,
+      "length": 18,
+      "value": "\"basketballWomens\""
+    },
+    {
+      "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 14157,
       "length": 17,
       "value": "\"defaultTeamLogo\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13973,
+      "offset": 14331,
       "length": 15,
       "value": "\"fantasy_login\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14158,
+      "offset": 14516,
       "length": 22,
       "value": "\"fantasy_mlb_gradient\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14342,
+      "offset": 14700,
       "length": 18,
       "value": "\"fantasy_mlb_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14530,
+      "offset": 14888,
       "length": 22,
       "value": "\"fantasy_nba_gradient\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14714,
+      "offset": 15072,
       "length": 18,
       "value": "\"fantasy_nba_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14902,
+      "offset": 15260,
       "length": 22,
       "value": "\"fantasy_nfl_gradient\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15086,
+      "offset": 15444,
       "length": 18,
       "value": "\"fantasy_nfl_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15274,
+      "offset": 15632,
       "length": 22,
       "value": "\"fantasy_nhl_gradient\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15458,
+      "offset": 15816,
       "length": 18,
       "value": "\"fantasy_nhl_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15633,
+      "offset": 15991,
       "length": 15,
       "value": "\"fantasy_promo\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15820,
+      "offset": 16178,
       "length": 23,
       "value": "\"fantasy_wnba_gradient\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16007,
+      "offset": 16365,
       "length": 19,
       "value": "\"fantasy_wnba_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16186,
+      "offset": 16544,
       "length": 17,
       "value": "\"key-plays-ghost\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16358,
+      "offset": 16716,
       "length": 14,
       "value": "\"load-failure\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16521,
+      "offset": 16879,
       "length": 11,
       "value": "\"my_disney\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16715,
+      "offset": 17073,
       "length": 29,
       "value": "\"mybets_allsports_green_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16916,
+      "offset": 17274,
       "length": 23,
       "value": "\"mybets_allsports_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17114,
+      "offset": 17472,
       "length": 25,
       "value": "\"mybets_green_check_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17314,
+      "offset": 17672,
       "length": 25,
       "value": "\"mybets_under_caret_icon\""
     },
     {
       "filePath": "\/Users\/todd\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-fadxebmndemtxddbibaxgzmhamit\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvos\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17512,
+      "offset": 17870,
       "length": 24,
       "value": "\"no-key-plays-available\""
     }
