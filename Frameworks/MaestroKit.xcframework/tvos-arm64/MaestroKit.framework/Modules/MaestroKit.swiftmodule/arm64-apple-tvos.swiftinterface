@@ -74,7 +74,7 @@ public enum MaestroPanelType {
   @_Concurrency.MainActor func shouldHideOverlay()
   @_Concurrency.MainActor func trackAction(analytics: [Swift.String : Swift.String])
   @_Concurrency.MainActor func trackImpression(analytics: [Swift.String : Swift.String])
-  @_Concurrency.MainActor func userDidRequestLogin()
+  @_Concurrency.MainActor func userRequestedLogin()
 }
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
   @_Concurrency.MainActor func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
@@ -94,8 +94,7 @@ public enum MaestroPanelType {
   @_Concurrency.MainActor func getKeyPlaysCount() -> Swift.Int?
   @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
 }
-@_Concurrency.MainActor public class MaestroEventViewModel : Combine.ObservableObject, MaestroKit.MaestroManagerViewModelDelegate {
-  @_Concurrency.MainActor public func userIsAuthenticated() async -> Swift.Bool
+@_Concurrency.MainActor public class MaestroEventViewModel : Combine.ObservableObject {
   @_Concurrency.MainActor public init(eventID: Swift.String, eventDelegate: any MaestroKit.MaestroEventDelegate, viewModelDelegate: any MaestroKit.MaestroManagerViewModelDelegate)
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -146,6 +145,8 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   public func userIsAuthenticated() async -> Swift.Bool
   @_Concurrency.MainActor public func getKeyPlaysCount() -> Swift.Int?
   @_Concurrency.MainActor public func getCurrentEventID() -> Swift.String?
+  public func getCurrentSwid() -> Swift.String?
+  public func getCurrentS2Cookie() -> Swift.String?
 }
 public protocol MaestroManagerInterface {
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String)
@@ -161,6 +162,8 @@ public protocol MaestroManagerViewModelDelegate : AnyObject {
   func userIsAuthenticated() async -> Swift.Bool
   func getKeyPlaysCount() -> Swift.Int?
   func getCurrentEventID() -> Swift.String?
+  func getCurrentSwid() -> Swift.String?
+  func getCurrentS2Cookie() -> Swift.String?
 }
 public struct SiteResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -279,10 +282,11 @@ public enum TestUseCase {
   case myBetsParlayBetUnsettled
   case winningBetWithOverlay
   case fantasyEventWithOverlay
-  case simulateFantasyUserWithLeagues
-  case simulateFantasyUserWithoutLeagues
   case enableMockFantasyData
   case enableLiveFantasyData
+  case simulateFantasyUserWithLeagues
+  case simulateFantasyUserWithoutLeagues
+  case simulateFantasyFanAPIResponse
   public static func == (a: MaestroKit.TestUseCase, b: MaestroKit.TestUseCase) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
