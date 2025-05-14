@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		oPPMtDGMu4/GT6hkMGzbzuQlPCU=
+		zWpft390BeTEwpLQsGQDoEONr5E=
 		</data>
 		<key>BentonSans-Black.ttf</key>
 		<data>
@@ -72,53 +72,57 @@
 		<data>
 		Ywnb+10XEEQWWblR3P6zzji0qOc=
 		</data>
+		<key>GoogleService-Info.plist</key>
+		<data>
+		b5hS6GeiJPNLTpdv1AiNA5LzVxI=
+		</data>
 		<key>Headers/MaestroKit.h</key>
 		<data>
 		vUvjKVCQRFfymRpF+OMMTscX1+w=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EsmXdcE38ZyYvM3l53tEQdvJrOs=
+		FNH6Obe8OJu9/gT/smmZFgmoOK8=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		HDxvQzYDbUd91KfAZJtNlRbbH9g=
+		Hg0tIzN7nk/NqCsSHIAcg0T9qVU=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		sdaNBK0oekhkIh/v6ip9gy8QTlw=
+		gD67W2XPlrT771yyJL8+kNePB1Y=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		8h/tCCvILveYlXKfkjfpRTMJARE=
+		w80lFiaptEzj8jzXUK5yn3I80WU=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		sdaNBK0oekhkIh/v6ip9gy8QTlw=
+		gD67W2XPlrT771yyJL8+kNePB1Y=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		nuTSEUzUgQd7x5N31TfvLt8cn2Y=
+		Xw3BYoy18abEHM3UzQL+WHYW9qo=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		HDxvQzYDbUd91KfAZJtNlRbbH9g=
+		Hg0tIzN7nk/NqCsSHIAcg0T9qVU=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
-		fUfZrfC1lPk2/Z/BzEGs34+Fj58=
+		2Y32MTiQKXvqXPrNbtZyLpJOlxo=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<data>
-		6RME5pBF9PfbKS+jpVo4OVdAxmw=
+		BCKu1tyop3QRInjf2nx61rFSnh8=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<data>
-		fUfZrfC1lPk2/Z/BzEGs34+Fj58=
+		2Y32MTiQKXvqXPrNbtZyLpJOlxo=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		DBqKjmW8I2GnKcAIz747IOjTbz0=
+		i5Yze6Lw8rTf+J71dD5+gSzOK1s=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -128,6 +132,10 @@
 		<data>
 		jRlm16nthbTcXzylxmJIp/ewN04=
 		</data>
+		<key>espn_flagship_pinchbacknotif_fantasy.riv</key>
+		<data>
+		5wAIr05HNxUBVlHVLAQPYNInS3U=
+		</data>
 		<key>fanatsy2.riv</key>
 		<data>
 		Xfvma34t6GEdxyHlneMyw36wtXY=
@@ -135,10 +143,6 @@
 		<key>fantasy3.riv</key>
 		<data>
 		5wAIr05HNxUBVlHVLAQPYNInS3U=
-		</data>
-		<key>fantasy4.riv</key>
-		<data>
-		TCSllgpAfqbcl4e7WDosBloUjjk=
 		</data>
 		<key>myBetsBoostBetLost_response.json</key>
 		<data>
@@ -192,6 +196,10 @@
 		<data>
 		xq9JfMvoRc/lD+QtBLdB+UlCBUM=
 		</data>
+		<key>playerImage-3593381.webp</key>
+		<data>
+		Qeha/X4Uygh50fK1uF1OUKzguAg=
+		</data>
 		<key>playerImage.png</key>
 		<data>
 		xq9JfMvoRc/lD+QtBLdB+UlCBUM=
@@ -227,7 +235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3ejGp62CaUOcgQaBkA0XsZHK++aVv600FXPjC22v2ig=
+			8f2klY0c3XiSir66pJgH+C147i8/PzFgoqajM+JtZQU=
 			</data>
 		</dict>
 		<key>BentonSans-Black.ttf</key>
@@ -342,6 +350,13 @@
 			MBSMXossU916Y3lOM/r/No73vWxKwXKpEoExaWsK3Jo=
 			</data>
 		</dict>
+		<key>GoogleService-Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h0p/gMOVT+cNn/W57fDC/9xIjEQo26Qe+GvpMymfZT0=
+			</data>
+		</dict>
 		<key>Headers/MaestroKit.h</key>
 		<dict>
 			<key>hash2</key>
@@ -353,70 +368,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			E2TjVntoVujpamcP4IplaRqsLufGhhNSiX2koDdrVks=
+			pDKogWPKl5NZujhReSVpEVz8fZyt3xzZ4bQOfX2WoxA=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gAABXMjGEPBGbRz6LCCxzxzkb02LBupW0HGV8D237Qk=
+			CK0UyWd5a3SEKgGgN9ABKxKfQjcgwAp74pDdYoLdzfM=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rrbCs1K6iBX6XN89In6JmBmbQBq8H6mJDXhso+fRVzY=
+			aoI1RqKWCd1mgzFu/WA2CjNtDoN+Tyu+LYFkAb9HrvY=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gAABXMjGEPBGbRz6LCCxzxzkb02LBupW0HGV8D237Qk=
+			CK0UyWd5a3SEKgGgN9ABKxKfQjcgwAp74pDdYoLdzfM=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3AqEV+L9/djjIzZ2kSZ2NBoh7i7GH31cbWnY0IHemiE=
+			5NJSlIFz1LtMAmP7t3cF6AcwPYeYqO1OV73GfPqOzyY=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E2TjVntoVujpamcP4IplaRqsLufGhhNSiX2koDdrVks=
+			pDKogWPKl5NZujhReSVpEVz8fZyt3xzZ4bQOfX2WoxA=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxCRJN+9OZfE0Yk6pJ3no9WCow2S/qRKcew0Yuy4hok=
+			zoo9RlcNzF/0ab5rGA1ULEUjNjuHZVmVjGjv1G7sZdw=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O49UYJ5y+ZE6bzKyWd2uI8AwwDg/MShInpZPMYTGs94=
+			XvXMJeorurdwKU0Qa7hdgH76phkPj3ELRcsta+Nhxdc=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZxCRJN+9OZfE0Yk6pJ3no9WCow2S/qRKcew0Yuy4hok=
+			zoo9RlcNzF/0ab5rGA1ULEUjNjuHZVmVjGjv1G7sZdw=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			E+P/seHGIQPFc5cPO4JMIYd+IJ4T2f2hqTykx8rAt+g=
+			HLLd2ZYnXN8CZrRB0OijCEL4M6faBd8X8yARI8CUQrU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -433,6 +448,13 @@
 			rpfLclBe8kLInIGEYc+12M9/FLNqas70K5HChgu9s+M=
 			</data>
 		</dict>
+		<key>espn_flagship_pinchbacknotif_fantasy.riv</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EXfd9RKOQsFZZjLOVZaUnpu+bfUyoOod01o8GHmHIoU=
+			</data>
+		</dict>
 		<key>fanatsy2.riv</key>
 		<dict>
 			<key>hash2</key>
@@ -445,13 +467,6 @@
 			<key>hash2</key>
 			<data>
 			EXfd9RKOQsFZZjLOVZaUnpu+bfUyoOod01o8GHmHIoU=
-			</data>
-		</dict>
-		<key>fantasy4.riv</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			n2gD4EWWNF6Exv2jiXWnBKG2UjVDb7SlkQqbLTc6j34=
 			</data>
 		</dict>
 		<key>myBetsBoostBetLost_response.json</key>
@@ -543,6 +558,13 @@
 			<key>hash2</key>
 			<data>
 			YqRXw3NXSdiR36lw38CXGEJUPaN8LaYLonUX5yvLuxM=
+			</data>
+		</dict>
+		<key>playerImage-3593381.webp</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1O4cmbqLK0l88GW1k/fYlk6gi49KbTWR10w7tUuvihU=
 			</data>
 		</dict>
 		<key>playerImage.png</key>
