@@ -17,50 +17,10 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-public enum OverlayType {
-  case winningBet
-  case fantasyPlayerEvent
-  public static func == (a: MaestroKit.OverlayType, b: MaestroKit.OverlayType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@_Concurrency.MainActor @preconcurrency public struct MaestroOverlay : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(buttonPosition: CoreFoundation.CGPoint, overlayType: MaestroKit.OverlayType, payload: MaestroKit.MaestroOverlayEvent? = nil)
-  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A7OverlayV4bodyQrvp", 0) __
-}
 public class ConfigManager {
   public static let shared: MaestroKit.ConfigManager
   public init()
   @objc deinit
-}
-@_Concurrency.MainActor public protocol MaestroManagerDelegate : AnyObject, Swift.Sendable {
-  @_Concurrency.MainActor func trackState(name: Swift.String, attributes: [Swift.String : Swift.String])
-  @_Concurrency.MainActor func trackAction(name: Swift.String, attributes: [Swift.String : Swift.String])
-}
-@_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
-  @_Concurrency.MainActor func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
-  @_Concurrency.MainActor func didStartPlayingClip(atIndex index: Swift.Int)
-  @_Concurrency.MainActor func didStopPlayingClip(atIndex index: Swift.Int)
-  @_Concurrency.MainActor func didFailToPlayClip(atIndex index: Swift.Int)
-  @_Concurrency.MainActor func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
-  @_Concurrency.MainActor func didShowPanel()
-  @_Concurrency.MainActor func didHidePanel()
-  @_Concurrency.MainActor func didShowOverlay()
-  @_Concurrency.MainActor func didHideOverlay()
-  @_Concurrency.MainActor func currentEventDoesNotSupportKeyPlays()
-  @_Concurrency.MainActor func updatePlayerTimeCode(timeCode: Swift.Double)
-  @_Concurrency.MainActor func getCurrentEventID() -> Swift.String?
-  @_Concurrency.MainActor func getCurrentlyPlayingClipIndex() -> Swift.Int?
-  @_Concurrency.MainActor func getLastPlayedClipIndex() -> Swift.Int?
-  @_Concurrency.MainActor func getCurrentClipPlaybackProgress() -> Swift.Double?
-  @_Concurrency.MainActor func getKeyPlaysCount() -> Swift.Int?
-  @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
-  @_Concurrency.MainActor func simulateUseCaseHideWagers(_ useCase: MaestroKit.TestUseCase, testData: Any?, hideWagers: Swift.Bool)
 }
 public enum TestUseCase {
   case enableMockBetsData
@@ -113,9 +73,49 @@ public enum TestUseCase {
     get
   }
 }
-public struct SiteResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+@_Concurrency.MainActor public protocol MaestroManagerDelegate : AnyObject, Swift.Sendable {
+  @_Concurrency.MainActor func trackState(name: Swift.String, attributes: [Swift.String : Swift.String])
+  @_Concurrency.MainActor func trackAction(name: Swift.String, attributes: [Swift.String : Swift.String])
+  @_Concurrency.MainActor func trackImpression(name: Swift.String, attributes: [Swift.String : Swift.String])
+}
+@_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
+  @_Concurrency.MainActor func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
+  @_Concurrency.MainActor func didStartPlayingClip(atIndex index: Swift.Int)
+  @_Concurrency.MainActor func didStopPlayingClip(atIndex index: Swift.Int)
+  @_Concurrency.MainActor func didFailToPlayClip(atIndex index: Swift.Int)
+  @_Concurrency.MainActor func didUpdatePlaybackProgressOfClip(atIndex index: Swift.Int, to progress: Swift.Double)
+  @_Concurrency.MainActor func didShowPanel()
+  @_Concurrency.MainActor func didHidePanel()
+  @_Concurrency.MainActor func didShowOverlay()
+  @_Concurrency.MainActor func didHideOverlay()
+  @_Concurrency.MainActor func currentEventDoesNotSupportKeyPlays()
+  @_Concurrency.MainActor func updatePlayerTimeCode(timeCode: Swift.Double)
+  @_Concurrency.MainActor func getCurrentEventID() -> Swift.String?
+  @_Concurrency.MainActor func getCurrentlyPlayingClipIndex() -> Swift.Int?
+  @_Concurrency.MainActor func getLastPlayedClipIndex() -> Swift.Int?
+  @_Concurrency.MainActor func getCurrentClipPlaybackProgress() -> Swift.Double?
+  @_Concurrency.MainActor func getKeyPlaysCount() -> Swift.Int?
+  @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
+  @_Concurrency.MainActor func simulateUseCaseHideWagers(_ useCase: MaestroKit.TestUseCase, testData: Any?, hideWagers: Swift.Bool)
+}
+@_Concurrency.MainActor @preconcurrency public struct MaestroPanel : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var topMarginView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var leftMarginView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var rightMarginView: some SwiftUICore.View {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public var gradientMaskView: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
 }
 public struct MaestroKeyPlaysResponse : Swift.Decodable, Swift.Equatable, Swift.Hashable {
   public let teams: [MaestroKit.MaestroKeyPlaysTeam]?
@@ -200,6 +200,31 @@ public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable, Swift.Equata
     get
   }
 }
+public enum MaestroOverlayEvent {
+  case fantasy(MaestroKit.MaestroOverlayEvent.FantasyPayload)
+  public struct FantasyPayload {
+    public let tags: [Swift.String]
+    public let image: Swift.String
+    public let title: Swift.String
+    public let metadata: Swift.String
+    public let sportsType: Swift.String
+    public let headline: Swift.String
+    public let description: Swift.String
+    public init(tags: [Swift.String], image: Swift.String, title: Swift.String, metadata: Swift.String, sportsType: Swift.String, headline: Swift.String, description: Swift.String)
+  }
+}
+public enum TrackType {
+  case action, impression
+  public static func == (a: MaestroKit.TrackType, b: MaestroKit.TrackType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct SiteResponse : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 public protocol MaestroManagerInterface {
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment)
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
@@ -240,37 +265,35 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   @objc deinit
   public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
 }
-@_Concurrency.MainActor @preconcurrency public struct MaestroPanel : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil)
+public enum MaestroPanelType : Swift.String {
+  case keyPlays
+  case stats
+  case fantasy
+  case bets
+  case shop
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum OverlayType {
+  case winningBet
+  case fantasyPlayerEvent
+  public static func == (a: MaestroKit.OverlayType, b: MaestroKit.OverlayType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct MaestroOverlay : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public init(buttonPosition: CoreFoundation.CGPoint, overlayType: MaestroKit.OverlayType, payload: MaestroKit.MaestroOverlayEvent? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var topMarginView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var leftMarginView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var rightMarginView: some SwiftUICore.View {
-    get
-  }
-  @_Concurrency.MainActor @preconcurrency public var gradientMaskView: some SwiftUICore.View {
-    get
-  }
-  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A7OverlayV4bodyQrvp", 0) __
 }
-public enum MaestroOverlayEvent {
-  case fantasy(MaestroKit.MaestroOverlayEvent.FantasyPayload)
-  public struct FantasyPayload {
-    public let tags: [Swift.String]
-    public let image: Swift.String
-    public let title: Swift.String
-    public let metadata: Swift.String
-    public let sportsType: Swift.String
-    public let headline: Swift.String
-    public let description: Swift.String
-    public init(tags: [Swift.String], image: Swift.String, title: Swift.String, metadata: Swift.String, sportsType: Swift.String, headline: Swift.String, description: Swift.String)
-  }
+public struct WinningBet {
 }
 public enum MaestroWorkingEnvironment {
   case test
@@ -308,8 +331,6 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   @_Concurrency.MainActor public func getShouldScrollToMostRecentlyFocusedItem() -> Swift.Bool
   @_Concurrency.MainActor public func setShouldScrollToMostRecentlyFocusedItem(_ value: Swift.Bool)
 }
-public struct WinningBet {
-}
 extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor public func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
   @_Concurrency.MainActor public func didStartPlayingClip(atIndex index: Swift.Int)
@@ -344,27 +365,17 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor func userRequestedLogin()
   @_Concurrency.MainActor func playPauseButtonPressed()
 }
-public enum MaestroPanelType : Swift.String {
-  case keyPlays
-  case stats
-  case fantasy
-  case bets
-  case shop
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-extension MaestroKit.OverlayType : Swift.Equatable {}
-extension MaestroKit.OverlayType : Swift.Hashable {}
-extension MaestroKit.MaestroOverlay : Swift.Sendable {}
 extension MaestroKit.MaestroEventViewModel : Swift.Sendable {}
 extension MaestroKit.TestUseCase : Swift.Equatable {}
 extension MaestroKit.TestUseCase : Swift.Hashable {}
 extension MaestroKit.MaestroPanel : Swift.Sendable {}
-extension MaestroKit.MaestroWorkingEnvironment : Swift.Equatable {}
-extension MaestroKit.MaestroWorkingEnvironment : Swift.Hashable {}
+extension MaestroKit.TrackType : Swift.Equatable {}
+extension MaestroKit.TrackType : Swift.Hashable {}
 extension MaestroKit.MaestroPanelType : Swift.Equatable {}
 extension MaestroKit.MaestroPanelType : Swift.Hashable {}
 extension MaestroKit.MaestroPanelType : Swift.RawRepresentable {}
+extension MaestroKit.OverlayType : Swift.Equatable {}
+extension MaestroKit.OverlayType : Swift.Hashable {}
+extension MaestroKit.MaestroOverlay : Swift.Sendable {}
+extension MaestroKit.MaestroWorkingEnvironment : Swift.Equatable {}
+extension MaestroKit.MaestroWorkingEnvironment : Swift.Hashable {}
