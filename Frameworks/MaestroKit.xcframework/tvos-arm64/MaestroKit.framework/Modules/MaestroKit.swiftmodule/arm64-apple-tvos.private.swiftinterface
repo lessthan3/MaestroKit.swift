@@ -359,6 +359,7 @@ public enum TestUseCase {
   case showHockeyInGameStatsMockData
   case enableFauxCastData
   case enableTestFauxCastData
+  case errorServiceUnavailable
   case enableMockShopData
   case enableLiveShopData
   case enableShopErrorState
