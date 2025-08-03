@@ -139,6 +139,7 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   public static let shared: MaestroKit.MaestroManager
   weak public var delegate: (any MaestroKit.MaestroManagerDelegate)?
   public func setMaestroManagerDelegate(_ delegate: any MaestroKit.MaestroManagerDelegate)
+  public func setDefaultPanel(_ panel: MaestroKit.MaestroPanelType)
   public func setSiteID(_ siteID: Swift.String?)
   public func setMaestroJwt(_ jwt: Swift.String?)
   public func setClientAppSwid(_ swid: Swift.String?)
@@ -151,7 +152,7 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   }
 }
 extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
-  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment)
+  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType)
   nonisolated public func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated public func userDidStopWatchingEvent(_ eventID: Swift.String) async
   nonisolated public func authenticateUser(swid: Swift.String, jwt: Swift.String) async
@@ -159,6 +160,7 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func getCurrentSiteID() async -> Swift.String?
   nonisolated public func getCurrentJwt() async -> Swift.String?
   nonisolated public func getCurrentSwid() async -> Swift.String?
+  public func getDefaultPanel() -> MaestroKit.MaestroPanelType
 }
 extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerViewModelDelegate {
   public func userIsAuthenticated() async -> Swift.Bool
@@ -178,7 +180,7 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   @_Concurrency.MainActor func trackAnalyticsEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
 }
 public protocol MaestroManagerInterface {
-  nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment)
+  nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType)
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated func userDidStopWatchingEvent(_ eventID: Swift.String) async
   nonisolated func authenticateUser(swid: Swift.String, jwt: Swift.String) async
@@ -186,6 +188,7 @@ public protocol MaestroManagerInterface {
   nonisolated func getCurrentSiteID() async -> Swift.String?
   nonisolated func getCurrentJwt() async -> Swift.String?
   nonisolated func getCurrentSwid() async -> Swift.String?
+  nonisolated func getDefaultPanel() async -> MaestroKit.MaestroPanelType
 }
 public protocol MaestroManagerViewModelDelegate : AnyObject {
   func userIsAuthenticated() async -> Swift.Bool

@@ -3517,6 +3517,32 @@
           },
           {
             "kind": "Function",
+            "name": "setDefaultPanel",
+            "printedName": "setDefaultPanel(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroPanelType",
+                "printedName": "MaestroKit.MaestroPanelType",
+                "usr": "s:10MaestroKit0A9PanelTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit0A7ManagerC15setDefaultPanelyyAA0aF4TypeOF",
+            "mangledName": "$s10MaestroKit0A7ManagerC15setDefaultPanelyyAA0aF4TypeOF",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "setSiteID",
             "printedName": "setSiteID(_:)",
             "children": [
@@ -3735,7 +3761,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:)",
+            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3765,11 +3791,17 @@
                 "name": "MaestroWorkingEnvironment",
                 "printedName": "MaestroKit.MaestroWorkingEnvironment",
                 "usr": "s:10MaestroKit0A18WorkingEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroPanelType",
+                "printedName": "MaestroKit.MaestroPanelType",
+                "usr": "s:10MaestroKit0A9PanelTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironmentySS_SSAA0acI0_pAA0ajK0OtF",
-            "mangledName": "$s10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironmentySS_SSAA0acI0_pAA0ajK0OtF",
+            "usr": "s:10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironment12defaultPanelySS_SSAA0acI0_pAA0ajK0OAA0aM4TypeOtF",
+            "mangledName": "$s10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironment12defaultPanelySS_SSAA0acI0_pAA0ajK0OAA0aM4TypeOtF",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Nonisolated",
@@ -4009,6 +4041,28 @@
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Nonisolated",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDefaultPanel",
+            "printedName": "getDefaultPanel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroPanelType",
+                "printedName": "MaestroKit.MaestroPanelType",
+                "usr": "s:10MaestroKit0A9PanelTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit0A7ManagerC15getDefaultPanelAA0aF4TypeOyF",
+            "mangledName": "$s10MaestroKit0A7ManagerC15getDefaultPanelAA0aF4TypeOyF",
+            "moduleName": "MaestroKit",
+            "declAttributes": [
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -4591,7 +4645,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:)",
+            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4621,11 +4675,17 @@
                 "name": "MaestroWorkingEnvironment",
                 "printedName": "MaestroKit.MaestroWorkingEnvironment",
                 "usr": "s:10MaestroKit0A18WorkingEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroPanelType",
+                "printedName": "MaestroKit.MaestroPanelType",
+                "usr": "s:10MaestroKit0A9PanelTypeO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironmentySS_SSAA0acJ0_pAA0akL0OtF",
-            "mangledName": "$s10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironmentySS_SSAA0acJ0_pAA0akL0OtF",
+            "usr": "s:10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanelySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOtF",
+            "mangledName": "$s10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanelySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOtF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroManagerInterface>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroManagerInterface>",
@@ -4883,6 +4943,32 @@
             "declKind": "Func",
             "usr": "s:10MaestroKit0A16ManagerInterfaceP14getCurrentSwidSSSgyYaF",
             "mangledName": "$s10MaestroKit0A16ManagerInterfaceP14getCurrentSwidSSSgyYaF",
+            "moduleName": "MaestroKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroManagerInterface>",
+            "sugared_genericSig": "<Self where Self : MaestroKit.MaestroManagerInterface>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getDefaultPanel",
+            "printedName": "getDefaultPanel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroPanelType",
+                "printedName": "MaestroKit.MaestroPanelType",
+                "usr": "s:10MaestroKit0A9PanelTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit0A16ManagerInterfaceP15getDefaultPanelAA0aG4TypeOyYaF",
+            "mangledName": "$s10MaestroKit0A16ManagerInterfaceP15getDefaultPanelAA0aG4TypeOyYaF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroManagerInterface>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroManagerInterface>",
@@ -14509,99 +14595,85 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2933,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3142,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "Array",
-      "offset": 2988,
+      "offset": 2944,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3284,
+      "offset": 3069,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3396,
+      "offset": 3181,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 3540,
+      "offset": 3325,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "Array",
-      "offset": 3821,
+      "offset": 3606,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "Array",
-      "offset": 3874,
+      "offset": 3659,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4063,
+      "offset": 3848,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5032,
+      "offset": 4817,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5138,
+      "offset": 4923,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5270,
+      "offset": 5055,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7047,
+      "offset": 6935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 16842,
+      "offset": 16730,
       "length": 2,
       "value": "\"\""
     },
@@ -14685,28 +14757,28 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "Dictionary",
-      "offset": 1181,
+      "offset": 1229,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "StringLiteral",
-      "offset": 1375,
+      "offset": 1423,
       "length": 40,
       "value": "\"{45636D22-B82E-494E-B0BD-DBF25AB34BB5}\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
+      "offset": 1499,
       "length": 346,
       "value": "\"AEA916LtQmdBEZaslSodIec3p\/BaLeVs\/\/M0vT1\/lWr7EB\/O3KAYs194dsnz\/ytViMfYJw7sw0psPTaLeiDSljkUoZ8oei6NXfyANi2aHiFNzXJVRhVX9RxgBivWJbwMW9+UNriY+OpQAtmvdJ8Z4YImkg8I\/ObizzP1p2us9RpqrKByaG0hejzX7qGx3EkkD0gLi5jp19IZxVGrqvXusM8rOSAiKytR0by9elfs0KGCXjdw6M0\/qmolfyQviKQpTlwakeixqUsvngwX+Ws\/rgm88IuQFwfdg9KWgFkMPhwEFj3LMdu155Gbh4fJM8p2wwtN+\/MtynUXQPiGXWoB9AZC\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "Dictionary",
-      "offset": 4069,
+      "offset": 4205,
       "length": 3,
       "value": "[]"
     },
