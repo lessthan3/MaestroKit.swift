@@ -76,14 +76,14 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func shouldShowPanel()
   @_Concurrency.MainActor func shouldHidePanel()
-  @_Concurrency.MainActor func shouldShowOverlay(buttonSize: CoreFoundation.CGSize, overlayType: MaestroKit.OverlayType, payload: MaestroKit.MaestroOverlayEvent?)
-  @_Concurrency.MainActor func shouldHideOverlay()
+  @_Concurrency.MainActor func shouldShowOverlay(buttonSize: CoreFoundation.CGSize, overlayType: MaestroKit.OverlayType, payload: MaestroKit.MaestroOverlayEvent?) async
+  @_Concurrency.MainActor func shouldHideOverlay() async
   @_Concurrency.MainActor func userViewedPanel(panel: MaestroKit.MaestroPanelType)
   @_Concurrency.MainActor func trackAction(analytics: [Swift.String : Swift.String])
   @_Concurrency.MainActor func trackImpression(analytics: [Swift.String : Swift.String])
-  @_Concurrency.MainActor func userRequestedLogin()
+  @_Concurrency.MainActor func userRequestedLogin() async
   @_Concurrency.MainActor func playPauseButtonPressed()
-  @_Concurrency.MainActor func shouldShowPanelType(panel: MaestroKit.MaestroPanelType)
+  @_Concurrency.MainActor func shouldShowPanelType(panel: MaestroKit.MaestroPanelType) async
 }
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
   @_Concurrency.MainActor func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
@@ -174,7 +174,7 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   @_Concurrency.MainActor public func setCurrentlyFocusedItemIndex(_ index: Swift.Int?)
   @_Concurrency.MainActor public func getShouldScrollToMostRecentlyFocusedItem() -> Swift.Bool
   @_Concurrency.MainActor public func setShouldScrollToMostRecentlyFocusedItem(_ value: Swift.Bool)
-  @_Concurrency.MainActor public func shouldShowPanelType(panel: MaestroKit.MaestroPanelType)
+  @_Concurrency.MainActor public func shouldShowPanelType(panel: MaestroKit.MaestroPanelType) async
 }
 @_Concurrency.MainActor public protocol MaestroManagerDelegate : AnyObject, Swift.Sendable {
   @_Concurrency.MainActor func trackAnalyticsEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
@@ -202,7 +202,7 @@ public protocol MaestroManagerViewModelDelegate : AnyObject {
   func setCurrentlyFocusedItemIndex(_ index: Swift.Int?)
   func getShouldScrollToMostRecentlyFocusedItem() -> Swift.Bool
   func setShouldScrollToMostRecentlyFocusedItem(_ value: Swift.Bool)
-  func shouldShowPanelType(panel: MaestroKit.MaestroPanelType)
+  func shouldShowPanelType(panel: MaestroKit.MaestroPanelType) async
 }
 public struct SiteResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
@@ -230,12 +230,15 @@ public enum MaestroOverlayEvent {
   public struct FantasyPayload {
     public let tags: [Swift.String]
     public let image: Swift.String
-    public let title: Swift.String
-    public let metadata: Swift.String
     public let sportsType: Swift.String
     public let headline: Swift.String
-    public let description: Swift.String
-    public init(tags: [Swift.String], image: Swift.String, title: Swift.String, metadata: Swift.String, sportsType: Swift.String, headline: Swift.String, description: Swift.String)
+    public let detailText: Swift.String
+    public let gameInfo: Swift.String
+    public let icon: Swift.String
+    public let playerName: Swift.String
+    public let primaryColor: Swift.String?
+    public let wallClock: Swift.String
+    public init(tags: [Swift.String], image: Swift.String, sportsType: Swift.String, headline: Swift.String, detailText: Swift.String, gameInfo: Swift.String, icon: Swift.String, playerName: Swift.String, primaryColor: Swift.String?, wallClock: Swift.String)
   }
 }
 public struct MaestroKeyPlaysResponse : Swift.Decodable, Swift.Equatable, Swift.Hashable {
