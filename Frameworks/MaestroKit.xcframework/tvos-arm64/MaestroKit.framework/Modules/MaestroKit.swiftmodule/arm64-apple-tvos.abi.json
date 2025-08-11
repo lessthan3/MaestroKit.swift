@@ -14878,9 +14878,16 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 17493,
+      "offset": 18288,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel+ModuleDelegate.swift",
+      "kind": "BooleanLiteral",
+      "offset": 157,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel+Overlays.swift",
@@ -16144,71 +16151,78 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 190,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2596,
+      "offset": 2634,
       "length": 14,
       "value": "\"\/caniplay\/v1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2636,
+      "offset": 2674,
       "length": 12,
       "value": "\"\/stream\/v1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2679,
+      "offset": 2717,
       "length": 17,
       "value": "\"\/userprofile\/v1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "StringLiteral",
-      "offset": 2726,
+      "offset": 2764,
       "length": 12,
       "value": "\"\/active\/v2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3715,
+      "offset": 3753,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 3766,
+      "offset": 3804,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7564,
+      "offset": 7602,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7615,
+      "offset": 7653,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9177,
+      "offset": 9215,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/NetworkManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 9228,
+      "offset": 9266,
       "length": 5,
       "value": "false"
     },
@@ -16235,29 +16249,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 135,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "Dictionary",
-      "offset": 752,
+      "offset": 785,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "Dictionary",
-      "offset": 826,
+      "offset": 859,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "Dictionary",
-      "offset": 884,
+      "offset": 917,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 959,
+      "offset": 992,
       "length": 5,
       "value": "false"
     },
@@ -18251,141 +18272,162 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 184,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 218,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 250,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 2209,
+      "offset": 2347,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 2337,
+      "offset": 2475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 2628,
+      "offset": 2755,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Dictionary",
-      "offset": 2802,
+      "offset": 2930,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Dictionary",
-      "offset": 2913,
+      "offset": 3041,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 4388,
+      "offset": 4524,
       "length": 4,
       "value": "30.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 4440,
+      "offset": 4616,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4514,
+      "offset": 4690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4546,
+      "offset": 4722,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4581,
+      "offset": 4757,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4818,
+      "offset": 4994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4867,
+      "offset": 5043,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 5023,
+      "offset": 5199,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5129,
+      "offset": 5305,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5386,
+      "offset": 5562,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5437,
+      "offset": 5613,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Dictionary",
-      "offset": 5527,
+      "offset": 5703,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Dictionary",
-      "offset": 5627,
+      "offset": 5803,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5790,
+      "offset": 5966,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 39036,
+      "offset": 39957,
       "length": 2,
       "value": "[]"
     },
@@ -20044,140 +20086,140 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7161,
+      "offset": 7457,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8785,
+      "offset": 9081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 8821,
+      "offset": 9117,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 10319,
+      "offset": 10615,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 11381,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
-      "kind": "Array",
-      "offset": 12807,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12840,
+      "offset": 11677,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 13410,
+      "offset": 13103,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 14536,
+      "offset": 13136,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 15023,
+      "offset": 13706,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
+      "kind": "BooleanLiteral",
+      "offset": 14832,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
+      "kind": "Array",
+      "offset": 15319,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 15070,
+      "offset": 15366,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 17033,
+      "offset": 17329,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18324,
+      "offset": 18834,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 18778,
+      "offset": 19288,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 19278,
+      "offset": 19788,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20046,
+      "offset": 20556,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 20998,
+      "offset": 21508,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 21667,
+      "offset": 22177,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 22638,
+      "offset": 23148,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 23322,
+      "offset": 23832,
       "length": 4,
       "value": "true"
     },
@@ -20527,7 +20569,7 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+Networking.swift",
       "kind": "BooleanLiteral",
-      "offset": 9161,
+      "offset": 11938,
       "length": 4,
       "value": "true"
     },
