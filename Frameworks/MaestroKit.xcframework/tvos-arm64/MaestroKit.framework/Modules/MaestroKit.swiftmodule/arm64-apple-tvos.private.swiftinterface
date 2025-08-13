@@ -161,7 +161,7 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func getCurrentSiteID() async -> Swift.String?
   nonisolated public func getCurrentJwt() async -> Swift.String?
   nonisolated public func getCurrentSwid() async -> Swift.String?
-  public func getDefaultPanel() -> MaestroKit.MaestroPanelType
+  nonisolated public func getDefaultPanel() async -> MaestroKit.MaestroPanelType
 }
 extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerViewModelDelegate {
   public func userIsAuthenticated() async -> Swift.Bool
