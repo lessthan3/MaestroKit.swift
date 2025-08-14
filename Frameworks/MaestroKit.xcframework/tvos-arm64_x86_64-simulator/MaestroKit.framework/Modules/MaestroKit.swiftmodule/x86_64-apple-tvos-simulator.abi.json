@@ -902,27 +902,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(eventViewModel:width:)",
+            "printedName": "init(width:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "MaestroPanel",
                 "printedName": "MaestroKit.MaestroPanel",
                 "usr": "s:10MaestroKit0A5PanelV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "MaestroKit.MaestroEventViewModel?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "MaestroEventViewModel",
-                    "printedName": "MaestroKit.MaestroEventViewModel",
-                    "usr": "s:10MaestroKit0A14EventViewModelC"
-                  }
-                ],
-                "usr": "s:Sq"
               },
               {
                 "kind": "TypeNominal",
@@ -941,8 +927,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10MaestroKit0A5PanelV14eventViewModel5widthAcA0a5EventeF0CSg_14CoreFoundation7CGFloatVSgtcfc",
-            "mangledName": "$s10MaestroKit0A5PanelV14eventViewModel5widthAcA0a5EventeF0CSg_12CoreGraphics7CGFloatVSgtcfc",
+            "usr": "s:10MaestroKit0A5PanelV5widthAC14CoreFoundation7CGFloatVSg_tcfc",
+            "mangledName": "$s10MaestroKit0A5PanelV5widthAC12CoreGraphics7CGFloatVSg_tcfc",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Preconcurrency",
