@@ -54,7 +54,7 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
   }
 }
 @_Concurrency.MainActor @preconcurrency public struct MaestroPanel : SwiftUICore.View {
-  @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil)
+  @_Concurrency.MainActor @preconcurrency public init(eventViewModel: MaestroKit.MaestroEventViewModel?, width: CoreFoundation.CGFloat? = nil)
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -140,6 +140,9 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   public static let shared: MaestroKit.MaestroManager
   weak public var delegate: (any MaestroKit.MaestroManagerDelegate)?
   public func setMaestroManagerDelegate(_ delegate: any MaestroKit.MaestroManagerDelegate)
+  @_Concurrency.MainActor weak public var maestroEventViewModel: MaestroKit.MaestroEventViewModel? {
+    get
+  }
   public func setDefaultPanel(_ panel: MaestroKit.MaestroPanelType)
   public func setSiteID(_ siteID: Swift.String?)
   public func setMaestroJwt(_ jwt: Swift.String?)
