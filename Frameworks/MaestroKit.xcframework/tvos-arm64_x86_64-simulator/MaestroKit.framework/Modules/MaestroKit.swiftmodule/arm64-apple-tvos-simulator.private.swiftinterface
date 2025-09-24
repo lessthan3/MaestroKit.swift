@@ -227,6 +227,27 @@ public enum MaestroWorkingEnvironment {
     get
   }
 }
+@_hasMissingDesignatedInitializers public actor SessionAnalyticsManager {
+  public static let shared: MaestroKit.SessionAnalyticsManager
+  public func startSession(with metadata: [Swift.String : Swift.String]) async
+  public func endSession() async
+  public func notifyAppDidEnterBackground() async
+  public func notifyAppWillEnterForeground() async
+  @objc deinit
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+@_Concurrency.MainActor @preconcurrency public struct SessionAnalyticsObserver : SwiftUICore.ViewModifier {
+  @_Concurrency.MainActor @preconcurrency public func body(content: MaestroKit.SessionAnalyticsObserver.Content) -> some SwiftUICore.View
+  
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit24SessionAnalyticsObserverV4body7contentQr7SwiftUI21_ViewModifier_ContentVyACG_tF", 0) __
+}
+extension SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public func observeSessionAnalytics() -> some SwiftUICore.View
+  
+}
 public struct WinningBet {
 }
 public enum MaestroOverlayEvent {
@@ -390,5 +411,6 @@ extension MaestroKit.MaestroPanel : Swift.Sendable {}
 extension MaestroKit.MaestroEventViewModel : Swift.Sendable {}
 extension MaestroKit.MaestroWorkingEnvironment : Swift.Equatable {}
 extension MaestroKit.MaestroWorkingEnvironment : Swift.Hashable {}
+extension MaestroKit.SessionAnalyticsObserver : Swift.Sendable {}
 extension MaestroKit.TestUseCase : Swift.Equatable {}
 extension MaestroKit.TestUseCase : Swift.Hashable {}

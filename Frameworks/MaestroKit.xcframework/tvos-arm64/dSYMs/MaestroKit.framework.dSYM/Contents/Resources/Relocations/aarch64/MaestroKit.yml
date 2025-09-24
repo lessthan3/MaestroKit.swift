@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/runner/Library/Developer/Xcode/DerivedData/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg/Build/Intermediates.noindex/ArchiveIntermediates/MaestroKit/InstallationBuildProductsLocation/@rpath/MaestroKit.framework/MaestroKit'
+relocations:     []
+...
