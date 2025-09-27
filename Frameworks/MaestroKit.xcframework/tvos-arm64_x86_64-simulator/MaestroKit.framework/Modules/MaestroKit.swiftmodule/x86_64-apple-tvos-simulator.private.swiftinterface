@@ -263,7 +263,8 @@ public enum MaestroOverlayEvent {
     public let playerName: Swift.String
     public let primaryColor: Swift.String?
     public let wallClock: Swift.String
-    public init(tags: [Swift.String], image: Swift.String, sportsType: Swift.String, headline: Swift.String, detailText: Swift.String, gameInfo: Swift.String, icon: Swift.String, playerName: Swift.String, primaryColor: Swift.String?, wallClock: Swift.String)
+    public let riveUrl: Swift.String
+    public init(tags: [Swift.String], image: Swift.String, sportsType: Swift.String, headline: Swift.String, detailText: Swift.String, gameInfo: Swift.String, icon: Swift.String, playerName: Swift.String, primaryColor: Swift.String?, wallClock: Swift.String, riveUrl: Swift.String)
   }
 }
 public struct MaestroKeyPlaysResponse : Swift.Decodable, Swift.Equatable, Swift.Hashable {
