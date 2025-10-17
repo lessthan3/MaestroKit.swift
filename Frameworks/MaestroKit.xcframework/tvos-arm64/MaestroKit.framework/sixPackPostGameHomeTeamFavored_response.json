@@ -1,166 +1,229 @@
 {
-    "entities": {
-        "teams": {
-            "11": {
-                "id": "11",
-                "uid": "s:20~l:28~t:11",
-                "guid": "99887766-5544-3322-1100-aabbccddeeff",
-                "slug": "seattle-seahawks",
-                "abbreviation": "SEA",
-                "displayName": "Seattle Seahawks",
-                "favored":true,
-                "shortDisplayName": "Seahawks",
-                "name": "Seahawks",
-                "nickname": "Seahawks",
-                "location": "Seattle",
-                "color": "002244",
-                "alternateColor": "69be28",
-                "links": [
-                    {
-                        "language": "en-US",
-                        "rel": ["clubhouse", "desktop", "team"],
-                        "href": "https://www.espn.com/nfl/team/_/name/sea/seattle-seahawks",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false,
-                        "isHidden": false
-                    }
-                ]
-            },
-            "18": {
-                "id": "18",
-                "uid": "s:20~l:28~t:18",
-                "guid": "1234abcd-5678-ef90-1122-334455667788",
-                "slug": "buffalo-bills",
-                "abbreviation": "BUF",
-                "displayName": "Buffalo Bills",
-                "favored":false,
-                "shortDisplayName": "Bills",
-                "name": "Bills",
-                "nickname": "Bills",
-                "location": "Buffalo",
-                "color": "00338d",
-                "alternateColor": "c60c30",
-                "links": [
-                    {
-                        "language": "en-US",
-                        "rel": ["clubhouse", "desktop", "team"],
-                        "href": "https://www.espn.com/nfl/team/_/name/buf/buffalo-bills",
-                        "text": "Clubhouse",
-                        "shortText": "Clubhouse",
-                        "isExternal": false,
-                        "isPremium": false,
-                        "isHidden": false
-                    }
-                ]
-            }
-        }
-    },
-    "id": "401671999",
-    "sport": "football",
-    "date": "2025-02-01T20:00Z",
-    "gameState": "post",
-    "bets": {
-        "odds": [
-            {
-                "displayName": "Spread",
-                "abbreviation": "Spread",
-                "type": "pointSpread",
-                "state": "open",
-                "values": [
-                    {
-                        "line": "-4.5",
-                        "odds": "-120",
-                        "team": "11",
-                        "type": "home"
-                    },
-                    {
-                        "line": "+4.5",
-                        "odds": "+190",
-                        "team": "18",
-                        "type": "away"
-                    }
-                ]
-            },
-            {
-                "displayName": "Spread",
-                "abbreviation": "Spread",
-                "type": "pointSpread",
-                "state": "close",
-                "values": [
-                    {
-                        "line": "-1.5",
-                        "odds": "-110",
-                        "outcome": "WIN",
-                        "team": "11",
-                        "type": "home"
-                    },
-                    {
-                        "line": "+1.5",
-                        "odds": "+115",
-                        "outcome": "LOSS",
-                        "team": "18",
-                        "type": "away"
-                    }
-                ]
-            },
-            {
-                "displayName": "Total Points",
-                "abbreviation": "Total",
-                "type": "total",
-                "state": "close",
-                "values": [
-                    {
-                        "line": "o43.5",
-                        "odds": "+105",
-                        "outcome": "LOSS",
-                        "type": "over"
-                    },
-                    {
-                        "line": "u43.5",
-                        "odds": "-110",
-                        "outcome": "WIN",
-                        "type": "under"
-                    }
-                ]
-            },
-            {
-                "displayName": "Total Points",
-                "abbreviation": "Total",
-                "type": "total",
-                "state": "open",
-                "values": [
-                    {
-                        "line": "o24.5",
-                        "odds": "+125",
-                        "type": "over"
-                    },
-                    {
-                        "line": "u24.5",
-                        "odds": "-135",
-                        "type": "under"
-                    }
-                ]
-            },
-            {
-                "displayName": "Moneyline",
-                "abbreviation": "ML",
-                "type": "moneyline",
-                "state": "close",
-                "values": [
-                    {
-                        "odds": "-130",
-                        "team": "11",
-                        "type": "home"
-                    },
-                    {
-                        "odds": "+150",
-                        "team": "18",
-                        "type": "away"
-                    }
-                ]
-            }
-        ]
+  "entities": {
+    "teams": {
+      "125": {
+        "id": "125",
+        "uid": "s:600~t:125",
+        "guid": "01baf2d6-fa74-448f-8989-6620e402468c",
+        "slug": "ger.frankfurt",
+        "abbreviation": "SGE",
+        "displayName": "Eintracht Frankfurt",
+        "shortDisplayName": "Frankfurt",
+        "name": "Eintracht Frankfurt",
+        "location": "Eintracht Frankfurt",
+        "color": "ffffff",
+        "alternateColor": "272726",
+        "displayOrder": "2",
+        "favored": false,
+        "favoredAtOpen": false
+      },
+      "131": {
+        "id": "131",
+        "uid": "s:600~t:131",
+        "guid": "483ec574-cb09-6d8f-e308-302d5d695d70",
+        "slug": "ger.leverkusen",
+        "abbreviation": "B04",
+        "displayName": "Bayer Leverkusen",
+        "shortDisplayName": "Leverkusen",
+        "name": "Bayer Leverkusen",
+        "location": "Bayer Leverkusen",
+        "color": "DA0308",
+        "alternateColor": "f9fbfc",
+        "displayOrder": "1",
+        "favored": true,
+        "favoredAtOpen": true
+      }
     }
+  },
+  "event": {
+    "id": "746739",
+    "sport": "soccer",
+    "league": "ger.1",
+    "date": "2025-09-12T18:30Z",
+    "gameState": "pre",
+    "bets": {
+      "odds": [
+        {
+          "displayName": "Moneyline",
+          "abbreviation": "ML",
+          "type": "moneyline",
+          "state": "close",
+          "values": [
+            {
+              "odds": "+125",
+              "team": "131",
+              "type": "home"
+            },
+            {
+              "odds": "+180",
+              "team": "125",
+              "type": "away"
+            },
+            {
+              "odds": "+280",
+              "type": "draw"
+            }
+          ]
+        },
+        {
+          "displayName": "Moneyline",
+          "abbreviation": "ML",
+          "type": "moneyline",
+          "state": "open",
+          "values": [
+            {
+              "odds": "+110",
+              "team": "131",
+              "type": "home"
+            },
+            {
+              "odds": "+205",
+              "team": "125",
+              "type": "away"
+            },
+            {
+              "odds": "+265",
+              "type": "draw"
+            }
+          ]
+        },
+        {
+          "displayName": "Moneyline",
+          "abbreviation": "ML",
+          "type": "moneyline",
+          "state": "live",
+          "values": [
+            {
+              "odds": "OFF"
+            },
+            {
+              "odds": "OFF"
+            },
+            {
+              "odds": "OFF"
+            }
+          ]
+        },
+        {
+          "displayName": "Total Goals",
+          "abbreviation": "Total",
+          "type": "total",
+          "state": "close",
+          "values": [
+            {
+              "line": "o3.5",
+              "odds": "+120",
+              "type": "over"
+            },
+            {
+              "line": "u3.5",
+              "odds": "-160",
+              "type": "under"
+            }
+          ]
+        },
+        {
+          "displayName": "Total Goals",
+          "abbreviation": "Total",
+          "type": "total",
+          "state": "open",
+          "values": [
+            {
+              "line": "o2.5",
+              "odds": "-185",
+              "type": "over"
+            },
+            {
+              "line": "u2.5",
+              "odds": "+130",
+              "type": "under"
+            }
+          ]
+        },
+        {
+          "displayName": "Total Goals",
+          "abbreviation": "Total",
+          "type": "total",
+          "state": "live",
+          "values": [
+            {
+              "odds": "OFF"
+            },
+            {
+              "odds": "OFF"
+            }
+          ]
+        },
+        {
+          "displayName": "Spread",
+          "abbreviation": "Spread",
+          "type": "pointSpread",
+          "state": "close",
+          "values": [
+            {
+              "line": "-0.5",
+              "odds": "+115",
+              "team": "131",
+              "type": "home"
+            },
+            {
+              "line": "+0.5",
+              "odds": "-160",
+              "team": "125",
+              "type": "away"
+            }
+          ]
+        },
+        {
+          "displayName": "Spread",
+          "abbreviation": "Spread",
+          "type": "pointSpread",
+          "state": "open",
+          "values": [
+            {
+              "line": "-0.5",
+              "odds": "+105",
+              "team": "131",
+              "type": "home"
+            },
+            {
+              "line": "+0.5",
+              "odds": "-145",
+              "team": "125",
+              "type": "away"
+            }
+          ]
+        },
+        {
+          "displayName": "Spread",
+          "abbreviation": "Spread",
+          "type": "pointSpread",
+          "state": "live",
+          "values": [
+            {
+              "odds": "OFF"
+            },
+            {
+              "odds": "OFF"
+            }
+          ]
+        }
+      ]
+    },
+    "links": [
+      {
+        "href": "http://192.168.2.130:8888/;https://espnbet.app.link/integrations?%243p=a_espn&clr=espnbettingintegration&$canonical_url=/sport/soccer/organization/germany/competition/bundesliga/event/eaeec229-0e25-44fa-920e-cd4a37e6b1b1"
+      }
+    ]
+  },
+  "promotion": {
+    "title": "New Players",
+    "description": "Bet $10, Get $100 in Bonus Bets. Offer not valid in NY.",
+    "logo": "http://192.168.2.130:8888/;https://www.espn.com/redesign/assets/img/ictv/logo_qr/1x/logo_qr_bet.png",
+    "qrCode": "http://192.168.2.130:8888/;https://stitcher.espn.com/qr-code/espnbet.png?width=300&height=300&padding=20&url=https%3A%2F%2Fespnbet.app.link%2Fintegrations%3F%25243p%3Da_espn%26clr%3Despnbettingintegration%26%2524canonical_url%3D%252Fsport%252Fsoccer%252Forganization%252Fgermany%252Fcompetition%252Fbundesliga%252Fevent%252Feaeec229-0e25-44fa-920e-cd4a37e6b1b1%26channel%3Despn-ctv%26campaign%3Dbetting-integrations",
+    "backgroundImage": "http://192.168.2.130:8888/;https://www.espn.com/redesign/assets/img/ictv/bkg_qr_bet.png"
+  },
+  "disclaimers": {
+    "gambling": "Odds by ESPN BET; 21+. Gambling Problem? Call 1-800-GAMBLER"
+  }
 }
