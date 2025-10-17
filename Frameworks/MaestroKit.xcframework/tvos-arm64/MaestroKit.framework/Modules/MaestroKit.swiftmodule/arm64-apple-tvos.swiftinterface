@@ -233,6 +233,9 @@ public enum MaestroWorkingEnvironment {
   public func endSession() async
   public func notifyAppDidEnterBackground() async
   public func notifyAppWillEnterForeground() async
+  public func applyRemoteConfigChanges() async
+  public func updateAnalyticsEnabled(_ enabled: Swift.Bool) async
+  public func updateBeaconInterval(_ interval: Foundation.TimeInterval) async
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
@@ -272,6 +275,7 @@ public struct MaestroKeyPlaysResponse : Swift.Decodable, Swift.Equatable, Swift.
   public let athletes: [MaestroKit.MaestroKeyPlaysAthlete]?
   public var sections: [MaestroKit.MaestroKeyPlaysSection]?
   public init(teams: [MaestroKit.MaestroKeyPlaysTeam]? = nil, athletes: [MaestroKit.MaestroKeyPlaysAthlete]? = nil, sections: [MaestroKit.MaestroKeyPlaysSection]? = nil)
+  public init(from decoder: any Swift.Decoder) throws
   public var keyPlayCount: Swift.Int {
     get
   }
@@ -283,7 +287,6 @@ public struct MaestroKeyPlaysResponse : Swift.Decodable, Swift.Equatable, Swift.
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MaestroKeyPlaysTeam : Swift.Decodable, Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public let id: Swift.String
@@ -296,26 +299,26 @@ public struct MaestroKeyPlaysTeam : Swift.Decodable, Swift.Identifiable, Swift.E
   public let logo: Swift.String?
   public let logoDark: Swift.String?
   public init(id: Swift.String, displayName: Swift.String? = nil, shortName: Swift.String? = nil, color: Swift.String? = nil, alternateColor: Swift.String? = nil, homeAway: Swift.String? = nil, displayOrder: Swift.String? = nil, logo: Swift.String? = nil, logoDark: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
   public static func == (a: MaestroKit.MaestroKeyPlaysTeam, b: MaestroKit.MaestroKeyPlaysTeam) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias ID = Swift.String
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MaestroKeyPlaysAthlete : Swift.Decodable, Swift.Identifiable, Swift.Equatable, Swift.Hashable {
   public let id: Swift.String
   public let shortName: Swift.String?
   public let headshot: Swift.String?
   public init(id: Swift.String, shortName: Swift.String? = nil, headshot: Swift.String? = nil)
+  public init(from decoder: any Swift.Decoder) throws
   public static func == (a: MaestroKit.MaestroKeyPlaysAthlete, b: MaestroKit.MaestroKeyPlaysAthlete) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias ID = Swift.String
   public var hashValue: Swift.Int {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
 }
 public struct MaestroKeyPlaysSection : Swift.Decodable, Swift.Equatable, Swift.Hashable {
   public let title: Swift.String?
