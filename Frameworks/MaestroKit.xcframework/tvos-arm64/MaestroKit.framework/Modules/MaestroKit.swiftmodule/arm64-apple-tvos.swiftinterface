@@ -18,6 +18,54 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
+
+
+
+
+#if compiler(>=5.3) && $PrimaryAssociatedTypes2
+public protocol ExpandableCardVM<Item> : Combine.ObservableObject {
+  associatedtype Item
+  var id: Foundation.UUID { get }
+  var title: Swift.String { get }
+  var items: [Self.Item] { get }
+  var threshold: Swift.Int { get set }
+  var isExpanded: Swift.Bool { get set }
+  var showDivider: Swift.Bool { get }
+  func toggleExpanded()
+}
+#else
+public protocol ExpandableCardVM : Combine.ObservableObject {
+  associatedtype Item
+  var id: Foundation.UUID { get }
+  var title: Swift.String { get }
+  var items: [Self.Item] { get }
+  var threshold: Swift.Int { get set }
+  var isExpanded: Swift.Bool { get set }
+  var showDivider: Swift.Bool { get }
+  func toggleExpanded()
+}
+#endif
+extension MaestroKit.ExpandableCardVM {
+  public var hasEnoughContentToBeExpanded: Swift.Bool {
+    get
+  }
+  public var numberOfVisibleInCollapsed: Swift.Int {
+    get
+  }
+  public var numberOfNotVisibleInCollapsed: Swift.Int {
+    get
+  }
+  public var displayedIndices: [Swift.Int] {
+    get
+  }
+  public func expandButtonImageName(isButtonFocused: Swift.Bool) -> Swift.String
+}
+@_Concurrency.MainActor @preconcurrency public struct ExpandableCardView<VM, RowContent> : SwiftUICore.View where VM : MaestroKit.ExpandableCardVM, RowContent : SwiftUICore.View {
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit18ExpandableCardViewV4bodyQrvp", 0) __<VM, RowContent>
+}
 public enum OverlayType {
   case winningBet
   case fantasyPlayerEvent
@@ -72,6 +120,8 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
 }
+
+
 @_Concurrency.MainActor public protocol MaestroEventDelegate : AnyObject {
   @_Concurrency.MainActor func userRequestedNewKeyPlaysData()
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
@@ -143,13 +193,14 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor weak public var maestroEventViewModel: MaestroKit.MaestroEventViewModel? {
     get
   }
+  @objc deinit
   public func setDefaultPanel(_ panel: MaestroKit.MaestroPanelType)
   public func setSiteID(_ siteID: Swift.String?)
   public func setMaestroJwt(_ jwt: Swift.String?)
   public func setClientAppSwid(_ swid: Swift.String?)
   public func setClientAppJwt(_ jwt: Swift.String?)
   public func setHideBetsPanel(_ hideBetsPanel: Swift.Bool)
-  @objc deinit
+  nonisolated public func destroySDK() async
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
@@ -237,6 +288,10 @@ public enum MaestroWorkingEnvironment {
   public func updateAnalyticsEnabled(_ enabled: Swift.Bool) async
   public func updateBeaconInterval(_ interval: Foundation.TimeInterval) async
   @objc deinit
+  public func getCurrentIds() async -> (session: Swift.String?, page: Swift.String?)
+  public func startNewPageSession() async
+  public func pinchbackDidShow(baseMetadata: [Swift.String : Swift.String]) async
+  public func pinchbackDidHide(baseMetadata: [Swift.String : Swift.String]) async
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
@@ -354,6 +409,15 @@ public struct MaestroKeyPlay : Swift.Decodable, Swift.Identifiable, Swift.Equata
   }
 }
 
+
+
+
+
+
+
+
+
+
 public enum TestUseCase {
   case enableMockBetsData
   case enableLiveBetsData
@@ -396,6 +460,7 @@ public enum TestUseCase {
   case enableFauxCastData
   case enableTestFauxCastData
   case errorServiceUnavailable
+  case showTennisStatsMockData
   case enableMockShopData
   case enableLiveShopData
   case enableShopErrorState
@@ -406,6 +471,7 @@ public enum TestUseCase {
     get
   }
 }
+extension MaestroKit.ExpandableCardView : Swift.Sendable {}
 extension MaestroKit.OverlayType : Swift.Equatable {}
 extension MaestroKit.OverlayType : Swift.Hashable {}
 extension MaestroKit.MaestroOverlay : Swift.Sendable {}

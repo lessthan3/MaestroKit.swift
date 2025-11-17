@@ -1,0 +1,472 @@
+{
+  "entities": {
+    "athletes": {
+      "296": {
+        "displayName": "Novak Djokovic",
+        "shortName": "N. Djokovic",
+        "lastName": "Djokovic",
+        "headshot": "https://stitcher.espn.com/ctv/sports/tennis/leagues/atp/athletes/10044.png",
+        "country": {
+          "name": "Serbia",
+          "abbreviation": "SER",
+          "flag": {
+            "href": "https://a.espncdn.com/i/teamlogos/countries/500/ser.png",
+            "alt": "Serbia",
+            "rel": [
+              "country-flag"
+            ]
+          }
+        }
+      },
+      "2355": {
+        "displayName": "Benjamin Bonzi",
+        "shortName": "B. Bonzi",
+        "lastName": "Bonzi",
+        "headshot": "https://stitcher.espn.com/ctv/sports/tennis/leagues/atp/athletes/10044.png",
+        "country": {
+          "name": "France",
+          "abbreviation": "FRA",
+          "flag": {
+            "href": "https://a.espncdn.com/i/teamlogos/countries/500/fra.png",
+            "alt": "France",
+            "rel": [
+              "country-flag"
+            ]
+          }
+        }
+      },
+      "3782": {
+        "displayName": "Carlos Alcaraz",
+        "shortName": "C. Alcaraz",
+        "lastName": "Alcaraz",
+        "headshot": "https://stitcher.espn.com/ctv/sports/tennis/leagues/atp/athletes/10044.png",
+        "country": {
+          "name": "Spain",
+          "abbreviation": "ESP",
+          "flag": {
+            "href": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+            "alt": "Spain",
+            "rel": [
+              "country-flag"
+            ]
+          }
+        }
+      },
+      "10044": {
+        "displayName": "Francisco Comesana",
+        "shortName": "F. Comesana",
+        "lastName": "Comesana",
+        "headshot": "https://stitcher.espn.com/ctv/sports/tennis/leagues/atp/athletes/10044.png",
+        "country": {
+          "name": "Argentina",
+          "abbreviation": "ARG",
+          "flag": {
+            "href": "https://a.espncdn.com/i/teamlogos/countries/500/arg.png",
+            "alt": "Argentina",
+            "rel": [
+              "country-flag"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "competitionHeader": {
+    "title": "US Open",
+    "details": [
+      "New York, USA",
+      "Total Purse: $5,000,000"
+    ],
+    "logoUrl": "https://a.espncdn.com/combiner/i?img=/redesign/assets/img/icons/ESPN-icon-tennis.png",
+    "date": "2025-08-18T04:00Z",
+    "endDate": "2025-09-08T03:59Z",
+    "weather": {
+      "temperature": 106,
+      "gust": 22,
+      "iconUrl": "https://secure.espncdn.com/redesign/assets/img/icons/accuWeather/04.png",
+      "logoUrl": "https://secure.espncdn.com/redesign/assets/img/logos/logo_accuweather2@2x.png",
+      "link": {
+        "language": "en-US",
+        "href": "http://www.accuweather.com/en/us/state-farm-stadium-az/85301/hourly-weather-forecast/53536_poi?day=2&hbhhour=17&lang=en-us",
+        "text": "Weather"
+      }
+    }
+  },
+  "profiles": {
+    "title": "Player Profiles",
+    "sections": [
+      {
+        "items": [
+          {
+            "title": "N. Djokovic",
+            "subtitle": "#7 ATP",
+            "details": [
+              "Age 38, Turned Pro 2003",
+              "Hometown Belgrade, Serbia"
+            ],
+            "athlete": {
+              "$key": "296",
+              "statistics": [
+                {
+                  "label": "2025 Singles Titles",
+                  "displayValue": "7"
+                },
+                {
+                  "label": "Career Singles Titles",
+                  "displayValue": "100"
+                },
+                {
+                  "label": "2025 Double Titles",
+                  "displayValue": "0"
+                },
+                {
+                  "label": "Career Double Titles",
+                  "displayValue": "0"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "title": "C. Alcaraz",
+            "subtitle": "#2 ATP",
+            "details": [
+              "Age 22,Turned Pro 2018",
+              "Hometown El Palmar, Murcia, Spain"
+            ],
+            "athlete": {
+              "$key": "3782",
+              "statistics": [
+                {
+                  "label": "2025 Singles Titles",
+                  "displayValue": "7"
+                },
+                {
+                  "label": "Career Singles Titles",
+                  "displayValue": "100"
+                },
+                {
+                  "label": "2025 Double Titles",
+                  "displayValue": "0"
+                },
+                {
+                  "label": "Career Double Titles",
+                  "displayValue": "0"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "title": "B. Bonzi",
+            "subtitle": "ATP",
+            "details": [
+              "Age 29, Turned Pro 2015",
+              "Hometown Nimes, France"
+            ],
+            "athlete": {
+              "$key": "2355",
+              "statistics": [
+                {
+                  "label": "2025 Singles Titles",
+                  "displayValue": "1"
+                },
+                {
+                  "label": "Career Singles Titles",
+                  "displayValue": "2"
+                },
+                {
+                  "label": "2025 Double Titles",
+                  "displayValue": "3"
+                },
+                {
+                  "label": "Career Double Titles",
+                  "displayValue": "4"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "title": "F. Comesana",
+            "subtitle": "#100 ATP",
+            "details": [
+              "Age 21, Turned Pro 2000",
+              "Hometown Mar del Plata"
+            ],
+            "athlete": {
+              "$key": "10044",
+              "statistics": [
+                {
+                  "label": "2025 Singles Titles",
+                  "displayValue": "5"
+                },
+                {
+                  "label": "Career Singles Titles",
+                  "displayValue": "6"
+                },
+                {
+                  "label": "2025 Double Titles",
+                  "displayValue": "7"
+                },
+                {
+                  "label": "Career Double Titles",
+                  "displayValue": "200"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "competition": {
+    "id": "161410",
+    "title": "US Open / Semifinal",
+    "round": "Semifinal",
+    "type": {
+      "text": "Men's Singles",
+      "type": "singles"
+    },
+    "court": "Arthur Ashe Stadium",
+    "situation": {
+      "server": {
+        "competitorId": "3782"
+      }
+    },
+    "competitors": [
+      {
+        "id": "3782",
+        "athlete": [
+          {
+            "$key": "3782"
+          }
+        ],
+        "displayOrder": "2",
+        "ranking": 2,
+        "winner": true,
+        "linescores": [
+          {
+            "displayValue": "6",
+            "winner": true
+          },
+          {
+            "displayValue": "7",
+            "tiebreak": "7",
+            "winner": true
+          },
+          {
+            "displayValue": "6",
+            "winner": true
+          }
+        ]
+      },
+      {
+        "id": "296",
+        "athlete": [
+          {
+            "$key": "296"
+          }
+        ],
+        "displayOrder": "1",
+        "ranking": 7,
+        "winner": false,
+        "linescores": [
+          {
+            "displayValue": "4",
+            "winner": false
+          },
+          {
+            "displayValue": "6",
+            "tiebreak": "4",
+            "winner": false
+          },
+          {
+            "displayValue": "2",
+            "winner": false
+          }
+        ]
+      }
+    ],
+    "linescoresHeader": [
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  "live": {
+    "title": "Also Live",
+    "competitions": [
+      {
+        "id": "161410",
+        "title": "US Open / Semifinal",
+        "round": "Semifinal",
+        "type": {
+          "text": "Mens's Singles",
+          "type": "singles"
+        },
+        "court": "Arthur Ashe Stadium",
+        "situation": {
+          "server": {
+            "competitorId": "296"
+          }
+        },
+        "competitors": [
+          {
+            "id": "3782",
+            "athlete": [
+              {
+                "$key": "3782"
+              }
+            ],
+            "displayOrder": "2",
+            "ranking": 2,
+            "winner": true,
+            "linescores": [
+              {
+                "displayValue": "6",
+                "winner": true
+              },
+              {
+                "displayValue": "7",
+                "tiebreak": "7",
+                "winner": true
+              },
+              {
+                "displayValue": "6",
+                "winner": true
+              }
+            ]
+          },
+          {
+            "id": "296",
+            "athlete": [
+              {
+                "$key": "296"
+              }
+            ],
+            "displayOrder": "1",
+            "ranking": 7,
+            "winner": false,
+            "linescores": [
+              {
+                "displayValue": "4",
+                "winner": false
+              },
+              {
+                "displayValue": "6",
+                "tiebreak": "4",
+                "winner": false
+              },
+              {
+                "displayValue": "2",
+                "winner": false
+              }
+            ]
+          }
+        ],
+        "linescoresHeader": [
+          "1",
+          "2",
+          "3"
+        ]
+      },
+      {
+        "id": "161410",
+        "round": "Semifinal",
+        "title": "US Open / Semifinal",
+        "type": {
+          "text": "Mens's Doubles",
+          "type": "doubles"
+        },
+        "court": "Arthur Ashe Stadium",
+        "situation": {
+          "server": {
+            "competitorId": "3782-3782"
+          }
+        },
+        "competitors": [
+          {
+            "id": "3782-3782",
+            "athletes": [
+              {
+                "$key": "3782"
+              },
+              {
+                "$key": "3782"
+              }
+            ],
+            "displayOrder": "2",
+            "ranking": 2,
+            "winner": true,
+            "linescores": [
+              {
+                "displayValue": "6",
+                "winner": true
+              },
+              {
+                "displayValue": "7",
+                "tiebreak": "7",
+                "winner": true
+              },
+              {
+                "displayValue": "6",
+                "winner": true
+              }
+            ]
+          },
+          {
+            "id": "296-296",
+            "athletes": [
+              {
+                "$key": "296"
+              },
+              {
+                "$key": "296"
+              }
+            ],
+            "displayOrder": "1",
+            "ranking": 7,
+            "winner": false,
+            "linescores": [
+              {
+                "displayValue": "4",
+                "winner": false
+              },
+              {
+                "displayValue": "6",
+                "tiebreak": "4",
+                "winner": false
+              },
+              {
+                "displayValue": "2",
+                "winner": false
+              }
+            ]
+          }
+        ],
+        "linescoresHeader": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ]
+  },
+  "promotion": {
+    "title": "Serving Sports Fans. Anytime.",
+    "description": "Open the ESPN app on a mobile device to check out more stats!",
+    "logo": "https://www.espn.com/redesign/assets/img/ictv/logo_qr/1x/logo_qr_espn.png",
+    "qrCode": "https://stitcher.espn.com/qr-code/espn.png?width=300&height=300&padding=20&url=sportscenter%3A%2F%2Fx-callback-url%2FshowGame%3FsportName%3Dbasketball%26leagueAbbrev%3Dwnba%26gameId%3D401761352",
+    "backgroundImage": "https://www.espn.com/redesign/assets/img/ictv/bkg_qr_espn.png"
+  }
+}
