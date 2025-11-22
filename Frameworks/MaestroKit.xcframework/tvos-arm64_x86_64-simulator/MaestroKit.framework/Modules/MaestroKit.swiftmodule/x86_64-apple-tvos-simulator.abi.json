@@ -4678,27 +4678,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Function",
-            "name": "destroySDK",
-            "printedName": "destroySDK()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit0A7ManagerC10destroySDKyyYaF",
-            "mangledName": "$s10MaestroKit0A7ManagerC10destroySDKyyYaF",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "Nonisolated",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
             "name": "unownedExecutor",
             "printedName": "unownedExecutor",
@@ -7266,159 +7245,6 @@
             "moduleName": "MaestroKit",
             "declAttributes": [
               "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getCurrentIds",
-            "printedName": "getCurrentIds()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(session: Swift.String?, page: Swift.String?)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit23SessionAnalyticsManagerC13getCurrentIdsSSSg7session_AE4pagetyYaF",
-            "mangledName": "$s10MaestroKit23SessionAnalyticsManagerC13getCurrentIdsSSSg7session_AE4pagetyYaF",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startNewPageSession",
-            "printedName": "startNewPageSession()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit23SessionAnalyticsManagerC012startNewPageC0yyYaF",
-            "mangledName": "$s10MaestroKit23SessionAnalyticsManagerC012startNewPageC0yyYaF",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "pinchbackDidShow",
-            "printedName": "pinchbackDidShow(baseMetadata:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit23SessionAnalyticsManagerC16pinchbackDidShow12baseMetadataySDyS2SG_tYaF",
-            "mangledName": "$s10MaestroKit23SessionAnalyticsManagerC16pinchbackDidShow12baseMetadataySDyS2SG_tYaF",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "pinchbackDidHide",
-            "printedName": "pinchbackDidHide(baseMetadata:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10MaestroKit23SessionAnalyticsManagerC16pinchbackDidHide12baseMetadataySDyS2SG_tYaF",
-            "mangledName": "$s10MaestroKit23SessionAnalyticsManagerC16pinchbackDidHide12baseMetadataySDyS2SG_tYaF",
-            "moduleName": "MaestroKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -16087,149 +15913,149 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4341,
+      "offset": 4361,
       "length": 8,
       "value": "\"A.Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4374,
+      "offset": 4394,
       "length": 9,
       "value": "\"Event 1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4406,
+      "offset": 4426,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4540,
+      "offset": 4560,
       "length": 8,
       "value": "\"B.last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4573,
+      "offset": 4593,
       "length": 9,
       "value": "\"Event 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4605,
+      "offset": 4625,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4740,
+      "offset": 4760,
       "length": 8,
       "value": "\"C.Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4773,
+      "offset": 4793,
       "length": 9,
       "value": "\"Event 3\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4805,
+      "offset": 4825,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4837,
+      "offset": 4857,
       "length": 7,
       "value": "\"add 1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4943,
+      "offset": 4963,
       "length": 8,
       "value": "\"D.Last\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 4976,
+      "offset": 4996,
       "length": 9,
       "value": "\"Event 4\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 5008,
+      "offset": 5028,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/EventRowView.swift",
       "kind": "StringLiteral",
-      "offset": 5040,
+      "offset": 5060,
       "length": 7,
       "value": "\"add 2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
       "kind": "FloatLiteral",
-      "offset": 714,
+      "offset": 743,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
-      "kind": "StringLiteral",
-      "offset": 1002,
-      "length": 11,
-      "value": "\"Half Time\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
       "kind": "FloatLiteral",
-      "offset": 1051,
+      "offset": 1026,
       "length": 4,
       "value": "29.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
       "kind": "FloatLiteral",
-      "offset": 1147,
+      "offset": 1122,
       "length": 4,
       "value": "24.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
       "kind": "FloatLiteral",
-      "offset": 1180,
+      "offset": 1155,
       "length": 4,
       "value": "89.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
       "kind": "StringLiteral",
-      "offset": 2229,
+      "offset": 2277,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
       "kind": "StringLiteral",
-      "offset": 2250,
+      "offset": 2298,
       "length": 3,
       "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/HalftimeRowView.swift",
+      "kind": "StringLiteral",
+      "offset": 2317,
+      "length": 10,
+      "value": "\"Halftime\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Client\/ESPN\/Components\/MatchTimeline Expanded Row Views\/SubstituteView.swift",
@@ -17452,35 +17278,35 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4954,
+      "offset": 4916,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5060,
+      "offset": 5022,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5192,
+      "offset": 5154,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 7500,
+      "offset": 7462,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel.swift",
       "kind": "StringLiteral",
-      "offset": 19255,
+      "offset": 19211,
       "length": 2,
       "value": "\"\""
     },
@@ -17599,7 +17425,7 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager.swift",
       "kind": "Dictionary",
-      "offset": 4923,
+      "offset": 4812,
       "length": 3,
       "value": "[]"
     },
@@ -19160,49 +18986,49 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "Dictionary",
-      "offset": 865,
+      "offset": 840,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "Dictionary",
-      "offset": 939,
+      "offset": 914,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "Dictionary",
-      "offset": 997,
+      "offset": 972,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/PollingService.swift",
       "kind": "BooleanLiteral",
-      "offset": 1072,
+      "offset": 1047,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/SessionAnalyticsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 291,
+      "offset": 261,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/SessionAnalyticsManager.swift",
       "kind": "Dictionary",
-      "offset": 349,
+      "offset": 319,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/SessionAnalyticsManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 395,
+      "offset": 365,
       "length": 5,
       "value": "false"
     },
@@ -24536,119 +24362,119 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 39832,
+      "offset": 40028,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 41862,
+      "offset": 42058,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 43678,
+      "offset": 43903,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 43710,
+      "offset": 43935,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 45031,
+      "offset": 45419,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 45169,
+      "offset": 45557,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 45211,
+      "offset": 45599,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 45362,
+      "offset": 45750,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 45928,
+      "offset": 46316,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 45971,
+      "offset": 46359,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 46479,
+      "offset": 46867,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 47693,
+      "offset": 48081,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 48233,
+      "offset": 48621,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 49760,
+      "offset": 50148,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 49805,
+      "offset": 50193,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "Array",
-      "offset": 49992,
+      "offset": 50380,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/Model\/StatsViewDataModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 50039,
+      "offset": 50427,
       "length": 5,
       "value": "false"
     },
@@ -25663,28 +25489,28 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsMatchTimeline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6759,
+      "offset": 6817,
       "length": 2,
       "value": "44"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsMatchTimeline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6828,
+      "offset": 6886,
       "length": 2,
       "value": "32"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsMatchTimeline.swift",
       "kind": "IntegerLiteral",
-      "offset": 6870,
+      "offset": 6928,
       "length": 3,
       "value": "228"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsMatchTimeline.swift",
       "kind": "BooleanLiteral",
-      "offset": 6995,
+      "offset": 7053,
       "length": 4,
       "value": "true"
     },
@@ -26811,910 +26637,980 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11947,
+      "offset": 11942,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11962,
+      "offset": 11957,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12038,
+      "offset": 12033,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12052,
+      "offset": 12047,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17351,
+      "offset": 17346,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19016,
+      "offset": 19011,
       "length": 28,
       "value": "\"Singles – with win style\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19147,
+      "offset": 19142,
       "length": 6,
       "value": "\"djok\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19176,
+      "offset": 19171,
       "length": 16,
       "value": "\"Novak Djokovic\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19212,
+      "offset": 19207,
       "length": 10,
       "value": "\"Djokovic\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19256,
+      "offset": 19251,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19363,
+      "offset": 19358,
       "length": 72,
       "value": "\"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/f\/ff\/Flag_of_Serbia.svg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19452,
+      "offset": 19447,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19477,
+      "offset": 19472,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19503,
+      "offset": 19498,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19525,
+      "offset": 19520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19549,
+      "offset": 19544,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19581,
+      "offset": 19571,
       "length": 5,
       "value": "\"USA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19638,
+      "offset": 19604,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 19661,
       "length": 6,
       "value": "\"alca\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19667,
+      "offset": 19690,
       "length": 16,
       "value": "\"Carlos Alcaraz\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19703,
+      "offset": 19726,
       "length": 9,
       "value": "\"Alcaraz\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19746,
+      "offset": 19769,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 19853,
+      "offset": 19876,
       "length": 66,
       "value": "\"https:\/\/upload.wikimedia.org\/wikipedia\/en\/9\/9a\/Flag_of_Spain.svg\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19936,
+      "offset": 19959,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19958,
+      "offset": 19981,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19983,
+      "offset": 20006,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20016,
+      "offset": 20034,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 20067,
       "length": 5,
       "value": "\"CZE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20138,
+      "offset": 20189,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20152,
+      "offset": 20203,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20167,
+      "offset": 20218,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20180,
+      "offset": 20231,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20263,
+      "offset": 20314,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20277,
+      "offset": 20328,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20292,
+      "offset": 20343,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20305,
+      "offset": 20356,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20326,
+      "offset": 20377,
       "length": 3,
       "value": "\"5\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20346,
+      "offset": 20397,
       "length": 3,
       "value": "\"7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20388,
+      "offset": 20439,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20402,
+      "offset": 20453,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20417,
+      "offset": 20468,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20430,
+      "offset": 20481,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20536,
+      "offset": 20587,
       "length": 25,
       "value": "\"US Open – Men's Final\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20667,
+      "offset": 20718,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20698,
+      "offset": 20749,
       "length": 21,
       "value": "\"Arthur Ashe Stadium\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 20761,
+      "offset": 20812,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20785,
+      "offset": 20836,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20894,
+      "offset": 20945,
       "length": 27,
       "value": "\"Singles – No winner yet\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20969,
+      "offset": 21020,
       "length": 4,
       "value": "\"p1\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 20996,
+      "offset": 21047,
       "length": 12,
       "value": "\"Player One\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21028,
+      "offset": 21079,
       "length": 10,
       "value": "\"lastname\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21072,
+      "offset": 21123,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21214,
+      "offset": 21265,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 21240,
+      "offset": 21291,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21262,
+      "offset": 21313,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21287,
+      "offset": 21338,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21343,
+      "offset": 21366,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 21399,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 21455,
       "length": 4,
       "value": "\"p2\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21370,
+      "offset": 21482,
       "length": 12,
       "value": "\"Player Two\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21402,
+      "offset": 21514,
       "length": 10,
       "value": "\"lastname\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21446,
+      "offset": 21558,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21585,
+      "offset": 21697,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21609,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21725,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21739,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21754,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21767,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21850,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21864,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21879,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 21892,
+      "offset": 21721,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 21998,
+      "offset": 21749,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 21782,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21898,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21912,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 21927,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21940,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22023,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22037,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 22052,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 22065,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 22171,
       "length": 21,
       "value": "\"Masters 1000 – QF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22125,
+      "offset": 22298,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22156,
+      "offset": 22329,
       "length": 25,
       "value": "\"Court Philippe-Chatrier\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22223,
+      "offset": 22396,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22247,
+      "offset": 22420,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22356,
+      "offset": 22529,
       "length": 9,
       "value": "\"Doubles\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22476,
+      "offset": 22649,
       "length": 5,
       "value": "\"296\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22504,
+      "offset": 22677,
       "length": 13,
       "value": "\"N. Djokovic\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22537,
+      "offset": 22710,
       "length": 10,
       "value": "\"Djokovic\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22582,
+      "offset": 22755,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22690,
+      "offset": 22863,
       "length": 57,
       "value": "\"https:\/\/a.espncdn.com\/i\/teamlogos\/countries\/500\/ser.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22764,
+      "offset": 22937,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22789,
+      "offset": 22962,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22815,
+      "offset": 22988,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22837,
+      "offset": 23010,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22861,
+      "offset": 23034,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22893,
+      "offset": 23061,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 23094,
       "length": 5,
       "value": "\"SER\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22950,
+      "offset": 23151,
       "length": 6,
       "value": "\"2355\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 22979,
+      "offset": 23180,
       "length": 10,
       "value": "\"B. Bonzi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23009,
+      "offset": 23210,
       "length": 7,
       "value": "\"Bonzi\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23051,
+      "offset": 23252,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23159,
+      "offset": 23360,
       "length": 57,
       "value": "\"https:\/\/a.espncdn.com\/i\/teamlogos\/countries\/500\/fra.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23233,
+      "offset": 23434,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23255,
+      "offset": 23456,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23279,
+      "offset": 23480,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23311,
+      "offset": 23507,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 23540,
       "length": 5,
       "value": "\"FRA\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23436,
+      "offset": 23665,
       "length": 6,
       "value": "\"3782\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23465,
+      "offset": 23694,
       "length": 12,
       "value": "\"C. Alcaraz\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23497,
+      "offset": 23726,
       "length": 9,
       "value": "\"Alcaraz\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23541,
+      "offset": 23770,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23649,
+      "offset": 23878,
       "length": 57,
       "value": "\"https:\/\/a.espncdn.com\/i\/teamlogos\/countries\/500\/esp.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23723,
+      "offset": 23952,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23745,
+      "offset": 23974,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23770,
+      "offset": 23999,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23803,
+      "offset": 24027,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 24060,
       "length": 5,
       "value": "\"ESP\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23860,
+      "offset": 24117,
       "length": 7,
       "value": "\"10044\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23890,
+      "offset": 24147,
       "length": 13,
       "value": "\"F. Comesana\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23923,
+      "offset": 24180,
       "length": 10,
       "value": "\"Comesana\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 23968,
+      "offset": 24225,
       "length": 76,
       "value": "\"https:\/\/stitcher.espn.com\/ctv\/sports\/tennis\/leagues\/atp\/athletes\/10044.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 24076,
+      "offset": 24333,
       "length": 57,
       "value": "\"https:\/\/a.espncdn.com\/i\/teamlogos\/countries\/500\/arg.png\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24150,
+      "offset": 24407,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24172,
+      "offset": 24429,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24197,
+      "offset": 24454,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 24230,
+      "offset": 24482,
+      "length": 5,
+      "value": "\"USA\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
+      "kind": "StringLiteral",
+      "offset": 24515,
       "length": 5,
       "value": "\"ARG\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24362,
+      "offset": 24647,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24376,
+      "offset": 24661,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24391,
+      "offset": 24676,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24404,
+      "offset": 24689,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24487,
+      "offset": 24772,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24501,
+      "offset": 24786,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24516,
+      "offset": 24801,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24529,
+      "offset": 24814,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 24550,
+      "offset": 24835,
       "length": 3,
       "value": "\"7\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 24570,
+      "offset": 24855,
       "length": 3,
       "value": "\"6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24612,
+      "offset": 24897,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24626,
+      "offset": 24911,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24641,
+      "offset": 24926,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24654,
+      "offset": 24939,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "StringLiteral",
-      "offset": 24760,
+      "offset": 25045,
       "length": 25,
       "value": "\"WTA 1000 – Doubles QF\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24901,
+      "offset": 25186,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24980,
+      "offset": 25265,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View\/Cards\/Top Level\/StatsTennisMatchHeaderView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25004,
+      "offset": 25289,
       "length": 5,
       "value": "false"
     },
