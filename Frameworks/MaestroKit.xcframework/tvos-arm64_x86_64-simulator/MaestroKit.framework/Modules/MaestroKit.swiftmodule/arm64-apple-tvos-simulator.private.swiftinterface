@@ -193,14 +193,13 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor weak public var maestroEventViewModel: MaestroKit.MaestroEventViewModel? {
     get
   }
-  @objc deinit
   public func setDefaultPanel(_ panel: MaestroKit.MaestroPanelType)
   public func setSiteID(_ siteID: Swift.String?)
   public func setMaestroJwt(_ jwt: Swift.String?)
   public func setClientAppSwid(_ swid: Swift.String?)
   public func setClientAppJwt(_ jwt: Swift.String?)
   public func setHideBetsPanel(_ hideBetsPanel: Swift.Bool)
-  nonisolated public func destroySDK() async
+  @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
@@ -216,6 +215,9 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func getCurrentJwt() async -> Swift.String?
   nonisolated public func getCurrentSwid() async -> Swift.String?
   nonisolated public func getDefaultPanel() async -> MaestroKit.MaestroPanelType
+  nonisolated public func setDataToPanel(_ override: MaestroKit.MaestroPanelOverride) async -> Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>
+  nonisolated public func setDataToPanels(_ overrides: [MaestroKit.MaestroPanelOverride]) async -> [Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>]
+  public func setDataToPanel(panelName: Swift.String, interfaceName: Swift.String, overwriteUrl: Swift.String) async -> Swift.String
 }
 extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerViewModelDelegate {
   public func userIsAuthenticated() async -> Swift.Bool
@@ -244,6 +246,26 @@ public protocol MaestroManagerInterface {
   nonisolated func getCurrentJwt() async -> Swift.String?
   nonisolated func getCurrentSwid() async -> Swift.String?
   nonisolated func getDefaultPanel() async -> MaestroKit.MaestroPanelType
+  nonisolated func setDataToPanel(_ override: MaestroKit.MaestroPanelOverride) async -> Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>
+  nonisolated func setDataToPanels(_ overrides: [MaestroKit.MaestroPanelOverride]) async -> [Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>]
+  nonisolated func setDataToPanel(panelName: Swift.String, interfaceName: Swift.String, overwriteUrl: Swift.String) async -> Swift.String
+}
+public struct MaestroPanelOverride : Swift.Sendable {
+  public var panelIdentifier: Swift.String
+  public var interfaceName: Swift.String
+  public var url: Swift.String
+  public init(panelIdentifier: Swift.String, interfaceName: Swift.String, url: Swift.String)
+}
+public enum MaestroPanelOverrideError : Swift.Error, Swift.CustomStringConvertible, Swift.Sendable {
+  case noActiveEvent
+  case unsupportedPanelIdentifier(Swift.String)
+  case panelNotConfigured(MaestroKit.MaestroPanelType)
+  case emptyURL
+  case unknown
+  case interfaceUnsupported(Swift.String)
+  public var description: Swift.String {
+    get
+  }
 }
 public protocol MaestroManagerViewModelDelegate : AnyObject {
   func userIsAuthenticated() async -> Swift.Bool
@@ -263,9 +285,8 @@ public struct SiteResponse : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public class ConfigManager {
+@_hasMissingDesignatedInitializers public class ConfigManager {
   public static let shared: MaestroKit.ConfigManager
-  public init()
   @objc deinit
 }
 public enum MaestroWorkingEnvironment {
@@ -288,10 +309,6 @@ public enum MaestroWorkingEnvironment {
   public func updateAnalyticsEnabled(_ enabled: Swift.Bool) async
   public func updateBeaconInterval(_ interval: Foundation.TimeInterval) async
   @objc deinit
-  public func getCurrentIds() async -> (session: Swift.String?, page: Swift.String?)
-  public func startNewPageSession() async
-  public func pinchbackDidShow(baseMetadata: [Swift.String : Swift.String]) async
-  public func pinchbackDidHide(baseMetadata: [Swift.String : Swift.String]) async
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
     get
