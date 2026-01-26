@@ -82,7 +82,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I0wS9igm6jskG26wio1HKM3uhY8=
+		5EXH707TEwFwlUnS40HWt4eZxOo=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/arm64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		CO14O7+rTZctjznJkPk8+MLsjXc=
+		g4BVu2KOFa5+MlYhaBys5sbbdnM=
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.swiftmodule</key>
 		<data>
-		FDZ6gxaKMPqgyGzun/a14TLR6Ac=
+		xHUflL1B0Jiz0OuWz5ION7/PQzw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -392,7 +392,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YfGCyo3m5uD10Z/VbJ9X7Qg7wQyK0sTXvBPm4l6uB9E=
+			BGYJ5SARPxva7aSlZ2RfSYbpI/tGPVTD46bJ3avpImw=
 			</data>
 		</dict>
 		<key>Modules/MaestroKit.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
@@ -427,7 +427,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rmveQ/tEyJHJyd8zFq/RPWjDYxBKDAj0fH39i+Eu1ys=
+			RaCjnkOdlRa8Lg2CQr7Ja1UK5sbDOS8GD/70uHWOhqU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
