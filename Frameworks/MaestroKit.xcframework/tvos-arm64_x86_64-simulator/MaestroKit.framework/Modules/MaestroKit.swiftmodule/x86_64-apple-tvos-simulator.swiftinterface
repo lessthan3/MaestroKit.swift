@@ -9,6 +9,7 @@ import DeveloperToolsSupport
 import Foundation
 @_exported import MaestroKit
 import Observation
+import RegexBuilder
 import RiveRuntime
 import Swift
 import SwiftUI
@@ -29,7 +30,8 @@ public protocol ExpandableCardVM<Item> : Combine.ObservableObject {
   var items: [Self.Item] { get }
   var threshold: Swift.Int { get set }
   var isExpanded: Swift.Bool { get set }
-  var showDivider: Swift.Bool { get }
+  var showDividerWhenCollapsed: Swift.Bool { get }
+  var showDividerWhenExpanded: Swift.Bool { get }
   var isSingleItemMode: Swift.Bool { get }
   func toggleExpanded()
 }
@@ -50,6 +52,15 @@ extension MaestroKit.ExpandableCardVM {
     get
   }
   public func expandButtonImageName(isButtonFocused: Swift.Bool) -> Swift.String
+  public var showDividerWhenCollapsed: Swift.Bool {
+    get
+  }
+  public var showDividerWhenExpanded: Swift.Bool {
+    get
+  }
+  public var shouldShowDivider: Swift.Bool {
+    get
+  }
 }
 @_Concurrency.MainActor @preconcurrency public struct ExpandableCardView<VM, RowContent> : SwiftUICore.View where VM : MaestroKit.ExpandableCardVM, RowContent : SwiftUICore.View {
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
@@ -117,6 +128,11 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
 }
+
+
+
+
+
 
 
 @_Concurrency.MainActor public protocol MaestroEventDelegate : AnyObject {
@@ -540,6 +556,7 @@ public struct MaestroKeyPlay : Swift.Codable, Swift.Identifiable, Swift.Equatabl
     get
   }
 }
+
 
 
 
