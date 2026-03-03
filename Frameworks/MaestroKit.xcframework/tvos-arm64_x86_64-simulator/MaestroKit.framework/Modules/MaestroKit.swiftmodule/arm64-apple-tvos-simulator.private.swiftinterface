@@ -135,6 +135,7 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
 
 
 
+
 @_Concurrency.MainActor public protocol MaestroEventDelegate : AnyObject {
   @_Concurrency.MainActor func userRequestedNewKeyPlaysData()
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
