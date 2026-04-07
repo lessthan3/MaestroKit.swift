@@ -33,6 +33,7 @@ public protocol ExpandableCardVM<Item> : Combine.ObservableObject {
   var showDividerWhenCollapsed: Swift.Bool { get }
   var showDividerWhenExpanded: Swift.Bool { get }
   var isSingleItemMode: Swift.Bool { get }
+  var showExpandButtonAlways: Swift.Bool { get }
   func toggleExpanded()
 }
 extension MaestroKit.ExpandableCardVM {
@@ -46,6 +47,12 @@ extension MaestroKit.ExpandableCardVM {
     get
   }
   public var isSingleItemMode: Swift.Bool {
+    get
+  }
+  public var showExpandButtonAlways: Swift.Bool {
+    get
+  }
+  public var shouldShowExpandButton: Swift.Bool {
     get
   }
   public var displayedIndices: [Swift.Int] {
@@ -86,7 +93,7 @@ public enum OverlayType {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A7OverlayV4bodyQrvp", 0) __
 }
-public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
+public enum MaestroPanelType : Swift.String, Swift.CaseIterable, Swift.Sendable {
   case keyPlays
   case stats
   case fantasy
@@ -128,6 +135,7 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable {
   }
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A5PanelV4bodyQrvp", 0) __
 }
+
 
 
 
@@ -245,7 +253,7 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   public static let shared: MaestroKit.MaestroManager
   weak public var delegate: (any MaestroKit.MaestroManagerDelegate)?
   public func setMaestroManagerDelegate(_ delegate: any MaestroKit.MaestroManagerDelegate)
-  @_Concurrency.MainActor weak public var maestroEventViewModel: MaestroKit.MaestroEventViewModel? {
+  @_Concurrency.MainActor public var maestroEventViewModel: MaestroKit.MaestroEventViewModel? {
     get
   }
   public func setDefaultPanel(_ panel: MaestroKit.MaestroPanelType)
