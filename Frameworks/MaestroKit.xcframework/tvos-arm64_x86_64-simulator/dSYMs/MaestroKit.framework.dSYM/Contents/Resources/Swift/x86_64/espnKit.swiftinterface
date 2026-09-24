@@ -1,0 +1,3263 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-tvos13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -module-name espnKit
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import espnKit
+public enum Skie {
+  public enum RuntimeKotlin {
+    public enum SkieColdFlowIterator {
+      public typealias __Kotlin = espnKit.SkieColdFlowIterator
+    }
+    public enum SkieKotlinFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinFlow
+    }
+    public enum SkieKotlinMutableSharedFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinMutableSharedFlow
+    }
+    public enum SkieKotlinMutableStateFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinMutableStateFlow
+    }
+    public enum SkieKotlinOptionalFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinOptionalFlow
+    }
+    public enum SkieKotlinOptionalMutableSharedFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinOptionalMutableSharedFlow
+    }
+    public enum SkieKotlinOptionalMutableStateFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinOptionalMutableStateFlow
+    }
+    public enum SkieKotlinOptionalSharedFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinOptionalSharedFlow
+    }
+    public enum SkieKotlinOptionalStateFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinOptionalStateFlow
+    }
+    public enum SkieKotlinSharedFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinSharedFlow
+    }
+    public enum SkieKotlinStateFlow {
+      public typealias __Kotlin = espnKit.SkieKotlinStateFlow
+    }
+    public enum Skie_CancellationHandler {
+      public typealias __Kotlin = espnKit.Skie_CancellationHandler
+    }
+    public enum Skie_DispatcherDelegate {
+      public typealias __Kotlin = espnKit.Skie_DispatcherDelegate
+    }
+    public enum Skie_SuspendHandler {
+      public typealias __Kotlin = espnKit.Skie_SuspendHandler
+    }
+    public enum Skie_SuspendResult {
+      public typealias __Kotlin = espnKit.Skie_SuspendResult
+      public enum Success {
+        public typealias __Kotlin = espnKit.Skie_SuspendResult.Success
+      }
+      public enum Error {
+        public typealias __Kotlin = espnKit.Skie_SuspendResult.Error
+      }
+      public enum Canceled {
+        public typealias __Kotlin = espnKit.Skie_SuspendResult.Canceled
+      }
+    }
+  }
+  public typealias co_touchlab_skie__runtime_kotlin = espnKit.Skie.RuntimeKotlin
+  public enum KotlinxCoroutinesCore {
+    public enum Flow {
+      public typealias __Kotlin = espnKit.Kotlinx_coroutines_coreFlow
+    }
+    public enum StateFlow {
+      public typealias __Kotlin = espnKit.Kotlinx_coroutines_coreStateFlow
+    }
+    public enum SharedFlow {
+      public typealias __Kotlin = espnKit.Kotlinx_coroutines_coreSharedFlow
+    }
+    public enum MutableSharedFlow {
+      public typealias __Kotlin = espnKit.Kotlinx_coroutines_coreMutableSharedFlow
+    }
+    public enum MutableStateFlow {
+      public typealias __Kotlin = espnKit.Kotlinx_coroutines_coreMutableStateFlow
+    }
+    public enum Runnable {
+      public typealias __Kotlin = espnKit.Kotlinx_coroutines_coreRunnable
+    }
+    public enum SelectClause0 {
+    }
+    public enum SelectClause {
+    }
+    public enum SelectInstance {
+    }
+    public enum SelectClause1 {
+    }
+    public enum SelectClause2 {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_coroutines_core = espnKit.Skie.KotlinxCoroutinesCore
+  public enum KtorUtils {
+    public enum Pipeline {
+    }
+  }
+  public typealias io_ktor__ktor_utils = espnKit.Skie.KtorUtils
+  public enum EspnDomain {
+    public enum ESPNMaestroSDK {
+      public enum DebugEvent {
+      }
+    }
+    public enum StatsAction {
+    }
+    public enum StatsCardType {
+    }
+    public enum ShopItemAction {
+    }
+    public enum ScoreboardAction {
+    }
+    public enum ScoreboardGameUiModel {
+    }
+    public enum KeyPlayAction {
+    }
+    public enum FantasyCardType {
+    }
+    public enum EntryData {
+    }
+    public enum Preference {
+    }
+    public enum BetPanelAction {
+    }
+    public enum BetCardType {
+    }
+    public enum TennisOdds {
+      public enum Odd {
+        public enum Player {
+        }
+      }
+    }
+    public enum LoadedFantasyData {
+    }
+    public enum PickemsCardUiModel {
+    }
+    public enum PickEmsSummaryCardUiModel {
+      public enum StatLineItem {
+      }
+    }
+    public enum PickEmsState {
+    }
+    public enum FantasyLeagueUiModel {
+    }
+    public enum PickUiModel {
+      public enum Pick {
+      }
+    }
+    public enum AnalyticsShopCardType {
+    }
+    public enum ShopPanelUiState {
+      public enum CardType {
+      }
+    }
+    public enum TeamStatisticsEntry {
+    }
+    public enum StatsCardUiModel {
+      public enum AlsoLive {
+        public enum TennisMatchHeader {
+          public enum CompetitionType {
+            public enum Double {
+              public enum DoubleMatchup {
+                public enum FlagAndPlayer {
+                  public enum FlagType {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      public enum MatchHeader {
+        public enum Score {
+          public enum TeamDisplay {
+          }
+        }
+      }
+      public enum MatchTimeline {
+        public enum ExpandedItem {
+        }
+      }
+    }
+    public enum TennisBoxTeamUiModel {
+      public enum DisplayName {
+      }
+    }
+    public enum StatsCard {
+    }
+  }
+  public typealias com_lessthan3__espn_domain = espnKit.Skie.EspnDomain
+  public enum KtorHttp {
+    public enum OutgoingContent {
+    }
+  }
+  public typealias io_ktor__ktor_http = espnKit.Skie.KtorHttp
+  public enum KotlinxSerializationCore {
+    public enum SerialKind {
+    }
+    public enum SerializersModule {
+    }
+    public enum PolymorphicKind {
+    }
+    public enum PrimitiveKind {
+    }
+    public enum StructureKind {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_core = espnKit.Skie.KotlinxSerializationCore
+  public enum KotlinxIoCore {
+    public enum Source {
+    }
+    public enum Sink {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_io_core = espnKit.Skie.KotlinxIoCore
+  public enum Shared {
+    public enum ClientPlatform {
+      public enum Apple {
+      }
+      public enum Android {
+      }
+      public enum Web {
+      }
+    }
+    public enum MaestroNetworkResult {
+    }
+    public enum ExecutionTree {
+    }
+    public enum MaestroLoadableResult {
+    }
+    public enum ParseResult {
+    }
+    public enum AsyncImageParams {
+    }
+    public enum BuilderCardUiModel {
+    }
+    public enum CostreamConnectionState {
+    }
+    public enum ActionPayload {
+    }
+    public enum BindingSource {
+    }
+    public enum BroadcastSnapshot {
+    }
+    public enum MaestroNetworkError {
+    }
+    public enum CtaSpec {
+    }
+  }
+  public typealias com_lessthan3__shared = espnKit.Skie.Shared
+  public enum KotlinxSerializationJson {
+    public enum JsonElement {
+    }
+    public enum JsonPrimitive {
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_serialization_json = espnKit.Skie.KotlinxSerializationJson
+  public enum KotlinxDatetime {
+    public enum DateTimeFormat {
+    }
+    public enum DateTimeFormatBuilder {
+      public enum WithTime {
+      }
+      public enum WithDate {
+      }
+      public enum WithYearMonth {
+      }
+      public enum WithDateTime {
+      }
+      public enum WithUtcOffset {
+      }
+      public enum WithDateTimeComponents {
+      }
+    }
+  }
+  public typealias org_jetbrains_kotlinx__kotlinx_datetime = espnKit.Skie.KotlinxDatetime
+}
+@_hasMissingDesignatedInitializers public class SkieSwiftFlowIterator<T> : _Concurrency.AsyncIteratorProtocol {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func next() async -> T?
+  @objc deinit
+  public typealias Element = T
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncIteratorProtocol, Failure) public typealias __AsyncIteratorProtocol_Failure = Swift.Never
+}
+public protocol SkieSwiftFlowProtocol<Element> : _Concurrency.AsyncSequence {
+  associatedtype Element
+  associatedtype Delegate : espnKit.Kotlinx_coroutines_coreFlow
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = espnKit.SkieKotlinFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinOptionalFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = espnKit.SkieKotlinOptionalFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftSharedFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = espnKit.SkieKotlinSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalSharedFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var replayCache: [T?] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = espnKit.SkieKotlinOptionalSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableSharedFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: espnKit.SkieSwiftStateFlow<espnKit.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinMutableSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinMutableSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = espnKit.SkieKotlinMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableSharedFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var subscriptionCount: espnKit.SkieSwiftStateFlow<espnKit.KotlinInt> {
+    get
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalMutableSharedFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalMutableSharedFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = espnKit.SkieKotlinOptionalMutableSharedFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreMutableSharedFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftStateFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = espnKit.SkieKotlinStateFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalStateFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T? {
+    get
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = espnKit.SkieKotlinOptionalStateFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftMutableStateFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T {
+    get
+    set(value)
+  }
+  final public var replayCache: [T] {
+    get
+  }
+  final public var subscriptionCount: espnKit.SkieSwiftStateFlow<espnKit.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T, update: T) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T) async throws
+  final public func tryEmit(value: T) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinMutableStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinMutableStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T>
+  public typealias Element = T
+  public typealias _ObjectiveCType = espnKit.SkieKotlinMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class SkieSwiftOptionalMutableStateFlow<T> : espnKit.SkieSwiftFlowProtocol, Swift._ObjectiveCBridgeable {
+  final public var value: T? {
+    get
+    set(value)
+  }
+  final public var replayCache: [T?] {
+    get
+  }
+  final public var subscriptionCount: espnKit.SkieSwiftStateFlow<espnKit.KotlinInt> {
+    get
+  }
+  final public func compareAndSet(expect: T?, update: T?) -> Swift.Bool
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  final public func emit(value: T?) async throws
+  final public func tryEmit(value: T?) -> Swift.Bool
+  final public func resetReplayCache()
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalMutableStateFlow<T>?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>, result: inout espnKit.SkieSwiftOptionalMutableStateFlow<T>?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>?) -> Self
+  final public func _bridgeToObjectiveC() -> espnKit.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  final public func makeAsyncIterator() -> espnKit.SkieSwiftFlowIterator<T?>
+  public typealias AsyncIterator = espnKit.SkieSwiftFlowIterator<T?>
+  public typealias Element = T?
+  public typealias _ObjectiveCType = espnKit.SkieKotlinOptionalMutableStateFlow<Swift.AnyObject>
+  public typealias Delegate = any espnKit.Kotlinx_coroutines_coreMutableStateFlow
+  @available(iOS 18.0, tvOS 18.0, watchOS 11.0, visionOS 2.0, macOS 15.0, *)
+  @_implements(_Concurrency.AsyncSequence, Failure) public typealias __AsyncSequence_Failure = Swift.Never
+  @objc deinit
+}
+extension espnKit.Skie.RuntimeKotlin.SkieColdFlowIterator {
+  public struct __Suspend<E> where E : AnyObject {
+    public let __kotlinObject: espnKit.SkieColdFlowIterator<E>
+    public init(_ __kotlinObject: espnKit.SkieColdFlowIterator<E>)
+  }
+}
+public func skie<E>(_ kotlinObject: espnKit.SkieColdFlowIterator<E>) -> espnKit.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend<E> where E : AnyObject
+extension espnKit.Skie.RuntimeKotlin.SkieColdFlowIterator.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func hasNext() async throws -> espnKit.KotlinBoolean
+}
+extension espnKit.Kotlinx_coroutines_coreFlow {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func collect(collector: any espnKit.Kotlinx_coroutines_coreFlowCollector) async throws
+}
+extension espnKit.Kotlinx_coroutines_coreFlowCollector {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func emit(value: Any?) async throws
+}
+extension espnKit.Kotlinx_coroutines_coreJob {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func join() async throws
+}
+extension espnKit.Skie.KtorUtils.Pipeline {
+  public struct __Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject {
+    public let __kotlinObject: espnKit.Ktor_utilsPipeline<TSubject, TContext>
+    public init(_ __kotlinObject: espnKit.Ktor_utilsPipeline<TSubject, TContext>)
+  }
+}
+public func skie<TSubject, TContext>(_ kotlinObject: espnKit.Ktor_utilsPipeline<TSubject, TContext>) -> espnKit.Skie.KtorUtils.Pipeline.__Suspend<TSubject, TContext> where TSubject : AnyObject, TContext : AnyObject
+extension espnKit.Skie.KtorUtils.Pipeline.__Suspend {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(context: TContext, subject: TSubject) async throws -> TSubject
+}
+extension espnKit.KotlinSuspendFunction2 {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?, p2: Any?) async throws -> Any?
+}
+extension espnKit.Ktor_client_coreHttpClientCall {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func body(info: espnKit.Ktor_utilsTypeInfo) async throws -> Any
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func bodyNullable(info: espnKit.Ktor_utilsTypeInfo) async throws -> Any?
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getResponseContent() async throws -> any espnKit.Ktor_ioByteReadChannel
+}
+extension espnKit.Ktor_ioByteReadChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func awaitContent(min: Swift.Int32) async throws -> espnKit.KotlinBoolean
+}
+extension espnKit.Ktor_client_coreHttpClientEngine {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func execute(data: espnKit.Ktor_client_coreHttpRequestData) async throws -> espnKit.Ktor_client_coreHttpResponseData
+}
+extension espnKit.StatsAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackCardClicked(cardType: any espnKit.StatsCardType, gameState: espnKit.StatsGameState?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackCardExpandedCollapsed(cardType: any espnKit.StatsCardType, gameState: espnKit.StatsGameState?, expanded: Swift.Bool) async throws
+}
+extension espnKit.KotlinSuspendFunction1 {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func invoke(p1: Any?) async throws -> Any?
+}
+extension espnKit.StatsDataSource {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getTimeCodedResponse(eventId: Swift.String, leagueId: Swift.String, timecodeMs: Swift.Int64) async throws -> any espnKit.SharedMaestroNetworkResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func retrieveBaseResponse(params: espnKit.ESPNReloadParams, fauxcastId: Swift.String?) async throws -> any espnKit.SharedMaestroNetworkResult
+}
+extension espnKit.StatsTimecodeApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getStatsForTimecode(eventId: Swift.String, leagueId: Swift.String, timecode: Swift.String?) async throws -> espnKit.Ktor_client_coreHttpResponse
+}
+extension espnKit.StatsApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getStats(eventId: Swift.String, gameState: Swift.String?) async throws -> espnKit.Ktor_client_coreHttpResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getStatsOverride(url: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+}
+extension espnKit.SharedAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func track(event: espnKit.SharedAnalyticsEvent, config: espnKit.SharedCombinedRemoteConfig?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackBatch(items: [espnKit.KotlinPair<espnKit.SharedAnalyticsEvent, espnKit.SharedCombinedRemoteConfig>]) async throws
+}
+extension espnKit.SharedAnalyticsApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendBatch(events: [[Swift.String : Swift.String]]) async throws -> any espnKit.SharedMaestroNetworkResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func sendEvent(params: [Swift.String : Swift.String]) async throws -> any espnKit.SharedMaestroNetworkResult
+}
+extension espnKit.ShopAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackProductDetailsDismissed(productId: Swift.String?, sectionType: Swift.String?, sectionName: Swift.String?, price: Swift.String?, salePercentage: espnKit.KotlinInt?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackProductSummaryClicked(productId: Swift.String, sectionType: Swift.String?, sectionName: Swift.String?, price: Swift.String?, salePercentage: espnKit.KotlinInt?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackQRClicked() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackWantMoreClicked(sectionType: Swift.String?, sectionName: Swift.String?) async throws
+}
+extension espnKit.ShopDataSource {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getShopItems(eventId: Swift.String) async throws -> any espnKit.SharedMaestroNetworkResult
+}
+extension espnKit.ShopApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getShopItems(eventId: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+}
+extension espnKit.ScoreboardAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackGameClicked(game: any espnKit.ScoreboardGameUiModel) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackWatchLiveClicked(game: espnKit.ScoreboardGameUiModelLive) async throws
+}
+extension espnKit.ScoreboardDataSource {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getScoreboard(params: espnKit.ESPNReloadParams) async throws -> any espnKit.SharedMaestroNetworkResult
+}
+extension espnKit.ScoreboardApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getScoreboard(eventId: Swift.String?, region: Swift.String, lang: Swift.String, postalCode: Swift.String?, pinnedEvents: Swift.String?, swid: Swift.String?, authToken: Swift.String?) async throws -> espnKit.Ktor_client_coreHttpResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getScoreboardOverride(url: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+}
+extension espnKit.SharedRiveOverlayCache {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getFile(url: Swift.String) async throws -> espnKit.KotlinByteArray?
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getRiveImage(url: Swift.String) async throws -> espnKit.KotlinByteArray?
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func preload(batch: [espnKit.SharedFirebaseOverlayPayload]) async throws
+}
+extension espnKit.KeyPlaysAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackKeyPlayClicked(clipId: Swift.String, keyPlayText: Swift.String, tileType: Swift.String?) async throws
+}
+extension espnKit.FantasyAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackCardClicked(cardType: espnKit.FantasyCardType, fantasyTeamsManaged: espnKit.KotlinInt?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackCardExpandedCollapsed(cardType: espnKit.FantasyCardType, fantasyTeamsManaged: espnKit.KotlinInt?, expanded: Swift.Bool) async throws
+}
+extension espnKit.FantasyDataSource {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func fetchBase(eventId: Swift.String, swid: Swift.String, authToken: Swift.String, prevEtag: Swift.String?) async throws -> any espnKit.SharedMaestroNetworkResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getChallengeScoreboard(params: espnKit.ChallengeLoadParams) async throws -> any espnKit.SharedMaestroNetworkResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getLeagueScoreboard(params: espnKit.LeagueScoreboardParams) async throws -> any espnKit.SharedMaestroNetworkResult
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPromo() async throws -> espnKit.ESPNPromoResponse?
+}
+extension espnKit.BetsAnalyticsTracker {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackBetStatusShown(betStatus: espnKit.BetStatus, betsState: espnKit.BetsSessionState?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackCardClicked(cardType: any espnKit.BetCardType, betsState: espnKit.BetsSessionState?) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func trackCardExpandedCollapsed(betStatus: espnKit.BetStatus, cardType: any espnKit.BetCardType, betsState: espnKit.BetsSessionState?, expanded: Swift.Bool) async throws
+}
+extension espnKit.BetApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getAnonymousBets(eventId: Swift.String, overrideEnabled: Swift.Bool) async throws -> espnKit.Ktor_client_coreHttpResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getPersonalizedBets(eventId: Swift.String, swid: Swift.String, overrideEnabled: Swift.Bool, authToken: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+}
+extension espnKit.SharedCostreamPresenter {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func connect() async throws -> any espnKit.Kotlinx_coroutines_coreJob
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func disconnect() async throws
+}
+extension espnKit.SharedRoomConnectionProvider {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func connectToRoom(url: Swift.String, token: Swift.String, roomId: espnKit.SharedCostreamRoomId) async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func disconnectAll() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func disconnectRoom(roomId: espnKit.SharedCostreamRoomId) async throws
+}
+extension espnKit.FantasyApi {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getFan(baseUrl: Swift.String, swid: Swift.String, displayHiddenPrefs: Swift.Bool, prefTypes: [Swift.String], context: Swift.String, useCookieAuth: Swift.Bool, source: Swift.String, featureFlags: Swift.String, eventId: Swift.String, filterType: Swift.String, platform: Swift.String, swidQuery: Swift.String, authToken: Swift.String, prevEtag: Swift.String?) async throws -> espnKit.Ktor_client_coreHttpResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getGambit(url: Swift.String, competitionId: Swift.String, cookie: Swift.String, platform: Swift.String, view: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getScoreboard(url: Swift.String, cookie: Swift.String, accept: Swift.String, view: Swift.String, proGameId: Swift.String, teamId: Swift.String, platform: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func getStaticPromo(url: Swift.String) async throws -> espnKit.Ktor_client_coreHttpResponse
+}
+extension espnKit.Ktor_httpOutgoingContent.ProtocolUpgrade {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func upgrade(input: any espnKit.Ktor_ioByteReadChannel, output: any espnKit.Ktor_ioByteWriteChannel, engineContext: any espnKit.KotlinCoroutineContext, userContext: any espnKit.KotlinCoroutineContext) async throws -> any espnKit.Kotlinx_coroutines_coreJob
+}
+extension espnKit.Ktor_ioByteWriteChannel {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func flush() async throws
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func flushAndClose() async throws
+}
+extension espnKit.Ktor_httpOutgoingContent.WriteChannelContent {
+  @available(iOS 13, macOS 10.15, watchOS 6, tvOS 13, *)
+  public func writeTo(channel: any espnKit.Ktor_ioByteWriteChannel) async throws
+}
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftFlow<T>) -> espnKit.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinFlow<T> where T : AnyObject
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftFlow<T>) -> espnKit.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T> where T : AnyObject
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftOptionalFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftOptionalFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinSharedFlow<T> where T : AnyObject
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftSharedFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftOptionalSharedFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftOptionalSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinMutableSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+}
+extension espnKit.SkieSwiftMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+}
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalMutableSharedFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableSharedFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>) -> espnKit.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftOptionalMutableSharedFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+extension espnKit.SkieSwiftOptionalMutableSharedFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableSharedFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableSharedFlow<T>)
+}
+public func SkieKotlinStateFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinStateFlow<T> where T : AnyObject
+public func SkieKotlinStateFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftStateFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalStateFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftOptionalStateFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftOptionalStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+public func SkieKotlinMutableStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinMutableStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+}
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalMutableStateFlow<T> where T : AnyObject
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: espnKit.SkieSwiftMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+public func SkieKotlinOptionalMutableStateFlow<T>(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>) -> espnKit.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType> where T : Swift._ObjectiveCBridgeable
+extension espnKit.SkieSwiftOptionalMutableStateFlow where T : AnyObject {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+extension espnKit.SkieSwiftOptionalMutableStateFlow where T : Swift._ObjectiveCBridgeable {
+  convenience public init(_ flow: espnKit.SkieKotlinMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieKotlinOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T._ObjectiveCType>)
+  convenience public init(_ flow: espnKit.SkieSwiftMutableStateFlow<T>)
+  convenience public init(_ flow: espnKit.SkieSwiftOptionalMutableStateFlow<T>)
+}
+@frozen public enum KotlinKVariance : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case invariant
+  case `in`
+  case out
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__KotlinKVariance, result: inout espnKit.KotlinKVariance?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__KotlinKVariance, result: inout espnKit.KotlinKVariance?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__KotlinKVariance?) -> espnKit.KotlinKVariance
+  public func _bridgeToObjectiveC() -> espnKit.__KotlinKVariance
+  public typealias _ObjectiveCType = espnKit.__KotlinKVariance
+  public static func == (a: espnKit.KotlinKVariance, b: espnKit.KotlinKVariance) -> Swift.Bool
+  public typealias AllCases = [espnKit.KotlinKVariance]
+  nonisolated public static var allCases: [espnKit.KotlinKVariance] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.KotlinKVariance {
+  public func toKotlinEnum() -> espnKit.__KotlinKVariance
+}
+extension espnKit.__KotlinKVariance {
+  public func toSwiftEnum() -> espnKit.KotlinKVariance
+}
+extension espnKit.ESPNMaestroSDK {
+  public typealias SDKLogLevel = espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel
+}
+extension espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel {
+  public func toKotlinEnum() -> espnKit.ESPNMaestroSDK.__SDKLogLevel
+}
+extension espnKit.ESPNMaestroSDK.__SDKLogLevel {
+  public func toSwiftEnum() -> espnKit.ESPNMaestroSDK.SDKLogLevel
+}
+@frozen public enum __Bridge__ESPNMaestroSDK_SDKLogLevel : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case debug
+  case info
+  case warn
+  case error
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.ESPNMaestroSDK.__SDKLogLevel, result: inout espnKit.ESPNMaestroSDK.SDKLogLevel?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.ESPNMaestroSDK.__SDKLogLevel, result: inout espnKit.ESPNMaestroSDK.SDKLogLevel?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.ESPNMaestroSDK.__SDKLogLevel?) -> espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel
+  public func _bridgeToObjectiveC() -> espnKit.ESPNMaestroSDK.__SDKLogLevel
+  public typealias _ObjectiveCType = espnKit.ESPNMaestroSDK.__SDKLogLevel
+  public static func == (a: espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel, b: espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel]
+  nonisolated public static var allCases: [espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum StatsGameState : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case pre
+  case `in`
+  case post
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__StatsGameState, result: inout espnKit.StatsGameState?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__StatsGameState, result: inout espnKit.StatsGameState?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__StatsGameState?) -> espnKit.StatsGameState
+  public func _bridgeToObjectiveC() -> espnKit.__StatsGameState
+  public typealias _ObjectiveCType = espnKit.__StatsGameState
+  public static func == (a: espnKit.StatsGameState, b: espnKit.StatsGameState) -> Swift.Bool
+  public typealias AllCases = [espnKit.StatsGameState]
+  nonisolated public static var allCases: [espnKit.StatsGameState] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.StatsGameState {
+  public func toKotlinEnum() -> espnKit.__StatsGameState
+}
+extension espnKit.__StatsGameState {
+  public func toSwiftEnum() -> espnKit.StatsGameState
+}
+@frozen public enum ScoreboardTextStyle : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case regular
+  case light
+  public var apiValue: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: espnKit.__ScoreboardTextStyle.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__ScoreboardTextStyle, result: inout espnKit.ScoreboardTextStyle?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__ScoreboardTextStyle, result: inout espnKit.ScoreboardTextStyle?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__ScoreboardTextStyle?) -> espnKit.ScoreboardTextStyle
+  public func _bridgeToObjectiveC() -> espnKit.__ScoreboardTextStyle
+  public typealias _ObjectiveCType = espnKit.__ScoreboardTextStyle
+  public typealias Companion = espnKit.__ScoreboardTextStyle.Companion
+  public static func == (a: espnKit.ScoreboardTextStyle, b: espnKit.ScoreboardTextStyle) -> Swift.Bool
+  public typealias AllCases = [espnKit.ScoreboardTextStyle]
+  nonisolated public static var allCases: [espnKit.ScoreboardTextStyle] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.ScoreboardTextStyle {
+  public func toKotlinEnum() -> espnKit.__ScoreboardTextStyle
+}
+extension espnKit.__ScoreboardTextStyle {
+  public func toSwiftEnum() -> espnKit.ScoreboardTextStyle
+}
+@frozen public enum ScoreboardTextType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case text
+  case date
+  case time
+  public var apiValue: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: espnKit.__ScoreboardTextType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__ScoreboardTextType, result: inout espnKit.ScoreboardTextType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__ScoreboardTextType, result: inout espnKit.ScoreboardTextType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__ScoreboardTextType?) -> espnKit.ScoreboardTextType
+  public func _bridgeToObjectiveC() -> espnKit.__ScoreboardTextType
+  public typealias _ObjectiveCType = espnKit.__ScoreboardTextType
+  public typealias Companion = espnKit.__ScoreboardTextType.Companion
+  public static func == (a: espnKit.ScoreboardTextType, b: espnKit.ScoreboardTextType) -> Swift.Bool
+  public typealias AllCases = [espnKit.ScoreboardTextType]
+  nonisolated public static var allCases: [espnKit.ScoreboardTextType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.ScoreboardTextType {
+  public func toKotlinEnum() -> espnKit.__ScoreboardTextType
+}
+extension espnKit.__ScoreboardTextType {
+  public func toSwiftEnum() -> espnKit.ScoreboardTextType
+}
+@frozen public enum BetStatus : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case live
+  case settled
+  case upcoming
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: espnKit.__BetStatus.Companion {
+    get
+  }
+  public func headerTitle() -> Swift.String
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__BetStatus, result: inout espnKit.BetStatus?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__BetStatus, result: inout espnKit.BetStatus?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__BetStatus?) -> espnKit.BetStatus
+  public func _bridgeToObjectiveC() -> espnKit.__BetStatus
+  public typealias _ObjectiveCType = espnKit.__BetStatus
+  public typealias Companion = espnKit.__BetStatus.Companion
+  public static func == (a: espnKit.BetStatus, b: espnKit.BetStatus) -> Swift.Bool
+  public typealias AllCases = [espnKit.BetStatus]
+  nonisolated public static var allCases: [espnKit.BetStatus] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.BetStatus {
+  public func toKotlinEnum() -> espnKit.__BetStatus
+}
+extension espnKit.__BetStatus {
+  public func toSwiftEnum() -> espnKit.BetStatus
+}
+@frozen public enum BetType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case parlay
+  case parlayPlus
+  case teaser
+  case straight
+  case boost
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public func displayName() -> Swift.String
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__BetType, result: inout espnKit.BetType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__BetType, result: inout espnKit.BetType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__BetType?) -> espnKit.BetType
+  public func _bridgeToObjectiveC() -> espnKit.__BetType
+  public typealias _ObjectiveCType = espnKit.__BetType
+  public static func == (a: espnKit.BetType, b: espnKit.BetType) -> Swift.Bool
+  public typealias AllCases = [espnKit.BetType]
+  nonisolated public static var allCases: [espnKit.BetType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.BetType {
+  public func toKotlinEnum() -> espnKit.__BetType
+}
+extension espnKit.__BetType {
+  public func toSwiftEnum() -> espnKit.BetType
+}
+@frozen public enum BetsSettledResult : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case won
+  case wonDeadHeat
+  case cashout
+  case halfWon
+  case lost
+  case halfLost
+  case ghostWin
+  case ghostLegParlay
+  case boost30
+  case earlyExitWin
+  case earlyExitProtected
+  case push
+  case void
+  case placed
+  case placedDeadHeat
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__BetsSettledResult, result: inout espnKit.BetsSettledResult?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__BetsSettledResult, result: inout espnKit.BetsSettledResult?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__BetsSettledResult?) -> espnKit.BetsSettledResult
+  public func _bridgeToObjectiveC() -> espnKit.__BetsSettledResult
+  public typealias _ObjectiveCType = espnKit.__BetsSettledResult
+  public static func == (a: espnKit.BetsSettledResult, b: espnKit.BetsSettledResult) -> Swift.Bool
+  public typealias AllCases = [espnKit.BetsSettledResult]
+  nonisolated public static var allCases: [espnKit.BetsSettledResult] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.BetsSettledResult {
+  public func toKotlinEnum() -> espnKit.__BetsSettledResult
+}
+extension espnKit.__BetsSettledResult {
+  public func toSwiftEnum() -> espnKit.BetsSettledResult
+}
+@frozen public enum PromoQRType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case fantasy
+  case bet
+  case tc
+  public var logoHeight: Swift.Float {
+    get
+  }
+  public var logoWidth: Swift.Float {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__PromoQRType, result: inout espnKit.PromoQRType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__PromoQRType, result: inout espnKit.PromoQRType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__PromoQRType?) -> espnKit.PromoQRType
+  public func _bridgeToObjectiveC() -> espnKit.__PromoQRType
+  public typealias _ObjectiveCType = espnKit.__PromoQRType
+  public static func == (a: espnKit.PromoQRType, b: espnKit.PromoQRType) -> Swift.Bool
+  public typealias AllCases = [espnKit.PromoQRType]
+  nonisolated public static var allCases: [espnKit.PromoQRType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.PromoQRType {
+  public func toKotlinEnum() -> espnKit.__PromoQRType
+}
+extension espnKit.__PromoQRType {
+  public func toSwiftEnum() -> espnKit.PromoQRType
+}
+extension espnKit.PickCardHeaderUiModel {
+  public typealias TitleAccent = espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent
+}
+extension espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent {
+  public func toKotlinEnum() -> espnKit.PickCardHeaderUiModel.__TitleAccent
+}
+extension espnKit.PickCardHeaderUiModel.__TitleAccent {
+  public func toSwiftEnum() -> espnKit.PickCardHeaderUiModel.TitleAccent
+}
+@frozen public enum __Bridge__PickCardHeaderUiModel_TitleAccent : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case `default`
+  case success
+  case error
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.PickCardHeaderUiModel.__TitleAccent, result: inout espnKit.PickCardHeaderUiModel.TitleAccent?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.PickCardHeaderUiModel.__TitleAccent, result: inout espnKit.PickCardHeaderUiModel.TitleAccent?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.PickCardHeaderUiModel.__TitleAccent?) -> espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent
+  public func _bridgeToObjectiveC() -> espnKit.PickCardHeaderUiModel.__TitleAccent
+  public typealias _ObjectiveCType = espnKit.PickCardHeaderUiModel.__TitleAccent
+  public static func == (a: espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent, b: espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent]
+  nonisolated public static var allCases: [espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum MatchUpBlockGravity : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case left
+  case right
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__MatchUpBlockGravity, result: inout espnKit.MatchUpBlockGravity?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__MatchUpBlockGravity, result: inout espnKit.MatchUpBlockGravity?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__MatchUpBlockGravity?) -> espnKit.MatchUpBlockGravity
+  public func _bridgeToObjectiveC() -> espnKit.__MatchUpBlockGravity
+  public typealias _ObjectiveCType = espnKit.__MatchUpBlockGravity
+  public static func == (a: espnKit.MatchUpBlockGravity, b: espnKit.MatchUpBlockGravity) -> Swift.Bool
+  public typealias AllCases = [espnKit.MatchUpBlockGravity]
+  nonisolated public static var allCases: [espnKit.MatchUpBlockGravity] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.MatchUpBlockGravity {
+  public func toKotlinEnum() -> espnKit.__MatchUpBlockGravity
+}
+extension espnKit.__MatchUpBlockGravity {
+  public func toSwiftEnum() -> espnKit.MatchUpBlockGravity
+}
+@frozen public enum PickSide : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case first
+  case second
+  case `default`
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__PickSide, result: inout espnKit.PickSide?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__PickSide, result: inout espnKit.PickSide?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__PickSide?) -> espnKit.PickSide
+  public func _bridgeToObjectiveC() -> espnKit.__PickSide
+  public typealias _ObjectiveCType = espnKit.__PickSide
+  public static func == (a: espnKit.PickSide, b: espnKit.PickSide) -> Swift.Bool
+  public typealias AllCases = [espnKit.PickSide]
+  nonisolated public static var allCases: [espnKit.PickSide] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.PickSide {
+  public func toKotlinEnum() -> espnKit.__PickSide
+}
+extension espnKit.__PickSide {
+  public func toSwiftEnum() -> espnKit.PickSide
+}
+@frozen public enum PickResult : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case win
+  case loss
+  case none
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__PickResult, result: inout espnKit.PickResult?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__PickResult, result: inout espnKit.PickResult?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__PickResult?) -> espnKit.PickResult
+  public func _bridgeToObjectiveC() -> espnKit.__PickResult
+  public typealias _ObjectiveCType = espnKit.__PickResult
+  public static func == (a: espnKit.PickResult, b: espnKit.PickResult) -> Swift.Bool
+  public typealias AllCases = [espnKit.PickResult]
+  nonisolated public static var allCases: [espnKit.PickResult] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.PickResult {
+  public func toKotlinEnum() -> espnKit.__PickResult
+}
+extension espnKit.__PickResult {
+  public func toSwiftEnum() -> espnKit.PickResult
+}
+extension espnKit.KeyPlayCardUiModel {
+  public typealias OverlayType = espnKit.__Bridge__KeyPlayCardUiModel_OverlayType
+}
+extension espnKit.__Bridge__KeyPlayCardUiModel_OverlayType {
+  public func toKotlinEnum() -> espnKit.KeyPlayCardUiModel.__OverlayType
+}
+extension espnKit.KeyPlayCardUiModel.__OverlayType {
+  public func toSwiftEnum() -> espnKit.KeyPlayCardUiModel.OverlayType
+}
+@frozen public enum __Bridge__KeyPlayCardUiModel_OverlayType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case fullOverlay
+  case cornerOverlay
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.KeyPlayCardUiModel.__OverlayType, result: inout espnKit.KeyPlayCardUiModel.OverlayType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.KeyPlayCardUiModel.__OverlayType, result: inout espnKit.KeyPlayCardUiModel.OverlayType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.KeyPlayCardUiModel.__OverlayType?) -> espnKit.__Bridge__KeyPlayCardUiModel_OverlayType
+  public func _bridgeToObjectiveC() -> espnKit.KeyPlayCardUiModel.__OverlayType
+  public typealias _ObjectiveCType = espnKit.KeyPlayCardUiModel.__OverlayType
+  public static func == (a: espnKit.__Bridge__KeyPlayCardUiModel_OverlayType, b: espnKit.__Bridge__KeyPlayCardUiModel_OverlayType) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__KeyPlayCardUiModel_OverlayType]
+  nonisolated public static var allCases: [espnKit.__Bridge__KeyPlayCardUiModel_OverlayType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.StatsCardUiModel {
+  public typealias GolfLeaderboardMark = espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark
+}
+extension espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark {
+  public func toKotlinEnum() -> espnKit.StatsCardUiModel.__GolfLeaderboardMark
+}
+extension espnKit.StatsCardUiModel.__GolfLeaderboardMark {
+  public func toSwiftEnum() -> espnKit.StatsCardUiModel.GolfLeaderboardMark
+}
+@frozen public enum __Bridge__StatsCardUiModel_GolfLeaderboardMark : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case eagle
+  case birdie
+  case bogey
+  case doubleBogey
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__GolfLeaderboardMark, result: inout espnKit.StatsCardUiModel.GolfLeaderboardMark?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__GolfLeaderboardMark, result: inout espnKit.StatsCardUiModel.GolfLeaderboardMark?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__GolfLeaderboardMark?) -> espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark
+  public func _bridgeToObjectiveC() -> espnKit.StatsCardUiModel.__GolfLeaderboardMark
+  public typealias _ObjectiveCType = espnKit.StatsCardUiModel.__GolfLeaderboardMark
+  public static func == (a: espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark, b: espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark]
+  nonisolated public static var allCases: [espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.StatsCardUiModel {
+  public typealias LastFiveResultTeamResultDetailResult = espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult
+}
+extension espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult {
+  public func toKotlinEnum() -> espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult
+}
+extension espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult {
+  public func toSwiftEnum() -> espnKit.StatsCardUiModel.LastFiveResultTeamResultDetailResult
+}
+@frozen public enum __Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case win
+  case loss
+  case draw
+  case cancelled
+  case postponed
+  case tied
+  public var label: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult, result: inout espnKit.StatsCardUiModel.LastFiveResultTeamResultDetailResult?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult, result: inout espnKit.StatsCardUiModel.LastFiveResultTeamResultDetailResult?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult?) -> espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult
+  public func _bridgeToObjectiveC() -> espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult
+  public typealias _ObjectiveCType = espnKit.StatsCardUiModel.__LastFiveResultTeamResultDetailResult
+  public static func == (a: espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult, b: espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult]
+  nonisolated public static var allCases: [espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum StatsCardUiModelMatchTimelineExpandedItemSide : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case start
+  case end
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide, result: inout espnKit.StatsCardUiModelMatchTimelineExpandedItemSide?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide, result: inout espnKit.StatsCardUiModelMatchTimelineExpandedItemSide?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide?) -> espnKit.StatsCardUiModelMatchTimelineExpandedItemSide
+  public func _bridgeToObjectiveC() -> espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide
+  public typealias _ObjectiveCType = espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide
+  public static func == (a: espnKit.StatsCardUiModelMatchTimelineExpandedItemSide, b: espnKit.StatsCardUiModelMatchTimelineExpandedItemSide) -> Swift.Bool
+  public typealias AllCases = [espnKit.StatsCardUiModelMatchTimelineExpandedItemSide]
+  nonisolated public static var allCases: [espnKit.StatsCardUiModelMatchTimelineExpandedItemSide] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.StatsCardUiModelMatchTimelineExpandedItemSide {
+  public func toKotlinEnum() -> espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide
+}
+extension espnKit.__StatsCardUiModelMatchTimelineExpandedItemSide {
+  public func toSwiftEnum() -> espnKit.StatsCardUiModelMatchTimelineExpandedItemSide
+}
+extension espnKit.StatsCardUiModel {
+  public typealias WinProbabilityTeamSectionTeamGraphLineStyle = espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle
+}
+extension espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle {
+  public func toKotlinEnum() -> espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle
+}
+extension espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle {
+  public func toSwiftEnum() -> espnKit.StatsCardUiModel.WinProbabilityTeamSectionTeamGraphLineStyle
+}
+@frozen public enum __Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case solid
+  case gapped
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle, result: inout espnKit.StatsCardUiModel.WinProbabilityTeamSectionTeamGraphLineStyle?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle, result: inout espnKit.StatsCardUiModel.WinProbabilityTeamSectionTeamGraphLineStyle?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle?) -> espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle
+  public func _bridgeToObjectiveC() -> espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle
+  public typealias _ObjectiveCType = espnKit.StatsCardUiModel.__WinProbabilityTeamSectionTeamGraphLineStyle
+  public static func == (a: espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle, b: espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle]
+  nonisolated public static var allCases: [espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum Ktor_utilsMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: espnKit.__Ktor_utilsMonth.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__Ktor_utilsMonth, result: inout espnKit.Ktor_utilsMonth?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__Ktor_utilsMonth, result: inout espnKit.Ktor_utilsMonth?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__Ktor_utilsMonth?) -> espnKit.Ktor_utilsMonth
+  public func _bridgeToObjectiveC() -> espnKit.__Ktor_utilsMonth
+  public typealias _ObjectiveCType = espnKit.__Ktor_utilsMonth
+  public typealias Companion = espnKit.__Ktor_utilsMonth.Companion
+  public static func == (a: espnKit.Ktor_utilsMonth, b: espnKit.Ktor_utilsMonth) -> Swift.Bool
+  public typealias AllCases = [espnKit.Ktor_utilsMonth]
+  nonisolated public static var allCases: [espnKit.Ktor_utilsMonth] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.Ktor_utilsMonth {
+  public func toKotlinEnum() -> espnKit.__Ktor_utilsMonth
+}
+extension espnKit.__Ktor_utilsMonth {
+  public func toSwiftEnum() -> espnKit.Ktor_utilsMonth
+}
+@frozen public enum Ktor_utilsWeekDay : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var value: Swift.String {
+    get
+  }
+  public static var companion: espnKit.__Ktor_utilsWeekDay.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__Ktor_utilsWeekDay, result: inout espnKit.Ktor_utilsWeekDay?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__Ktor_utilsWeekDay, result: inout espnKit.Ktor_utilsWeekDay?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__Ktor_utilsWeekDay?) -> espnKit.Ktor_utilsWeekDay
+  public func _bridgeToObjectiveC() -> espnKit.__Ktor_utilsWeekDay
+  public typealias _ObjectiveCType = espnKit.__Ktor_utilsWeekDay
+  public typealias Companion = espnKit.__Ktor_utilsWeekDay.Companion
+  public static func == (a: espnKit.Ktor_utilsWeekDay, b: espnKit.Ktor_utilsWeekDay) -> Swift.Bool
+  public typealias AllCases = [espnKit.Ktor_utilsWeekDay]
+  nonisolated public static var allCases: [espnKit.Ktor_utilsWeekDay] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.Ktor_utilsWeekDay {
+  public func toKotlinEnum() -> espnKit.__Ktor_utilsWeekDay
+}
+extension espnKit.__Ktor_utilsWeekDay {
+  public func toSwiftEnum() -> espnKit.Ktor_utilsWeekDay
+}
+@frozen public enum SharedSharedWorkingEnvironment : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case dev
+  case production
+  public var analyticsUrl: Swift.String {
+    get
+  }
+  public var maestroBaseURLDev: Swift.String {
+    get
+  }
+  public var maestroBaseURLProd: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public var pageConfigBaseURLProd: Swift.String {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedSharedWorkingEnvironment, result: inout espnKit.SharedSharedWorkingEnvironment?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedSharedWorkingEnvironment, result: inout espnKit.SharedSharedWorkingEnvironment?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedSharedWorkingEnvironment?) -> espnKit.SharedSharedWorkingEnvironment
+  public func _bridgeToObjectiveC() -> espnKit.__SharedSharedWorkingEnvironment
+  public typealias _ObjectiveCType = espnKit.__SharedSharedWorkingEnvironment
+  public static func == (a: espnKit.SharedSharedWorkingEnvironment, b: espnKit.SharedSharedWorkingEnvironment) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedSharedWorkingEnvironment]
+  nonisolated public static var allCases: [espnKit.SharedSharedWorkingEnvironment] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedSharedWorkingEnvironment {
+  public func toKotlinEnum() -> espnKit.__SharedSharedWorkingEnvironment
+}
+extension espnKit.__SharedSharedWorkingEnvironment {
+  public func toSwiftEnum() -> espnKit.SharedSharedWorkingEnvironment
+}
+@frozen public enum SharedDeviceOrientation : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case portrait
+  case landscape
+  public var analyticsValue: Swift.String {
+    get
+  }
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedDeviceOrientation, result: inout espnKit.SharedDeviceOrientation?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedDeviceOrientation, result: inout espnKit.SharedDeviceOrientation?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedDeviceOrientation?) -> espnKit.SharedDeviceOrientation
+  public func _bridgeToObjectiveC() -> espnKit.__SharedDeviceOrientation
+  public typealias _ObjectiveCType = espnKit.__SharedDeviceOrientation
+  public static func == (a: espnKit.SharedDeviceOrientation, b: espnKit.SharedDeviceOrientation) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedDeviceOrientation]
+  nonisolated public static var allCases: [espnKit.SharedDeviceOrientation] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedDeviceOrientation {
+  public func toKotlinEnum() -> espnKit.__SharedDeviceOrientation
+}
+extension espnKit.__SharedDeviceOrientation {
+  public func toSwiftEnum() -> espnKit.SharedDeviceOrientation
+}
+@frozen public enum SharedEngagementKind : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case anyClick
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedEngagementKind, result: inout espnKit.SharedEngagementKind?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedEngagementKind, result: inout espnKit.SharedEngagementKind?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedEngagementKind?) -> espnKit.SharedEngagementKind
+  public func _bridgeToObjectiveC() -> espnKit.__SharedEngagementKind
+  public typealias _ObjectiveCType = espnKit.__SharedEngagementKind
+  public static func == (a: espnKit.SharedEngagementKind, b: espnKit.SharedEngagementKind) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedEngagementKind]
+  nonisolated public static var allCases: [espnKit.SharedEngagementKind] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedEngagementKind {
+  public func toKotlinEnum() -> espnKit.__SharedEngagementKind
+}
+extension espnKit.__SharedEngagementKind {
+  public func toSwiftEnum() -> espnKit.SharedEngagementKind
+}
+@frozen public enum SharedOverlayTriggerType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case broadcast
+  case timecoded
+  case rule
+  case custom
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedOverlayTriggerType, result: inout espnKit.SharedOverlayTriggerType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedOverlayTriggerType, result: inout espnKit.SharedOverlayTriggerType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedOverlayTriggerType?) -> espnKit.SharedOverlayTriggerType
+  public func _bridgeToObjectiveC() -> espnKit.__SharedOverlayTriggerType
+  public typealias _ObjectiveCType = espnKit.__SharedOverlayTriggerType
+  public static func == (a: espnKit.SharedOverlayTriggerType, b: espnKit.SharedOverlayTriggerType) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedOverlayTriggerType]
+  nonisolated public static var allCases: [espnKit.SharedOverlayTriggerType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedOverlayTriggerType {
+  public func toKotlinEnum() -> espnKit.__SharedOverlayTriggerType
+}
+extension espnKit.__SharedOverlayTriggerType {
+  public func toSwiftEnum() -> espnKit.SharedOverlayTriggerType
+}
+extension espnKit.SharedWhatJustHappenedModulePresenter {
+  public typealias Phase = espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase
+}
+extension espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase {
+  public func toKotlinEnum() -> espnKit.SharedWhatJustHappenedModulePresenter.__Phase
+}
+extension espnKit.SharedWhatJustHappenedModulePresenter.__Phase {
+  public func toSwiftEnum() -> espnKit.SharedWhatJustHappenedModulePresenter.Phase
+}
+@frozen public enum __Bridge__SharedWhatJustHappenedModulePresenter_Phase : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case hidden
+  case pill
+  case expanded
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SharedWhatJustHappenedModulePresenter.__Phase, result: inout espnKit.SharedWhatJustHappenedModulePresenter.Phase?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SharedWhatJustHappenedModulePresenter.__Phase, result: inout espnKit.SharedWhatJustHappenedModulePresenter.Phase?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SharedWhatJustHappenedModulePresenter.__Phase?) -> espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase
+  public func _bridgeToObjectiveC() -> espnKit.SharedWhatJustHappenedModulePresenter.__Phase
+  public typealias _ObjectiveCType = espnKit.SharedWhatJustHappenedModulePresenter.__Phase
+  public static func == (a: espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase, b: espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase]
+  nonisolated public static var allCases: [espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum SharedCostreamRoomId : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case studio
+  case event
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedCostreamRoomId, result: inout espnKit.SharedCostreamRoomId?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedCostreamRoomId, result: inout espnKit.SharedCostreamRoomId?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedCostreamRoomId?) -> espnKit.SharedCostreamRoomId
+  public func _bridgeToObjectiveC() -> espnKit.__SharedCostreamRoomId
+  public typealias _ObjectiveCType = espnKit.__SharedCostreamRoomId
+  public static func == (a: espnKit.SharedCostreamRoomId, b: espnKit.SharedCostreamRoomId) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedCostreamRoomId]
+  nonisolated public static var allCases: [espnKit.SharedCostreamRoomId] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedCostreamRoomId {
+  public func toKotlinEnum() -> espnKit.__SharedCostreamRoomId
+}
+extension espnKit.__SharedCostreamRoomId {
+  public func toSwiftEnum() -> espnKit.SharedCostreamRoomId
+}
+@frozen public enum SharedCostreamTrackKind : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case video
+  case audio
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedCostreamTrackKind, result: inout espnKit.SharedCostreamTrackKind?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedCostreamTrackKind, result: inout espnKit.SharedCostreamTrackKind?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedCostreamTrackKind?) -> espnKit.SharedCostreamTrackKind
+  public func _bridgeToObjectiveC() -> espnKit.__SharedCostreamTrackKind
+  public typealias _ObjectiveCType = espnKit.__SharedCostreamTrackKind
+  public static func == (a: espnKit.SharedCostreamTrackKind, b: espnKit.SharedCostreamTrackKind) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedCostreamTrackKind]
+  nonisolated public static var allCases: [espnKit.SharedCostreamTrackKind] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedCostreamTrackKind {
+  public func toKotlinEnum() -> espnKit.__SharedCostreamTrackKind
+}
+extension espnKit.__SharedCostreamTrackKind {
+  public func toSwiftEnum() -> espnKit.SharedCostreamTrackKind
+}
+extension espnKit.SharedStyledText {
+  public typealias Emphasis = espnKit.__Bridge__SharedStyledText_Emphasis
+}
+extension espnKit.__Bridge__SharedStyledText_Emphasis {
+  public func toKotlinEnum() -> espnKit.SharedStyledText.__Emphasis
+}
+extension espnKit.SharedStyledText.__Emphasis {
+  public func toSwiftEnum() -> espnKit.SharedStyledText.Emphasis
+}
+@frozen public enum __Bridge__SharedStyledText_Emphasis : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case muted
+  case highlighted
+  case `default`
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.SharedStyledText.__Emphasis, result: inout espnKit.SharedStyledText.Emphasis?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.SharedStyledText.__Emphasis, result: inout espnKit.SharedStyledText.Emphasis?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.SharedStyledText.__Emphasis?) -> espnKit.__Bridge__SharedStyledText_Emphasis
+  public func _bridgeToObjectiveC() -> espnKit.SharedStyledText.__Emphasis
+  public typealias _ObjectiveCType = espnKit.SharedStyledText.__Emphasis
+  public static func == (a: espnKit.__Bridge__SharedStyledText_Emphasis, b: espnKit.__Bridge__SharedStyledText_Emphasis) -> Swift.Bool
+  public typealias AllCases = [espnKit.__Bridge__SharedStyledText_Emphasis]
+  nonisolated public static var allCases: [espnKit.__Bridge__SharedStyledText_Emphasis] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@frozen public enum SharedVodCommandType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case play
+  case pause
+  case seek
+  case theLoad
+  case stop
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: espnKit.__SharedVodCommandType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedVodCommandType, result: inout espnKit.SharedVodCommandType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedVodCommandType, result: inout espnKit.SharedVodCommandType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedVodCommandType?) -> espnKit.SharedVodCommandType
+  public func _bridgeToObjectiveC() -> espnKit.__SharedVodCommandType
+  public typealias _ObjectiveCType = espnKit.__SharedVodCommandType
+  public typealias Companion = espnKit.__SharedVodCommandType.Companion
+  public static func == (a: espnKit.SharedVodCommandType, b: espnKit.SharedVodCommandType) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedVodCommandType]
+  nonisolated public static var allCases: [espnKit.SharedVodCommandType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedVodCommandType {
+  public func toKotlinEnum() -> espnKit.__SharedVodCommandType
+}
+extension espnKit.__SharedVodCommandType {
+  public func toSwiftEnum() -> espnKit.SharedVodCommandType
+}
+@frozen public enum SharedBehavior : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case onEveryOccurrence
+  case onFirstOccurrence
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: espnKit.__SharedBehavior.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedBehavior, result: inout espnKit.SharedBehavior?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedBehavior, result: inout espnKit.SharedBehavior?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedBehavior?) -> espnKit.SharedBehavior
+  public func _bridgeToObjectiveC() -> espnKit.__SharedBehavior
+  public typealias _ObjectiveCType = espnKit.__SharedBehavior
+  public typealias Companion = espnKit.__SharedBehavior.Companion
+  public static func == (a: espnKit.SharedBehavior, b: espnKit.SharedBehavior) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedBehavior]
+  nonisolated public static var allCases: [espnKit.SharedBehavior] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedBehavior {
+  public func toKotlinEnum() -> espnKit.__SharedBehavior
+}
+extension espnKit.__SharedBehavior {
+  public func toSwiftEnum() -> espnKit.SharedBehavior
+}
+@frozen public enum SharedBindingValueType : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case number
+  case string
+  case boolean
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static var companion: espnKit.__SharedBindingValueType.Companion {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__SharedBindingValueType, result: inout espnKit.SharedBindingValueType?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedBindingValueType, result: inout espnKit.SharedBindingValueType?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__SharedBindingValueType?) -> espnKit.SharedBindingValueType
+  public func _bridgeToObjectiveC() -> espnKit.__SharedBindingValueType
+  public typealias _ObjectiveCType = espnKit.__SharedBindingValueType
+  public typealias Companion = espnKit.__SharedBindingValueType.Companion
+  public static func == (a: espnKit.SharedBindingValueType, b: espnKit.SharedBindingValueType) -> Swift.Bool
+  public typealias AllCases = [espnKit.SharedBindingValueType]
+  nonisolated public static var allCases: [espnKit.SharedBindingValueType] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.SharedBindingValueType {
+  public func toKotlinEnum() -> espnKit.__SharedBindingValueType
+}
+extension espnKit.__SharedBindingValueType {
+  public func toSwiftEnum() -> espnKit.SharedBindingValueType
+}
+@frozen public enum Kotlinx_datetimePadding : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case none
+  case zero
+  case space
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimePadding, result: inout espnKit.Kotlinx_datetimePadding?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimePadding, result: inout espnKit.Kotlinx_datetimePadding?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimePadding?) -> espnKit.Kotlinx_datetimePadding
+  public func _bridgeToObjectiveC() -> espnKit.__Kotlinx_datetimePadding
+  public typealias _ObjectiveCType = espnKit.__Kotlinx_datetimePadding
+  public static func == (a: espnKit.Kotlinx_datetimePadding, b: espnKit.Kotlinx_datetimePadding) -> Swift.Bool
+  public typealias AllCases = [espnKit.Kotlinx_datetimePadding]
+  nonisolated public static var allCases: [espnKit.Kotlinx_datetimePadding] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.Kotlinx_datetimePadding {
+  public func toKotlinEnum() -> espnKit.__Kotlinx_datetimePadding
+}
+extension espnKit.__Kotlinx_datetimePadding {
+  public func toSwiftEnum() -> espnKit.Kotlinx_datetimePadding
+}
+@frozen public enum Kotlinx_datetimeMonth : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case january
+  case february
+  case march
+  case april
+  case may
+  case june
+  case july
+  case august
+  case september
+  case october
+  case november
+  case december
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimeMonth, result: inout espnKit.Kotlinx_datetimeMonth?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimeMonth, result: inout espnKit.Kotlinx_datetimeMonth?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimeMonth?) -> espnKit.Kotlinx_datetimeMonth
+  public func _bridgeToObjectiveC() -> espnKit.__Kotlinx_datetimeMonth
+  public typealias _ObjectiveCType = espnKit.__Kotlinx_datetimeMonth
+  public static func == (a: espnKit.Kotlinx_datetimeMonth, b: espnKit.Kotlinx_datetimeMonth) -> Swift.Bool
+  public typealias AllCases = [espnKit.Kotlinx_datetimeMonth]
+  nonisolated public static var allCases: [espnKit.Kotlinx_datetimeMonth] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.Kotlinx_datetimeMonth {
+  public func toKotlinEnum() -> espnKit.__Kotlinx_datetimeMonth
+}
+extension espnKit.__Kotlinx_datetimeMonth {
+  public func toSwiftEnum() -> espnKit.Kotlinx_datetimeMonth
+}
+@frozen public enum Kotlinx_datetimeDayOfWeek : Swift.Hashable, Swift.CaseIterable, Swift._ObjectiveCBridgeable {
+  case monday
+  case tuesday
+  case wednesday
+  case thursday
+  case friday
+  case saturday
+  case sunday
+  public var name: Swift.String {
+    get
+  }
+  public var ordinal: Swift.Int32 {
+    get
+  }
+  public static func _forceBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimeDayOfWeek, result: inout espnKit.Kotlinx_datetimeDayOfWeek?)
+  public static func _conditionallyBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimeDayOfWeek, result: inout espnKit.Kotlinx_datetimeDayOfWeek?) -> Swift.Bool
+  public static func _unconditionallyBridgeFromObjectiveC(_ source: espnKit.__Kotlinx_datetimeDayOfWeek?) -> espnKit.Kotlinx_datetimeDayOfWeek
+  public func _bridgeToObjectiveC() -> espnKit.__Kotlinx_datetimeDayOfWeek
+  public typealias _ObjectiveCType = espnKit.__Kotlinx_datetimeDayOfWeek
+  public static func == (a: espnKit.Kotlinx_datetimeDayOfWeek, b: espnKit.Kotlinx_datetimeDayOfWeek) -> Swift.Bool
+  public typealias AllCases = [espnKit.Kotlinx_datetimeDayOfWeek]
+  nonisolated public static var allCases: [espnKit.Kotlinx_datetimeDayOfWeek] {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+extension espnKit.Kotlinx_datetimeDayOfWeek {
+  public func toKotlinEnum() -> espnKit.__Kotlinx_datetimeDayOfWeek
+}
+extension espnKit.__Kotlinx_datetimeDayOfWeek {
+  public func toSwiftEnum() -> espnKit.Kotlinx_datetimeDayOfWeek
+}
+extension espnKit.Skie.RuntimeKotlin.Skie_SuspendResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(espnKit.Skie_SuspendResult.Canceled)
+    case error(espnKit.Skie_SuspendResult.Error)
+    case success(espnKit.Skie_SuspendResult.Success)
+    public static func == (a: espnKit.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed, b: espnKit.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed where __Sealed : espnKit.Skie_SuspendResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.RuntimeKotlin.Skie_SuspendResult.__Sealed? where __Sealed : espnKit.Skie_SuspendResult
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause0 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed, b: espnKit.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause0
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed? where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause0
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause {
+  @frozen public enum __Sealed {
+    case selectClause0(any espnKit.Kotlinx_coroutines_coreSelectClause0)
+    case selectClause1(any espnKit.Kotlinx_coroutines_coreSelectClause1)
+    case selectClause2(any espnKit.Kotlinx_coroutines_coreSelectClause2)
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause.__Sealed? where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectInstance {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed, b: espnKit.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed where __Sealed : espnKit.Kotlinx_coroutines_coreSelectInstance
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed? where __Sealed : espnKit.Kotlinx_coroutines_coreSelectInstance
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause1 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed, b: espnKit.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause1
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed? where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause1
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause2 {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed, b: espnKit.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause2
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed? where __Sealed : espnKit.Kotlinx_coroutines_coreSelectClause2
+extension espnKit.Skie.EspnDomain.ESPNMaestroSDK.DebugEvent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case statsMetadataLoaded(espnKit.ESPNMaestroSDKDebugEventStatsMetadataLoaded)
+    public static func == (a: espnKit.Skie.EspnDomain.ESPNMaestroSDK.DebugEvent.__Sealed, b: espnKit.Skie.EspnDomain.ESPNMaestroSDK.DebugEvent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.ESPNMaestroSDK.DebugEvent.__Sealed where __Sealed : espnKit.ESPNMaestroSDKDebugEvent
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.ESPNMaestroSDK.DebugEvent.__Sealed? where __Sealed : espnKit.ESPNMaestroSDKDebugEvent
+extension espnKit.Skie.EspnDomain.StatsAction {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cardClicked(espnKit.StatsActionCardClicked)
+    case cardExpandedCollapsed(espnKit.StatsActionCardExpandedCollapsed)
+    case cardFocused(espnKit.StatsActionCardFocused)
+    case retryClicked(espnKit.StatsActionRetryClicked)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsAction.__Sealed, b: espnKit.Skie.EspnDomain.StatsAction.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsAction.__Sealed where __Sealed : espnKit.StatsAction
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsAction.__Sealed? where __Sealed : espnKit.StatsAction
+extension espnKit.Skie.EspnDomain.StatsCardType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case alsoLive(espnKit.StatsCardTypeAlsoLive)
+    case careerMatchup(espnKit.StatsCardTypeCareerMatchup)
+    case driveSummary(espnKit.StatsCardTypeDriveSummary)
+    case golfLeaderboard(espnKit.StatsCardTypeGolfLeaderboard)
+    case header(espnKit.StatsCardTypeHeader)
+    case lastFiveResults(espnKit.StatsCardTypeLastFiveResults)
+    case leaders(espnKit.StatsCardTypeLeaders)
+    case matchFormations(espnKit.StatsCardTypeMatchFormations)
+    case matchTimeline(espnKit.StatsCardTypeMatchTimeline)
+    case miniHeader(espnKit.StatsCardTypeMiniHeader)
+    case moreStatsQR(espnKit.StatsCardTypeMoreStatsQR)
+    case onTheCourt(espnKit.StatsCardTypeOnTheCourt)
+    case penalty(espnKit.StatsCardTypePenalty)
+    case penaltyShootout(espnKit.StatsCardTypePenaltyShootout)
+    case playerProfiles(espnKit.StatsCardTypePlayerProfiles)
+    case playerSeasonStats(espnKit.StatsCardTypePlayerSeasonStats)
+    case predictor(espnKit.StatsCardTypePredictor)
+    case scoringSummary(espnKit.StatsCardTypeScoringSummary)
+    case shotMap(espnKit.StatsCardTypeShotMap)
+    case teamStats(espnKit.StatsCardTypeTeamStats)
+    case teamStatsModule(espnKit.StatsCardTypeTeamStatsModule)
+    case tennisMatchHeader(espnKit.StatsCardTypeTennisMatchHeader)
+    case winProbability(espnKit.StatsCardTypeWinProbability)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsCardType.__Sealed, b: espnKit.Skie.EspnDomain.StatsCardType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsCardType.__Sealed where __Sealed : espnKit.StatsCardType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsCardType.__Sealed? where __Sealed : espnKit.StatsCardType
+extension espnKit.Skie.EspnDomain.ShopItemAction {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cardClicked(espnKit.ShopItemActionCardClicked)
+    case detailsDismissed(espnKit.ShopItemActionDetailsDismissed)
+    case qRClicked(espnKit.ShopItemActionQRClicked)
+    case retryClicked(espnKit.ShopItemActionRetryClicked)
+    public static func == (a: espnKit.Skie.EspnDomain.ShopItemAction.__Sealed, b: espnKit.Skie.EspnDomain.ShopItemAction.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.ShopItemAction.__Sealed where __Sealed : espnKit.ShopItemAction
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.ShopItemAction.__Sealed? where __Sealed : espnKit.ShopItemAction
+extension espnKit.Skie.EspnDomain.ScoreboardAction {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case gameClicked(espnKit.ScoreboardActionGameClicked)
+    case retryClicked(espnKit.ScoreboardActionRetryClicked)
+    case watchLiveClicked(espnKit.ScoreboardActionWatchLiveClicked)
+    public static func == (a: espnKit.Skie.EspnDomain.ScoreboardAction.__Sealed, b: espnKit.Skie.EspnDomain.ScoreboardAction.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.ScoreboardAction.__Sealed where __Sealed : espnKit.ScoreboardAction
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.ScoreboardAction.__Sealed? where __Sealed : espnKit.ScoreboardAction
+extension espnKit.Skie.EspnDomain.ScoreboardGameUiModel {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case final(espnKit.ScoreboardGameUiModelFinal)
+    case live(espnKit.ScoreboardGameUiModelLive)
+    case upcoming(espnKit.ScoreboardGameUiModelUpcoming)
+    public static func == (a: espnKit.Skie.EspnDomain.ScoreboardGameUiModel.__Sealed, b: espnKit.Skie.EspnDomain.ScoreboardGameUiModel.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.ScoreboardGameUiModel.__Sealed where __Sealed : espnKit.ScoreboardGameUiModel
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.ScoreboardGameUiModel.__Sealed? where __Sealed : espnKit.ScoreboardGameUiModel
+extension espnKit.Skie.EspnDomain.KeyPlayAction {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case focusedCardShown(espnKit.KeyPlayActionFocusedCardShown)
+    case keyPlayCardFocusGained(espnKit.KeyPlayActionKeyPlayCardFocusGained)
+    case keyPlayCardFocusLost(espnKit.KeyPlayActionKeyPlayCardFocusLost)
+    case onClipClicked(espnKit.KeyPlayActionOnClipClicked)
+    case onInteraction(espnKit.KeyPlayActionOnInteraction)
+    case onRetry(espnKit.KeyPlayActionOnRetry)
+    case playClip(espnKit.KeyPlayActionPlayClip)
+    public static func == (a: espnKit.Skie.EspnDomain.KeyPlayAction.__Sealed, b: espnKit.Skie.EspnDomain.KeyPlayAction.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.KeyPlayAction.__Sealed where __Sealed : espnKit.KeyPlayAction
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.KeyPlayAction.__Sealed? where __Sealed : espnKit.KeyPlayAction
+extension espnKit.Skie.EspnDomain.FantasyCardType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case matchup(espnKit.FantasyCardType.Matchup)
+    case roster(espnKit.FantasyCardType.Roster)
+    case topPlayer(espnKit.FantasyCardType.TopPlayer)
+    public static func == (a: espnKit.Skie.EspnDomain.FantasyCardType.__Sealed, b: espnKit.Skie.EspnDomain.FantasyCardType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.FantasyCardType.__Sealed where __Sealed : espnKit.FantasyCardType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.FantasyCardType.__Sealed? where __Sealed : espnKit.FantasyCardType
+extension espnKit.Skie.EspnDomain.EntryData {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case challenge(espnKit.EntryDataChallenge)
+    case league(espnKit.EntryDataLeague)
+    case nonDraftAndCountdown(espnKit.EntryDataNonDraftAndCountdown)
+    public static func == (a: espnKit.Skie.EspnDomain.EntryData.__Sealed, b: espnKit.Skie.EspnDomain.EntryData.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.EntryData.__Sealed where __Sealed : espnKit.EntryData
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.EntryData.__Sealed? where __Sealed : espnKit.EntryData
+extension espnKit.Skie.EspnDomain.Preference {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case challengePreference(espnKit.ChallengePreference)
+    case leaguePreference(espnKit.LeaguePreference)
+    public static func == (a: espnKit.Skie.EspnDomain.Preference.__Sealed, b: espnKit.Skie.EspnDomain.Preference.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.Preference.__Sealed where __Sealed : espnKit.Preference
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.Preference.__Sealed? where __Sealed : espnKit.Preference
+extension espnKit.Skie.EspnDomain.BetPanelAction {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case betStatusSelected(espnKit.BetPanelActionBetStatusSelected)
+    case cardClicked(espnKit.BetPanelActionCardClicked)
+    case cardExpandedCollapsed(espnKit.BetPanelActionCardExpandedCollapsed)
+    case cardFocused(espnKit.BetPanelActionCardFocused)
+    case disclaimerShown(espnKit.BetPanelActionDisclaimerShown)
+    case onBetSettled(espnKit.BetPanelActionOnBetSettled)
+    case onBetsRetry(espnKit.BetPanelActionOnBetsRetry)
+    public static func == (a: espnKit.Skie.EspnDomain.BetPanelAction.__Sealed, b: espnKit.Skie.EspnDomain.BetPanelAction.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.BetPanelAction.__Sealed where __Sealed : espnKit.BetPanelAction
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.BetPanelAction.__Sealed? where __Sealed : espnKit.BetPanelAction
+extension espnKit.Skie.EspnDomain.BetCardType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case disclaimer(espnKit.BetCardTypeDisclaimer)
+    case myBets(espnKit.BetCardTypeMyBets)
+    case promo(espnKit.BetCardTypePromo)
+    case qRCode(espnKit.BetCardTypeQRCode)
+    case sixPack(espnKit.BetCardTypeSixPack)
+    public static func == (a: espnKit.Skie.EspnDomain.BetCardType.__Sealed, b: espnKit.Skie.EspnDomain.BetCardType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.BetCardType.__Sealed where __Sealed : espnKit.BetCardType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.BetCardType.__Sealed? where __Sealed : espnKit.BetCardType
+extension espnKit.Skie.EspnDomain.TennisOdds.Odd.Player {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case double(espnKit.TennisOdds.OddPlayerDouble)
+    case single(espnKit.TennisOdds.OddPlayerSingle)
+    public static func == (a: espnKit.Skie.EspnDomain.TennisOdds.Odd.Player.__Sealed, b: espnKit.Skie.EspnDomain.TennisOdds.Odd.Player.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.TennisOdds.Odd.Player.__Sealed where __Sealed : espnKit.TennisOdds.OddPlayer
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.TennisOdds.Odd.Player.__Sealed? where __Sealed : espnKit.TennisOdds.OddPlayer
+extension espnKit.Skie.EspnDomain.LoadedFantasyData {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case notFound(espnKit.LoadedFantasyDataNotFound)
+    case success(espnKit.LoadedFantasyDataSuccess)
+    public static func == (a: espnKit.Skie.EspnDomain.LoadedFantasyData.__Sealed, b: espnKit.Skie.EspnDomain.LoadedFantasyData.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.LoadedFantasyData.__Sealed where __Sealed : espnKit.LoadedFantasyData
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.LoadedFantasyData.__Sealed? where __Sealed : espnKit.LoadedFantasyData
+extension espnKit.Skie.EspnDomain.PickemsCardUiModel {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case pickEmsSummaryCardUiModel(espnKit.PickEmsSummaryCardUiModel)
+    case pickemsSeeMoreCardUiModel(espnKit.PickemsSeeMoreCardUiModel)
+    public static func == (a: espnKit.Skie.EspnDomain.PickemsCardUiModel.__Sealed, b: espnKit.Skie.EspnDomain.PickemsCardUiModel.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.PickemsCardUiModel.__Sealed where __Sealed : espnKit.PickemsCardUiModel
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.PickemsCardUiModel.__Sealed? where __Sealed : espnKit.PickemsCardUiModel
+extension espnKit.Skie.EspnDomain.PickEmsSummaryCardUiModel.StatLineItem {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case statLineImageItem(espnKit.PickEmsSummaryCardUiModelStatLineItemStatLineImageItem)
+    case statLineTextItem(espnKit.PickEmsSummaryCardUiModelStatLineItemStatLineTextItem)
+    public static func == (a: espnKit.Skie.EspnDomain.PickEmsSummaryCardUiModel.StatLineItem.__Sealed, b: espnKit.Skie.EspnDomain.PickEmsSummaryCardUiModel.StatLineItem.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.PickEmsSummaryCardUiModel.StatLineItem.__Sealed where __Sealed : espnKit.PickEmsSummaryCardUiModelStatLineItem
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.PickEmsSummaryCardUiModel.StatLineItem.__Sealed? where __Sealed : espnKit.PickEmsSummaryCardUiModelStatLineItem
+extension espnKit.Skie.EspnDomain.PickEmsState {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case canceled(espnKit.PickEmsState.Canceled)
+    case completeResult(espnKit.PickEmsState.CompleteResult)
+    case `default`(espnKit.PickEmsState.Default)
+    case delayed(espnKit.PickEmsState.Delayed)
+    case forfeit(espnKit.PickEmsState.Forfeit)
+    case locked(espnKit.PickEmsState.Locked)
+    case multiCompleteResult(espnKit.PickEmsState.MultiCompleteResult)
+    case multiLocked(espnKit.PickEmsState.MultiLocked)
+    case multiSelected(espnKit.PickEmsState.MultiSelected)
+    case postponed(espnKit.PickEmsState.Postponed)
+    case selected(espnKit.PickEmsState.Selected)
+    case suspended(espnKit.PickEmsState.Suspended)
+    public static func == (a: espnKit.Skie.EspnDomain.PickEmsState.__Sealed, b: espnKit.Skie.EspnDomain.PickEmsState.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.PickEmsState.__Sealed where __Sealed : espnKit.PickEmsState
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.PickEmsState.__Sealed? where __Sealed : espnKit.PickEmsState
+extension espnKit.Skie.EspnDomain.FantasyLeagueUiModel {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case fantasyCountdownTimerLeagueUiModel(espnKit.FantasyCountdownTimerLeagueUiModel)
+    case fantasyLiveH2HLeagueUiModel(espnKit.FantasyLiveH2HLeagueUiModel)
+    case fantasyLiveROTOAndSeasonLeagueUiModel(espnKit.FantasyLiveROTOAndSeasonLeagueUiModel)
+    case fantasyNonDraftLeagueUiModel(espnKit.FantasyNonDraftLeagueUiModel)
+    public static func == (a: espnKit.Skie.EspnDomain.FantasyLeagueUiModel.__Sealed, b: espnKit.Skie.EspnDomain.FantasyLeagueUiModel.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.FantasyLeagueUiModel.__Sealed where __Sealed : espnKit.FantasyLeagueUiModel
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.FantasyLeagueUiModel.__Sealed? where __Sealed : espnKit.FantasyLeagueUiModel
+extension espnKit.Skie.EspnDomain.PickUiModel.Pick {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case image(espnKit.PickUiModel.PickImage)
+    case text(espnKit.PickUiModel.PickText)
+    public static func == (a: espnKit.Skie.EspnDomain.PickUiModel.Pick.__Sealed, b: espnKit.Skie.EspnDomain.PickUiModel.Pick.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.PickUiModel.Pick.__Sealed where __Sealed : espnKit.PickUiModel.Pick
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.PickUiModel.Pick.__Sealed? where __Sealed : espnKit.PickUiModel.Pick
+extension espnKit.Skie.EspnDomain.AnalyticsShopCardType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case fallback(espnKit.AnalyticsShopCardTypeFallback)
+    case productDetails(espnKit.AnalyticsShopCardTypeProductDetails)
+    case productSummary(espnKit.AnalyticsShopCardTypeProductSummary)
+    case wantMore(espnKit.AnalyticsShopCardTypeWantMore)
+    public static func == (a: espnKit.Skie.EspnDomain.AnalyticsShopCardType.__Sealed, b: espnKit.Skie.EspnDomain.AnalyticsShopCardType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.AnalyticsShopCardType.__Sealed where __Sealed : espnKit.AnalyticsShopCardType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.AnalyticsShopCardType.__Sealed? where __Sealed : espnKit.AnalyticsShopCardType
+extension espnKit.Skie.EspnDomain.ShopPanelUiState.CardType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case browseAll(espnKit.ShopPanelUiStateCardTypeBrowseAll)
+    case product(espnKit.ShopPanelUiStateCardTypeProduct)
+    public static func == (a: espnKit.Skie.EspnDomain.ShopPanelUiState.CardType.__Sealed, b: espnKit.Skie.EspnDomain.ShopPanelUiState.CardType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.ShopPanelUiState.CardType.__Sealed where __Sealed : espnKit.ShopPanelUiStateCardType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.ShopPanelUiState.CardType.__Sealed? where __Sealed : espnKit.ShopPanelUiStateCardType
+extension espnKit.Skie.EspnDomain.TeamStatisticsEntry {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case flat(espnKit.TeamStatisticsEntry.Flat)
+    case section(espnKit.TeamStatisticsEntry.Section)
+    public static func == (a: espnKit.Skie.EspnDomain.TeamStatisticsEntry.__Sealed, b: espnKit.Skie.EspnDomain.TeamStatisticsEntry.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.TeamStatisticsEntry.__Sealed where __Sealed : espnKit.TeamStatisticsEntry
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.TeamStatisticsEntry.__Sealed? where __Sealed : espnKit.TeamStatisticsEntry
+extension espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case double(espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionTypeDouble)
+    case single(espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionTypeSingle)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.__Sealed, b: espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.__Sealed where __Sealed : espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.__Sealed? where __Sealed : espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionType
+extension espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.Double.DoubleMatchup.FlagAndPlayer.FlagType {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case double(espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionTypeDoubleDoubleMatchupFlagAndPlayerFlagTypeDouble)
+    case single(espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionTypeDoubleDoubleMatchupFlagAndPlayerFlagTypeSingle)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.Double.DoubleMatchup.FlagAndPlayer.FlagType.__Sealed, b: espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.Double.DoubleMatchup.FlagAndPlayer.FlagType.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.Double.DoubleMatchup.FlagAndPlayer.FlagType.__Sealed where __Sealed : espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionTypeDoubleDoubleMatchupFlagAndPlayerFlagType
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsCardUiModel.AlsoLive.TennisMatchHeader.CompetitionType.Double.DoubleMatchup.FlagAndPlayer.FlagType.__Sealed? where __Sealed : espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderCompetitionTypeDoubleDoubleMatchupFlagAndPlayerFlagType
+extension espnKit.Skie.EspnDomain.StatsCardUiModel.MatchHeader.Score.TeamDisplay {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case empty(espnKit.StatsCardUiModelMatchHeaderScoreTeamDisplayEmpty)
+    case logo(espnKit.StatsCardUiModelMatchHeaderScoreTeamDisplayLogo)
+    case text(espnKit.StatsCardUiModelMatchHeaderScoreTeamDisplayText)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsCardUiModel.MatchHeader.Score.TeamDisplay.__Sealed, b: espnKit.Skie.EspnDomain.StatsCardUiModel.MatchHeader.Score.TeamDisplay.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsCardUiModel.MatchHeader.Score.TeamDisplay.__Sealed where __Sealed : espnKit.StatsCardUiModelMatchHeaderScoreTeamDisplay
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsCardUiModel.MatchHeader.Score.TeamDisplay.__Sealed? where __Sealed : espnKit.StatsCardUiModelMatchHeaderScoreTeamDisplay
+extension espnKit.Skie.EspnDomain.StatsCardUiModel.MatchTimeline.ExpandedItem {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case centeredTextEventItem(espnKit.StatsCardUiModelMatchTimelineExpandedItemCenteredTextEventItem)
+    case halfTimelineItem(espnKit.StatsCardUiModelMatchTimelineExpandedItemHalfTimelineItem)
+    case simpleEventItem(espnKit.StatsCardUiModelMatchTimelineExpandedItemSimpleEventItem)
+    case substitutionItem(espnKit.StatsCardUiModelMatchTimelineExpandedItemSubstitutionItem)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsCardUiModel.MatchTimeline.ExpandedItem.__Sealed, b: espnKit.Skie.EspnDomain.StatsCardUiModel.MatchTimeline.ExpandedItem.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsCardUiModel.MatchTimeline.ExpandedItem.__Sealed where __Sealed : espnKit.StatsCardUiModelMatchTimelineExpandedItem
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsCardUiModel.MatchTimeline.ExpandedItem.__Sealed? where __Sealed : espnKit.StatsCardUiModelMatchTimelineExpandedItem
+extension espnKit.Skie.EspnDomain.TennisBoxTeamUiModel.DisplayName {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case double(espnKit.TennisBoxTeamUiModel.DisplayNameDouble)
+    case single(espnKit.TennisBoxTeamUiModel.DisplayNameSingle)
+    public static func == (a: espnKit.Skie.EspnDomain.TennisBoxTeamUiModel.DisplayName.__Sealed, b: espnKit.Skie.EspnDomain.TennisBoxTeamUiModel.DisplayName.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.TennisBoxTeamUiModel.DisplayName.__Sealed where __Sealed : espnKit.TennisBoxTeamUiModel.DisplayName
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.TennisBoxTeamUiModel.DisplayName.__Sealed? where __Sealed : espnKit.TennisBoxTeamUiModel.DisplayName
+extension espnKit.Skie.EspnDomain.StatsCard {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case alsoLive(espnKit.StatsCardAlsoLive)
+    case careerMatchup(espnKit.StatsCardCareerMatchup)
+    case driveSummary(espnKit.StatsCardDriveSummary)
+    case golfLeaderboard(espnKit.StatsCardGolfLeaderboard)
+    case header(espnKit.StatsCardHeader)
+    case lastFiveResults(espnKit.StatsCardLastFiveResults)
+    case leaders(espnKit.StatsCardLeaders)
+    case matchFormations(espnKit.StatsCardMatchFormations)
+    case matchTimeline(espnKit.StatsCardMatchTimeline)
+    case miniHeader(espnKit.StatsCardMiniHeader)
+    case onTheCourt(espnKit.StatsCardOnTheCourt)
+    case penalties(espnKit.StatsCardPenalties)
+    case penaltyShootout(espnKit.StatsCardPenaltyShootout)
+    case playerProfiles(espnKit.StatsCardPlayerProfiles)
+    case playerSeasonStats(espnKit.StatsCardPlayerSeasonStats)
+    case predictor(espnKit.StatsCardPredictor)
+    case qr(espnKit.StatsCardQr)
+    case scoringSummary(espnKit.StatsCardScoringSummary)
+    case shotMap(espnKit.StatsCardShotMap)
+    case teamStats(espnKit.StatsCardTeamStats)
+    case teamStatsModule(espnKit.StatsCardTeamStatsModule)
+    case tennisMatchHeader(espnKit.StatsCardTennisMatchHeader)
+    case winProbability(espnKit.StatsCardWinProbability)
+    public static func == (a: espnKit.Skie.EspnDomain.StatsCard.__Sealed, b: espnKit.Skie.EspnDomain.StatsCard.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.EspnDomain.StatsCard.__Sealed where __Sealed : espnKit.StatsCard
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.EspnDomain.StatsCard.__Sealed? where __Sealed : espnKit.StatsCard
+extension espnKit.Skie.KtorHttp.OutgoingContent {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case byteArrayContent(espnKit.Ktor_httpOutgoingContent.ByteArrayContent)
+    case contentWrapper(espnKit.Ktor_httpOutgoingContent.ContentWrapper)
+    case noContent(espnKit.Ktor_httpOutgoingContent.NoContent)
+    case protocolUpgrade(espnKit.Ktor_httpOutgoingContent.ProtocolUpgrade)
+    case readChannelContent(espnKit.Ktor_httpOutgoingContent.ReadChannelContent)
+    case writeChannelContent(espnKit.Ktor_httpOutgoingContent.WriteChannelContent)
+    public static func == (a: espnKit.Skie.KtorHttp.OutgoingContent.__Sealed, b: espnKit.Skie.KtorHttp.OutgoingContent.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KtorHttp.OutgoingContent.__Sealed where __Sealed : espnKit.Ktor_httpOutgoingContent
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KtorHttp.OutgoingContent.__Sealed? where __Sealed : espnKit.Ktor_httpOutgoingContent
+extension espnKit.Skie.KotlinxSerializationCore.SerialKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case polymorphicKind(espnKit.Kotlinx_serialization_corePolymorphicKind)
+    case primitiveKind(espnKit.Kotlinx_serialization_corePrimitiveKind)
+    case cONTEXTUAL(espnKit.Kotlinx_serialization_coreSerialKind.CONTEXTUAL)
+    case eNUM(espnKit.Kotlinx_serialization_coreSerialKind.ENUM)
+    case structureKind(espnKit.Kotlinx_serialization_coreStructureKind)
+    public static func == (a: espnKit.Skie.KotlinxSerializationCore.SerialKind.__Sealed, b: espnKit.Skie.KotlinxSerializationCore.SerialKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationCore.SerialKind.__Sealed where __Sealed : espnKit.Kotlinx_serialization_coreSerialKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationCore.SerialKind.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_coreSerialKind
+extension espnKit.Skie.KotlinxSerializationCore.SerializersModule {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxSerializationCore.SerializersModule.__Sealed, b: espnKit.Skie.KotlinxSerializationCore.SerializersModule.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationCore.SerializersModule.__Sealed where __Sealed : espnKit.Kotlinx_serialization_coreSerializersModule
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationCore.SerializersModule.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_coreSerializersModule
+extension espnKit.Skie.KotlinxSerializationCore.PolymorphicKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case oPEN(espnKit.Kotlinx_serialization_corePolymorphicKind.OPEN)
+    case sEALED(espnKit.Kotlinx_serialization_corePolymorphicKind.SEALED)
+    public static func == (a: espnKit.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed, b: espnKit.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed where __Sealed : espnKit.Kotlinx_serialization_corePolymorphicKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationCore.PolymorphicKind.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_corePolymorphicKind
+extension espnKit.Skie.KotlinxSerializationCore.PrimitiveKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bOOLEAN(espnKit.Kotlinx_serialization_corePrimitiveKind.BOOLEAN)
+    case bYTE(espnKit.Kotlinx_serialization_corePrimitiveKind.BYTE)
+    case cHAR(espnKit.Kotlinx_serialization_corePrimitiveKind.CHAR)
+    case dOUBLE(espnKit.Kotlinx_serialization_corePrimitiveKind.DOUBLE)
+    case fLOAT(espnKit.Kotlinx_serialization_corePrimitiveKind.FLOAT)
+    case iNT(espnKit.Kotlinx_serialization_corePrimitiveKind.INT)
+    case lONG(espnKit.Kotlinx_serialization_corePrimitiveKind.LONG)
+    case sHORT(espnKit.Kotlinx_serialization_corePrimitiveKind.SHORT)
+    case sTRING(espnKit.Kotlinx_serialization_corePrimitiveKind.STRING)
+    public static func == (a: espnKit.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed, b: espnKit.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed where __Sealed : espnKit.Kotlinx_serialization_corePrimitiveKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationCore.PrimitiveKind.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_corePrimitiveKind
+extension espnKit.Skie.KotlinxSerializationCore.StructureKind {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case cLASS(espnKit.Kotlinx_serialization_coreStructureKind.CLASS)
+    case lIST(espnKit.Kotlinx_serialization_coreStructureKind.LIST)
+    case mAP(espnKit.Kotlinx_serialization_coreStructureKind.MAP)
+    case oBJECT(espnKit.Kotlinx_serialization_coreStructureKind.OBJECT)
+    public static func == (a: espnKit.Skie.KotlinxSerializationCore.StructureKind.__Sealed, b: espnKit.Skie.KotlinxSerializationCore.StructureKind.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationCore.StructureKind.__Sealed where __Sealed : espnKit.Kotlinx_serialization_coreStructureKind
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationCore.StructureKind.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_coreStructureKind
+extension espnKit.Skie.KotlinxIoCore.Source {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(espnKit.Kotlinx_io_coreBuffer)
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxIoCore.Source.__Sealed, b: espnKit.Skie.KotlinxIoCore.Source.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxIoCore.Source.__Sealed where __Sealed : espnKit.Kotlinx_io_coreSource
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxIoCore.Source.__Sealed? where __Sealed : espnKit.Kotlinx_io_coreSource
+extension espnKit.Skie.KotlinxIoCore.Sink {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case buffer(espnKit.Kotlinx_io_coreBuffer)
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxIoCore.Sink.__Sealed, b: espnKit.Skie.KotlinxIoCore.Sink.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxIoCore.Sink.__Sealed where __Sealed : espnKit.Kotlinx_io_coreSink
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxIoCore.Sink.__Sealed? where __Sealed : espnKit.Kotlinx_io_coreSink
+extension espnKit.Skie.Shared.ClientPlatform {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case android(espnKit.SharedClientPlatform.Android)
+    case apple(espnKit.SharedClientPlatform.Apple)
+    case web(espnKit.SharedClientPlatform.Web)
+    public static func == (a: espnKit.Skie.Shared.ClientPlatform.__Sealed, b: espnKit.Skie.Shared.ClientPlatform.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ClientPlatform.__Sealed where __Sealed : espnKit.SharedClientPlatform
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ClientPlatform.__Sealed? where __Sealed : espnKit.SharedClientPlatform
+extension espnKit.Skie.Shared.ClientPlatform.Apple {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case iOS(espnKit.SharedClientPlatform.AppleIOS)
+    case tVOS(espnKit.SharedClientPlatform.AppleTVOS)
+    public static func == (a: espnKit.Skie.Shared.ClientPlatform.Apple.__Sealed, b: espnKit.Skie.Shared.ClientPlatform.Apple.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ClientPlatform.Apple.__Sealed where __Sealed : espnKit.SharedClientPlatform.Apple
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ClientPlatform.Apple.__Sealed? where __Sealed : espnKit.SharedClientPlatform.Apple
+extension espnKit.Skie.Shared.ClientPlatform.Android {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case fireTV(espnKit.SharedClientPlatform.AndroidFireTV)
+    case mobile(espnKit.SharedClientPlatform.AndroidMobile)
+    case tV(espnKit.SharedClientPlatform.AndroidTV)
+    public static func == (a: espnKit.Skie.Shared.ClientPlatform.Android.__Sealed, b: espnKit.Skie.Shared.ClientPlatform.Android.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ClientPlatform.Android.__Sealed where __Sealed : espnKit.SharedClientPlatform.Android
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ClientPlatform.Android.__Sealed? where __Sealed : espnKit.SharedClientPlatform.Android
+extension espnKit.Skie.Shared.ClientPlatform.Web {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case bbd(espnKit.SharedClientPlatform.WebBbd)
+    case desktop(espnKit.SharedClientPlatform.WebDesktop)
+    case mobile(espnKit.SharedClientPlatform.WebMobile)
+    public static func == (a: espnKit.Skie.Shared.ClientPlatform.Web.__Sealed, b: espnKit.Skie.Shared.ClientPlatform.Web.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ClientPlatform.Web.__Sealed where __Sealed : espnKit.SharedClientPlatform.Web
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ClientPlatform.Web.__Sealed? where __Sealed : espnKit.SharedClientPlatform.Web
+extension espnKit.Skie.Shared.MaestroNetworkResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case error(espnKit.SharedMaestroNetworkResultError)
+    case success(espnKit.SharedMaestroNetworkResultSuccess<Swift.AnyObject>)
+    public static func == (a: espnKit.Skie.Shared.MaestroNetworkResult.__Sealed, b: espnKit.Skie.Shared.MaestroNetworkResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.MaestroNetworkResult.__Sealed where __Sealed : espnKit.SharedMaestroNetworkResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.MaestroNetworkResult.__Sealed? where __Sealed : espnKit.SharedMaestroNetworkResult
+extension espnKit.Skie.Shared.ExecutionTree {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case action(espnKit.SharedExecutionTreeAction)
+    case binding(espnKit.SharedExecutionTreeBinding)
+    case filter(espnKit.SharedExecutionTreeFilter)
+    public static func == (a: espnKit.Skie.Shared.ExecutionTree.__Sealed, b: espnKit.Skie.Shared.ExecutionTree.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ExecutionTree.__Sealed where __Sealed : espnKit.SharedExecutionTree
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ExecutionTree.__Sealed? where __Sealed : espnKit.SharedExecutionTree
+extension espnKit.Skie.Shared.MaestroLoadableResult {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case error(espnKit.SharedMaestroLoadableResultError)
+    case loading(espnKit.SharedMaestroLoadableResultLoading)
+    case success(espnKit.SharedMaestroLoadableResultSuccess<Swift.AnyObject>)
+    public static func == (a: espnKit.Skie.Shared.MaestroLoadableResult.__Sealed, b: espnKit.Skie.Shared.MaestroLoadableResult.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.MaestroLoadableResult.__Sealed where __Sealed : espnKit.SharedMaestroLoadableResult
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.MaestroLoadableResult.__Sealed? where __Sealed : espnKit.SharedMaestroLoadableResult
+extension espnKit.Skie.Shared.ParseResult {
+  @frozen public enum __Sealed<T> : Swift.Hashable where T : AnyObject {
+    case failure(espnKit.SharedParseResultFailure)
+    case noContent(espnKit.SharedParseResultNoContent)
+    case success(espnKit.SharedParseResultSuccess<T>)
+    public static func == (a: espnKit.Skie.Shared.ParseResult.__Sealed<T>, b: espnKit.Skie.Shared.ParseResult.__Sealed<T>) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<T, __Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ParseResult.__Sealed<T> where T : AnyObject, __Sealed : espnKit.SharedParseResult<T>
+@_disfavoredOverload public func onEnum<T, __Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ParseResult.__Sealed<T>? where T : AnyObject, __Sealed : espnKit.SharedParseResult<T>
+extension espnKit.Skie.Shared.AsyncImageParams {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case data(espnKit.SharedAsyncImageParamsData)
+    case `else`
+    public static func == (a: espnKit.Skie.Shared.AsyncImageParams.__Sealed, b: espnKit.Skie.Shared.AsyncImageParams.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.AsyncImageParams.__Sealed where __Sealed : espnKit.SharedAsyncImageParams
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.AsyncImageParams.__Sealed? where __Sealed : espnKit.SharedAsyncImageParams
+extension espnKit.Skie.Shared.BuilderCardUiModel {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case expandable(espnKit.SharedBuilderCardUiModelExpandable)
+    case simple(espnKit.SharedBuilderCardUiModelSimple)
+    public static func == (a: espnKit.Skie.Shared.BuilderCardUiModel.__Sealed, b: espnKit.Skie.Shared.BuilderCardUiModel.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.BuilderCardUiModel.__Sealed where __Sealed : espnKit.SharedBuilderCardUiModel
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.BuilderCardUiModel.__Sealed? where __Sealed : espnKit.SharedBuilderCardUiModel
+extension espnKit.Skie.Shared.CostreamConnectionState {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case connected(espnKit.SharedCostreamConnectionState.Connected)
+    case connecting(espnKit.SharedCostreamConnectionState.Connecting)
+    case disconnected(espnKit.SharedCostreamConnectionState.Disconnected)
+    case failed(espnKit.SharedCostreamConnectionState.Failed)
+    case reconnecting(espnKit.SharedCostreamConnectionState.Reconnecting)
+    case validating(espnKit.SharedCostreamConnectionState.Validating)
+    public static func == (a: espnKit.Skie.Shared.CostreamConnectionState.__Sealed, b: espnKit.Skie.Shared.CostreamConnectionState.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.CostreamConnectionState.__Sealed where __Sealed : espnKit.SharedCostreamConnectionState
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.CostreamConnectionState.__Sealed? where __Sealed : espnKit.SharedCostreamConnectionState
+extension espnKit.Skie.Shared.ActionPayload {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case showOverlay(espnKit.SharedActionPayloadShowOverlay)
+    public static func == (a: espnKit.Skie.Shared.ActionPayload.__Sealed, b: espnKit.Skie.Shared.ActionPayload.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.ActionPayload.__Sealed where __Sealed : espnKit.SharedActionPayload
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.ActionPayload.__Sealed? where __Sealed : espnKit.SharedActionPayload
+extension espnKit.Skie.Shared.BindingSource {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case panel(espnKit.SharedBindingSourcePanel)
+    public static func == (a: espnKit.Skie.Shared.BindingSource.__Sealed, b: espnKit.Skie.Shared.BindingSource.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.BindingSource.__Sealed where __Sealed : espnKit.SharedBindingSource
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.BindingSource.__Sealed? where __Sealed : espnKit.SharedBindingSource
+extension espnKit.Skie.Shared.BroadcastSnapshot {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case connectionError(espnKit.SharedBroadcastSnapshotConnectionError)
+    case doc(espnKit.SharedBroadcastSnapshotDoc)
+    case empty(espnKit.SharedBroadcastSnapshotEmpty)
+    public static func == (a: espnKit.Skie.Shared.BroadcastSnapshot.__Sealed, b: espnKit.Skie.Shared.BroadcastSnapshot.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.BroadcastSnapshot.__Sealed where __Sealed : espnKit.SharedBroadcastSnapshot
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.BroadcastSnapshot.__Sealed? where __Sealed : espnKit.SharedBroadcastSnapshot
+extension espnKit.Skie.Shared.MaestroNetworkError {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case generic(espnKit.SharedMaestroNetworkErrorGeneric)
+    case noNetwork(espnKit.SharedMaestroNetworkErrorNoNetwork)
+    case notAuthorized(espnKit.SharedMaestroNetworkErrorNotAuthorized)
+    public static func == (a: espnKit.Skie.Shared.MaestroNetworkError.__Sealed, b: espnKit.Skie.Shared.MaestroNetworkError.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.MaestroNetworkError.__Sealed where __Sealed : espnKit.SharedMaestroNetworkError
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.MaestroNetworkError.__Sealed? where __Sealed : espnKit.SharedMaestroNetworkError
+extension espnKit.Skie.Shared.CtaSpec {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case showPanel(espnKit.SharedCtaSpecShowPanel)
+    public static func == (a: espnKit.Skie.Shared.CtaSpec.__Sealed, b: espnKit.Skie.Shared.CtaSpec.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.Shared.CtaSpec.__Sealed where __Sealed : espnKit.SharedCtaSpec
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.Shared.CtaSpec.__Sealed? where __Sealed : espnKit.SharedCtaSpec
+extension espnKit.Skie.KotlinxSerializationJson.JsonElement {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonPrimitive(espnKit.Kotlinx_serialization_jsonJsonPrimitive)
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxSerializationJson.JsonElement.__Sealed, b: espnKit.Skie.KotlinxSerializationJson.JsonElement.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationJson.JsonElement.__Sealed where __Sealed : espnKit.Kotlinx_serialization_jsonJsonElement
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationJson.JsonElement.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_jsonJsonElement
+extension espnKit.Skie.KotlinxSerializationJson.JsonPrimitive {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case jsonNull(espnKit.Kotlinx_serialization_jsonJsonNull)
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed, b: espnKit.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed where __Sealed : espnKit.Kotlinx_serialization_jsonJsonPrimitive
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxSerializationJson.JsonPrimitive.__Sealed? where __Sealed : espnKit.Kotlinx_serialization_jsonJsonPrimitive
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormat {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxDatetime.DateTimeFormat.__Sealed, b: espnKit.Skie.KotlinxDatetime.DateTimeFormat.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormat.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormat
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormat.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormat
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder {
+  @frozen public enum __Sealed {
+    case withTime(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithTime)
+    case withUtcOffset(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithUtcOffset)
+    case withYearMonth(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithYearMonth)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilder
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilder
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithTime {
+  @frozen public enum __Sealed {
+    case withDateTime(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithTime.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithTime
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithTime.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithTime
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDate {
+  @frozen public enum __Sealed {
+    case withDateTime(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDate.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDate
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDate.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDate
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithYearMonth {
+  @frozen public enum __Sealed {
+    case withDate(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDate)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithYearMonth.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithYearMonth
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithYearMonth.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithYearMonth
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTime {
+  @frozen public enum __Sealed {
+    case withDateTimeComponents(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTime.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTime.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTime
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithUtcOffset {
+  @frozen public enum __Sealed {
+    case withDateTimeComponents(any espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents)
+    case `else`
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithUtcOffset.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithUtcOffset
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithUtcOffset.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithUtcOffset
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents {
+  @frozen public enum __Sealed : Swift.Hashable {
+    case `else`
+    public static func == (a: espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed, b: espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+}
+public func onEnum<__Sealed>(of sealed: __Sealed) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents
+@_disfavoredOverload public func onEnum<__Sealed>(of sealed: __Sealed?) -> espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed? where __Sealed : espnKit.Kotlinx_datetimeDateTimeFormatBuilderWithDateTimeComponents
+public func platform() -> Swift.String
+public func getBetTypeByString(type: Swift.String?) -> espnKit.BetType
+public func betWonOverlayTopology(state: espnKit.SharedAnalyticsState, betType: Swift.String, betId: Swift.String, betsState: espnKit.BetsSessionState?, clicked: Swift.Bool, isFullScreen: Swift.Bool) -> espnKit.SharedTopology
+public func defaultBetStatus(gameState: Swift.String?, defaultTab: Swift.String?) -> espnKit.BetStatus?
+public var OVERLAY_TYPE_FANTASY: Swift.String {
+  get
+}
+public func fantasyOverlayTopology(state: espnKit.SharedAnalyticsState, templateId: Swift.String, templateName: Swift.String?, overlayId: Swift.String, overlayName: Swift.String, tags: [Swift.String], allVariables: [Swift.String : Swift.String], clicked: Swift.Bool, isFullScreen: Swift.Bool, fantasyTeamsManaged: espnKit.KotlinInt?) -> espnKit.SharedTopology
+public func buildPickCardUiModel(entry: espnKit.GambitEntry, proposition: espnKit.Proposition, buildCard: @escaping (espnKit.Proposition, espnKit.GambitEntry?, espnKit.Pick) -> espnKit.SharedParseResult<any espnKit.BasePickUiModel>) -> espnKit.PickEmsSummaryCardUiModel.Pick?
+public func getPickemState(pick: espnKit.Pick, result: espnKit.Outcome?, proposition: espnKit.Proposition, outcomes: [espnKit.Outcome], entry: espnKit.GambitEntry?) -> espnKit.SharedParseResult<espnKit.PickEmsState>
+public var COLLAPSED_EVENTS_PER_TEAM: Swift.Int32 {
+  get
+}
+public var MAX_COLLAPSED_SCORING_SUMMARY_PLAYS: Swift.Int32 {
+  get
+}
+public func buildCarouselsFromStats(leftStats: [espnKit.Statistic], rightStats: [espnKit.Statistic], isHomeOnLeft: Swift.Bool) -> [espnKit.StatsCarouselUiModel]
+public func buildTeamStatsHeader(leftTeam: espnKit.StatsEntities.Team, rightTeam: espnKit.StatsEntities.Team, label: Swift.String?) -> espnKit.StatsCardUiModel.TeamStatsHeader
+public func buildDoubleDisplayNames(topCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, bottomCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, athletesMap: [Swift.String : espnKit.StatsEntities.Athlete]?) -> espnKit.KotlinPair<espnKit.TennisBoxTeamUiModel.DisplayName, espnKit.TennisBoxTeamUiModel.DisplayName>
+public func buildMatchBoxScore(competition: espnKit.StatsGameDataResponse.Competition, topCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, bottomCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, topDisplayName: espnKit.TennisBoxTeamUiModel.DisplayName, bottomDisplayName: espnKit.TennisBoxTeamUiModel.DisplayName) -> espnKit.StatsCardUiModel.AlsoLiveTennisMatchHeaderScore
+public func buildScoreHeader(topCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, bottomCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor) -> [Swift.String]
+public func buildSingleDisplayNames(topCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, bottomCompetitor: espnKit.StatsGameDataResponse.CompetitionCompetitor, athletesMap: [Swift.String : espnKit.StatsEntities.Athlete]?) -> espnKit.KotlinPair<espnKit.TennisBoxTeamUiModel.DisplayName, espnKit.TennisBoxTeamUiModel.DisplayName>
+public func findTopAndBottomCompetitors(competitors: [espnKit.StatsGameDataResponse.CompetitionCompetitor]) -> espnKit.KotlinPair<espnKit.StatsGameDataResponse.CompetitionCompetitor, espnKit.StatsGameDataResponse.CompetitionCompetitor>
+extension espnKit.KotlinKVariance : Swift.Sendable {}
+extension espnKit.KotlinKVariance : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel : Swift.Sendable {}
+extension espnKit.__Bridge__ESPNMaestroSDK_SDKLogLevel : Swift.BitwiseCopyable {}
+extension espnKit.StatsGameState : Swift.Sendable {}
+extension espnKit.StatsGameState : Swift.BitwiseCopyable {}
+extension espnKit.ScoreboardTextStyle : Swift.Sendable {}
+extension espnKit.ScoreboardTextStyle : Swift.BitwiseCopyable {}
+extension espnKit.ScoreboardTextType : Swift.Sendable {}
+extension espnKit.ScoreboardTextType : Swift.BitwiseCopyable {}
+extension espnKit.BetStatus : Swift.Sendable {}
+extension espnKit.BetStatus : Swift.BitwiseCopyable {}
+extension espnKit.BetType : Swift.Sendable {}
+extension espnKit.BetType : Swift.BitwiseCopyable {}
+extension espnKit.BetsSettledResult : Swift.Sendable {}
+extension espnKit.BetsSettledResult : Swift.BitwiseCopyable {}
+extension espnKit.PromoQRType : Swift.Sendable {}
+extension espnKit.PromoQRType : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent : Swift.Sendable {}
+extension espnKit.__Bridge__PickCardHeaderUiModel_TitleAccent : Swift.BitwiseCopyable {}
+extension espnKit.MatchUpBlockGravity : Swift.Sendable {}
+extension espnKit.MatchUpBlockGravity : Swift.BitwiseCopyable {}
+extension espnKit.PickSide : Swift.Sendable {}
+extension espnKit.PickSide : Swift.BitwiseCopyable {}
+extension espnKit.PickResult : Swift.Sendable {}
+extension espnKit.PickResult : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__KeyPlayCardUiModel_OverlayType : Swift.Sendable {}
+extension espnKit.__Bridge__KeyPlayCardUiModel_OverlayType : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark : Swift.Sendable {}
+extension espnKit.__Bridge__StatsCardUiModel_GolfLeaderboardMark : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult : Swift.Sendable {}
+extension espnKit.__Bridge__StatsCardUiModel_LastFiveResultTeamResultDetailResult : Swift.BitwiseCopyable {}
+extension espnKit.StatsCardUiModelMatchTimelineExpandedItemSide : Swift.Sendable {}
+extension espnKit.StatsCardUiModelMatchTimelineExpandedItemSide : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle : Swift.Sendable {}
+extension espnKit.__Bridge__StatsCardUiModel_WinProbabilityTeamSectionTeamGraphLineStyle : Swift.BitwiseCopyable {}
+extension espnKit.Ktor_utilsMonth : Swift.Sendable {}
+extension espnKit.Ktor_utilsMonth : Swift.BitwiseCopyable {}
+extension espnKit.Ktor_utilsWeekDay : Swift.Sendable {}
+extension espnKit.Ktor_utilsWeekDay : Swift.BitwiseCopyable {}
+extension espnKit.SharedSharedWorkingEnvironment : Swift.Sendable {}
+extension espnKit.SharedSharedWorkingEnvironment : Swift.BitwiseCopyable {}
+extension espnKit.SharedDeviceOrientation : Swift.Sendable {}
+extension espnKit.SharedDeviceOrientation : Swift.BitwiseCopyable {}
+extension espnKit.SharedEngagementKind : Swift.Sendable {}
+extension espnKit.SharedEngagementKind : Swift.BitwiseCopyable {}
+extension espnKit.SharedOverlayTriggerType : Swift.Sendable {}
+extension espnKit.SharedOverlayTriggerType : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase : Swift.Sendable {}
+extension espnKit.__Bridge__SharedWhatJustHappenedModulePresenter_Phase : Swift.BitwiseCopyable {}
+extension espnKit.SharedCostreamRoomId : Swift.Sendable {}
+extension espnKit.SharedCostreamRoomId : Swift.BitwiseCopyable {}
+extension espnKit.SharedCostreamTrackKind : Swift.Sendable {}
+extension espnKit.SharedCostreamTrackKind : Swift.BitwiseCopyable {}
+extension espnKit.__Bridge__SharedStyledText_Emphasis : Swift.Sendable {}
+extension espnKit.__Bridge__SharedStyledText_Emphasis : Swift.BitwiseCopyable {}
+extension espnKit.SharedVodCommandType : Swift.Sendable {}
+extension espnKit.SharedVodCommandType : Swift.BitwiseCopyable {}
+extension espnKit.SharedBehavior : Swift.Sendable {}
+extension espnKit.SharedBehavior : Swift.BitwiseCopyable {}
+extension espnKit.SharedBindingValueType : Swift.Sendable {}
+extension espnKit.SharedBindingValueType : Swift.BitwiseCopyable {}
+extension espnKit.Kotlinx_datetimePadding : Swift.Sendable {}
+extension espnKit.Kotlinx_datetimePadding : Swift.BitwiseCopyable {}
+extension espnKit.Kotlinx_datetimeMonth : Swift.Sendable {}
+extension espnKit.Kotlinx_datetimeMonth : Swift.BitwiseCopyable {}
+extension espnKit.Kotlinx_datetimeDayOfWeek : Swift.Sendable {}
+extension espnKit.Kotlinx_datetimeDayOfWeek : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause0.__Sealed : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectInstance.__Sealed : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause1.__Sealed : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxCoroutinesCore.SelectClause2.__Sealed : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxSerializationCore.SerializersModule.__Sealed : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormat.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormat.__Sealed : Swift.BitwiseCopyable {}
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed : Swift.Sendable {}
+extension espnKit.Skie.KotlinxDatetime.DateTimeFormatBuilder.WithDateTimeComponents.__Sealed : Swift.BitwiseCopyable {}

@@ -17,6 +17,7 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import espnKit
 import os.log
 import os
 
@@ -95,6 +96,7 @@ public enum OverlayType {
   public typealias Body = @_opaqueReturnTypeOf("$s10MaestroKit0A7OverlayV4bodyQrvp", 0) __
 }
 public enum MaestroPanelType : Swift.String, Swift.CaseIterable, Swift.Sendable {
+  case scoreboard
   case keyPlays
   case stats
   case fantasy
@@ -160,6 +162,10 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable, Swift.Sendable 
   @_Concurrency.MainActor func userRequestedLogin() async
   @_Concurrency.MainActor func playPauseButtonPressed()
   @_Concurrency.MainActor func shouldShowPanelType(panel: MaestroKit.MaestroPanelType) async
+  @_Concurrency.MainActor func onPanelEvent(type: Swift.String, payload: [Swift.String : Swift.String])
+}
+extension MaestroKit.MaestroEventDelegate {
+  @_Concurrency.MainActor public func onPanelEvent(type: Swift.String, payload: [Swift.String : Swift.String])
 }
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
   #if compiler(>=5.3) && $NonescapableTypes
@@ -262,6 +268,9 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   public func setSiteID(_ siteID: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  public func setPageID(_ pageID: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func setMaestroJwt(_ jwt: Swift.String?)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
@@ -278,13 +287,19 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   }
 }
 extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
-  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType)
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType, pageID: Swift.String? = nil)
+  #endif
   nonisolated public func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated public func userDidStopWatchingEvent(_ eventID: Swift.String) async
+  nonisolated public func switchToEvent(eventID: Swift.String) async -> Swift.Bool
   nonisolated public func authenticateUser(swid: Swift.String, jwt: Swift.String) async
   nonisolated public func deauthenticateUser() async
   #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func getCurrentSiteID() async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated public func getCurrentPageID() async -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func getCurrentJwt() async -> Swift.String?
@@ -335,13 +350,19 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   @_Concurrency.MainActor func trackAnalyticsEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
 }
 public protocol MaestroManagerInterface {
-  nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType)
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType, pageID: Swift.String?)
+  #endif
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated func userDidStopWatchingEvent(_ eventID: Swift.String) async
+  nonisolated func switchToEvent(eventID: Swift.String) async -> Swift.Bool
   nonisolated func authenticateUser(swid: Swift.String, jwt: Swift.String) async
   nonisolated func deauthenticateUser() async
   #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func getCurrentSiteID() async -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  nonisolated func getCurrentPageID() async -> Swift.String?
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func getCurrentJwt() async -> Swift.String?
@@ -570,6 +591,19 @@ public struct MaestroKeyPlay : Swift.Codable, Swift.Identifiable, Swift.Equatabl
   }
 }
 
+@_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class ScoresDebugSettings {
+  @_Concurrency.MainActor public static let shared: MaestroKit.ScoresDebugSettings
+  @_Concurrency.MainActor final public var forceEmptyState: Swift.Bool {
+    get
+    set
+    _modify
+  }
+  @_Concurrency.MainActor final public func reset()
+  @objc deinit
+}
+extension MaestroKit.ScoresDebugSettings : nonisolated Observation.Observable {
+}
+
 
 
 
@@ -632,6 +666,7 @@ public enum TestUseCase {
   case enableLiveShopData
   case enableShopErrorState
   case enableNoItemsState
+  case simulateServerError
   case timecodedOverlayEvent
   public static func == (a: MaestroKit.TestUseCase, b: MaestroKit.TestUseCase) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
@@ -651,5 +686,6 @@ extension MaestroKit.MaestroEventViewModel : Swift.Sendable {}
 extension MaestroKit.MaestroWorkingEnvironment : Swift.Equatable {}
 extension MaestroKit.MaestroWorkingEnvironment : Swift.Hashable {}
 extension MaestroKit.SessionAnalyticsObserver : Swift.Sendable {}
+extension MaestroKit.ScoresDebugSettings : Swift.Sendable {}
 extension MaestroKit.TestUseCase : Swift.Equatable {}
 extension MaestroKit.TestUseCase : Swift.Hashable {}
