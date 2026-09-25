@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target x86_64-apple-tvos18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MaestroKit
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-tvos18.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name MaestroKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import Combine
 import CoreGraphics
 import CoreText
@@ -87,9 +87,7 @@ public enum OverlayType {
   }
 }
 @_Concurrency.MainActor @preconcurrency public struct MaestroOverlay : SwiftUICore.View {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(buttonPosition: CoreFoundation.CGPoint, overlayType: MaestroKit.OverlayType, payload: MaestroKit.MaestroOverlayEvent? = nil)
-  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -105,9 +103,7 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable, Swift.Sendable 
   public var name: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [MaestroKit.MaestroPanelType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [MaestroKit.MaestroPanelType] {
@@ -118,9 +114,7 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable, Swift.Sendable 
   }
 }
 @_Concurrency.MainActor @preconcurrency public struct MaestroPanel : SwiftUICore.View {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency public init(width: CoreFoundation.CGFloat? = nil)
-  #endif
   @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
     get
   }
@@ -152,9 +146,7 @@ public enum MaestroPanelType : Swift.String, Swift.CaseIterable, Swift.Sendable 
   @_Concurrency.MainActor func playClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func shouldShowPanel()
   @_Concurrency.MainActor func shouldHidePanel()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func shouldShowOverlay(buttonSize: CoreFoundation.CGSize, overlayType: MaestroKit.OverlayType, payload: MaestroKit.MaestroOverlayEvent?) async
-  #endif
   @_Concurrency.MainActor func shouldHideOverlay() async
   @_Concurrency.MainActor func userViewedPanel(panel: MaestroKit.MaestroPanelType)
   @_Concurrency.MainActor func trackAction(analytics: [Swift.String : Swift.String])
@@ -168,9 +160,7 @@ extension MaestroKit.MaestroEventDelegate {
   @_Concurrency.MainActor public func onPanelEvent(type: Swift.String, payload: [Swift.String : Swift.String])
 }
 @_Concurrency.MainActor public protocol MaestroEventInterface : AnyObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
-  #endif
   @_Concurrency.MainActor func didStartPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func didStopPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor func didFailToPlayClip(atIndex index: Swift.Int)
@@ -183,30 +173,14 @@ extension MaestroKit.MaestroEventDelegate {
   @_Concurrency.MainActor func currentEventInKeyPlaysTabLoadFailed()
   @_Concurrency.MainActor func currentEventInKeyPlaysUnpopulatedEvent()
   @_Concurrency.MainActor func updatePlayerTimeCode(timeCode: Swift.Double)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func getCurrentEventID() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func getCurrentlyPlayingClipIndex() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func getLastPlayedClipIndex() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func getCurrentClipPlaybackProgress() -> Swift.Double?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func getKeyPlaysCount() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func simulateUseCaseHideWagers(_ useCase: MaestroKit.TestUseCase, testData: Any?, hideWagers: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor func getStatsFirstPlayWallClock() -> Swift.String?
-  #endif
 }
 @_Concurrency.MainActor final public class MaestroEventViewModel {
   @_Concurrency.MainActor public init(eventID: Swift.String, eventDelegate: any MaestroKit.MaestroEventDelegate, viewModelDelegate: any MaestroKit.MaestroManagerViewModelDelegate)
@@ -215,9 +189,7 @@ extension MaestroKit.MaestroEventDelegate {
 extension MaestroKit.MaestroEventViewModel : nonisolated Observation.Observable {
 }
 extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func updateKeyPlaysData(to newData: MaestroKit.MaestroKeyPlaysResponse?)
-  #endif
   @_Concurrency.MainActor final public func didStartPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor final public func didStopPlayingClip(atIndex index: Swift.Int)
   @_Concurrency.MainActor final public func didFailToPlayClip(atIndex index: Swift.Int)
@@ -231,30 +203,14 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   @_Concurrency.MainActor final public func currentEventInKeyPlaysTabLoadFailed()
   @_Concurrency.MainActor final public func currentEventInKeyPlaysUnpopulatedEvent()
   @_Concurrency.MainActor final public func currentEventDoesNotSupportKeyPlays()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func getCurrentEventID() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func getCurrentlyPlayingClipIndex() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func getLastPlayedClipIndex() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func getCurrentClipPlaybackProgress() -> Swift.Double?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func getKeyPlaysCount() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func simulateUseCase(_ useCase: MaestroKit.TestUseCase, forPanel panelType: MaestroKit.MaestroPanelType, testData: Any?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func simulateUseCaseHideWagers(_ useCase: MaestroKit.TestUseCase, testData: Any?, hideWagers: Swift.Bool)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor final public func getStatsFirstPlayWallClock() -> Swift.String?
-  #endif
 }
 @_hasMissingDesignatedInitializers public actor MaestroManager {
   public static let shared: MaestroKit.MaestroManager
@@ -264,21 +220,11 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
     get
   }
   public func setDefaultPanel(_ panel: MaestroKit.MaestroPanelType)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setSiteID(_ siteID: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setPageID(_ pageID: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setMaestroJwt(_ jwt: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setClientAppSwid(_ swid: Swift.String?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func setClientAppJwt(_ jwt: Swift.String?)
-  #endif
   public func setHideBetsPanel(_ hideBetsPanel: Swift.Bool)
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
@@ -287,61 +233,31 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   }
 }
 extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType, pageID: Swift.String? = nil)
-  #endif
   nonisolated public func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated public func userDidStopWatchingEvent(_ eventID: Swift.String) async
   nonisolated public func switchToEvent(eventID: Swift.String) async -> Swift.Bool
   nonisolated public func authenticateUser(swid: Swift.String, jwt: Swift.String) async
   nonisolated public func deauthenticateUser() async
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func getCurrentSiteID() async -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func getCurrentPageID() async -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func getCurrentJwt() async -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func getCurrentSwid() async -> Swift.String?
-  #endif
   nonisolated public func getDefaultPanel() async -> MaestroKit.MaestroPanelType
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func setDataToPanel(_ override: MaestroKit.MaestroPanelOverride) async -> Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated public func setDataToPanels(_ overrides: [MaestroKit.MaestroPanelOverride]) async -> [Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>]
-  #endif
   public func setDataToPanel(panelName: Swift.String, interfaceName: Swift.String, overwriteUrl: Swift.String) async -> Swift.String
 }
 extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerViewModelDelegate {
   public func userIsAuthenticated() async -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getKeyPlaysCount() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getCurrentEventID() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getCurrentSwid() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getCurrentS2Cookie() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getCurrentlyFocusedItemID() -> Foundation.UUID?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setCurrentlyFocusedItemID(_ id: Foundation.UUID?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func getCurrentlyFocusedItemIndex() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor public func setCurrentlyFocusedItemIndex(_ index: Swift.Int?)
-  #endif
   @_Concurrency.MainActor public func getShouldScrollToMostRecentlyFocusedItem() -> Swift.Bool
   @_Concurrency.MainActor public func setShouldScrollToMostRecentlyFocusedItem(_ value: Swift.Bool)
   @_Concurrency.MainActor public func shouldShowPanelType(panel: MaestroKit.MaestroPanelType) async
@@ -350,33 +266,19 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   @_Concurrency.MainActor func trackAnalyticsEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
 }
 public protocol MaestroManagerInterface {
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType, pageID: Swift.String?)
-  #endif
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated func userDidStopWatchingEvent(_ eventID: Swift.String) async
   nonisolated func switchToEvent(eventID: Swift.String) async -> Swift.Bool
   nonisolated func authenticateUser(swid: Swift.String, jwt: Swift.String) async
   nonisolated func deauthenticateUser() async
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func getCurrentSiteID() async -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func getCurrentPageID() async -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func getCurrentJwt() async -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func getCurrentSwid() async -> Swift.String?
-  #endif
   nonisolated func getDefaultPanel() async -> MaestroKit.MaestroPanelType
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func setDataToPanel(_ override: MaestroKit.MaestroPanelOverride) async -> Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   nonisolated func setDataToPanels(_ overrides: [MaestroKit.MaestroPanelOverride]) async -> [Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>]
-  #endif
   nonisolated func setDataToPanel(panelName: Swift.String, interfaceName: Swift.String, overwriteUrl: Swift.String) async -> Swift.String
 }
 public struct MaestroPanelOverride : Swift.Sendable {
@@ -398,30 +300,14 @@ public enum MaestroPanelOverrideError : Swift.Error, Swift.CustomStringConvertib
 }
 public protocol MaestroManagerViewModelDelegate : AnyObject {
   func userIsAuthenticated() async -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   func getKeyPlaysCount() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCurrentEventID() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCurrentSwid() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCurrentS2Cookie() -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCurrentlyFocusedItemID() -> Foundation.UUID?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func setCurrentlyFocusedItemID(_ id: Foundation.UUID?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getCurrentlyFocusedItemIndex() -> Swift.Int?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func setCurrentlyFocusedItemIndex(_ index: Swift.Int?)
-  #endif
   func getShouldScrollToMostRecentlyFocusedItem() -> Swift.Bool
   func setShouldScrollToMostRecentlyFocusedItem(_ value: Swift.Bool)
   func shouldShowPanelType(panel: MaestroKit.MaestroPanelType) async
@@ -487,18 +373,14 @@ public enum MaestroOverlayEvent {
     public let primaryColor: Swift.String?
     public let wallClock: Swift.String
     public let riveUrl: Swift.String
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(tags: [Swift.String], image: Swift.String, sportsType: Swift.String, headline: Swift.String, detailText: Swift.String, gameInfo: Swift.String, icon: Swift.String, playerName: Swift.String, primaryColor: Swift.String?, wallClock: Swift.String, riveUrl: Swift.String)
-    #endif
   }
 }
 public struct MaestroKeyPlaysResponse : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let teams: [MaestroKit.MaestroKeyPlaysTeam]?
   public let athletes: [MaestroKit.MaestroKeyPlaysAthlete]?
   public var sections: [MaestroKit.MaestroKeyPlaysSection]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(teams: [MaestroKit.MaestroKeyPlaysTeam]? = nil, athletes: [MaestroKit.MaestroKeyPlaysAthlete]? = nil, sections: [MaestroKit.MaestroKeyPlaysSection]? = nil)
-  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public var keyPlayCount: Swift.Int {
@@ -523,9 +405,7 @@ public struct MaestroKeyPlaysTeam : Swift.Codable, Swift.Identifiable, Swift.Equ
   public let displayOrder: Swift.String?
   public let logo: Swift.String?
   public let logoDark: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String, displayName: Swift.String? = nil, shortName: Swift.String? = nil, color: Swift.String? = nil, alternateColor: Swift.String? = nil, homeAway: Swift.String? = nil, displayOrder: Swift.String? = nil, logo: Swift.String? = nil, logoDark: Swift.String? = nil)
-  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: MaestroKit.MaestroKeyPlaysTeam, b: MaestroKit.MaestroKeyPlaysTeam) -> Swift.Bool
@@ -539,9 +419,7 @@ public struct MaestroKeyPlaysAthlete : Swift.Codable, Swift.Identifiable, Swift.
   public let id: Swift.String
   public let shortName: Swift.String?
   public let headshot: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String, shortName: Swift.String? = nil, headshot: Swift.String? = nil)
-  #endif
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
   public static func == (a: MaestroKit.MaestroKeyPlaysAthlete, b: MaestroKit.MaestroKeyPlaysAthlete) -> Swift.Bool
@@ -554,9 +432,7 @@ public struct MaestroKeyPlaysAthlete : Swift.Codable, Swift.Identifiable, Swift.
 public struct MaestroKeyPlaysSection : Swift.Codable, Swift.Equatable, Swift.Hashable {
   public let title: Swift.String?
   public var items: [MaestroKit.MaestroKeyPlay]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(title: Swift.String? = nil, items: [MaestroKit.MaestroKeyPlay]? = nil)
-  #endif
   public static func == (a: MaestroKit.MaestroKeyPlaysSection, b: MaestroKit.MaestroKeyPlaysSection) -> Swift.Bool
   public func encode(to encoder: any Swift.Encoder) throws
   public func hash(into hasher: inout Swift.Hasher)
@@ -578,9 +454,7 @@ public struct MaestroKeyPlay : Swift.Codable, Swift.Identifiable, Swift.Equatabl
   public let clipID: Swift.String
   public let awayScore: Swift.String?
   public let homeScore: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(description: Swift.String? = nil, team: Swift.String? = nil, wallClock: Swift.String? = nil, clock: Swift.String? = nil, shortPeriod: Swift.String? = nil, scoringPlay: Swift.Bool? = nil, athlete: Swift.String? = nil, thumbnail: Swift.String? = nil, clipID: Swift.String, awayScore: Swift.String? = nil, homeScore: Swift.String? = nil)
-  #endif
   public init(from decoder: any Swift.Decoder) throws
   public static func == (a: MaestroKit.MaestroKeyPlay, b: MaestroKit.MaestroKeyPlay) -> Swift.Bool
   public typealias ID = Swift.String
