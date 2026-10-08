@@ -226,6 +226,7 @@ extension MaestroKit.MaestroEventViewModel : MaestroKit.MaestroEventInterface {
   public func setClientAppSwid(_ swid: Swift.String?)
   public func setClientAppJwt(_ jwt: Swift.String?)
   public func setHideBetsPanel(_ hideBetsPanel: Swift.Bool)
+  nonisolated public func setUseDevStaticHost(_ useDevStaticHost: Swift.Bool)
   @objc deinit
   @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
