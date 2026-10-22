@@ -237,6 +237,7 @@ extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
   nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType, pageID: Swift.String? = nil)
   nonisolated public func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated public func userDidStopWatchingEvent(_ eventID: Swift.String) async
+  nonisolated public func destroySDK() async
   nonisolated public func switchToEvent(eventID: Swift.String) async -> Swift.Bool
   nonisolated public func authenticateUser(swid: Swift.String, jwt: Swift.String) async
   nonisolated public func deauthenticateUser() async
@@ -270,6 +271,7 @@ public protocol MaestroManagerInterface {
   nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType, pageID: Swift.String?)
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated func userDidStopWatchingEvent(_ eventID: Swift.String) async
+  nonisolated func destroySDK() async
   nonisolated func switchToEvent(eventID: Swift.String) async -> Swift.Bool
   nonisolated func authenticateUser(swid: Swift.String, jwt: Swift.String) async
   nonisolated func deauthenticateUser() async
@@ -335,6 +337,10 @@ public enum MaestroWorkingEnvironment {
   public static let shared: MaestroKit.SessionAnalyticsManager
   public func startSession(with metadata: [Swift.String : Swift.String]) async
   public func endSession() async
+  public func startPageSession(pageID: Swift.String?) async
+  public func endPageSession() async
+  public func startPinchbackSession() async
+  public func endPinchbackSession() async
   public func notifyAppDidEnterBackground() async
   public func notifyAppWillEnterForeground() async
   public func applyRemoteConfigChanges() async
