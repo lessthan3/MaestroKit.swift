@@ -29961,84 +29961,112 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1189,
+      "offset": 1179,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1224,
+      "length": 2,
+      "value": "14"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1268,
+      "length": 2,
+      "value": "88"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1365,
+      "length": 4,
+      "value": "0.65"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1463,
       "length": 2,
       "value": "74"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1234,
+      "offset": 1508,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1282,
+      "offset": 1556,
       "length": 3,
       "value": "116"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1334,
+      "offset": 1608,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1382,
+      "offset": 1656,
       "length": 3,
       "value": "176"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1432,
+      "offset": 1706,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1482,
+      "offset": 1756,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1536,
+      "offset": 1810,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1547,
+      "offset": 1821,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1599,
+      "offset": 1873,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1646,
+      "offset": 1920,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Scoreboard\/View\/Cards\/ScoreGameCardView.swift",
       "kind": "IntegerLiteral",
-      "offset": 1659,
+      "offset": 1933,
       "length": 3,
       "value": "170"
     },
