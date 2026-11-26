@@ -2719,73 +2719,6 @@
       },
       {
         "kind": "Import",
-        "name": "RiveRuntime",
-        "printedName": "RiveRuntime",
-        "declKind": "Import",
-        "moduleName": "MaestroKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
-        "declKind": "Import",
-        "moduleName": "MaestroKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -2803,6 +2736,83 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "RiveRuntime",
+        "printedName": "RiveRuntime",
+        "declKind": "Import",
+        "moduleName": "MaestroKit"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -2923,6 +2933,13 @@
         "kind": "Import",
         "name": "Observation",
         "printedName": "Observation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit"
+      },
+      {
+        "kind": "Import",
+        "name": "os",
+        "printedName": "os",
         "declKind": "Import",
         "moduleName": "MaestroKit"
       },
@@ -6452,7 +6469,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:pageID:postalCode:)",
+            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:pageID:postalCode:showHelloWorld:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -6527,11 +6544,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "hasDefaultArg": true,
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironment12defaultPanel04pageF010postalCodeySS_SSAA0acI0_pAA0ajK0OAA0aM4TypeOSgSSSgARtF",
-            "mangledName": "$s10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironment12defaultPanel04pageF010postalCodeySS_SSAA0acI0_pAA0ajK0OAA0aM4TypeOSgSSSgARtF",
+            "usr": "s:10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironment12defaultPanel04pageF010postalCode14showHelloWorldySS_SSAA0acI0_pAA0ajK0OAA0aM4TypeOSgSSSgASSbtF",
+            "mangledName": "$s10MaestroKit0A7ManagerC9configure6siteID3jwt07maestroC8Delegate0H18WorkingEnvironment12defaultPanel04pageF010postalCode14showHelloWorldySS_SSAA0acI0_pAA0ajK0OAA0aM4TypeOSgSSSgASSbtF",
             "moduleName": "MaestroKit",
             "declAttributes": [
               "Nonisolated",
@@ -7630,7 +7654,7 @@
           {
             "kind": "Function",
             "name": "configure",
-            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:pageID:postalCode:)",
+            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:pageID:postalCode:showHelloWorld:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7702,11 +7726,17 @@
                   }
                 ],
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanel04pageG010postalCodeySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOSgSSSgARtF",
-            "mangledName": "$s10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanel04pageG010postalCodeySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOSgSSSgARtF",
+            "usr": "s:10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanel04pageG010postalCode14showHelloWorldySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOSgSSSgASSbtF",
+            "mangledName": "$s10MaestroKit0A16ManagerInterfaceP9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanel04pageG010postalCode14showHelloWorldySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOSgSSSgASSbtF",
             "moduleName": "MaestroKit",
             "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroManagerInterface>",
             "sugared_genericSig": "<Self where Self : MaestroKit.MaestroManagerInterface>",
@@ -8254,6 +8284,96 @@
               "RawDocComment"
             ],
             "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "configure",
+            "printedName": "configure(siteID:jwt:maestroManagerDelegate:maestroWorkingEnvironment:defaultPanel:pageID:postalCode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroManagerDelegate",
+                "printedName": "any MaestroKit.MaestroManagerDelegate",
+                "usr": "s:10MaestroKit0A15ManagerDelegateP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MaestroWorkingEnvironment",
+                "printedName": "MaestroKit.MaestroWorkingEnvironment",
+                "usr": "s:10MaestroKit0A18WorkingEnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "MaestroKit.MaestroPanelType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaestroPanelType",
+                    "printedName": "MaestroKit.MaestroPanelType",
+                    "usr": "s:10MaestroKit0A9PanelTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10MaestroKit0A16ManagerInterfacePAAE9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanel04pageG010postalCodeySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOSgSSSgARtF",
+            "mangledName": "$s10MaestroKit0A16ManagerInterfacePAAE9configure6siteID3jwt07maestroC8Delegate0I18WorkingEnvironment12defaultPanel04pageG010postalCodeySS_SSAA0acJ0_pAA0akL0OAA0aN4TypeOSgSSSgARtF",
+            "moduleName": "MaestroKit",
+            "genericSig": "<τ_0_0 where τ_0_0 : MaestroKit.MaestroManagerInterface>",
+            "sugared_genericSig": "<Self where Self : MaestroKit.MaestroManagerInterface>",
+            "declAttributes": [
+              "Nonisolated",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -17185,6 +17305,23 @@
       },
       {
         "kind": "Import",
+        "name": "QuartzCore",
+        "printedName": "QuartzCore",
+        "declKind": "Import",
+        "moduleName": "MaestroKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Observation",
+        "printedName": "Observation",
+        "declKind": "Import",
+        "moduleName": "MaestroKit"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -20889,56 +21026,63 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 1288,
+      "offset": 1063,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 1686,
+      "offset": 1337,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1882,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 1730,
+      "offset": 1926,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 1829,
+      "offset": 2025,
       "length": 91,
       "value": "\"https:\/\/static.gcp.maestro.io\/media\/664b9c57d59a7a431542d814\/67db106027ddcdcd2ecb97d4.riv\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 1948,
+      "offset": 2144,
       "length": 14,
       "value": "\"stateMachine\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 2033,
+      "offset": 2229,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "BooleanLiteral",
-      "offset": 2056,
+      "offset": 2252,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/MaestroOverlay\/View\/MaestroOverlay.swift",
       "kind": "StringLiteral",
-      "offset": 2084,
+      "offset": 2280,
       "length": 14,
       "value": "\"mainArtboard\""
     },
@@ -21214,6 +21358,76 @@
       "offset": 2891,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 167,
+      "length": 3,
+      "value": "160"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 215,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 260,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 306,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 352,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 355,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 367,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 370,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 381,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/HelloWorldPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 384,
+      "length": 3,
+      "value": "255"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Components\/PanelManager\/View\/PanelManagerTabBarView.swift",
@@ -21988,140 +22202,140 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/BetsDataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 519,
+      "offset": 530,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/BetsDataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 557,
+      "offset": 568,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 1632,
+      "offset": 1610,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "FloatLiteral",
-      "offset": 1828,
+      "offset": 1949,
       "length": 4,
       "value": "10.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 2237,
+      "offset": 2418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 2348,
+      "offset": 2529,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "FloatLiteral",
-      "offset": 2841,
+      "offset": 3022,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "StringLiteral",
-      "offset": 10604,
+      "offset": 10236,
       "length": 25,
       "value": "\"https:\/\/client.espn.com\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "FloatLiteral",
-      "offset": 10648,
+      "offset": 10280,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 10673,
+      "offset": 10305,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "FloatLiteral",
-      "offset": 10696,
+      "offset": 10328,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 10722,
+      "offset": 10354,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "StringLiteral",
-      "offset": 10802,
+      "offset": 10434,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 10823,
+      "offset": 10455,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 10846,
+      "offset": 10478,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 10869,
+      "offset": 10501,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "BooleanLiteral",
-      "offset": 10893,
+      "offset": 10525,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "FloatLiteral",
-      "offset": 12279,
+      "offset": 11911,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "IntegerLiteral",
-      "offset": 12310,
+      "offset": 11942,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/DataStores\/DataStore.swift",
       "kind": "FloatLiteral",
-      "offset": 12348,
+      "offset": 11980,
       "length": 3,
       "value": "1.0"
     },
@@ -22373,14 +22587,14 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel+Overlays.swift",
       "kind": "StringLiteral",
-      "offset": 17975,
+      "offset": 19369,
       "length": 26,
       "value": "\"68785e0baabe421b032c80d6\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Events\/MaestroEventViewModel+Overlays.swift",
       "kind": "BooleanLiteral",
-      "offset": 23500,
+      "offset": 24894,
       "length": 5,
       "value": "false"
     },
@@ -22491,8 +22705,15 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager+Interface.swift",
+      "kind": "BooleanLiteral",
+      "offset": 516,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Manager\/MaestroManager+Interface.swift",
       "kind": "Array",
-      "offset": 1866,
+      "offset": 1965,
       "length": 2,
       "value": "[]"
     },
@@ -22834,78 +23055,36 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 391,
-      "length": 17,
-      "value": "\"firebase_config\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 731,
-      "length": 12,
-      "value": "\"project_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 766,
-      "length": 9,
-      "value": "\"api_key\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 805,
-      "length": 16,
-      "value": "\"storage_bucket\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 850,
-      "length": 15,
-      "value": "\"gcm_sender_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 893,
-      "length": 15,
-      "value": "\"google_app_id\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 2689,
+      "offset": 1889,
       "length": 3,
       "value": "0.5"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 2712,
+      "offset": 1912,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2738,
+      "offset": 1938,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 2768,
+      "offset": 1968,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Model\/FirebaseShardConfiguration.swift",
       "kind": "FloatLiteral",
-      "offset": 2800,
+      "offset": 2000,
       "length": 3,
       "value": "2.0"
     },
@@ -23891,43 +24070,64 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
+      "kind": "Array",
+      "offset": 1053,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
       "kind": "StringLiteral",
-      "offset": 1175,
+      "offset": 1212,
       "length": 37,
       "value": "\"com.maestro.sdk.configmanager.queue\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
       "kind": "StringLiteral",
-      "offset": 2386,
+      "offset": 2423,
       "length": 26,
       "value": "\"664b9c57d59a7a431542d814\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
       "kind": "StringLiteral",
-      "offset": 2443,
+      "offset": 2480,
       "length": 26,
       "value": "\"6930c214fcb9633b5484de81\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2960,
+      "offset": 2906,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 7215,
+      "offset": 3180,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 10468,
+      "offset": 7612,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 10698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Networking\/ConfigManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12534,
       "length": 5,
       "value": "false"
     },
@@ -24074,7 +24274,7 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/AnalyticsService.swift",
       "kind": "Array",
-      "offset": 7180,
+      "offset": 7278,
       "length": 306,
       "value": "[\"version\", \"sdk_version\", \"kingdom\", \"phylum\", \"class\", \"order\", \"family\", \"genus\", \"species\", \"event_name\", \"card\", \"columnHeaderTitle\", \"rowHeaderTitle\", \"secondScreenEnabled\", \"expanded\", \"playerSessionId\", \"airing_name\", \"pageId\", \"viewer_id\", \"watch_session_id\"]"
     },
@@ -24102,49 +24302,42 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseConfigurationService.swift",
       "kind": "StringLiteral",
-      "offset": 546,
+      "offset": 634,
       "length": 20,
       "value": "\"espn-master-456504\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseConfigurationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 698,
+      "offset": 1554,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseConfigurationService.swift",
       "kind": "FloatLiteral",
-      "offset": 864,
+      "offset": 1720,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseShardService.swift",
-      "kind": "StringLiteral",
-      "offset": 315,
-      "length": 79,
-      "value": "\"https:\/\/static-prod.us-central1-espn-prod.gcp.maestro.io\/config\/firebase.json\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseShardService.swift",
       "kind": "Array",
-      "offset": 483,
+      "offset": 328,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseShardService.swift",
       "kind": "IntegerLiteral",
-      "offset": 591,
+      "offset": 552,
       "length": 3,
       "value": "180"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Core\/Services\/FirebaseShardService.swift",
       "kind": "Array",
-      "offset": 2859,
+      "offset": 3735,
       "length": 2,
       "value": "[]"
     },
@@ -26307,7 +26500,7 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View\/Cards\/Top-Level\/BetsParlayView.swift",
       "kind": "BooleanLiteral",
-      "offset": 347,
+      "offset": 401,
       "length": 5,
       "value": "false"
     },
@@ -26531,14 +26724,14 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View\/Panel\/Post-Migration\/BetsPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1219,
+      "offset": 1269,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Bets\/View\/Panel\/Post-Migration\/BetsPanelView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1332,
+      "offset": 1382,
       "length": 5,
       "value": "false"
     },
@@ -28987,113 +29180,127 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3854,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3888,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 4017,
+      "offset": 4082,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Dictionary",
-      "offset": 4137,
+      "offset": 4202,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Dictionary",
-      "offset": 4248,
+      "offset": 4313,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "FloatLiteral",
-      "offset": 4736,
+      "offset": 4801,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4949,
+      "offset": 5014,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 4981,
+      "offset": 5046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5016,
+      "offset": 5081,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5338,
+      "offset": 5403,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5391,
+      "offset": 5456,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5437,
+      "offset": 5502,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 5474,
+      "offset": 5539,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5637,
+      "offset": 5702,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5752,
+      "offset": 5817,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5803,
+      "offset": 5868,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 5856,
+      "offset": 5921,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Fantasy\/View Model\/FantasyViewModel.swift",
       "kind": "Array",
-      "offset": 57108,
+      "offset": 57432,
       "length": 2,
       "value": "[]"
     },
@@ -31514,108 +31721,192 @@
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1580,
+      "length": 2,
+      "value": "65"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView.swift",
+      "kind": "FloatLiteral",
+      "offset": 1637,
+      "length": 3,
+      "value": "0.3"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1797,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView.swift",
       "kind": "Dictionary",
-      "offset": 1636,
+      "offset": 1903,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "IntegerLiteral",
-      "offset": 10903,
+      "offset": 11944,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "BooleanLiteral",
-      "offset": 11319,
+      "offset": 12360,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "IntegerLiteral",
-      "offset": 11451,
+      "offset": 12492,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "BooleanLiteral",
-      "offset": 11503,
+      "offset": 12544,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "FloatLiteral",
-      "offset": 11632,
+      "offset": 12673,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "FloatLiteral",
-      "offset": 11638,
+      "offset": 12679,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "IntegerLiteral",
-      "offset": 11711,
+      "offset": 12752,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "IntegerLiteral",
-      "offset": 12042,
+      "offset": 13083,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "IntegerLiteral",
-      "offset": 12522,
+      "offset": 13563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "BooleanLiteral",
-      "offset": 12817,
+      "offset": 13858,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "BooleanLiteral",
-      "offset": 12929,
+      "offset": 13970,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "FloatLiteral",
-      "offset": 13084,
+      "offset": 14125,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "FloatLiteral",
-      "offset": 13090,
+      "offset": 14131,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopPanelView+Views.swift",
       "kind": "IntegerLiteral",
-      "offset": 13166,
+      "offset": 14207,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 424,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 461,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 589,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 654,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 717,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 771,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 823,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 881,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View\/Panel\/Post-Migration\/ShopScrollOffsetAnimator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 944,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Shop\/View Model\/ShopViewModel.swift",
@@ -37899,63 +38190,63 @@
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "BooleanLiteral",
-      "offset": 18542,
+      "offset": 19244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "StringLiteral",
-      "offset": 31773,
+      "offset": 32475,
       "length": 17,
       "value": "\"Win Probability\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "StringLiteral",
-      "offset": 31869,
+      "offset": 32571,
       "length": 14,
       "value": "\"Possession %\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "Dictionary",
-      "offset": 32120,
+      "offset": 32822,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "StringLiteral",
-      "offset": 34504,
+      "offset": 35206,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "StringLiteral",
-      "offset": 34624,
+      "offset": 35326,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "StringLiteral",
-      "offset": 34700,
+      "offset": 35402,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "StringLiteral",
-      "offset": 34820,
+      "offset": 35522,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/runner\/work\/maestro-swift-sdk\/maestro-swift-sdk\/MaestroKit Framework\/MaestroKit\/Modules\/Stats\/View Model\/StatsViewModel+StatsParser.swift",
       "kind": "Array",
-      "offset": 35363,
+      "offset": 36065,
       "length": 2,
       "value": "[]"
     },
@@ -38284,994 +38575,1001 @@
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7102,
+      "offset": 7100,
+      "length": 18,
+      "value": "\"HelloWorldMascot\""
+    },
+    {
+      "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 7284,
       "length": 20,
       "value": "\"Hockey-Live-GlowNo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7290,
+      "offset": 7472,
       "length": 21,
       "value": "\"Hockey-Live-GlowYes\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7472,
+      "offset": 7654,
       "length": 17,
       "value": "\"Hockey-Upcoming\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7636,
+      "offset": 7818,
       "length": 10,
       "value": "\"Hot Prop\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7786,
+      "offset": 7968,
       "length": 6,
       "value": "\"Info\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 7954,
+      "offset": 8136,
       "length": 18,
       "value": "\"Jersey Generic 0\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8134,
+      "offset": 8316,
       "length": 18,
       "value": "\"Jersey-Live-Glow\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8321,
+      "offset": 8503,
       "length": 22,
       "value": "\"Key-Plays-Icon-Alert\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8516,
+      "offset": 8698,
       "length": 24,
       "value": "\"Key-Plays-Icon-Default\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8709,
+      "offset": 8891,
       "length": 22,
       "value": "\"Key-Plays-Icon-Focus\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 8906,
+      "offset": 9088,
       "length": 25,
       "value": "\"Key-Plays-Icon-Selected\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9095,
+      "offset": 9277,
       "length": 18,
       "value": "\"LeftFadeGradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9253,
+      "offset": 9435,
       "length": 6,
       "value": "\"Loss\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9421,
+      "offset": 9603,
       "length": 18,
       "value": "\"Loss-State-Badge\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9601,
+      "offset": 9783,
       "length": 18,
       "value": "\"Over-Live-GlowNo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9783,
+      "offset": 9965,
       "length": 19,
       "value": "\"Over-Live-GlowYes\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 9959,
+      "offset": 10141,
       "length": 15,
       "value": "\"Over-Upcoming\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10118,
+      "offset": 10300,
       "length": 8,
       "value": "\"Parlay\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10268,
+      "offset": 10450,
       "length": 7,
       "value": "\"Phone\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10430,
+      "offset": 10612,
       "length": 14,
       "value": "\"Placed-Badge\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10617,
+      "offset": 10799,
       "length": 24,
       "value": "\"Placed-Dead-Heat-Badge\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10796,
+      "offset": 10978,
       "length": 14,
       "value": "\"Profit Boost\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 10952,
+      "offset": 11134,
       "length": 7,
       "value": "\"Promo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11125,
+      "offset": 11307,
       "length": 19,
       "value": "\"RightFadeGradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11312,
+      "offset": 11494,
       "length": 21,
       "value": "\"Scores-Icon-Default\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11497,
+      "offset": 11679,
       "length": 19,
       "value": "\"Scores-Icon-Focus\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11686,
+      "offset": 11868,
       "length": 22,
       "value": "\"Scores-Icon-Selected\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 11868,
+      "offset": 12050,
       "length": 17,
       "value": "\"Shop-Icon-Alert\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12049,
+      "offset": 12231,
       "length": 19,
       "value": "\"Shop-Icon-Default\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12228,
+      "offset": 12410,
       "length": 17,
       "value": "\"Shop-Icon-Focus\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12411,
+      "offset": 12593,
       "length": 20,
       "value": "\"Shop-Icon-Selected\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12587,
+      "offset": 12769,
       "length": 14,
       "value": "\"ShopEspnLogo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12767,
+      "offset": 12949,
       "length": 20,
       "value": "\"Soccer-Live-GlowNo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 12955,
+      "offset": 13137,
       "length": 21,
       "value": "\"Soccer-Live-GlowYes\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13137,
+      "offset": 13319,
       "length": 17,
       "value": "\"Soccer-Upcoming\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13316,
+      "offset": 13498,
       "length": 18,
       "value": "\"Stats-Icon-Alert\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13500,
+      "offset": 13682,
       "length": 20,
       "value": "\"Stats-Icon-Default\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13682,
+      "offset": 13864,
       "length": 18,
       "value": "\"Stats-Icon-Focus\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 13868,
+      "offset": 14050,
       "length": 21,
       "value": "\"Stats-Icon-Selected\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14044,
+      "offset": 14226,
       "length": 14,
       "value": "\"Super Boosts\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14224,
+      "offset": 14406,
       "length": 20,
       "value": "\"Tennis-Live-GlowNo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14412,
+      "offset": 14594,
       "length": 21,
       "value": "\"Tennis-Live-GlowYes\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14594,
+      "offset": 14776,
       "length": 17,
       "value": "\"Tennis-Upcoming\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14771,
+      "offset": 14953,
       "length": 17,
       "value": "\"UFC-Live-GlowNo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 14950,
+      "offset": 15132,
       "length": 18,
       "value": "\"UFC-Live-GlowYes\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15123,
+      "offset": 15305,
       "length": 14,
       "value": "\"UFC-Upcoming\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15301,
+      "offset": 15483,
       "length": 19,
       "value": "\"Under-Live-GlowNo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15486,
+      "offset": 15668,
       "length": 20,
       "value": "\"Under-Live-GlowYes\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15665,
+      "offset": 15847,
       "length": 16,
       "value": "\"Under-Upcoming\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15821,
+      "offset": 16003,
       "length": 6,
       "value": "\"Void\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 15978,
+      "offset": 16160,
       "length": 12,
       "value": "\"Void-Badge\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16128,
+      "offset": 16310,
       "length": 5,
       "value": "\"Win\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16293,
+      "offset": 16475,
       "length": 17,
       "value": "\"Win-State-Badge\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16464,
+      "offset": 16646,
       "length": 13,
       "value": "\"WinnerArrow\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16644,
+      "offset": 16826,
       "length": 21,
       "value": "\"Won-Dead-Heat-Badge\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 16835,
+      "offset": 17017,
       "length": 21,
       "value": "\"baseGradientFantasy\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17016,
+      "offset": 17198,
       "length": 16,
       "value": "\"basketballMens\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17196,
+      "offset": 17378,
       "length": 18,
       "value": "\"basketballWomens\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17392,
+      "offset": 17574,
       "length": 26,
       "value": "\"basketball_away_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17596,
+      "offset": 17778,
       "length": 26,
       "value": "\"basketball_home_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 17804,
+      "offset": 17986,
       "length": 28,
       "value": "\"basketball_match_predictor\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18003,
+      "offset": 18185,
       "length": 23,
       "value": "\"bets_qr_code_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18189,
+      "offset": 18371,
       "length": 19,
       "value": "\"bets_qr_code_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18365,
+      "offset": 18547,
       "length": 15,
       "value": "\"bluebull_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18532,
+      "offset": 18714,
       "length": 12,
       "value": "\"browselogo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18697,
+      "offset": 18879,
       "length": 13,
       "value": "\"bruins_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 18863,
+      "offset": 19045,
       "length": 13,
       "value": "\"chiefs_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19033,
+      "offset": 19215,
       "length": 15,
       "value": "\"clippers_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19202,
+      "offset": 19384,
       "length": 13,
       "value": "\"correctPick\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19377,
+      "offset": 19559,
       "length": 17,
       "value": "\"defaultTeamLogo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19550,
+      "offset": 19732,
       "length": 14,
       "value": "\"detailqrcode\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19717,
+      "offset": 19899,
       "length": 13,
       "value": "\"eagles_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 19900,
+      "offset": 20082,
       "length": 21,
       "value": "\"eliminatorPickemImg\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20081,
+      "offset": 20263,
       "length": 16,
       "value": "\"emptyStateLogo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20261,
+      "offset": 20443,
       "length": 18,
       "value": "\"fantasyPromoLogo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20436,
+      "offset": 20618,
       "length": 15,
       "value": "\"fantasy_login\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20621,
+      "offset": 20803,
       "length": 22,
       "value": "\"fantasy_mlb_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20805,
+      "offset": 20987,
       "length": 18,
       "value": "\"fantasy_mlb_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 20993,
+      "offset": 21175,
       "length": 22,
       "value": "\"fantasy_nba_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21177,
+      "offset": 21359,
       "length": 18,
       "value": "\"fantasy_nba_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21365,
+      "offset": 21547,
       "length": 22,
       "value": "\"fantasy_nfl_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21549,
+      "offset": 21731,
       "length": 18,
       "value": "\"fantasy_nfl_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21737,
+      "offset": 21919,
       "length": 22,
       "value": "\"fantasy_nhl_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 21921,
+      "offset": 22103,
       "length": 18,
       "value": "\"fantasy_nhl_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22096,
+      "offset": 22278,
       "length": 15,
       "value": "\"fantasy_promo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22288,
+      "offset": 22470,
       "length": 26,
       "value": "\"fantasy_qr_code_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22483,
+      "offset": 22665,
       "length": 22,
       "value": "\"fantasy_qr_code_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22683,
+      "offset": 22865,
       "length": 26,
       "value": "\"fantasy_sumarry_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 22881,
+      "offset": 23063,
       "length": 23,
       "value": "\"fantasy_wnba_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23068,
+      "offset": 23250,
       "length": 19,
       "value": "\"fantasy_wnba_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23256,
+      "offset": 23438,
       "length": 21,
       "value": "\"football-possession\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23451,
+      "offset": 23633,
       "length": 24,
       "value": "\"football_away_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23652,
+      "offset": 23834,
       "length": 26,
       "value": "\"football_away_headshot 1\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 23852,
+      "offset": 24034,
       "length": 24,
       "value": "\"football_home_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24053,
+      "offset": 24235,
       "length": 26,
       "value": "\"football_home_headshot 1\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24257,
+      "offset": 24439,
       "length": 26,
       "value": "\"football_match_predictor\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24436,
+      "offset": 24618,
       "length": 13,
       "value": "\"giants_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24619,
+      "offset": 24801,
       "length": 22,
       "value": "\"hockey_away_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 24811,
+      "offset": 24993,
       "length": 22,
       "value": "\"hockey_home_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25007,
+      "offset": 25189,
       "length": 24,
       "value": "\"hockey_match_predictor\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25205,
+      "offset": 25387,
       "length": 24,
       "value": "\"hockey_player_headshot\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25380,
+      "offset": 25562,
       "length": 12,
       "value": "\"horns_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25551,
+      "offset": 25733,
       "length": 16,
       "value": "\"horsehead_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25725,
+      "offset": 25907,
       "length": 15,
       "value": "\"incorrectPick\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 25885,
+      "offset": 26067,
       "length": 9,
       "value": "\"kc_glow\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26043,
+      "offset": 26225,
       "length": 11,
       "value": "\"kc_swatch\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26214,
+      "offset": 26396,
       "length": 17,
       "value": "\"key-plays-ghost\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26376,
+      "offset": 26558,
       "length": 9,
       "value": "\"la_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26538,
+      "offset": 26720,
       "length": 13,
       "value": "\"lakers_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26703,
+      "offset": 26885,
       "length": 12,
       "value": "\"leftPickem\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 26863,
+      "offset": 27045,
       "length": 10,
       "value": "\"leftSide\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27033,
+      "offset": 27215,
       "length": 16,
       "value": "\"leftTextChoice\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27207,
+      "offset": 27389,
       "length": 15,
       "value": "\"leftplayerImg\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27377,
+      "offset": 27559,
       "length": 14,
       "value": "\"load-failure\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27537,
+      "offset": 27719,
       "length": 9,
       "value": "\"lockimg\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27695,
+      "offset": 27877,
       "length": 11,
       "value": "\"my_disney\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 27889,
+      "offset": 28071,
       "length": 29,
       "value": "\"mybets_allsports_green_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28090,
+      "offset": 28272,
       "length": 23,
       "value": "\"mybets_allsports_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28288,
+      "offset": 28470,
       "length": 25,
       "value": "\"mybets_green_check_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28488,
+      "offset": 28670,
       "length": 25,
       "value": "\"mybets_under_caret_icon\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28686,
+      "offset": 28868,
       "length": 24,
       "value": "\"no-key-plays-available\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 28855,
+      "offset": 29037,
       "length": 9,
       "value": "\"ny_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29021,
+      "offset": 29203,
       "length": 15,
       "value": "\"penalty_clock\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29183,
+      "offset": 29365,
       "length": 10,
       "value": "\"phi_glow\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29342,
+      "offset": 29524,
       "length": 13,
       "value": "\"playerImage\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29522,
+      "offset": 29704,
       "length": 20,
       "value": "\"player_Placeholder\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29688,
+      "offset": 29870,
       "length": 9,
       "value": "\"product\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 29841,
+      "offset": 30023,
       "length": 8,
       "value": "\"qrcode\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30003,
+      "offset": 30185,
       "length": 13,
       "value": "\"rightPickem\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30166,
+      "offset": 30348,
       "length": 11,
       "value": "\"rightSide\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30339,
+      "offset": 30521,
       "length": 17,
       "value": "\"rightTextChoice\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30516,
+      "offset": 30698,
       "length": 16,
       "value": "\"rightplayerImg\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30681,
+      "offset": 30863,
       "length": 11,
       "value": "\"star_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 30848,
+      "offset": 31030,
       "length": 15,
       "value": "\"stats_qr_code\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31036,
+      "offset": 31218,
       "length": 24,
       "value": "\"stats_qr_code_gradient\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31225,
+      "offset": 31407,
       "length": 20,
       "value": "\"stats_qr_code_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31402,
+      "offset": 31584,
       "length": 15,
       "value": "\"steelers_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31584,
+      "offset": 31766,
       "length": 20,
       "value": "\"tennis_emptyPlayer\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31747,
+      "offset": 31929,
       "length": 8,
       "value": "\"w_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 31904,
+      "offset": 32086,
       "length": 11,
       "value": "\"wild_logo\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32076,
+      "offset": 32258,
       "length": 17,
       "value": "\"win_probability\""
     },
     {
       "filePath": "\/Users\/runner\/Library\/Developer\/Xcode\/DerivedData\/MaestroKit-gzddyioedbjxgbeovdxwblnsusjg\/Build\/Intermediates.noindex\/ArchiveIntermediates\/MaestroKit\/IntermediateBuildFilesPath\/MaestroKit.build\/Release-appletvsimulator\/MaestroKit.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 32246,
+      "offset": 32428,
       "length": 13,
       "value": "\"winner_icon\""
     }

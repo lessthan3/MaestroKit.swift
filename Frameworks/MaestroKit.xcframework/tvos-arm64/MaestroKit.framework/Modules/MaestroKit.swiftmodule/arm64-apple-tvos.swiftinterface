@@ -9,6 +9,7 @@ import DeveloperToolsSupport
 import Foundation
 @_exported import MaestroKit
 import Observation
+import QuartzCore
 import RegexBuilder
 import RiveRuntime
 import Swift
@@ -258,7 +259,7 @@ public enum MaestroPanelEvent : Swift.Sendable, Swift.Equatable {
   }
 }
 extension MaestroKit.MaestroManager : MaestroKit.MaestroManagerInterface {
-  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType? = nil, pageID: Swift.String? = nil, postalCode: Swift.String? = nil)
+  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType? = nil, pageID: Swift.String? = nil, postalCode: Swift.String? = nil, showHelloWorld: Swift.Bool = false)
   nonisolated public func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hiddenPanels: Swift.Set<MaestroKit.MaestroPanelType> = [], hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated public func userDidStopWatchingEvent(_ eventID: Swift.String) async
   nonisolated public func destroySDK() async
@@ -292,7 +293,7 @@ extension MaestroKit.MaestroManager : @preconcurrency MaestroKit.MaestroManagerV
   @_Concurrency.MainActor func trackAnalyticsEvent(name: Swift.String, attributes: [Swift.String : Swift.String])
 }
 public protocol MaestroManagerInterface {
-  nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType?, pageID: Swift.String?, postalCode: Swift.String?)
+  nonisolated func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType?, pageID: Swift.String?, postalCode: Swift.String?, showHelloWorld: Swift.Bool)
   nonisolated func userDidStartWatchingEvent(eventID: Swift.String, delegate: any MaestroKit.MaestroEventDelegate, hiddenPanels: Swift.Set<MaestroKit.MaestroPanelType>, hideBetsPanel: Swift.Bool, hideBetsWagers: Swift.Bool, disableBetsOverlays: Swift.Bool, disableFantasyOverlays: Swift.Bool) async -> any MaestroKit.MaestroEventInterface
   nonisolated func userDidStopWatchingEvent(_ eventID: Swift.String) async
   nonisolated func destroySDK() async
@@ -307,6 +308,9 @@ public protocol MaestroManagerInterface {
   nonisolated func setDataToPanel(_ override: MaestroKit.MaestroPanelOverride) async -> Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>
   nonisolated func setDataToPanels(_ overrides: [MaestroKit.MaestroPanelOverride]) async -> [Swift.Result<Swift.Void, MaestroKit.MaestroPanelOverrideError>]
   nonisolated func setDataToPanel(panelName: Swift.String, interfaceName: Swift.String, overwriteUrl: Swift.String) async -> Swift.String
+}
+extension MaestroKit.MaestroManagerInterface {
+  nonisolated public func configure(siteID: Swift.String, jwt: Swift.String, maestroManagerDelegate: any MaestroKit.MaestroManagerDelegate, maestroWorkingEnvironment: MaestroKit.MaestroWorkingEnvironment, defaultPanel: MaestroKit.MaestroPanelType?, pageID: Swift.String?, postalCode: Swift.String?)
 }
 public struct MaestroPanelOverride : Swift.Sendable {
   public var panelIdentifier: Swift.String
